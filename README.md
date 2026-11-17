@@ -22,11 +22,29 @@ Base de datos para una firma independiente de asesoría financiera que gestiona 
 | `diagramas/` | Modelo conceptual EER y modelo relacional (PNG, SVG y fuente Graphviz) |
 | `docs/` | Modelo conceptual, normalización y diccionario de datos |
 
-## Requisitos
+## Requisitos y versiones utilizadas
 
-- PostgreSQL 16 o superior (`psql` y `pg_dump`)
-- MongoDB con `mongosh`
-- Python 3 con `pip install yfinance pandas requests pymongo`
+La solución se desarrolló y probó con estas versiones. Para reproducir los resultados tal cual, use las mismas.
+
+| Herramienta | Versión |
+| --- | --- |
+| Sistema operativo | Windows 11 (PowerShell 5.1) |
+| PostgreSQL (servidor, `psql`, `pg_dump`) | 18.6 |
+| pgAdmin | 4 |
+| MongoDB (servidor) | 9.0.8 |
+| mongosh | 2.14.2 |
+| Python | 3.13.17 |
+| Librerías de Python | ver `requirements.txt` |
+
+Instalar las librerías de Python con las versiones exactas:
+
+```powershell
+pip install -r requirements.txt
+```
+
+Los scripts SQL también funcionan en PostgreSQL 16 y 17.
+
+**Sobre la reproducibilidad de los datos:** los precios, dividendos y la TRM descargados están versionados en `datos/`, y `scripts/generar_datos.py` los reutiliza en lugar de volver a descargarlos. Los asesores, clientes y operaciones se generan con una semilla fija, por lo que la carga es idéntica en cualquier equipo. Solo las consultas que dependen de la fecha de ejecución (rentabilidad a 12 meses, vencimientos a 30/60/90 días, comisiones del último año) cambian según el día en que se ejecuten. Para descargar datos nuevos: `run_all.ps1 -Descargar`.
 
 ## Cómo ejecutar
 
