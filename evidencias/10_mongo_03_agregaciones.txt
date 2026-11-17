@@ -1,444 +1,166 @@
 ﻿
-=== AGREGACION 1: rendimiento y volatilidad, ultimos 6 meses ===
+=== AGREGACION 1: precios de cada activo desde junio de 2026 ===
 [
   {
-    tipo: 'ACCION',
-    dias: 127,
-    ticker: 'CIB',
-    cierre_inicial: 64.02,
-    cierre_final: 87.45,
-    minimo: 63.74,
-    maximo: 103.26,
-    rendimiento_pct: 36.6,
-    volatilidad_pct: 11.38
+    _id: 'SPY',
+    precio_promedio: 757.8015240168168,
+    precio_minimo: 725.4299926757812,
+    precio_maximo: 779.0900268554688,
+    dias: 118
   },
   {
-    tipo: 'ACCION',
-    dias: 127,
-    ticker: 'JNJ',
-    cierre_inicial: 228.92,
-    cierre_final: 282.55,
-    minimo: 222.89,
-    maximo: 285.75,
-    rendimiento_pct: 23.43,
-    volatilidad_pct: 5.96
+    _id: 'QQQ',
+    precio_promedio: 715.6001700708422,
+    precio_minimo: 647.0499877929688,
+    precio_maximo: 759.6599731445312,
+    dias: 118
   },
   {
-    tipo: 'ACCION',
-    dias: 127,
-    ticker: 'MSFT',
-    cierre_inicial: 423.54,
-    cierre_final: 517.99,
-    minimo: 352.83,
-    maximo: 555.8,
-    rendimiento_pct: 22.3,
-    volatilidad_pct: 12.62
+    _id: 'MSFT',
+    precio_promedio: 469.11618507514567,
+    precio_minimo: 352.8299865722656,
+    precio_maximo: 555.7999877929688,
+    dias: 118
   },
   {
-    tipo: 'ACCION',
-    dias: 127,
-    ticker: 'AAPL',
-    cierre_inicial: 297.84,
-    cierre_final: 352.78,
-    minimo: 275.15,
-    maximo: 356.27,
-    rendimiento_pct: 18.45,
-    volatilidad_pct: 5.8
+    _id: 'TSLA',
+    precio_promedio: 371.8274559408931,
+    precio_minimo: 298.32000732421875,
+    precio_maximo: 425.29998779296875,
+    dias: 118
   },
   {
-    tipo: 'ACCION',
-    dias: 127,
-    ticker: 'EC',
-    cierre_inicial: 13.81,
-    cierre_final: 14.91,
-    minimo: 13.72,
-    maximo: 18.26,
-    rendimiento_pct: 7.97,
-    volatilidad_pct: 6.71
+    _id: 'GOOGL',
+    precio_promedio: 341.3693214028569,
+    precio_minimo: 278.989990234375,
+    precio_maximo: 377.6499938964844,
+    dias: 118
   },
   {
-    tipo: 'FONDO',
-    dias: 127,
-    ticker: 'SPY',
-    cierre_inicial: 738.65,
-    cierre_final: 739.95,
-    minimo: 725.43,
-    maximo: 779.09,
-    rendimiento_pct: 0.18,
-    volatilidad_pct: 1.78
+    _id: 'AAPL',
+    precio_promedio: 322.9841531009997,
+    precio_minimo: 275.1499938964844,
+    precio_maximo: 356.2699890136719,
+    dias: 118
   },
   {
-    tipo: 'ACCION',
-    dias: 127,
-    ticker: 'AMZN',
-    cierre_inicial: 264.86,
-    cierre_final: 257.75,
-    minimo: 226.65,
-    maximo: 284.02,
-    rendimiento_pct: -2.68,
-    volatilidad_pct: 4.61
+    _id: 'JNJ',
+    precio_promedio: 259.71228816145555,
+    precio_minimo: 222.88999938964844,
+    precio_maximo: 285.75,
+    dias: 118
   },
   {
-    tipo: 'FONDO',
-    dias: 127,
-    ticker: 'QQQ',
-    cierre_inicial: 705.88,
-    cierre_final: 661.75,
-    minimo: 647.05,
-    maximo: 759.66,
-    rendimiento_pct: -6.25,
-    volatilidad_pct: 3
+    _id: 'AMZN',
+    precio_promedio: 252.6649997517214,
+    precio_minimo: 226.64999389648438,
+    precio_maximo: 284.0199890136719,
+    dias: 118
   },
   {
-    tipo: 'ACCION',
-    dias: 127,
-    ticker: 'TSLA',
-    cierre_inicial: 409.99,
-    cierre_final: 379.74,
-    minimo: 298.32,
-    maximo: 442.1,
-    rendimiento_pct: -7.38,
-    volatilidad_pct: 8.39
+    _id: 'CIB',
+    precio_promedio: 90.24228829852605,
+    precio_minimo: 70.87999725341797,
+    precio_maximo: 103.26000213623047,
+    dias: 118
   },
   {
-    tipo: 'ACCION',
-    dias: 127,
-    ticker: 'GOOGL',
-    cierre_inicial: 396.94,
-    cierre_final: 283.72,
-    minimo: 278.99,
-    maximo: 396.94,
-    rendimiento_pct: -28.52,
-    volatilidad_pct: 7.33
+    _id: 'EC',
+    precio_promedio: 16.495169542603573,
+    precio_minimo: 14.239999771118164,
+    precio_maximo: 18.260000228881836,
+    dias: 118
   }
 ]
 
-=== AGREGACION 2: dividendos por activo y anio ===
+=== AGREGACION 2: dividendos por activo ===
 [
   {
-    pagos: 4,
-    ticker: 'AAPL',
-    anio: 2024,
-    dividendos_por_unidad_usd: 0.99,
-    rendimiento_dividendo_pct: 0.48
+    _id: 'SPY',
+    pagos: 11,
+    total_dividendos_usd: 19.937
   },
   {
-    pagos: 4,
-    ticker: 'AAPL',
-    anio: 2025,
-    dividendos_por_unidad_usd: 1.03,
-    rendimiento_dividendo_pct: 0.44
+    _id: 'CIB',
+    pagos: 10,
+    total_dividendos_usd: 17.986
   },
   {
-    pagos: 4,
-    ticker: 'AAPL',
-    anio: 2026,
-    dividendos_por_unidad_usd: 1.07,
-    rendimiento_dividendo_pct: 0.36
+    _id: 'JNJ',
+    pagos: 11,
+    total_dividendos_usd: 14.030000000000001
   },
   {
-    pagos: 4,
-    ticker: 'CIB',
-    anio: 2024,
-    dividendos_por_unidad_usd: 4.29,
-    rendimiento_dividendo_pct: 13.02
+    _id: 'MSFT',
+    pagos: 11,
+    total_dividendos_usd: 9.21
   },
   {
-    pagos: 2,
-    ticker: 'CIB',
-    anio: 2025,
-    dividendos_por_unidad_usd: 8.098,
-    rendimiento_dividendo_pct: 17.08
+    _id: 'QQQ',
+    pagos: 11,
+    total_dividendos_usd: 7.939
   },
   {
-    pagos: 4,
-    ticker: 'CIB',
-    anio: 2026,
-    dividendos_por_unidad_usd: 5.598,
-    rendimiento_dividendo_pct: 6.85
+    _id: 'EC',
+    pagos: 5,
+    total_dividendos_usd: 3.253
   },
   {
-    pagos: 2,
-    ticker: 'EC',
-    anio: 2024,
-    dividendos_por_unidad_usd: 1.6,
-    rendimiento_dividendo_pct: 15.4
+    _id: 'AAPL',
+    pagos: 12,
+    total_dividendos_usd: 3.09
   },
   {
-    pagos: 2,
-    ticker: 'EC',
-    anio: 2025,
-    dividendos_por_unidad_usd: 0.992,
-    rendimiento_dividendo_pct: 10.75
-  },
-  {
-    pagos: 1,
-    ticker: 'EC',
-    anio: 2026,
-    dividendos_por_unidad_usd: 0.661,
-    rendimiento_dividendo_pct: 4.42
-  },
-  {
-    pagos: 3,
-    ticker: 'GOOGL',
-    anio: 2024,
-    dividendos_por_unidad_usd: 0.6,
-    rendimiento_dividendo_pct: 0.37
-  },
-  {
-    pagos: 4,
-    ticker: 'GOOGL',
-    anio: 2025,
-    dividendos_por_unidad_usd: 0.83,
-    rendimiento_dividendo_pct: 0.39
-  },
-  {
-    pagos: 3,
-    ticker: 'GOOGL',
-    anio: 2026,
-    dividendos_por_unidad_usd: 0.65,
-    rendimiento_dividendo_pct: 0.19
-  },
-  {
-    pagos: 4,
-    ticker: 'JNJ',
-    anio: 2024,
-    dividendos_por_unidad_usd: 4.91,
-    rendimiento_dividendo_pct: 3.16
-  },
-  {
-    pagos: 4,
-    ticker: 'JNJ',
-    anio: 2025,
-    dividendos_por_unidad_usd: 5.14,
-    rendimiento_dividendo_pct: 3.02
-  },
-  {
-    pagos: 3,
-    ticker: 'JNJ',
-    anio: 2026,
-    dividendos_por_unidad_usd: 3.98,
-    rendimiento_dividendo_pct: 1.61
-  },
-  {
-    pagos: 4,
-    ticker: 'MSFT',
-    anio: 2024,
-    dividendos_por_unidad_usd: 3.08,
-    rendimiento_dividendo_pct: 0.73
-  },
-  {
-    pagos: 4,
-    ticker: 'MSFT',
-    anio: 2025,
-    dividendos_por_unidad_usd: 3.4,
-    rendimiento_dividendo_pct: 0.73
-  },
-  {
-    pagos: 3,
-    ticker: 'MSFT',
-    anio: 2026,
-    dividendos_por_unidad_usd: 2.73,
-    rendimiento_dividendo_pct: 0.61
-  },
-  {
-    pagos: 4,
-    ticker: 'QQQ',
-    anio: 2024,
-    dividendos_por_unidad_usd: 2.847,
-    rendimiento_dividendo_pct: 0.61
-  },
-  {
-    pagos: 4,
-    ticker: 'QQQ',
-    anio: 2025,
-    dividendos_por_unidad_usd: 2.795,
-    rendimiento_dividendo_pct: 0.51
-  },
-  {
-    pagos: 3,
-    ticker: 'QQQ',
-    anio: 2026,
-    dividendos_por_unidad_usd: 2.297,
-    rendimiento_dividendo_pct: 0.34
-  },
-  {
-    pagos: 4,
-    ticker: 'SPY',
-    anio: 2024,
-    dividendos_por_unidad_usd: 7.066,
-    rendimiento_dividendo_pct: 1.31
-  },
-  {
-    pagos: 4,
-    ticker: 'SPY',
-    anio: 2025,
-    dividendos_por_unidad_usd: 7.281,
-    rendimiento_dividendo_pct: 1.17
-  },
-  {
-    pagos: 3,
-    ticker: 'SPY',
-    anio: 2026,
-    dividendos_por_unidad_usd: 5.59,
-    rendimiento_dividendo_pct: 0.77
+    _id: 'GOOGL',
+    pagos: 10,
+    total_dividendos_usd: 2.08
   }
 ]
 
-=== AGREGACION 3: universo de activos por sector ===
+=== AGREGACION 3: acciones por sector ===
 [
   {
-    activos: 2,
-    tickers: [
-      'AMZN',
-      'TSLA'
-    ],
-    sector: 'Consumer Cyclical',
-    capitalizacion_miles_millones_usd: 4288.1
-  },
-  {
-    activos: 2,
-    tickers: [
-      'QQQ',
-      'SPY'
-    ],
-    sector: 'Fondo indexado (diversificado)',
-    capitalizacion_miles_millones_usd: 1260.7
-  },
-  {
-    activos: 2,
+    _id: 'Technology',
+    acciones: 2,
     tickers: [
       'AAPL',
       'MSFT'
-    ],
-    sector: 'Technology',
-    capitalizacion_miles_millones_usd: 8973.4
+    ]
   },
   {
-    activos: 1,
+    _id: 'Consumer Cyclical',
+    acciones: 2,
     tickers: [
-      'GOOGL'
-    ],
-    sector: 'Communication Services',
-    capitalizacion_miles_millones_usd: 3488.1
+      'AMZN',
+      'TSLA'
+    ]
   },
   {
-    activos: 1,
+    _id: 'Energy',
+    acciones: 1,
     tickers: [
       'EC'
-    ],
-    sector: 'Energy',
-    capitalizacion_miles_millones_usd: 30.7
+    ]
   },
   {
-    activos: 1,
+    _id: 'Financial Services',
+    acciones: 1,
     tickers: [
       'CIB'
-    ],
-    sector: 'Financial Services',
-    capitalizacion_miles_millones_usd: 20.7
+    ]
   },
   {
-    activos: 1,
+    _id: 'Communication Services',
+    acciones: 1,
+    tickers: [
+      'GOOGL'
+    ]
+  },
+  {
+    _id: 'Healthcare',
+    acciones: 1,
     tickers: [
       'JNJ'
-    ],
-    sector: 'Healthcare',
-    capitalizacion_miles_millones_usd: 680.2
-  }
-]
-
-=== AGREGACION 4: TRM mensual (ultimos 12 meses) ===
-[
-  {
-    trm_minima: 3716.73,
-    trm_maxima: 3808.77,
-    publicaciones: 8,
-    mes: '2025-11',
-    trm_promedio: 3766.57
-  },
-  {
-    trm_minima: 3706.94,
-    trm_maxima: 3874.71,
-    publicaciones: 20,
-    mes: '2025-12',
-    trm_promedio: 3797.46
-  },
-  {
-    trm_minima: 3630.33,
-    trm_maxima: 3790.77,
-    publicaciones: 19,
-    mes: '2026-01',
-    trm_promedio: 3693.16
-  },
-  {
-    trm_minima: 3622,
-    trm_maxima: 3766.3,
-    publicaciones: 19,
-    mes: '2026-02',
-    trm_promedio: 3678.7
-  },
-  {
-    trm_minima: 3668.89,
-    trm_maxima: 3797.64,
-    publicaciones: 20,
-    mes: '2026-03',
-    trm_promedio: 3714.86
-  },
-  {
-    trm_minima: 3551.17,
-    trm_maxima: 3678.19,
-    publicaciones: 20,
-    mes: '2026-04',
-    trm_promedio: 3613.54
-  },
-  {
-    trm_minima: 3631.57,
-    trm_maxima: 3796.87,
-    publicaciones: 19,
-    mes: '2026-05',
-    trm_promedio: 3718.86
-  },
-  {
-    trm_minima: 3406.14,
-    trm_maxima: 3588.09,
-    publicaciones: 17,
-    mes: '2026-06',
-    trm_promedio: 3497.09
-  },
-  {
-    trm_minima: 3132.42,
-    trm_maxima: 3440.83,
-    publicaciones: 21,
-    mes: '2026-07',
-    trm_promedio: 3272.01
-  },
-  {
-    trm_minima: 3048.12,
-    trm_maxima: 3230.44,
-    publicaciones: 19,
-    mes: '2026-08',
-    trm_promedio: 3126.78
-  },
-  {
-    trm_minima: 3072.27,
-    trm_maxima: 3349.63,
-    publicaciones: 21,
-    mes: '2026-09',
-    trm_promedio: 3184.33
-  },
-  {
-    trm_minima: 3148.02,
-    trm_maxima: 3312.84,
-    publicaciones: 22,
-    mes: '2026-10',
-    trm_promedio: 3198.62
-  },
-  {
-    trm_minima: 3221.19,
-    trm_maxima: 3316.7,
-    publicaciones: 8,
-    mes: '2026-11',
-    trm_promedio: 3263.55
+    ]
   }
 ]

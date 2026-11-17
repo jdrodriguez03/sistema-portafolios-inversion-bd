@@ -21,9 +21,9 @@ El paginador no se usar�.
 SET max_parallel_workers_per_gather = 0;
 SET
 DROP SCHEMA IF EXISTS opt CASCADE;
-psql:sql/07_optimizacion.sql:22: NOTICE:  el esquema «opt» no existe, omitiendo
 DROP SCHEMA
 CREATE SCHEMA opt;
+psql:sql/07_optimizacion.sql:22: NOTICE:  el esquema «opt» no existe, omitiendo
 CREATE SCHEMA
 -- =====================================================================
 -- PRUEBA 1. Precio mas reciente por posicion
@@ -93,39 +93,39 @@ SELECT te.id_cuenta, te.id_activo, te.cantidad,
 FROM tenencia te;
                                                                  QUERY PLAN                                                                  
 ---------------------------------------------------------------------------------------------------------------------------------------------
- Subquery Scan on te  (cost=39.48..1998.23 rows=14 width=72) (actual time=0.860..97.973 rows=250.00 loops=1)
+ Subquery Scan on te  (cost=39.48..1998.23 rows=14 width=72) (actual time=0.956..103.419 rows=250.00 loops=1)
    Buffers: shared hit=11520
-   ->  HashAggregate  (cost=39.48..40.12 rows=14 width=40) (actual time=0.484..0.595 rows=250.00 loops=1)
+   ->  HashAggregate  (cost=39.48..40.12 rows=14 width=40) (actual time=0.478..0.657 rows=250.00 loops=1)
          Group Key: t.id_cuenta, t.id_activo
          Filter: (sum(CASE WHEN ((t.tipo_transaccion)::text = 'COMPRA'::text) THEN t.cantidad ELSE (- t.cantidad) END) > '0'::numeric)
          Batches: 1  Memory Usage: 184kB
          Rows Removed by Filter: 13
          Buffers: shared hit=20
-         ->  Hash Join  (cost=1.23..38.94 rows=43 width=19) (actual time=0.023..0.282 rows=886.00 loops=1)
+         ->  Hash Join  (cost=1.23..38.94 rows=43 width=19) (actual time=0.023..0.280 rows=886.00 loops=1)
                Hash Cond: (t.id_activo = af.id_activo)
                Buffers: shared hit=20
-               ->  Seq Scan on transaccion t  (cost=0.00..33.79 rows=1479 width=19) (actual time=0.008..0.102 rows=1479.00 loops=1)
+               ->  Seq Scan on transaccion t  (cost=0.00..33.79 rows=1479 width=19) (actual time=0.009..0.109 rows=1479.00 loops=1)
                      Buffers: shared hit=19
-               ->  Hash  (cost=1.10..1.10 rows=10 width=4) (actual time=0.007..0.007 rows=10.00 loops=1)
+               ->  Hash  (cost=1.10..1.10 rows=10 width=4) (actual time=0.007..0.008 rows=10.00 loops=1)
                      Buckets: 1024  Batches: 1  Memory Usage: 9kB
                      Buffers: shared hit=1
                      ->  Seq Scan on accion_fondo af  (cost=0.00..1.10 rows=10 width=4) (actual time=0.003..0.004 rows=10.00 loops=1)
                            Buffers: shared hit=1
    SubPlan 1
-     ->  Limit  (cost=139.86..139.86 rows=1 width=10) (actual time=0.389..0.389 rows=1.00 loops=250)
+     ->  Limit  (cost=139.86..139.86 rows=1 width=10) (actual time=0.410..0.410 rows=1.00 loops=250)
            Buffers: shared hit=11500
-           ->  Sort  (cost=139.86..141.67 rows=722 width=10) (actual time=0.389..0.389 rows=1.00 loops=250)
+           ->  Sort  (cost=139.86..141.67 rows=722 width=10) (actual time=0.410..0.410 rows=1.00 loops=250)
                  Sort Key: p.fecha DESC
                  Sort Method: top-N heapsort  Memory: 25kB
                  Buffers: shared hit=11500
-                 ->  Seq Scan on precio_preliminar p  (cost=0.00..136.25 rows=722 width=10) (actual time=0.002..0.331 rows=722.00 loops=250)
+                 ->  Seq Scan on precio_preliminar p  (cost=0.00..136.25 rows=722 width=10) (actual time=0.002..0.349 rows=722.00 loops=250)
                        Filter: (id_activo = te.id_activo)
                        Rows Removed by Filter: 6498
                        Buffers: shared hit=11500
  Planning:
    Buffers: shared hit=151
- Planning Time: 2.026 ms
- Execution Time: 98.072 ms
+ Planning Time: 2.807 ms
+ Execution Time: 103.522 ms
 (33 filas)
 
 \echo
@@ -158,35 +158,35 @@ SELECT te.id_cuenta, te.id_activo, te.cantidad,
 FROM tenencia te;
                                                                                    QUERY PLAN                                                                                    
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Subquery Scan on te  (cost=39.48..48.14 rows=14 width=72) (actual time=0.456..1.948 rows=250.00 loops=1)
+ Subquery Scan on te  (cost=39.48..48.14 rows=14 width=72) (actual time=0.481..2.073 rows=250.00 loops=1)
    Buffers: shared hit=759 read=11
-   ->  HashAggregate  (cost=39.48..40.12 rows=14 width=40) (actual time=0.419..0.473 rows=250.00 loops=1)
+   ->  HashAggregate  (cost=39.48..40.12 rows=14 width=40) (actual time=0.443..0.502 rows=250.00 loops=1)
          Group Key: t.id_cuenta, t.id_activo
          Filter: (sum(CASE WHEN ((t.tipo_transaccion)::text = 'COMPRA'::text) THEN t.cantidad ELSE (- t.cantidad) END) > '0'::numeric)
          Batches: 1  Memory Usage: 184kB
          Rows Removed by Filter: 13
          Buffers: shared hit=20
-         ->  Hash Join  (cost=1.23..38.94 rows=43 width=19) (actual time=0.019..0.231 rows=886.00 loops=1)
+         ->  Hash Join  (cost=1.23..38.94 rows=43 width=19) (actual time=0.019..0.246 rows=886.00 loops=1)
                Hash Cond: (t.id_activo = af.id_activo)
                Buffers: shared hit=20
-               ->  Seq Scan on transaccion t  (cost=0.00..33.79 rows=1479 width=19) (actual time=0.005..0.067 rows=1479.00 loops=1)
+               ->  Seq Scan on transaccion t  (cost=0.00..33.79 rows=1479 width=19) (actual time=0.005..0.070 rows=1479.00 loops=1)
                      Buffers: shared hit=19
-               ->  Hash  (cost=1.10..1.10 rows=10 width=4) (actual time=0.006..0.007 rows=10.00 loops=1)
+               ->  Hash  (cost=1.10..1.10 rows=10 width=4) (actual time=0.007..0.007 rows=10.00 loops=1)
                      Buckets: 1024  Batches: 1  Memory Usage: 9kB
                      Buffers: shared hit=1
-                     ->  Seq Scan on accion_fondo af  (cost=0.00..1.10 rows=10 width=4) (actual time=0.003..0.004 rows=10.00 loops=1)
+                     ->  Seq Scan on accion_fondo af  (cost=0.00..1.10 rows=10 width=4) (actual time=0.004..0.004 rows=10.00 loops=1)
                            Buffers: shared hit=1
    SubPlan 1
      ->  Limit  (cost=0.28..0.57 rows=1 width=10) (actual time=0.006..0.006 rows=1.00 loops=250)
            Buffers: shared hit=739 read=11
-           ->  Index Scan Backward using ix_opt_precio_activo_fecha on precio_preliminar p  (cost=0.28..207.80 rows=722 width=10) (actual time=0.005..0.005 rows=1.00 loops=250)
+           ->  Index Scan Backward using ix_opt_precio_activo_fecha on precio_preliminar p  (cost=0.28..208.00 rows=722 width=10) (actual time=0.006..0.006 rows=1.00 loops=250)
                  Index Cond: (id_activo = te.id_activo)
                  Index Searches: 250
                  Buffers: shared hit=739 read=11
  Planning:
-   Buffers: shared hit=19 read=1
- Planning Time: 0.207 ms
- Execution Time: 1.998 ms
+   Buffers: shared hit=17 read=1
+ Planning Time: 0.231 ms
+ Execution Time: 2.131 ms
 (29 filas)
 
 -- =====================================================================
@@ -247,30 +247,30 @@ WHERE cu.id_cliente = :cliente_prueba
 ORDER BY t.id_cuenta, t.fecha_hora;
                                                                   QUERY PLAN                                                                  
 ----------------------------------------------------------------------------------------------------------------------------------------------
- Sort  (cost=5747.47..5761.33 rows=5546 width=40) (actual time=22.147..22.369 rows=9600.00 loops=1)
+ Sort  (cost=5747.47..5761.33 rows=5546 width=40) (actual time=21.836..22.076 rows=9600.00 loops=1)
    Sort Key: t.id_cuenta, t.fecha_hora
    Sort Method: quicksort  Memory: 985kB
    Buffers: shared hit=2563
-   ->  Hash Join  (cost=10.88..5402.58 rows=5546 width=40) (actual time=0.038..19.186 rows=9600.00 loops=1)
+   ->  Hash Join  (cost=10.88..5402.58 rows=5546 width=40) (actual time=0.071..18.884 rows=9600.00 loops=1)
          Hash Cond: (t.id_cuenta = cu.id_cuenta)
          Buffers: shared hit=2563
-         ->  Seq Scan on transaccion t  (cost=0.00..4778.50 rows=221850 width=40) (actual time=0.006..8.214 rows=221850.00 loops=1)
+         ->  Seq Scan on transaccion t  (cost=0.00..4778.50 rows=221850 width=40) (actual time=0.008..8.100 rows=221850.00 loops=1)
                Buffers: shared hit=2560
-         ->  Hash  (cost=10.85..10.85 rows=2 width=4) (actual time=0.016..0.017 rows=2.00 loops=1)
+         ->  Hash  (cost=10.85..10.85 rows=2 width=4) (actual time=0.040..0.041 rows=2.00 loops=1)
                Buckets: 1024  Batches: 1  Memory Usage: 9kB
                Buffers: shared hit=3
-               ->  Bitmap Heap Scan on cuenta cu  (cost=4.28..10.85 rows=2 width=4) (actual time=0.014..0.015 rows=2.00 loops=1)
+               ->  Bitmap Heap Scan on cuenta cu  (cost=4.28..10.85 rows=2 width=4) (actual time=0.037..0.038 rows=2.00 loops=1)
                      Recheck Cond: (id_cliente = 58)
                      Heap Blocks: exact=1
                      Buffers: shared hit=3
-                     ->  Bitmap Index Scan on uq_cuenta_nombre  (cost=0.00..4.28 rows=2 width=0) (actual time=0.008..0.008 rows=2.00 loops=1)
+                     ->  Bitmap Index Scan on uq_cuenta_nombre  (cost=0.00..4.28 rows=2 width=0) (actual time=0.011..0.011 rows=2.00 loops=1)
                            Index Cond: (id_cliente = 58)
                            Index Searches: 1
                            Buffers: shared hit=2
  Planning:
    Buffers: shared hit=36
- Planning Time: 0.121 ms
- Execution Time: 23.217 ms
+ Planning Time: 0.120 ms
+ Execution Time: 22.384 ms
 (24 filas)
 
 \echo
@@ -293,32 +293,32 @@ WHERE cu.id_cliente = :cliente_prueba
 ORDER BY t.id_cuenta, t.fecha_hora;
                                                                           QUERY PLAN                                                                          
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
- Sort  (cost=5415.88..5429.75 rows=5546 width=40) (actual time=6.584..6.793 rows=9600.00 loops=1)
+ Sort  (cost=5415.88..5429.75 rows=5546 width=40) (actual time=7.075..7.362 rows=9600.00 loops=1)
    Sort Key: t.id_cuenta, t.fecha_hora
    Sort Method: quicksort  Memory: 985kB
    Buffers: shared hit=3299 read=35
-   ->  Nested Loop  (cost=66.47..5071.00 rows=5546 width=40) (actual time=0.456..3.956 rows=9600.00 loops=1)
+   ->  Nested Loop  (cost=66.47..5071.00 rows=5546 width=40) (actual time=0.498..4.295 rows=9600.00 loops=1)
          Buffers: shared hit=3299 read=35
-         ->  Bitmap Heap Scan on cuenta cu  (cost=4.28..10.85 rows=2 width=4) (actual time=0.010..0.011 rows=2.00 loops=1)
+         ->  Bitmap Heap Scan on cuenta cu  (cost=4.28..10.85 rows=2 width=4) (actual time=0.013..0.014 rows=2.00 loops=1)
                Recheck Cond: (id_cliente = 58)
                Heap Blocks: exact=1
                Buffers: shared hit=3
-               ->  Bitmap Index Scan on uq_cuenta_nombre  (cost=0.00..4.28 rows=2 width=0) (actual time=0.004..0.005 rows=2.00 loops=1)
+               ->  Bitmap Index Scan on uq_cuenta_nombre  (cost=0.00..4.28 rows=2 width=0) (actual time=0.004..0.004 rows=2.00 loops=1)
                      Index Cond: (id_cliente = 58)
                      Index Searches: 1
                      Buffers: shared hit=2
-         ->  Bitmap Heap Scan on transaccion t  (cost=62.18..2501.99 rows=2808 width=40) (actual time=0.501..1.546 rows=4800.00 loops=2)
+         ->  Bitmap Heap Scan on transaccion t  (cost=62.18..2501.99 rows=2808 width=40) (actual time=0.552..1.649 rows=4800.00 loops=2)
                Recheck Cond: (id_cuenta = cu.id_cuenta)
                Heap Blocks: exact=3293
                Buffers: shared hit=3296 read=35
-               ->  Bitmap Index Scan on ix_opt_transaccion_cuenta_fecha  (cost=0.00..61.48 rows=2808 width=0) (actual time=0.377..0.377 rows=4800.00 loops=2)
+               ->  Bitmap Index Scan on ix_opt_transaccion_cuenta_fecha  (cost=0.00..61.48 rows=2808 width=0) (actual time=0.418..0.418 rows=4800.00 loops=2)
                      Index Cond: (id_cuenta = cu.id_cuenta)
                      Index Searches: 2
                      Buffers: shared hit=3 read=35
  Planning:
    Buffers: shared hit=43 read=1
- Planning Time: 0.203 ms
- Execution Time: 7.073 ms
+ Planning Time: 0.225 ms
+ Execution Time: 7.703 ms
 (26 filas)
 
 -- =====================================================================
@@ -358,16 +358,16 @@ WHERE t.tipo_transaccion = 'COMPRA'
 GROUP BY t.id_activo;
                                                           QUERY PLAN                                                           
 -------------------------------------------------------------------------------------------------------------------------------
- HashAggregate  (cost=6597.51..6601.83 rows=346 width=44) (actual time=42.035..42.094 rows=346.00 loops=1)
+ HashAggregate  (cost=6607.21..6611.53 rows=346 width=44) (actual time=40.668..40.725 rows=346.00 loops=1)
    Group Key: id_activo
    Batches: 1  Memory Usage: 192kB
    Buffers: shared hit=2560
-   ->  Seq Scan on transaccion t  (cost=0.00..5333.12 rows=168584 width=11) (actual time=0.016..17.387 rows=168900.00 loops=1)
+   ->  Seq Scan on transaccion t  (cost=0.00..5333.12 rows=169878 width=11) (actual time=0.007..17.182 rows=168900.00 loops=1)
          Filter: ((tipo_transaccion)::text = 'COMPRA'::text)
          Rows Removed by Filter: 52950
          Buffers: shared hit=2560
- Planning Time: 0.045 ms
- Execution Time: 42.120 ms
+ Planning Time: 0.056 ms
+ Execution Time: 40.754 ms
 (10 filas)
 
 \echo
@@ -389,18 +389,18 @@ WHERE t.tipo_transaccion = 'COMPRA'
 GROUP BY t.id_activo;
                                                           QUERY PLAN                                                           
 -------------------------------------------------------------------------------------------------------------------------------
- HashAggregate  (cost=6594.34..6598.66 rows=346 width=44) (actual time=41.863..41.923 rows=346.00 loops=1)
+ HashAggregate  (cost=6600.72..6605.05 rows=346 width=44) (actual time=44.102..44.168 rows=346.00 loops=1)
    Group Key: id_activo
    Batches: 1  Memory Usage: 192kB
    Buffers: shared hit=2560
-   ->  Seq Scan on transaccion t  (cost=0.00..5333.12 rows=168162 width=11) (actual time=0.008..17.501 rows=168900.00 loops=1)
+   ->  Seq Scan on transaccion t  (cost=0.00..5333.12 rows=169013 width=11) (actual time=0.025..18.807 rows=168900.00 loops=1)
          Filter: ((tipo_transaccion)::text = 'COMPRA'::text)
          Rows Removed by Filter: 52950
          Buffers: shared hit=2560
  Planning:
-   Buffers: shared hit=17 read=1
- Planning Time: 0.124 ms
- Execution Time: 41.956 ms
+   Buffers: shared hit=15 read=1
+ Planning Time: 0.143 ms
+ Execution Time: 44.222 ms
 (12 filas)
 
 \echo
@@ -416,20 +416,20 @@ WHERE t.tipo_transaccion = 'COMPRA'
 GROUP BY t.id_activo;
                                                                       QUERY PLAN                                                                      
 ------------------------------------------------------------------------------------------------------------------------------------------------------
- HashAggregate  (cost=7802.79..7807.12 rows=346 width=44) (actual time=41.894..41.953 rows=346.00 loops=1)
+ HashAggregate  (cost=7826.41..7830.73 rows=346 width=44) (actual time=39.773..39.828 rows=346.00 loops=1)
    Group Key: id_activo
    Batches: 1  Memory Usage: 192kB
    Buffers: shared hit=2506 read=144
-   ->  Bitmap Heap Scan on transaccion t  (cost=1879.55..6541.58 rows=168162 width=11) (actual time=3.840..14.092 rows=168900.00 loops=1)
+   ->  Bitmap Heap Scan on transaccion t  (cost=1886.15..6558.81 rows=169013 width=11) (actual time=3.851..13.483 rows=168900.00 loops=1)
          Recheck Cond: ((tipo_transaccion)::text = 'COMPRA'::text)
          Heap Blocks: exact=2506
          Buffers: shared hit=2506 read=144
-         ->  Bitmap Index Scan on ix_opt_transaccion_tipo  (cost=0.00..1837.51 rows=168162 width=0) (actual time=3.623..3.623 rows=168900.00 loops=1)
+         ->  Bitmap Index Scan on ix_opt_transaccion_tipo  (cost=0.00..1843.89 rows=169013 width=0) (actual time=3.641..3.641 rows=168900.00 loops=1)
                Index Cond: ((tipo_transaccion)::text = 'COMPRA'::text)
                Index Searches: 1
                Buffers: shared read=144
- Planning Time: 0.058 ms
- Execution Time: 42.013 ms
+ Planning Time: 0.079 ms
+ Execution Time: 39.895 ms
 (14 filas)
 
 RESET enable_seqscan;

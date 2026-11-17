@@ -1,0 +1,735 @@
+PROYECTO FINAL BASES DE DATOS 2026-2
+Sistema de Gestion de Portafolios de Inversion
+Julian David Rodriguez Ramirez - Juan Esteban Acosta Morales
+Repositorio: https://github.com/jdrodriguez03/sistema-portafolios-inversion-bd
+
+======================================================================
+VISTAS
+======================================================================
+
+-- v_tenencia: Cantidad que cada cuenta posee de cada activo (compras - ventas)
+CREATE VIEW v_tenencia AS
+SELECT id_cuenta, id_activo,
+       SUM(CASE WHEN tipo_transaccion = 'COMPRA' THEN cantidad ELSE -cantidad END) AS cantidad
+FROM transaccion
+GROUP BY id_cuenta, id_activo
+HAVING SUM(CASE WHEN tipo_transaccion = 'COMPRA' THEN cantidad ELSE -cantidad END) > 0;
+
+-- v_posicion_actual: Posiciones de cada cliente valoradas hoy en USD
+CREATE VIEW v_posicion_actual AS
+SELECT cl.id_cliente,
+       cl.nombres || ' ' || cl.apellidos AS cliente,
+       cu.id_cuenta,
+       a.id_activo,
+       a.nombre       AS activo,
+       ta.nombre_tipo AS tipo_activo,
+       ta.clase_activo,
+       p.cantidad,
+       p.valor_usd
+FROM fn_posiciones(CURRENT_DATE) p
+JOIN cuenta cu      ON cu.id_cuenta = p.id_cuenta
+JOIN cliente cl     ON cl.id_cliente = cu.id_cliente
+JOIN activo a       ON a.id_activo = p.id_activo
+JOIN tipo_activo ta ON ta.id_tipo_activo = a.id_tipo_activo;
+
+-- v_portafolio_cliente: Valor de cada cliente por categoria (tipos de activo + efectivo)
+CREATE VIEW v_portafolio_cliente AS
+SELECT id_cliente, tipo_activo AS categoria, SUM(valor_usd) AS valor_usd
+FROM v_posicion_actual
+GROUP BY id_cliente, tipo_activo
+UNION ALL
+SELECT id_cliente, 'EFECTIVO', SUM(saldo_efectivo)
+FROM cuenta
+GROUP BY id_cliente;
+
+-- v_cumplimiento_perfil: Porcentaje en renta variable de cada cliente frente al limite de su perfil (Regla 2)
+CREATE VIEW v_cumplimiento_perfil AS
+SELECT cl.id_cliente,
+       cl.nombres || ' ' || cl.apellidos AS cliente,
+       pr.nombre_perfil,
+       pr.limite_max_renta_var AS limite_pct,
+       SUM(p.valor_usd) AS valor_total_usd,
+       ROUND(100 * SUM(CASE WHEN p.categoria IN ('ACCION', 'FONDO') THEN p.valor_usd ELSE 0 END)
+             / SUM(p.valor_usd), 2) AS pct_renta_variable
+FROM cliente cl
+JOIN perfil_riesgo pr       ON pr.id_perfil = cl.id_perfil
+JOIN v_portafolio_cliente p ON p.id_cliente = cl.id_cliente
+GROUP BY cl.id_cliente, cl.nombres, cl.apellidos, pr.nombre_perfil, pr.limite_max_renta_var;
+
+-- v_vencimientos_renta_fija: CDT y TES que los clientes aun poseen, con los dias que faltan para su vencimiento
+CREATE VIEW v_vencimientos_renta_fija AS
+SELECT p.cliente,
+       ase.nombres || ' ' || ase.apellidos AS asesor,
+       p.id_cuenta,
+       p.activo,
+       p.tipo_activo,
+       COALESCE(c.fecha_vencimiento, s.fecha_vencimiento) AS fecha_vencimiento,
+       COALESCE(c.fecha_vencimiento, s.fecha_vencimiento) - CURRENT_DATE AS dias_al_vencimiento,
+       p.valor_usd
+FROM v_posicion_actual p
+JOIN cliente cl  ON cl.id_cliente = p.id_cliente
+JOIN asesor ase  ON ase.id_asesor = cl.id_asesor
+LEFT JOIN cdt c  ON c.id_activo = p.id_activo
+LEFT JOIN tes s  ON s.id_activo = p.id_activo
+WHERE p.clase_activo = 'RENTA_FIJA';
+
+======================================================================
+CONSULTAS
+======================================================================
+
+-- C01 - P1: Valor actual del portafolio de cada cliente por tipo de activo
+SELECT cl.id_cliente,
+       cl.nombres || ' ' || cl.apellidos AS cliente,
+       SUM(CASE WHEN p.categoria = 'ACCION'   THEN p.valor_usd ELSE 0 END) AS acciones_usd,
+       SUM(CASE WHEN p.categoria = 'FONDO'    THEN p.valor_usd ELSE 0 END) AS fondos_usd,
+       SUM(CASE WHEN p.categoria = 'CDT'      THEN p.valor_usd ELSE 0 END) AS cdt_usd,
+       SUM(CASE WHEN p.categoria = 'TES'      THEN p.valor_usd ELSE 0 END) AS tes_usd,
+       SUM(CASE WHEN p.categoria = 'EFECTIVO' THEN p.valor_usd ELSE 0 END) AS efectivo_usd,
+       SUM(p.valor_usd) AS total_usd
+FROM v_portafolio_cliente p
+JOIN cliente cl ON cl.id_cliente = p.id_cliente
+GROUP BY cl.id_cliente, cl.nombres, cl.apellidos
+ORDER BY total_usd DESC;
+
+-- C02 - P2: Rentabilidad de cada cliente en los ultimos 12 meses
+SELECT cl.id_cliente,
+       cl.nombres || ' ' || cl.apellidos AS cliente,
+       pr.nombre_perfil,
+       fn_rentabilidad_cliente(cl.id_cliente, CURRENT_DATE - 365, CURRENT_DATE) AS rentabilidad_pct
+FROM cliente cl
+JOIN perfil_riesgo pr ON pr.id_perfil = cl.id_perfil
+ORDER BY rentabilidad_pct DESC;
+
+-- C03a - P3: Porcentaje del portafolio de cada cliente en cada tipo de activo
+SELECT cl.nombres || ' ' || cl.apellidos AS cliente,
+       p.categoria,
+       p.valor_usd,
+       ROUND(100 * p.valor_usd / t.total, 2) AS porcentaje
+FROM v_portafolio_cliente p
+JOIN cliente cl ON cl.id_cliente = p.id_cliente
+JOIN (SELECT id_cliente, SUM(valor_usd) AS total
+      FROM v_portafolio_cliente
+      GROUP BY id_cliente) t ON t.id_cliente = p.id_cliente
+ORDER BY cliente, porcentaje DESC;
+
+-- C03b - P3: Clientes que cumplen o exceden el limite de renta variable de su perfil
+SELECT cliente, nombre_perfil, limite_pct, pct_renta_variable, valor_total_usd,
+       CASE WHEN pct_renta_variable <= limite_pct THEN 'CUMPLE' ELSE 'EXCEDE' END AS estado
+FROM v_cumplimiento_perfil
+ORDER BY estado DESC, pct_renta_variable DESC;
+
+-- C04 - P4: CDT y TES que vencen en los proximos 30, 60 y 90 dias
+SELECT CASE WHEN dias_al_vencimiento <= 30 THEN 'Hasta 30 dias'
+            WHEN dias_al_vencimiento <= 60 THEN 'De 31 a 60 dias'
+            ELSE 'De 61 a 90 dias'
+       END AS ventana,
+       cliente, asesor, tipo_activo, activo, fecha_vencimiento, dias_al_vencimiento, valor_usd
+FROM v_vencimientos_renta_fija
+WHERE dias_al_vencimiento BETWEEN 0 AND 90
+ORDER BY dias_al_vencimiento;
+
+-- C05 - P5: Comisiones generadas por cada asesor, mes a mes, en los ultimos 12 meses
+SELECT ase.nombres || ' ' || ase.apellidos AS asesor,
+       DATE_TRUNC('month', t.fecha_hora) AS mes,
+       COUNT(*) AS transacciones,
+       SUM(t.comision) AS comision_usd
+FROM transaccion t
+JOIN cuenta cu  ON cu.id_cuenta = t.id_cuenta
+JOIN cliente cl ON cl.id_cliente = cu.id_cliente
+JOIN asesor ase ON ase.id_asesor = cl.id_asesor
+WHERE t.fecha_hora >= CURRENT_DATE - 365
+GROUP BY ase.id_asesor, ase.nombres, ase.apellidos, DATE_TRUNC('month', t.fecha_hora)
+ORDER BY asesor, mes;
+
+-- C06 - P6: Los 3 clientes con mayor y los 3 con menor rentabilidad (CTE + RANK)
+WITH rentabilidad AS (
+    SELECT cl.nombres || ' ' || cl.apellidos AS cliente,
+           fn_rentabilidad_cliente(cl.id_cliente, CURRENT_DATE - 365, CURRENT_DATE) AS rentabilidad_pct
+    FROM cliente cl
+),
+ranking AS (
+    SELECT cliente, rentabilidad_pct,
+           RANK() OVER (ORDER BY rentabilidad_pct DESC) AS puesto_mayor,
+           RANK() OVER (ORDER BY rentabilidad_pct ASC)  AS puesto_menor
+    FROM rentabilidad
+)
+SELECT cliente, rentabilidad_pct, puesto_mayor AS puesto
+FROM ranking
+WHERE puesto_mayor <= 3 OR puesto_menor <= 3
+ORDER BY rentabilidad_pct DESC;
+
+-- C07 - P7: Historial de compras y ventas de un cliente, con el flujo de caja acumulado (cambiar el 1 por el id del cliente que se quiera consultar)
+SELECT t.fecha_hora,
+       t.tipo_transaccion,
+       a.nombre AS activo,
+       t.cantidad,
+       t.precio_unitario,
+       t.monto,
+       t.comision,
+       SUM(CASE WHEN t.tipo_transaccion = 'COMPRA' THEN -(t.monto + t.comision)
+                ELSE t.monto - t.comision END)
+           OVER (ORDER BY t.fecha_hora) AS flujo_acumulado_usd
+FROM transaccion t
+JOIN cuenta cu ON cu.id_cuenta = t.id_cuenta
+JOIN activo a  ON a.id_activo = t.id_activo
+WHERE cu.id_cliente = 1
+ORDER BY t.fecha_hora;
+
+-- C08 - P8: Numero de clientes y valor administrado (AUM) por asesor
+WITH valor_cuenta AS (
+    SELECT id_cuenta, id_cliente, fn_valor_cuenta(id_cuenta) AS valor_usd
+    FROM cuenta
+)
+SELECT ase.nombres || ' ' || ase.apellidos AS asesor,
+       COUNT(DISTINCT cl.id_cliente) AS clientes,
+       COALESCE(SUM(vc.valor_usd), 0) AS aum_usd
+FROM asesor ase
+LEFT JOIN cliente cl      ON cl.id_asesor = ase.id_asesor
+LEFT JOIN valor_cuenta vc ON vc.id_cliente = cl.id_cliente
+GROUP BY ase.id_asesor, ase.nombres, ase.apellidos
+ORDER BY aum_usd DESC;
+
+-- C09a - P9: Los 5 activos mas comprados en los ultimos 12 meses
+SELECT a.nombre AS activo, COUNT(*) AS operaciones, SUM(t.monto) AS monto_usd
+FROM transaccion t
+JOIN activo a ON a.id_activo = t.id_activo
+WHERE t.tipo_transaccion = 'COMPRA'
+  AND t.fecha_hora >= CURRENT_DATE - 365
+GROUP BY a.nombre
+ORDER BY monto_usd DESC
+LIMIT 5;
+
+-- C09b - P9: Los 5 activos mas vendidos en los ultimos 12 meses
+SELECT a.nombre AS activo, COUNT(*) AS operaciones, SUM(t.monto) AS monto_usd
+FROM transaccion t
+JOIN activo a ON a.id_activo = t.id_activo
+WHERE t.tipo_transaccion = 'VENTA'
+  AND t.fecha_hora >= CURRENT_DATE - 365
+GROUP BY a.nombre
+ORDER BY monto_usd DESC
+LIMIT 5;
+
+-- C10 - Apoyo a P5: Asesores cuya comision total supera el promedio (HAVING + subconsulta)
+SELECT ase.nombres || ' ' || ase.apellidos AS asesor,
+       SUM(t.comision) AS comision_total_usd
+FROM transaccion t
+JOIN cuenta cu  ON cu.id_cuenta = t.id_cuenta
+JOIN cliente cl ON cl.id_cliente = cu.id_cliente
+JOIN asesor ase ON ase.id_asesor = cl.id_asesor
+GROUP BY ase.id_asesor, ase.nombres, ase.apellidos
+HAVING SUM(t.comision) > (SELECT SUM(t2.comision) / COUNT(DISTINCT cl2.id_asesor)
+                          FROM transaccion t2
+                          JOIN cuenta cu2  ON cu2.id_cuenta = t2.id_cuenta
+                          JOIN cliente cl2 ON cl2.id_cliente = cu2.id_cliente)
+ORDER BY comision_total_usd DESC;
+
+-- C11 - Apoyo a P2: Precio promedio mensual de cada activo y su variacion (CTE + LAG)
+WITH promedio_mes AS (
+    SELECT af.ticker,
+           DATE_TRUNC('month', ph.fecha) AS mes,
+           ROUND(AVG(ph.precio_cierre), 2) AS precio_promedio
+    FROM precio_historico ph
+    JOIN accion_fondo af ON af.id_activo = ph.id_activo
+    WHERE ph.fecha >= CURRENT_DATE - 180
+    GROUP BY af.ticker, DATE_TRUNC('month', ph.fecha)
+)
+SELECT ticker, mes, precio_promedio,
+       LAG(precio_promedio) OVER (PARTITION BY ticker ORDER BY mes) AS mes_anterior,
+       ROUND(100 * (precio_promedio / LAG(precio_promedio) OVER (PARTITION BY ticker ORDER BY mes) - 1), 2) AS variacion_pct
+FROM promedio_mes
+ORDER BY ticker, mes;
+
+-- C12 - Apoyo a P1: Ganancia o perdida no realizada de cada posicion en acciones y fondos
+WITH costo AS (
+    SELECT id_cuenta, id_activo, SUM(monto) / SUM(cantidad) AS costo_promedio
+    FROM transaccion
+    WHERE tipo_transaccion = 'COMPRA'
+    GROUP BY id_cuenta, id_activo
+)
+SELECT p.cliente,
+       p.activo,
+       p.cantidad,
+       ROUND(c.costo_promedio, 2) AS costo_promedio_usd,
+       ROUND(p.valor_usd / p.cantidad, 2) AS precio_actual_usd,
+       ROUND(p.valor_usd - p.cantidad * c.costo_promedio, 2) AS ganancia_usd
+FROM v_posicion_actual p
+JOIN costo c ON c.id_cuenta = p.id_cuenta AND c.id_activo = p.id_activo
+WHERE p.clase_activo = 'RENTA_VARIABLE'
+ORDER BY ganancia_usd DESC;
+
+-- C13 - Apoyo a P7: Clientes sin compras ni ventas en los ultimos 90 dias (NOT EXISTS)
+SELECT cl.id_cliente, cl.nombres || ' ' || cl.apellidos AS cliente
+FROM cliente cl
+WHERE NOT EXISTS (SELECT 1
+                  FROM transaccion t
+                  JOIN cuenta cu ON cu.id_cuenta = t.id_cuenta
+                  WHERE cu.id_cliente = cl.id_cliente
+                    AND t.fecha_hora >= CURRENT_DATE - 90)
+ORDER BY cl.id_cliente;
+
+-- C14 - Apoyo a P9: Activos que estan en 3 o mas cuentas (GROUP BY + HAVING)
+SELECT a.nombre AS activo, COUNT(*) AS cuentas, SUM(te.cantidad) AS cantidad_total
+FROM v_tenencia te
+JOIN activo a ON a.id_activo = te.id_activo
+GROUP BY a.nombre
+HAVING COUNT(*) >= 3
+ORDER BY cuentas DESC;
+
+-- C15 - Control: cuentas cuyo saldo guardado no coincide con el historial (debe dar 0 filas)
+SELECT id_cuenta, saldo_efectivo, fn_efectivo(id_cuenta) AS saldo_reconstruido
+FROM cuenta
+WHERE saldo_efectivo <> fn_efectivo(id_cuenta);
+
+======================================================================
+FUNCIONES
+======================================================================
+
+-- fn_trm: TRM vigente en una fecha
+CREATE OR REPLACE FUNCTION fn_trm(p_fecha DATE)
+RETURNS NUMERIC
+LANGUAGE sql AS $$
+    SELECT t.valor_cop
+    FROM trm t
+    WHERE t.fecha_desde <= p_fecha
+    ORDER BY t.fecha_desde DESC
+    LIMIT 1;
+$$;
+
+-- fn_precio: Ultimo precio de cierre de una accion o fondo a una fecha
+CREATE OR REPLACE FUNCTION fn_precio(p_id_activo INTEGER, p_fecha DATE DEFAULT CURRENT_DATE)
+RETURNS NUMERIC
+LANGUAGE sql AS $$
+    SELECT ph.precio_cierre
+    FROM precio_historico ph
+    WHERE ph.id_activo = p_id_activo
+      AND ph.fecha <= p_fecha
+    ORDER BY ph.fecha DESC
+    LIMIT 1;
+$$;
+
+-- fn_tenencia: Cantidad que una cuenta posee de un activo
+CREATE OR REPLACE FUNCTION fn_tenencia(p_id_cuenta INTEGER, p_id_activo INTEGER)
+RETURNS NUMERIC
+LANGUAGE sql AS $$
+    SELECT COALESCE(SUM(CASE WHEN t.tipo_transaccion = 'COMPRA'
+                             THEN t.cantidad ELSE -t.cantidad END), 0)
+    FROM transaccion t
+    WHERE t.id_cuenta = p_id_cuenta
+      AND t.id_activo = p_id_activo;
+$$;
+
+-- fn_efectivo: Saldo de una cuenta reconstruido desde el historial
+CREATE OR REPLACE FUNCTION fn_efectivo(p_id_cuenta INTEGER, p_fecha DATE DEFAULT CURRENT_DATE)
+RETURNS NUMERIC
+LANGUAGE sql AS $$
+    SELECT
+        COALESCE((SELECT SUM(CASE WHEN m.tipo_movimiento = 'DEPOSITO'
+                                  THEN m.monto ELSE -m.monto END)
+                  FROM movimiento_efectivo m
+                  WHERE m.id_cuenta = p_id_cuenta
+                    AND m.fecha_hora::date <= p_fecha), 0)
+      + COALESCE((SELECT SUM(r.monto)
+                  FROM rendimiento r
+                  WHERE r.id_cuenta = p_id_cuenta
+                    AND r.fecha <= p_fecha), 0)
+      + COALESCE((SELECT SUM(CASE WHEN t.tipo_transaccion = 'COMPRA'
+                                  THEN -(t.monto + t.comision)
+                                  ELSE  (t.monto - t.comision) END)
+                  FROM transaccion t
+                  WHERE t.id_cuenta = p_id_cuenta
+                    AND t.fecha_hora::date <= p_fecha), 0);
+$$;
+
+-- fn_posiciones: Posiciones de las cuentas valoradas en USD a una fecha
+CREATE OR REPLACE FUNCTION fn_posiciones(p_fecha DATE DEFAULT CURRENT_DATE,
+                                         p_id_cuenta INTEGER DEFAULT NULL)
+RETURNS TABLE (id_cuenta INTEGER, id_activo INTEGER, cantidad NUMERIC, valor_usd NUMERIC)
+LANGUAGE sql AS $$
+    -- Renta variable
+    SELECT t.id_cuenta,
+           t.id_activo,
+           SUM(CASE WHEN t.tipo_transaccion = 'COMPRA' THEN t.cantidad ELSE -t.cantidad END),
+           ROUND(SUM(CASE WHEN t.tipo_transaccion = 'COMPRA' THEN t.cantidad ELSE -t.cantidad END)
+                 * COALESCE(fn_precio(t.id_activo, p_fecha), 0), 2)
+    FROM transaccion t
+    JOIN accion_fondo af ON af.id_activo = t.id_activo
+    WHERE t.fecha_hora::date <= p_fecha
+      AND (p_id_cuenta IS NULL OR t.id_cuenta = p_id_cuenta)
+    GROUP BY t.id_cuenta, t.id_activo
+    HAVING SUM(CASE WHEN t.tipo_transaccion = 'COMPRA' THEN t.cantidad ELSE -t.cantidad END) > 0
+
+    UNION ALL
+
+    -- Renta fija: compras de CDT y TES aun no redimidas a la fecha
+    SELECT t.id_cuenta,
+           t.id_activo,
+           SUM(t.cantidad),
+           ROUND(SUM(t.monto * fn_trm(t.fecha_hora::date)
+                     * POWER(1 + t.tasa_pactada,
+                             (LEAST(p_fecha, COALESCE(c.fecha_vencimiento, s.fecha_vencimiento))
+                              - t.fecha_hora::date) / 365.0))
+                 / fn_trm(p_fecha), 2)
+    FROM transaccion t
+    LEFT JOIN cdt c ON c.id_activo = t.id_activo
+    LEFT JOIN tes s ON s.id_activo = t.id_activo
+    WHERE t.tipo_transaccion = 'COMPRA'
+      AND t.tasa_pactada IS NOT NULL
+      AND t.fecha_hora::date <= p_fecha
+      AND (p_id_cuenta IS NULL OR t.id_cuenta = p_id_cuenta)
+      AND NOT EXISTS (SELECT 1
+                      FROM transaccion v
+                      WHERE v.id_cuenta = t.id_cuenta
+                        AND v.id_activo = t.id_activo
+                        AND v.tipo_transaccion = 'VENTA'
+                        AND v.fecha_hora::date <= p_fecha)
+    GROUP BY t.id_cuenta, t.id_activo;
+$$;
+
+-- fn_valor_cuenta: Valor total de una cuenta (efectivo + posiciones)
+CREATE OR REPLACE FUNCTION fn_valor_cuenta(p_id_cuenta INTEGER, p_fecha DATE DEFAULT CURRENT_DATE)
+RETURNS NUMERIC
+LANGUAGE sql AS $$
+    SELECT fn_efectivo(p_id_cuenta, p_fecha)
+         + COALESCE((SELECT SUM(p.valor_usd)
+                     FROM fn_posiciones(p_fecha, p_id_cuenta) p), 0);
+$$;
+
+-- fn_rentabilidad_cliente: Rentabilidad de un cliente en un periodo
+CREATE OR REPLACE FUNCTION fn_rentabilidad_cliente(p_id_cliente INTEGER,
+                                                   p_desde DATE,
+                                                   p_hasta DATE DEFAULT CURRENT_DATE)
+RETURNS NUMERIC
+LANGUAGE plpgsql AS $$
+DECLARE
+    v_inicial NUMERIC;
+    v_final   NUMERIC;
+    v_aportes NUMERIC;
+BEGIN
+    IF p_hasta <= p_desde THEN
+        RAISE EXCEPTION 'El periodo es invalido: % a %', p_desde, p_hasta;
+    END IF;
+
+    SELECT COALESCE(SUM(fn_valor_cuenta(c.id_cuenta, p_desde)), 0),
+           COALESCE(SUM(fn_valor_cuenta(c.id_cuenta, p_hasta)), 0)
+    INTO v_inicial, v_final
+    FROM cuenta c
+    WHERE c.id_cliente = p_id_cliente;
+
+    SELECT COALESCE(SUM(CASE WHEN m.tipo_movimiento = 'DEPOSITO'
+                             THEN m.monto ELSE -m.monto END), 0)
+    INTO v_aportes
+    FROM movimiento_efectivo m
+    JOIN cuenta c ON c.id_cuenta = m.id_cuenta
+    WHERE c.id_cliente = p_id_cliente
+      AND m.fecha_hora::date > p_desde
+      AND m.fecha_hora::date <= p_hasta;
+
+    IF v_inicial + v_aportes <= 0 THEN
+        RETURN NULL;
+    END IF;
+
+    RETURN ROUND((v_final - v_inicial - v_aportes) / (v_inicial + v_aportes) * 100, 2);
+END;
+$$;
+
+======================================================================
+PROCEDIMIENTO
+======================================================================
+
+-- sp_registrar_compra: Registra una compra al ultimo precio disponible
+CREATE OR REPLACE PROCEDURE sp_registrar_compra(
+    p_id_cuenta    INTEGER,
+    p_id_activo    INTEGER,
+    p_cantidad     NUMERIC,
+    p_precio       NUMERIC DEFAULT NULL,
+    p_tasa_pactada NUMERIC DEFAULT NULL)
+LANGUAGE plpgsql AS $$
+DECLARE
+    v_precio NUMERIC := COALESCE(p_precio, fn_precio(p_id_activo, CURRENT_DATE));
+    v_id     INTEGER;
+    v_total  NUMERIC;
+BEGIN
+    IF v_precio IS NULL THEN
+        RAISE EXCEPTION 'No hay precio disponible para el activo %; indique p_precio', p_id_activo;
+    END IF;
+
+    INSERT INTO transaccion (id_cuenta, id_activo, tipo_transaccion, cantidad, precio_unitario, tasa_pactada)
+    VALUES (p_id_cuenta, p_id_activo, 'COMPRA', p_cantidad, v_precio, p_tasa_pactada)
+    RETURNING id_transaccion, monto + comision INTO v_id, v_total;
+
+    RAISE NOTICE 'Compra % registrada: % unidades a % USD. Total descontado (con comision): % USD',
+        v_id, p_cantidad, v_precio, v_total;
+END;
+$$;
+
+======================================================================
+TRIGGERS
+======================================================================
+
+-- trg_fn_transaccion_validar: Valida cada compra o venta (Reglas 4, 6, 7 y 11) y actualiza el saldo
+CREATE OR REPLACE FUNCTION trg_fn_transaccion_validar()
+RETURNS TRIGGER
+LANGUAGE plpgsql AS $$
+DECLARE
+    v_saldo     NUMERIC;
+    v_estado    VARCHAR;
+    v_apertura  DATE;
+    v_tipo      SMALLINT;
+    v_venc      DATE;
+    v_es_rf     BOOLEAN;
+    v_monto     NUMERIC;
+    v_comision  NUMERIC;
+    v_tenencia  NUMERIC;
+BEGIN
+    -- Bloqueo de la cuenta durante toda la transaccion
+    SELECT c.saldo_efectivo, c.estado, c.fecha_apertura
+    INTO v_saldo, v_estado, v_apertura
+    FROM cuenta c
+    WHERE c.id_cuenta = NEW.id_cuenta
+    FOR UPDATE;
+
+    IF NOT FOUND THEN
+        RAISE EXCEPTION 'La cuenta % no existe', NEW.id_cuenta;
+    END IF;
+    IF v_estado <> 'ACTIVA' THEN
+        RAISE EXCEPTION 'La cuenta % esta % y no admite transacciones', NEW.id_cuenta, v_estado;
+    END IF;
+    IF NEW.fecha_hora::date < v_apertura THEN
+        RAISE EXCEPTION 'La transaccion (%) es anterior a la apertura de la cuenta (%)',
+            NEW.fecha_hora::date, v_apertura;
+    END IF;
+
+    -- Tipo del activo y, si es renta fija, su vencimiento
+    SELECT a.id_tipo_activo, COALESCE(c.fecha_vencimiento, s.fecha_vencimiento)
+    INTO v_tipo, v_venc
+    FROM activo a
+    LEFT JOIN cdt c ON c.id_activo = a.id_activo
+    LEFT JOIN tes s ON s.id_activo = a.id_activo
+    WHERE a.id_activo = NEW.id_activo;
+
+    IF NOT FOUND THEN
+        RAISE EXCEPTION 'El activo % no existe', NEW.id_activo;
+    END IF;
+
+    v_es_rf    := v_tipo IN (3, 4);
+    -- En un trigger BEFORE las columnas generadas aun no existen:
+    -- se calculan con la misma expresion del DDL.
+    v_monto    := ROUND(NEW.cantidad * NEW.precio_unitario, 2);
+    v_comision := ROUND(NEW.cantidad * NEW.precio_unitario * NEW.tasa_comision, 2);
+
+    IF NEW.tipo_transaccion = 'COMPRA' THEN
+        IF v_es_rf THEN
+            IF NEW.tasa_pactada IS NULL THEN
+                RAISE EXCEPTION 'Regla 7: la compra de CDT/TES debe indicar la tasa pactada';
+            END IF;
+            IF NEW.fecha_hora::date >= v_venc THEN
+                RAISE EXCEPTION 'No se puede comprar un titulo vencido (vence %)', v_venc;
+            END IF;
+        ELSIF NEW.tasa_pactada IS NOT NULL THEN
+            RAISE EXCEPTION 'La tasa pactada solo aplica a CDT y TES';
+        END IF;
+
+        IF v_saldo < v_monto + v_comision THEN
+            RAISE EXCEPTION 'Regla 4: saldo insuficiente en la cuenta %. Disponible: %, requerido: %',
+                NEW.id_cuenta, v_saldo, v_monto + v_comision;
+        END IF;
+
+        UPDATE cuenta
+        SET saldo_efectivo = saldo_efectivo - (v_monto + v_comision)
+        WHERE id_cuenta = NEW.id_cuenta;
+
+    ELSE  -- VENTA
+        IF NEW.tasa_pactada IS NOT NULL THEN
+            RAISE EXCEPTION 'La tasa pactada solo se registra en la compra';
+        END IF;
+
+        v_tenencia := fn_tenencia(NEW.id_cuenta, NEW.id_activo);
+        IF NEW.cantidad > v_tenencia THEN
+            RAISE EXCEPTION 'Regla 11: se intenta vender % pero la cuenta % solo posee %',
+                NEW.cantidad, NEW.id_cuenta, v_tenencia;
+        END IF;
+
+        IF v_es_rf THEN
+            IF NEW.fecha_hora::date < v_venc THEN
+                RAISE EXCEPTION 'Regla 6: el CDT/TES no puede liquidarse antes de su vencimiento (%)', v_venc;
+            END IF;
+            IF NEW.cantidad <> v_tenencia THEN
+                RAISE EXCEPTION 'La redencion de un CDT/TES debe ser por el total de la posicion (%)', v_tenencia;
+            END IF;
+        END IF;
+
+        UPDATE cuenta
+        SET saldo_efectivo = saldo_efectivo + (v_monto - v_comision)
+        WHERE id_cuenta = NEW.id_cuenta;
+    END IF;
+
+    RETURN NEW;
+END;
+$$;
+
+DROP TRIGGER IF EXISTS trg_transaccion_validar ON transaccion;
+CREATE TRIGGER trg_transaccion_validar
+    BEFORE INSERT ON transaccion
+    FOR EACH ROW EXECUTE FUNCTION trg_fn_transaccion_validar();
+
+-- trg_fn_movimiento_aplicar: Aplica depositos y retiros al saldo
+CREATE OR REPLACE FUNCTION trg_fn_movimiento_aplicar()
+RETURNS TRIGGER
+LANGUAGE plpgsql AS $$
+DECLARE
+    v_saldo    NUMERIC;
+    v_estado   VARCHAR;
+    v_apertura DATE;
+BEGIN
+    SELECT c.saldo_efectivo, c.estado, c.fecha_apertura
+    INTO v_saldo, v_estado, v_apertura
+    FROM cuenta c
+    WHERE c.id_cuenta = NEW.id_cuenta
+    FOR UPDATE;
+
+    IF NOT FOUND THEN
+        RAISE EXCEPTION 'La cuenta % no existe', NEW.id_cuenta;
+    END IF;
+    IF v_estado = 'CERRADA' THEN
+        RAISE EXCEPTION 'La cuenta % esta cerrada', NEW.id_cuenta;
+    END IF;
+    IF NEW.fecha_hora::date < v_apertura THEN
+        RAISE EXCEPTION 'El movimiento (%) es anterior a la apertura de la cuenta (%)',
+            NEW.fecha_hora::date, v_apertura;
+    END IF;
+
+    IF NEW.tipo_movimiento = 'RETIRO' THEN
+        IF v_saldo < NEW.monto THEN
+            RAISE EXCEPTION 'Saldo insuficiente para retirar % de la cuenta %. Disponible: %',
+                NEW.monto, NEW.id_cuenta, v_saldo;
+        END IF;
+        UPDATE cuenta SET saldo_efectivo = saldo_efectivo - NEW.monto
+        WHERE id_cuenta = NEW.id_cuenta;
+    ELSE
+        UPDATE cuenta SET saldo_efectivo = saldo_efectivo + NEW.monto
+        WHERE id_cuenta = NEW.id_cuenta;
+    END IF;
+
+    RETURN NEW;
+END;
+$$;
+
+DROP TRIGGER IF EXISTS trg_movimiento_aplicar ON movimiento_efectivo;
+CREATE TRIGGER trg_movimiento_aplicar
+    BEFORE INSERT ON movimiento_efectivo
+    FOR EACH ROW EXECUTE FUNCTION trg_fn_movimiento_aplicar();
+
+-- trg_fn_rendimiento_aplicar: Abona dividendos e intereses a la cuenta (Regla 8)
+CREATE OR REPLACE FUNCTION trg_fn_rendimiento_aplicar()
+RETURNS TRIGGER
+LANGUAGE plpgsql AS $$
+DECLARE
+    v_tipo SMALLINT;
+BEGIN
+    SELECT a.id_tipo_activo INTO v_tipo
+    FROM activo a
+    WHERE a.id_activo = NEW.id_activo;
+
+    IF NEW.tipo_rendimiento = 'DIVIDENDO' AND v_tipo NOT IN (1, 2) THEN
+        RAISE EXCEPTION 'Los dividendos solo aplican a acciones y fondos';
+    END IF;
+    IF NEW.tipo_rendimiento = 'INTERES' AND v_tipo NOT IN (3, 4) THEN
+        RAISE EXCEPTION 'Los intereses solo aplican a CDT y TES';
+    END IF;
+
+    IF NOT EXISTS (SELECT 1
+                   FROM transaccion t
+                   WHERE t.id_cuenta = NEW.id_cuenta
+                     AND t.id_activo = NEW.id_activo
+                     AND t.tipo_transaccion = 'COMPRA'
+                     AND t.fecha_hora::date <= NEW.fecha) THEN
+        RAISE EXCEPTION 'La cuenta % no habia comprado el activo % antes del %',
+            NEW.id_cuenta, NEW.id_activo, NEW.fecha;
+    END IF;
+
+    UPDATE cuenta SET saldo_efectivo = saldo_efectivo + NEW.monto
+    WHERE id_cuenta = NEW.id_cuenta;
+
+    RETURN NEW;
+END;
+$$;
+
+DROP TRIGGER IF EXISTS trg_rendimiento_aplicar ON rendimiento;
+CREATE TRIGGER trg_rendimiento_aplicar
+    BEFORE INSERT ON rendimiento
+    FOR EACH ROW EXECUTE FUNCTION trg_fn_rendimiento_aplicar();
+
+-- trg_fn_cuenta_proteger_saldo: Impide modificar el saldo directamente
+CREATE OR REPLACE FUNCTION trg_fn_cuenta_proteger_saldo()
+RETURNS TRIGGER
+LANGUAGE plpgsql AS $$
+BEGIN
+    IF TG_OP = 'INSERT' THEN
+        IF NEW.saldo_efectivo <> 0 THEN
+            RAISE EXCEPTION 'Una cuenta nueva inicia con saldo 0; registre un DEPOSITO en movimiento_efectivo';
+        END IF;
+    ELSIF NEW.saldo_efectivo <> OLD.saldo_efectivo
+          AND pg_trigger_depth() < 2 THEN
+        RAISE EXCEPTION 'El saldo no se modifica directamente; registre un movimiento, transaccion o rendimiento';
+    END IF;
+    RETURN NEW;
+END;
+$$;
+
+DROP TRIGGER IF EXISTS trg_cuenta_proteger_saldo ON cuenta;
+CREATE TRIGGER trg_cuenta_proteger_saldo
+    BEFORE INSERT OR UPDATE OF saldo_efectivo ON cuenta
+    FOR EACH ROW EXECUTE FUNCTION trg_fn_cuenta_proteger_saldo();
+
+-- trg_fn_registro_inmutable: Impide editar o borrar el historial
+CREATE OR REPLACE FUNCTION trg_fn_registro_inmutable()
+RETURNS TRIGGER
+LANGUAGE plpgsql AS $$
+BEGIN
+    RAISE EXCEPTION 'Los registros de % son inmutables: no se permite %', TG_TABLE_NAME, TG_OP;
+END;
+$$;
+
+DROP TRIGGER IF EXISTS trg_transaccion_inmutable ON transaccion;
+CREATE TRIGGER trg_transaccion_inmutable
+    BEFORE UPDATE OR DELETE ON transaccion
+    FOR EACH ROW EXECUTE FUNCTION trg_fn_registro_inmutable();
+
+DROP TRIGGER IF EXISTS trg_movimiento_inmutable ON movimiento_efectivo;
+CREATE TRIGGER trg_movimiento_inmutable
+    BEFORE UPDATE OR DELETE ON movimiento_efectivo
+    FOR EACH ROW EXECUTE FUNCTION trg_fn_registro_inmutable();
+
+DROP TRIGGER IF EXISTS trg_rendimiento_inmutable ON rendimiento;
+CREATE TRIGGER trg_rendimiento_inmutable
+    BEFORE UPDATE OR DELETE ON rendimiento
+    FOR EACH ROW EXECUTE FUNCTION trg_fn_registro_inmutable();
+
+-- trg_fn_activo_subtipo: Exige que todo activo tenga su subtipo (Regla 12)
+CREATE OR REPLACE FUNCTION trg_fn_activo_subtipo()
+RETURNS TRIGGER
+LANGUAGE plpgsql AS $$
+DECLARE
+    v_existe BOOLEAN;
+BEGIN
+    IF NEW.id_tipo_activo IN (1, 2) THEN
+        SELECT EXISTS (SELECT 1 FROM accion_fondo x WHERE x.id_activo = NEW.id_activo) INTO v_existe;
+    ELSIF NEW.id_tipo_activo = 3 THEN
+        SELECT EXISTS (SELECT 1 FROM cdt x WHERE x.id_activo = NEW.id_activo) INTO v_existe;
+    ELSE
+        SELECT EXISTS (SELECT 1 FROM tes x WHERE x.id_activo = NEW.id_activo) INTO v_existe;
+    END IF;
+
+    IF NOT v_existe THEN
+        RAISE EXCEPTION 'Regla 12: el activo % (%) no tiene registro en la tabla de su tipo',
+            NEW.id_activo, NEW.nombre;
+    END IF;
+    RETURN NULL;
+END;
+$$;
+
+DROP TRIGGER IF EXISTS trg_activo_subtipo ON activo;
+CREATE CONSTRAINT TRIGGER trg_activo_subtipo
+    AFTER INSERT ON activo
+    DEFERRABLE INITIALLY DEFERRED
+    FOR EACH ROW EXECUTE FUNCTION trg_fn_activo_subtipo();

@@ -1,21 +1,7 @@
 ﻿
-=== INDICE 1 - trm_raw: TRM vigente al 2026-03-15 ===
-ANTES (sin indice):
-{
-  etapas: 'SORT <- COLLSCAN',
-  documentos_examinados: 698,
-  claves_examinadas: 0,
-  documentos_devueltos: 1,
-  tiempo_ms: 0
-}
-DESPUES (indice { vigenciadesde: 1 }):
-{
-  etapas: 'LIMIT <- FETCH <- IXSCAN',
-  documentos_examinados: 1,
-  claves_examinadas: 1,
-  documentos_devueltos: 1,
-  tiempo_ms: 5
-}
+=== INDICE 1: trm_raw { vigenciadesde: 1 } ===
+ANTES   - documentos examinados: 698
+DESPUES - documentos examinados: 1
 Resultado:
 [
   {
@@ -25,74 +11,40 @@ Resultado:
   }
 ]
 
-=== INDICE 2 - mercado_activos: acciones del sector Technology ===
-ANTES (sin indice):
-{
-  etapas: 'PROJECTION_DEFAULT <- COLLSCAN',
-  documentos_examinados: 10,
-  claves_examinadas: 0,
-  documentos_devueltos: 2,
-  tiempo_ms: 0
-}
-DESPUES (indice { info.sector: 1, tipo: 1 }):
-{
-  etapas: 'PROJECTION_DEFAULT <- FETCH <- IXSCAN',
-  documentos_examinados: 2,
-  claves_examinadas: 2,
-  documentos_devueltos: 2,
-  tiempo_ms: 6
-}
-Resultado:
-[
-  {
-    _id: 'AAPL',
-    ticker: 'AAPL',
-    nombre: 'Apple Inc.',
-    info: {
-      industry: 'Consumer Electronics'
-    }
-  },
-  {
-    _id: 'MSFT',
-    ticker: 'MSFT',
-    nombre: 'Microsoft Corporation',
-    info: {
-      industry: 'Software - Infrastructure'
-    }
-  }
-]
+=== INDICE 2: mercado_activos { tipo: 1 } ===
+ANTES   - documentos examinados: 10
+DESPUES - documentos examinados: 2
 
-=== Indices definidos ===
+=== Indices creados ===
 [
   {
-    coleccion: 'mercado_activos',
-    nombre: '_id_',
-    clave: {
+    v: 2,
+    key: {
       _id: 1
-    }
+    },
+    name: '_id_'
   },
   {
-    coleccion: 'mercado_activos',
-    nombre: 'ix_sector_tipo',
-    clave: {
-      'info.sector': 1,
-      tipo: 1
-    }
+    v: 2,
+    key: {
+      vigenciadesde: 1
+    },
+    name: 'vigenciadesde_1'
   }
 ]
 [
   {
-    coleccion: 'trm_raw',
-    nombre: '_id_',
-    clave: {
+    v: 2,
+    key: {
       _id: 1
-    }
+    },
+    name: '_id_'
   },
   {
-    coleccion: 'trm_raw',
-    nombre: 'ix_trm_vigencia',
-    clave: {
-      vigenciadesde: 1
-    }
+    v: 2,
+    key: {
+      tipo: 1
+    },
+    name: 'tipo_1'
   }
 ]

@@ -52,8 +52,8 @@ psql:sql/02_funciones_triggers.sql:489: NOTICE:  “trigger” «trg_activo_subt
 
 
 ===== sql\05_vistas.sql =====
-psql:sql/05_vistas.sql:14: NOTICE:  la vista «v_vencimientos_renta_fija» no existe, omitiendo
-psql:sql/05_vistas.sql:14: NOTICE:  la vista «v_cumplimiento_perfil» no existe, omitiendo
-psql:sql/05_vistas.sql:14: NOTICE:  la vista «v_portafolio_cliente» no existe, omitiendo
-psql:sql/05_vistas.sql:14: NOTICE:  la vista «v_posicion_actual» no existe, omitiendo
-psql:sql/05_vistas.sql:14: NOTICE:  la vista «v_tenencia» no existe, omitiendo
+psql:sql/05_vistas.sql:6: NOTICE:  la vista «v_vencimientos_renta_fija» no existe, omitiendo
+psql:sql/05_vistas.sql:6: NOTICE:  la vista «v_cumplimiento_perfil» no existe, omitiendo
+psql:sql/05_vistas.sql:6: NOTICE:  la vista «v_portafolio_cliente» no existe, omitiendo
+psql:sql/05_vistas.sql:6: NOTICE:  la vista «v_posicion_actual» no existe, omitiendo
+psql:sql/05_vistas.sql:6: NOTICE:  la vista «v_tenencia» no existe, omitiendo

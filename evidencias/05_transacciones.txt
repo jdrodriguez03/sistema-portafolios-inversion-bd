@@ -62,7 +62,7 @@ SELECT id_transaccion, tipo_transaccion, cantidad, precio_unitario, monto, comis
 FROM transaccion WHERE id_cuenta = :cta ORDER BY id_transaccion DESC LIMIT 1;
  id_transaccion | tipo_transaccion | cantidad | precio_unitario | monto  | comision |         fecha_hora         
 ----------------+------------------+----------+-----------------+--------+----------+----------------------------
-           1480 | COMPRA           | 1.000000 |        739.9500 | 739.95 |     3.70 | 2026-11-16 23:45:29.804164
+           1480 | COMPRA           | 1.000000 |        739.9500 | 739.95 |     3.70 | 2026-11-17 10:37:01.214713
 (1 fila)
 
 -- =====================================================================
@@ -114,9 +114,9 @@ FROM cuenta WHERE id_cuenta = :cta;
 -- Editar el saldo directamente (redundancia controlada)
 UPDATE cuenta SET saldo_efectivo = saldo_efectivo + 1000000 WHERE id_cuenta = :cta;
 -- Borrar una transaccion del historial
+DELETE FROM transaccion WHERE id_cuenta = :cta;
 psql:sql/08_transacciones.sql:80: ERROR:  El saldo no se modifica directamente; registre un movimiento, transaccion o rendimiento
 CONTEXTO:  función PL/pgSQL trg_fn_cuenta_proteger_saldo() en la línea 9 en RAISE
-DELETE FROM transaccion WHERE id_cuenta = :cta;
 psql:sql/08_transacciones.sql:82: ERROR:  Los registros de transaccion son inmutables: no se permite DELETE
 CONTEXTO:  función PL/pgSQL trg_fn_registro_inmutable() en la línea 3 en RAISE
 -- Retirar mas de lo disponible

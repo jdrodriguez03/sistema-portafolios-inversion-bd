@@ -5,12 +5,12 @@ psql:sql/concurrencia/00_preparar.sql:21: NOTICE:  el esquema «demo» no existe
 ==============================================================
 CASO 1 - Sin bloqueo (la aplicacion lee, valida y escribe): saldo 1000, dos compras de 700
 ==============================================================
-[23:45:29.994] Sesion A lee saldo = 1000.00
-[23:45:29.994] Sesion A valida la compra de 700: APROBADA
-[23:45:31.125] Sesion B lee saldo = 1000.00
-[23:45:31.125] Sesion B valida la compra de 700: APROBADA
-[23:45:32.007] Sesion A COMMIT. Escribio saldo = 1000.00 - 700
-[23:45:33.131] Sesion B COMMIT. Escribio saldo = 1000.00 - 700
+[10:37:01.505] Sesion A lee saldo = 1000.00
+[10:37:01.505] Sesion A valida la compra de 700: APROBADA
+[10:37:02.533] Sesion B lee saldo = 1000.00
+[10:37:02.533] Sesion B valida la compra de 700: APROBADA
+[10:37:03.524] Sesion A COMMIT. Escribio saldo = 1000.00 - 700
+[10:37:04.543] Sesion B COMMIT. Escribio saldo = 1000.00 - 700
 
 Estado final de la cuenta de demostracion:
  saldo_final | saldo_correcto | compras_aprobadas 
@@ -22,12 +22,12 @@ Estado final de la cuenta de demostracion:
 ==============================================================
 CASO 2 - Tabla real con trigger y SELECT ... FOR UPDATE
 ==============================================================
-[23:45:33.313] Sesion A inicia: compra de 181 SPY a 739.9500 en la cuenta 15 (saldo confirmado 224770.34)
-[23:45:33.319] Sesion A compra aceptada. Saldo dentro de su transaccion = 90169.74
-[23:45:34.338] Sesion B inicia: compra de 181 SPY a 739.9500 en la cuenta 15 (saldo confirmado 224770.34)
-[23:45:36.330] Sesion A COMMIT (libera el bloqueo)
-[23:45:36.339] Sesion B RECHAZADA tras esperar el bloqueo. Motivo: Regla 4: saldo insuficiente en la cuenta 15. Disponible: 90169.74, requerido: 134600.60
-[23:45:36.339] Sesion B ROLLBACK
+[10:37:04.821] Sesion A inicia: compra de 181 SPY a 739.9500 en la cuenta 15 (saldo confirmado 224770.34)
+[10:37:04.827] Sesion A compra aceptada. Saldo dentro de su transaccion = 90169.74
+[10:37:05.958] Sesion B inicia: compra de 181 SPY a 739.9500 en la cuenta 15 (saldo confirmado 224770.34)
+[10:37:07.842] Sesion A COMMIT (libera el bloqueo)
+[10:37:07.848] Sesion B RECHAZADA tras esperar el bloqueo. Motivo: Regla 4: saldo insuficiente en la cuenta 15. Disponible: 90169.74, requerido: 134600.60
+[10:37:07.848] Sesion B ROLLBACK
 
   Mensajes del servidor en la sesion B:
     psql:sql/concurrencia/sesion_con_bloqueo.sql:30: ERROR:  Regla 4: saldo insuficiente en la cuenta 15. Disponible: 90169.74, requerido: 134600.60
@@ -36,8 +36,8 @@ CASO 2 - Tabla real con trigger y SELECT ... FOR UPDATE
 Ultimas transacciones de la cuenta y auditoria del saldo:
  id_transaccion | id_cuenta | tipo_transaccion |  cantidad  |   monto   | comision |         fecha_hora         
 ----------------+-----------+------------------+------------+-----------+----------+----------------------------
-           1482 |        15 | COMPRA           | 181.000000 | 133930.95 |   669.65 | 2026-11-16 23:45:33.313477
-           1480 |        15 | COMPRA           |   1.000000 |    739.95 |     3.70 | 2026-11-16 23:45:29.804164
+           1482 |        15 | COMPRA           | 181.000000 | 133930.95 |   669.65 | 2026-11-17 10:37:04.822227
+           1480 |        15 | COMPRA           |   1.000000 |    739.95 |     3.70 | 2026-11-17 10:37:01.214713
 (2 filas)
 
  cuentas_descuadradas 

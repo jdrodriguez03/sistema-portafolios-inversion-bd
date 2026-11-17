@@ -1,151 +1,54 @@
 ﻿
-=== CREATE: insertOne de un activo en evaluacion ===
+=== CREATE ===
 {
   acknowledged: true,
   insertedId: 'NVDA'
 }
 
-=== READ 1: fondos indexados (proyeccion de campos) ===
+=== READ 1: fondos indexados ===
 [
   {
     ticker: 'QQQ',
-    nombre: 'Invesco QQQ Trust',
-    mercado: 'NASDAQ'
+    nombre: 'Invesco QQQ Trust'
   },
   {
     ticker: 'SPY',
-    nombre: 'State Street SPDR S&P 500 ETF Trust',
-    mercado: 'NYSE ARCA'
+    nombre: 'State Street SPDR S&P 500 ETF Trust'
   }
 ]
 
-=== READ 2: ultimos 3 cierres de AAPL ($slice sobre el arreglo embebido) ===
+=== READ 2: acciones del sector tecnologia ===
 [
   {
     ticker: 'AAPL',
-    historia: [
-      {
-        fecha: ISODate('2026-11-12T00:00:00.000Z'),
-        apertura: 357.80999755859375,
-        maximo: 359.3699951171875,
-        minimo: 354.4100036621094,
-        cierre: 354.8800048828125,
-        volumen: 31875000,
-        dividendo: 0.27
-      },
-      {
-        fecha: ISODate('2026-11-13T00:00:00.000Z'),
-        apertura: 357.9599914550781,
-        maximo: 360.8299865722656,
-        minimo: 355.75,
-        cierre: 356.2699890136719,
-        volumen: 40027500,
-        dividendo: 0
-      },
-      {
-        fecha: ISODate('2026-11-16T00:00:00.000Z'),
-        apertura: 357.1300048828125,
-        maximo: 357.1300048828125,
-        minimo: 351.30999755859375,
-        cierre: 352.7799987792969,
-        volumen: 45945500,
-        dividendo: 0
-      }
-    ]
-  }
-]
-
-=== READ 3: activos cuya ficha trae el campo dividendYield ($exists) ===
-[
-  {
-    ticker: 'AAPL',
-    info: {
-      dividendYield: 0.3
-    }
-  },
-  {
-    ticker: 'AMZN',
-    info: {
-      dividendYield: 0
-    }
-  },
-  {
-    ticker: 'CIB',
-    info: {
-      dividendYield: 4.47
-    }
-  },
-  {
-    ticker: 'EC',
-    info: {
-      dividendYield: 4.21
-    }
-  },
-  {
-    ticker: 'GOOGL',
-    info: {
-      dividendYield: 0.3
-    }
-  },
-  {
-    ticker: 'JNJ',
-    info: {
-      dividendYield: 1.88
-    }
+    nombre: 'Apple Inc.'
   },
   {
     ticker: 'MSFT',
-    info: {
-      dividendYield: 0.75
-    }
+    nombre: 'Microsoft Corporation'
   },
   {
-    ticker: 'QQQ',
-    info: {
-      dividendYield: 0.45
-    }
-  },
-  {
-    ticker: 'SPY',
-    info: {
-      dividendYield: 1
-    }
-  },
-  {
-    ticker: 'TSLA',
-    info: {
-      dividendYield: 0
-    }
+    ticker: 'NVDA',
+    nombre: 'NVIDIA Corporation'
   }
 ]
 
-=== READ 4: el activo en evaluacion ===
+=== READ 3: el activo en evaluacion ===
 {
   _id: 'NVDA',
   ticker: 'NVDA',
   nombre: 'NVIDIA Corporation',
   tipo: 'ACCION',
   mercado: 'NASDAQ',
-  fuente: 'registro manual del comite de inversiones',
-  descargado_en: ISODate('2026-11-17T04:45:38.100Z'),
   estado: 'EN_EVALUACION',
   info: {
     sector: 'Technology',
-    industry: 'Semiconductors',
-    analisis: {
-      analista: 'Comite de inversiones',
-      perfiles_sugeridos: [
-        'AGRESIVO'
-      ],
-      riesgos: [
-        'alta volatilidad',
-        'concentracion sectorial'
-      ]
-    }
-  }
+    industry: 'Semiconductors'
+  },
+  historia: []
 }
 
-=== UPDATE 1: se aprueba el activo y se registra su primer cierre ===
+=== UPDATE ===
 {
   acknowledged: true,
   insertedId: null,
@@ -154,64 +57,19 @@
   upsertedCount: 0
 }
 {
+  ticker: 'NVDA',
   estado: 'APROBADO',
-  info: {
-    analisis: {
-      analista: 'Comite de inversiones',
-      perfiles_sugeridos: [
-        'MODERADO',
-        'AGRESIVO'
-      ],
-      riesgos: [
-        'alta volatilidad',
-        'concentracion sectorial'
-      ]
-    }
-  },
   historia: [
     {
-      fecha: ISODate('2026-11-17T04:45:38.108Z'),
-      cierre: null,
-      nota: 'precio pendiente de la siguiente carga'
+      fecha: ISODate('2026-11-16T00:00:00.000Z'),
+      cierre: 0
     }
-  ],
-  actualizado_en: ISODate('2026-11-17T04:45:38.110Z')
+  ]
 }
 
-=== UPDATE 2: updateMany agrega una etiqueta a todos los fondos ===
-{
-  acknowledged: true,
-  insertedId: null,
-  matchedCount: 2,
-  modifiedCount: 2,
-  upsertedCount: 0
-}
-[
-  {
-    ticker: 'QQQ',
-    etiquetas: [
-      'indexado'
-    ]
-  },
-  {
-    ticker: 'SPY',
-    etiquetas: [
-      'indexado'
-    ]
-  }
-]
-
-=== DELETE: el comite descarta el activo ===
+=== DELETE ===
 {
   acknowledged: true,
   deletedCount: 1
 }
-Documentos con estado definido despues del borrado: 0
-{
-  acknowledged: true,
-  insertedId: null,
-  matchedCount: 10,
-  modifiedCount: 2,
-  upsertedCount: 0
-}
-Total de documentos en mercado_activos: 10
+Documentos en mercado_activos: 10

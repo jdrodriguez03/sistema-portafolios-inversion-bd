@@ -68,6 +68,7 @@ function Paso([string]$Nombre, [scriptblock]$Bloque) {
 }
 
 $Fallos = @()
+Set-Content -Path $Resumen -Value "" -Encoding UTF8   # cada ejecucion empieza un resumen nuevo
 Log "==== Ejecucion de run_all.ps1 (pasos: $($Pasos -join ', ')) ===="
 
 # ---------------------------------------------------------------- datos

@@ -26,7 +26,7 @@
 -- cubierta por ningun rango se usa la ultima TRM publicada antes.
 CREATE OR REPLACE FUNCTION fn_trm(p_fecha DATE)
 RETURNS NUMERIC
-LANGUAGE sql STABLE AS $$
+LANGUAGE sql AS $$
     SELECT t.valor_cop
     FROM trm t
     WHERE t.fecha_desde <= p_fecha
@@ -37,7 +37,7 @@ $$;
 -- Precio de cierre mas reciente de una accion/fondo a una fecha (Regla 9)
 CREATE OR REPLACE FUNCTION fn_precio(p_id_activo INTEGER, p_fecha DATE DEFAULT CURRENT_DATE)
 RETURNS NUMERIC
-LANGUAGE sql STABLE AS $$
+LANGUAGE sql AS $$
     SELECT ph.precio_cierre
     FROM precio_historico ph
     WHERE ph.id_activo = p_id_activo
@@ -50,7 +50,7 @@ $$;
 -- (compras menos ventas). La tenencia NO se almacena: se deriva.
 CREATE OR REPLACE FUNCTION fn_tenencia(p_id_cuenta INTEGER, p_id_activo INTEGER)
 RETURNS NUMERIC
-LANGUAGE sql STABLE AS $$
+LANGUAGE sql AS $$
     SELECT COALESCE(SUM(CASE WHEN t.tipo_transaccion = 'COMPRA'
                              THEN t.cantidad ELSE -t.cantidad END), 0)
     FROM transaccion t
@@ -63,13 +63,13 @@ $$;
 -- cuenta.saldo_efectivo (consulta de auditoria en 06_consultas.sql).
 CREATE OR REPLACE FUNCTION fn_efectivo(p_id_cuenta INTEGER, p_fecha DATE DEFAULT CURRENT_DATE)
 RETURNS NUMERIC
-LANGUAGE sql STABLE AS $$
+LANGUAGE sql AS $$
     SELECT
         COALESCE((SELECT SUM(CASE WHEN m.tipo_movimiento = 'DEPOSITO'
                                   THEN m.monto ELSE -m.monto END)
                   FROM movimiento_efectivo m
                   WHERE m.id_cuenta = p_id_cuenta
-                    AND m.fecha_hora < p_fecha + 1), 0)
+                    AND m.fecha_hora::date <= p_fecha), 0)
       + COALESCE((SELECT SUM(r.monto)
                   FROM rendimiento r
                   WHERE r.id_cuenta = p_id_cuenta
@@ -79,7 +79,7 @@ LANGUAGE sql STABLE AS $$
                                   ELSE  (t.monto - t.comision) END)
                   FROM transaccion t
                   WHERE t.id_cuenta = p_id_cuenta
-                    AND t.fecha_hora < p_fecha + 1), 0);
+                    AND t.fecha_hora::date <= p_fecha), 0);
 $$;
 
 -- Posiciones valoradas en USD al cierre de una fecha.
@@ -94,7 +94,7 @@ $$;
 CREATE OR REPLACE FUNCTION fn_posiciones(p_fecha DATE DEFAULT CURRENT_DATE,
                                          p_id_cuenta INTEGER DEFAULT NULL)
 RETURNS TABLE (id_cuenta INTEGER, id_activo INTEGER, cantidad NUMERIC, valor_usd NUMERIC)
-LANGUAGE sql STABLE AS $$
+LANGUAGE sql AS $$
     -- Renta variable
     SELECT t.id_cuenta,
            t.id_activo,
@@ -103,42 +103,42 @@ LANGUAGE sql STABLE AS $$
                  * COALESCE(fn_precio(t.id_activo, p_fecha), 0), 2)
     FROM transaccion t
     JOIN accion_fondo af ON af.id_activo = t.id_activo
-    WHERE t.fecha_hora < p_fecha + 1
+    WHERE t.fecha_hora::date <= p_fecha
       AND (p_id_cuenta IS NULL OR t.id_cuenta = p_id_cuenta)
     GROUP BY t.id_cuenta, t.id_activo
     HAVING SUM(CASE WHEN t.tipo_transaccion = 'COMPRA' THEN t.cantidad ELSE -t.cantidad END) > 0
 
     UNION ALL
 
-    -- Renta fija: lotes comprados y aun no redimidos a la fecha
+    -- Renta fija: compras de CDT y TES aun no redimidas a la fecha
     SELECT t.id_cuenta,
            t.id_activo,
            SUM(t.cantidad),
            ROUND(SUM(t.monto * fn_trm(t.fecha_hora::date)
                      * POWER(1 + t.tasa_pactada,
-                             (LEAST(p_fecha, rf.fecha_vencimiento) - t.fecha_hora::date) / 365.0))
+                             (LEAST(p_fecha, COALESCE(c.fecha_vencimiento, s.fecha_vencimiento))
+                              - t.fecha_hora::date) / 365.0))
                  / fn_trm(p_fecha), 2)
     FROM transaccion t
-    JOIN (SELECT c.id_activo, c.fecha_vencimiento FROM cdt c
-          UNION ALL
-          SELECT s.id_activo, s.fecha_vencimiento FROM tes s) rf
-      ON rf.id_activo = t.id_activo
+    LEFT JOIN cdt c ON c.id_activo = t.id_activo
+    LEFT JOIN tes s ON s.id_activo = t.id_activo
     WHERE t.tipo_transaccion = 'COMPRA'
-      AND t.fecha_hora < p_fecha + 1
+      AND t.tasa_pactada IS NOT NULL
+      AND t.fecha_hora::date <= p_fecha
       AND (p_id_cuenta IS NULL OR t.id_cuenta = p_id_cuenta)
       AND NOT EXISTS (SELECT 1
                       FROM transaccion v
                       WHERE v.id_cuenta = t.id_cuenta
                         AND v.id_activo = t.id_activo
                         AND v.tipo_transaccion = 'VENTA'
-                        AND v.fecha_hora < p_fecha + 1)
+                        AND v.fecha_hora::date <= p_fecha)
     GROUP BY t.id_cuenta, t.id_activo;
 $$;
 
 -- Valor total de una cuenta (efectivo + posiciones) en USD a una fecha
 CREATE OR REPLACE FUNCTION fn_valor_cuenta(p_id_cuenta INTEGER, p_fecha DATE DEFAULT CURRENT_DATE)
 RETURNS NUMERIC
-LANGUAGE sql STABLE AS $$
+LANGUAGE sql AS $$
     SELECT fn_efectivo(p_id_cuenta, p_fecha)
          + COALESCE((SELECT SUM(p.valor_usd)
                      FROM fn_posiciones(p_fecha, p_id_cuenta) p), 0);
@@ -155,7 +155,7 @@ CREATE OR REPLACE FUNCTION fn_rentabilidad_cliente(p_id_cliente INTEGER,
                                                    p_desde DATE,
                                                    p_hasta DATE DEFAULT CURRENT_DATE)
 RETURNS NUMERIC
-LANGUAGE plpgsql STABLE AS $$
+LANGUAGE plpgsql AS $$
 DECLARE
     v_inicial NUMERIC;
     v_final   NUMERIC;
@@ -177,8 +177,8 @@ BEGIN
     FROM movimiento_efectivo m
     JOIN cuenta c ON c.id_cuenta = m.id_cuenta
     WHERE c.id_cliente = p_id_cliente
-      AND m.fecha_hora >= p_desde + 1
-      AND m.fecha_hora <  p_hasta + 1;
+      AND m.fecha_hora::date > p_desde
+      AND m.fecha_hora::date <= p_hasta;
 
     IF v_inicial + v_aportes <= 0 THEN
         RETURN NULL;
@@ -416,7 +416,7 @@ BEGIN
         IF NEW.saldo_efectivo <> 0 THEN
             RAISE EXCEPTION 'Una cuenta nueva inicia con saldo 0; registre un DEPOSITO en movimiento_efectivo';
         END IF;
-    ELSIF NEW.saldo_efectivo IS DISTINCT FROM OLD.saldo_efectivo
+    ELSIF NEW.saldo_efectivo <> OLD.saldo_efectivo
           AND pg_trigger_depth() < 2 THEN
         RAISE EXCEPTION 'El saldo no se modifica directamente; registre un movimiento, transaccion o rendimiento';
     END IF;

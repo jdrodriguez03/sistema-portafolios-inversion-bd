@@ -1,7 +1,7 @@
 [
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0523"
+   "$oid": "6afc74a42423c94c88500c74"
   },
   "valor": "4045.22",
   "unidad": "COP",
@@ -11,7 +11,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0524"
+   "$oid": "6afc74a42423c94c88500c75"
   },
   "valor": "3983.15",
   "unidad": "COP",
@@ -21,7 +21,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0525"
+   "$oid": "6afc74a42423c94c88500c76"
   },
   "valor": "3999.91",
   "unidad": "COP",
@@ -31,7 +31,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0526"
+   "$oid": "6afc74a42423c94c88500c77"
   },
   "valor": "4023.21",
   "unidad": "COP",
@@ -41,7 +41,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0527"
+   "$oid": "6afc74a42423c94c88500c78"
   },
   "valor": "3989.55",
   "unidad": "COP",
@@ -51,7 +51,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0528"
+   "$oid": "6afc74a42423c94c88500c79"
   },
   "valor": "3998.51",
   "unidad": "COP",
@@ -61,7 +61,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0529"
+   "$oid": "6afc74a42423c94c88500c7a"
   },
   "valor": "3982.5",
   "unidad": "COP",
@@ -71,7 +71,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed052a"
+   "$oid": "6afc74a42423c94c88500c7b"
   },
   "valor": "3990.88",
   "unidad": "COP",
@@ -81,7 +81,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed052b"
+   "$oid": "6afc74a42423c94c88500c7c"
   },
   "valor": "3999.43",
   "unidad": "COP",
@@ -91,7 +91,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed052c"
+   "$oid": "6afc74a42423c94c88500c7d"
   },
   "valor": "3955.88",
   "unidad": "COP",
@@ -101,7 +101,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed052d"
+   "$oid": "6afc74a42423c94c88500c7e"
   },
   "valor": "3956.76",
   "unidad": "COP",
@@ -111,7 +111,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed052e"
+   "$oid": "6afc74a42423c94c88500c7f"
   },
   "valor": "3932.59",
   "unidad": "COP",
@@ -121,7 +121,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed052f"
+   "$oid": "6afc74a42423c94c88500c80"
   },
   "valor": "3925.77",
   "unidad": "COP",
@@ -131,7 +131,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0530"
+   "$oid": "6afc74a42423c94c88500c81"
   },
   "valor": "3948.54",
   "unidad": "COP",
@@ -141,7 +141,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0531"
+   "$oid": "6afc74a42423c94c88500c82"
   },
   "valor": "3943.03",
   "unidad": "COP",
@@ -151,7 +151,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0532"
+   "$oid": "6afc74a42423c94c88500c83"
   },
   "valor": "3915.43",
   "unidad": "COP",
@@ -161,7 +161,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0533"
+   "$oid": "6afc74a42423c94c88500c84"
   },
   "valor": "3871.45",
   "unidad": "COP",
@@ -171,7 +171,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0534"
+   "$oid": "6afc74a42423c94c88500c85"
   },
   "valor": "3844.81",
   "unidad": "COP",
@@ -181,7 +181,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0535"
+   "$oid": "6afc74a42423c94c88500c86"
   },
   "valor": "3822.05",
   "unidad": "COP",
@@ -191,7 +191,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0536"
+   "$oid": "6afc74a42423c94c88500c87"
   },
   "valor": "3895.53",
   "unidad": "COP",
@@ -201,7 +201,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0537"
+   "$oid": "6afc74a42423c94c88500c88"
   },
   "valor": "3914.6",
   "unidad": "COP",
@@ -211,7 +211,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0538"
+   "$oid": "6afc74a42423c94c88500c89"
   },
   "valor": "3927.64",
   "unidad": "COP",
@@ -221,7 +221,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0539"
+   "$oid": "6afc74a42423c94c88500c8a"
   },
   "valor": "3912.93",
   "unidad": "COP",
@@ -231,7 +231,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed053a"
+   "$oid": "6afc74a42423c94c88500c8b"
   },
   "valor": "3934.13",
   "unidad": "COP",
@@ -241,7 +241,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed053b"
+   "$oid": "6afc74a42423c94c88500c8c"
   },
   "valor": "3946.39",
   "unidad": "COP",
@@ -251,7 +251,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed053c"
+   "$oid": "6afc74a42423c94c88500c8d"
   },
   "valor": "3929.79",
   "unidad": "COP",
@@ -261,7 +261,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed053d"
+   "$oid": "6afc74a42423c94c88500c8e"
   },
   "valor": "3901.38",
   "unidad": "COP",
@@ -271,7 +271,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed053e"
+   "$oid": "6afc74a42423c94c88500c8f"
   },
   "valor": "3940.85",
   "unidad": "COP",
@@ -281,7 +281,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed053f"
+   "$oid": "6afc74a42423c94c88500c90"
   },
   "valor": "3969.5",
   "unidad": "COP",
@@ -291,7 +291,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0540"
+   "$oid": "6afc74a42423c94c88500c91"
   },
   "valor": "3939.89",
   "unidad": "COP",
@@ -301,7 +301,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0541"
+   "$oid": "6afc74a42423c94c88500c92"
   },
   "valor": "3916.39",
   "unidad": "COP",
@@ -311,7 +311,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0542"
+   "$oid": "6afc74a42423c94c88500c93"
   },
   "valor": "3904.49",
   "unidad": "COP",
@@ -321,7 +321,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0543"
+   "$oid": "6afc74a42423c94c88500c94"
   },
   "valor": "3934.62",
   "unidad": "COP",
@@ -331,7 +331,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0544"
+   "$oid": "6afc74a42423c94c88500c95"
   },
   "valor": "3929.95",
   "unidad": "COP",
@@ -341,7 +341,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0545"
+   "$oid": "6afc74a42423c94c88500c96"
   },
   "valor": "3932.96",
   "unidad": "COP",
@@ -351,7 +351,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0546"
+   "$oid": "6afc74a42423c94c88500c97"
   },
   "valor": "3925.26",
   "unidad": "COP",
@@ -361,7 +361,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0547"
+   "$oid": "6afc74a42423c94c88500c98"
   },
   "valor": "3918.93",
   "unidad": "COP",
@@ -371,7 +371,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0548"
+   "$oid": "6afc74a42423c94c88500c99"
   },
   "valor": "3925.6",
   "unidad": "COP",
@@ -381,7 +381,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0549"
+   "$oid": "6afc74a42423c94c88500c9a"
   },
   "valor": "3915.56",
   "unidad": "COP",
@@ -391,7 +391,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed054a"
+   "$oid": "6afc74a42423c94c88500c9b"
   },
   "valor": "3889.05",
   "unidad": "COP",
@@ -401,7 +401,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed054b"
+   "$oid": "6afc74a42423c94c88500c9c"
   },
   "valor": "3928.11",
   "unidad": "COP",
@@ -411,7 +411,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed054c"
+   "$oid": "6afc74a42423c94c88500c9d"
   },
   "valor": "3975.74",
   "unidad": "COP",
@@ -421,7 +421,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed054d"
+   "$oid": "6afc74a42423c94c88500c9e"
   },
   "valor": "3950.57",
   "unidad": "COP",
@@ -431,7 +431,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed054e"
+   "$oid": "6afc74a42423c94c88500c9f"
   },
   "valor": "3962.23",
   "unidad": "COP",
@@ -441,7 +441,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed054f"
+   "$oid": "6afc74a42423c94c88500ca0"
   },
   "valor": "3954.68",
   "unidad": "COP",
@@ -451,7 +451,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0550"
+   "$oid": "6afc74a42423c94c88500ca1"
   },
   "valor": "3926.08",
   "unidad": "COP",
@@ -461,7 +461,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0551"
+   "$oid": "6afc74a42423c94c88500ca2"
   },
   "valor": "3915.28",
   "unidad": "COP",
@@ -471,7 +471,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0552"
+   "$oid": "6afc74a42423c94c88500ca3"
   },
   "valor": "3929.0",
   "unidad": "COP",
@@ -481,7 +481,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0553"
+   "$oid": "6afc74a42423c94c88500ca4"
   },
   "valor": "3916.61",
   "unidad": "COP",
@@ -491,7 +491,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0554"
+   "$oid": "6afc74a42423c94c88500ca5"
   },
   "valor": "3909.89",
   "unidad": "COP",
@@ -501,7 +501,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0555"
+   "$oid": "6afc74a42423c94c88500ca6"
   },
   "valor": "3917.84",
   "unidad": "COP",
@@ -511,7 +511,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0556"
+   "$oid": "6afc74a42423c94c88500ca7"
   },
   "valor": "3912.97",
   "unidad": "COP",
@@ -521,7 +521,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0557"
+   "$oid": "6afc74a42423c94c88500ca8"
   },
   "valor": "3930.26",
   "unidad": "COP",
@@ -531,7 +531,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0558"
+   "$oid": "6afc74a42423c94c88500ca9"
   },
   "valor": "3935.64",
   "unidad": "COP",
@@ -541,7 +541,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0559"
+   "$oid": "6afc74a42423c94c88500caa"
   },
   "valor": "3949.36",
   "unidad": "COP",
@@ -551,7 +551,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed055a"
+   "$oid": "6afc74a42423c94c88500cab"
   },
   "valor": "3963.08",
   "unidad": "COP",
@@ -561,7 +561,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed055b"
+   "$oid": "6afc74a42423c94c88500cac"
   },
   "valor": "3935.59",
   "unidad": "COP",
@@ -571,7 +571,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed055c"
+   "$oid": "6afc74a42423c94c88500cad"
   },
   "valor": "3933.56",
   "unidad": "COP",
@@ -581,7 +581,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed055d"
+   "$oid": "6afc74a42423c94c88500cae"
   },
   "valor": "3931.31",
   "unidad": "COP",
@@ -591,7 +591,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed055e"
+   "$oid": "6afc74a42423c94c88500caf"
   },
   "valor": "3934.82",
   "unidad": "COP",
@@ -601,7 +601,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed055f"
+   "$oid": "6afc74a42423c94c88500cb0"
   },
   "valor": "3948.67",
   "unidad": "COP",
@@ -611,7 +611,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0560"
+   "$oid": "6afc74a42423c94c88500cb1"
   },
   "valor": "3945.32",
   "unidad": "COP",
@@ -621,7 +621,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0561"
+   "$oid": "6afc74a42423c94c88500cb2"
   },
   "valor": "3932.55",
   "unidad": "COP",
@@ -631,7 +631,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0562"
+   "$oid": "6afc74a42423c94c88500cb3"
   },
   "valor": "3920.79",
   "unidad": "COP",
@@ -641,7 +641,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0563"
+   "$oid": "6afc74a42423c94c88500cb4"
   },
   "valor": "3905.45",
   "unidad": "COP",
@@ -651,7 +651,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0564"
+   "$oid": "6afc74a42423c94c88500cb5"
   },
   "valor": "3907.81",
   "unidad": "COP",
@@ -661,7 +661,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0565"
+   "$oid": "6afc74a42423c94c88500cb6"
   },
   "valor": "3919.86",
   "unidad": "COP",
@@ -671,7 +671,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0566"
+   "$oid": "6afc74a42423c94c88500cb7"
   },
   "valor": "3908.02",
   "unidad": "COP",
@@ -681,7 +681,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0567"
+   "$oid": "6afc74a42423c94c88500cb8"
   },
   "valor": "3899.39",
   "unidad": "COP",
@@ -691,7 +691,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0568"
+   "$oid": "6afc74a42423c94c88500cb9"
   },
   "valor": "3884.64",
   "unidad": "COP",
@@ -701,7 +701,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0569"
+   "$oid": "6afc74a42423c94c88500cba"
   },
   "valor": "3880.59",
   "unidad": "COP",
@@ -711,7 +711,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed056a"
+   "$oid": "6afc74a42423c94c88500cbb"
   },
   "valor": "3894.37",
   "unidad": "COP",
@@ -721,7 +721,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed056b"
+   "$oid": "6afc74a42423c94c88500cbc"
   },
   "valor": "3886.94",
   "unidad": "COP",
@@ -731,7 +731,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed056c"
+   "$oid": "6afc74a42423c94c88500cbd"
   },
   "valor": "3888.02",
   "unidad": "COP",
@@ -741,7 +741,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed056d"
+   "$oid": "6afc74a42423c94c88500cbe"
   },
   "valor": "3901.51",
   "unidad": "COP",
@@ -751,7 +751,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed056e"
+   "$oid": "6afc74a42423c94c88500cbf"
   },
   "valor": "3865.97",
   "unidad": "COP",
@@ -761,7 +761,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed056f"
+   "$oid": "6afc74a42423c94c88500cc0"
   },
   "valor": "3842.3",
   "unidad": "COP",
@@ -771,7 +771,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0570"
+   "$oid": "6afc74a42423c94c88500cc1"
   },
   "valor": "3863.05",
   "unidad": "COP",
@@ -781,7 +781,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0571"
+   "$oid": "6afc74a42423c94c88500cc2"
   },
   "valor": "3845.22",
   "unidad": "COP",
@@ -791,7 +791,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0572"
+   "$oid": "6afc74a42423c94c88500cc3"
   },
   "valor": "3812.13",
   "unidad": "COP",
@@ -801,7 +801,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0573"
+   "$oid": "6afc74a42423c94c88500cc4"
   },
   "valor": "3775.37",
   "unidad": "COP",
@@ -811,7 +811,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0574"
+   "$oid": "6afc74a42423c94c88500cc5"
   },
   "valor": "3764.23",
   "unidad": "COP",
@@ -821,7 +821,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0575"
+   "$oid": "6afc74a42423c94c88500cc6"
   },
   "valor": "3768.8",
   "unidad": "COP",
@@ -831,7 +831,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0576"
+   "$oid": "6afc74a42423c94c88500cc7"
   },
   "valor": "3763.43",
   "unidad": "COP",
@@ -841,7 +841,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0577"
+   "$oid": "6afc74a42423c94c88500cc8"
   },
   "valor": "3815.44",
   "unidad": "COP",
@@ -851,7 +851,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0578"
+   "$oid": "6afc74a42423c94c88500cc9"
   },
   "valor": "3820.1",
   "unidad": "COP",
@@ -861,7 +861,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0579"
+   "$oid": "6afc74a42423c94c88500cca"
   },
   "valor": "3864.97",
   "unidad": "COP",
@@ -871,7 +871,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed057a"
+   "$oid": "6afc74a42423c94c88500ccb"
   },
   "valor": "3889.58",
   "unidad": "COP",
@@ -881,7 +881,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed057b"
+   "$oid": "6afc74a42423c94c88500ccc"
   },
   "valor": "3938.11",
   "unidad": "COP",
@@ -891,7 +891,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed057c"
+   "$oid": "6afc74a42423c94c88500ccd"
   },
   "valor": "3901.94",
   "unidad": "COP",
@@ -901,7 +901,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed057d"
+   "$oid": "6afc74a42423c94c88500cce"
   },
   "valor": "3918.23",
   "unidad": "COP",
@@ -911,7 +911,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed057e"
+   "$oid": "6afc74a42423c94c88500ccf"
   },
   "valor": "3937.13",
   "unidad": "COP",
@@ -921,7 +921,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed057f"
+   "$oid": "6afc74a42423c94c88500cd0"
   },
   "valor": "3924.82",
   "unidad": "COP",
@@ -931,7 +931,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0580"
+   "$oid": "6afc74a42423c94c88500cd1"
   },
   "valor": "3910.01",
   "unidad": "COP",
@@ -941,7 +941,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0581"
+   "$oid": "6afc74a42423c94c88500cd2"
   },
   "valor": "3935.65",
   "unidad": "COP",
@@ -951,7 +951,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0582"
+   "$oid": "6afc74a42423c94c88500cd3"
   },
   "valor": "3964.59",
   "unidad": "COP",
@@ -961,7 +961,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0583"
+   "$oid": "6afc74a42423c94c88500cd4"
   },
   "valor": "3926.02",
   "unidad": "COP",
@@ -971,7 +971,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0584"
+   "$oid": "6afc74a42423c94c88500cd5"
   },
   "valor": "3873.44",
   "unidad": "COP",
@@ -981,7 +981,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0585"
+   "$oid": "6afc74a42423c94c88500cd6"
   },
   "valor": "3899.07",
   "unidad": "COP",
@@ -991,7 +991,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0586"
+   "$oid": "6afc74a42423c94c88500cd7"
   },
   "valor": "3898.62",
   "unidad": "COP",
@@ -1001,7 +1001,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0587"
+   "$oid": "6afc74a42423c94c88500cd8"
   },
   "valor": "3895.41",
   "unidad": "COP",
@@ -1011,7 +1011,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0588"
+   "$oid": "6afc74a42423c94c88500cd9"
   },
   "valor": "3894.23",
   "unidad": "COP",
@@ -1021,7 +1021,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0589"
+   "$oid": "6afc74a42423c94c88500cda"
   },
   "valor": "3884.84",
   "unidad": "COP",
@@ -1031,7 +1031,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed058a"
+   "$oid": "6afc74a42423c94c88500cdb"
   },
   "valor": "3902.63",
   "unidad": "COP",
@@ -1041,7 +1041,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed058b"
+   "$oid": "6afc74a42423c94c88500cdc"
   },
   "valor": "3900.38",
   "unidad": "COP",
@@ -1051,7 +1051,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed058c"
+   "$oid": "6afc74a42423c94c88500cdd"
   },
   "valor": "3888.21",
   "unidad": "COP",
@@ -1061,7 +1061,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed058d"
+   "$oid": "6afc74a42423c94c88500cde"
   },
   "valor": "3861.82",
   "unidad": "COP",
@@ -1071,7 +1071,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed058e"
+   "$oid": "6afc74a42423c94c88500cdf"
   },
   "valor": "3825.42",
   "unidad": "COP",
@@ -1081,7 +1081,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed058f"
+   "$oid": "6afc74a42423c94c88500ce0"
   },
   "valor": "3828.98",
   "unidad": "COP",
@@ -1091,7 +1091,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0590"
+   "$oid": "6afc74a42423c94c88500ce1"
   },
   "valor": "3832.26",
   "unidad": "COP",
@@ -1101,7 +1101,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0591"
+   "$oid": "6afc74a42423c94c88500ce2"
   },
   "valor": "3822.39",
   "unidad": "COP",
@@ -1111,7 +1111,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0592"
+   "$oid": "6afc74a42423c94c88500ce3"
   },
   "valor": "3814.94",
   "unidad": "COP",
@@ -1121,7 +1121,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0593"
+   "$oid": "6afc74a42423c94c88500ce4"
   },
   "valor": "3829.59",
   "unidad": "COP",
@@ -1131,7 +1131,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0594"
+   "$oid": "6afc74a42423c94c88500ce5"
   },
   "valor": "3837.58",
   "unidad": "COP",
@@ -1141,7 +1141,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0595"
+   "$oid": "6afc74a42423c94c88500ce6"
   },
   "valor": "3878.07",
   "unidad": "COP",
@@ -1151,7 +1151,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0596"
+   "$oid": "6afc74a42423c94c88500ce7"
   },
   "valor": "3853.09",
   "unidad": "COP",
@@ -1161,7 +1161,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0597"
+   "$oid": "6afc74a42423c94c88500ce8"
   },
   "valor": "3867.02",
   "unidad": "COP",
@@ -1171,7 +1171,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0598"
+   "$oid": "6afc74a42423c94c88500ce9"
   },
   "valor": "3874.32",
   "unidad": "COP",
@@ -1181,7 +1181,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0599"
+   "$oid": "6afc74a42423c94c88500cea"
   },
   "valor": "3860.92",
   "unidad": "COP",
@@ -1191,7 +1191,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed059a"
+   "$oid": "6afc74a42423c94c88500ceb"
   },
   "valor": "3909.65",
   "unidad": "COP",
@@ -1201,7 +1201,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed059b"
+   "$oid": "6afc74a42423c94c88500cec"
   },
   "valor": "3927.91",
   "unidad": "COP",
@@ -1211,7 +1211,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed059c"
+   "$oid": "6afc74a42423c94c88500ced"
   },
   "valor": "3938.53",
   "unidad": "COP",
@@ -1221,7 +1221,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed059d"
+   "$oid": "6afc74a42423c94c88500cee"
   },
   "valor": "3944.14",
   "unidad": "COP",
@@ -1231,7 +1231,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed059e"
+   "$oid": "6afc74a42423c94c88500cef"
   },
   "valor": "3960.83",
   "unidad": "COP",
@@ -1241,7 +1241,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed059f"
+   "$oid": "6afc74a42423c94c88500cf0"
   },
   "valor": "4023.26",
   "unidad": "COP",
@@ -1251,7 +1251,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05a0"
+   "$oid": "6afc74a42423c94c88500cf1"
   },
   "valor": "4107.52",
   "unidad": "COP",
@@ -1261,7 +1261,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05a1"
+   "$oid": "6afc74a42423c94c88500cf2"
   },
   "valor": "4151.55",
   "unidad": "COP",
@@ -1271,7 +1271,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05a2"
+   "$oid": "6afc74a42423c94c88500cf3"
   },
   "valor": "4144.63",
   "unidad": "COP",
@@ -1281,7 +1281,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05a3"
+   "$oid": "6afc74a42423c94c88500cf4"
   },
   "valor": "4101.87",
   "unidad": "COP",
@@ -1291,7 +1291,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05a4"
+   "$oid": "6afc74a42423c94c88500cf5"
   },
   "valor": "4175.96",
   "unidad": "COP",
@@ -1301,7 +1301,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05a5"
+   "$oid": "6afc74a42423c94c88500cf6"
   },
   "valor": "4143.72",
   "unidad": "COP",
@@ -1311,7 +1311,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05a6"
+   "$oid": "6afc74a42423c94c88500cf7"
   },
   "valor": "4104.38",
   "unidad": "COP",
@@ -1321,7 +1321,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05a7"
+   "$oid": "6afc74a42423c94c88500cf8"
   },
   "valor": "4093.66",
   "unidad": "COP",
@@ -1331,7 +1331,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05a8"
+   "$oid": "6afc74a42423c94c88500cf9"
   },
   "valor": "4133.61",
   "unidad": "COP",
@@ -1341,7 +1341,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05a9"
+   "$oid": "6afc74a42423c94c88500cfa"
   },
   "valor": "4158.1",
   "unidad": "COP",
@@ -1351,7 +1351,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05aa"
+   "$oid": "6afc74a42423c94c88500cfb"
   },
   "valor": "4148.04",
   "unidad": "COP",
@@ -1361,7 +1361,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ab"
+   "$oid": "6afc74a42423c94c88500cfc"
   },
   "valor": "4130.03",
   "unidad": "COP",
@@ -1371,7 +1371,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ac"
+   "$oid": "6afc74a42423c94c88500cfd"
   },
   "valor": "4096.09",
   "unidad": "COP",
@@ -1381,7 +1381,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ad"
+   "$oid": "6afc74a42423c94c88500cfe"
   },
   "valor": "4093.72",
   "unidad": "COP",
@@ -1391,7 +1391,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ae"
+   "$oid": "6afc74a42423c94c88500cff"
   },
   "valor": "4052.99",
   "unidad": "COP",
@@ -1401,7 +1401,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05af"
+   "$oid": "6afc74a42423c94c88500d00"
   },
   "valor": "4022.05",
   "unidad": "COP",
@@ -1411,7 +1411,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05b0"
+   "$oid": "6afc74a42423c94c88500d01"
   },
   "valor": "3979.91",
   "unidad": "COP",
@@ -1421,7 +1421,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05b1"
+   "$oid": "6afc74a42423c94c88500d02"
   },
   "valor": "3968.87",
   "unidad": "COP",
@@ -1431,7 +1431,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05b2"
+   "$oid": "6afc74a42423c94c88500d03"
   },
   "valor": "3944.97",
   "unidad": "COP",
@@ -1441,7 +1441,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05b3"
+   "$oid": "6afc74a42423c94c88500d04"
   },
   "valor": "3948.41",
   "unidad": "COP",
@@ -1451,7 +1451,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05b4"
+   "$oid": "6afc74a42423c94c88500d05"
   },
   "valor": "3977.63",
   "unidad": "COP",
@@ -1461,7 +1461,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05b5"
+   "$oid": "6afc74a42423c94c88500d06"
   },
   "valor": "4011.19",
   "unidad": "COP",
@@ -1471,7 +1471,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05b6"
+   "$oid": "6afc74a42423c94c88500d07"
   },
   "valor": "4036.73",
   "unidad": "COP",
@@ -1481,7 +1481,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05b7"
+   "$oid": "6afc74a42423c94c88500d08"
   },
   "valor": "4040.2",
   "unidad": "COP",
@@ -1491,7 +1491,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05b8"
+   "$oid": "6afc74a42423c94c88500d09"
   },
   "valor": "4006.01",
   "unidad": "COP",
@@ -1501,7 +1501,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05b9"
+   "$oid": "6afc74a42423c94c88500d0a"
   },
   "valor": "4010.53",
   "unidad": "COP",
@@ -1511,7 +1511,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ba"
+   "$oid": "6afc74a42423c94c88500d0b"
   },
   "valor": "4047.66",
   "unidad": "COP",
@@ -1521,7 +1521,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05bb"
+   "$oid": "6afc74a42423c94c88500d0c"
   },
   "valor": "4035.0",
   "unidad": "COP",
@@ -1531,7 +1531,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05bc"
+   "$oid": "6afc74a42423c94c88500d0d"
   },
   "valor": "4014.56",
   "unidad": "COP",
@@ -1541,7 +1541,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05bd"
+   "$oid": "6afc74a42423c94c88500d0e"
   },
   "valor": "4059.91",
   "unidad": "COP",
@@ -1551,7 +1551,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05be"
+   "$oid": "6afc74a42423c94c88500d0f"
   },
   "valor": "4089.05",
   "unidad": "COP",
@@ -1561,7 +1561,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05bf"
+   "$oid": "6afc74a42423c94c88500d10"
   },
   "valor": "4060.34",
   "unidad": "COP",
@@ -1571,7 +1571,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05c0"
+   "$oid": "6afc74a42423c94c88500d11"
   },
   "valor": "4057.14",
   "unidad": "COP",
@@ -1581,7 +1581,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05c1"
+   "$oid": "6afc74a42423c94c88500d12"
   },
   "valor": "4110.37",
   "unidad": "COP",
@@ -1591,7 +1591,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05c2"
+   "$oid": "6afc74a42423c94c88500d13"
   },
   "valor": "4184.3",
   "unidad": "COP",
@@ -1601,7 +1601,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05c3"
+   "$oid": "6afc74a42423c94c88500d14"
   },
   "valor": "4136.27",
   "unidad": "COP",
@@ -1611,7 +1611,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05c4"
+   "$oid": "6afc74a42423c94c88500d15"
   },
   "valor": "4100.79",
   "unidad": "COP",
@@ -1621,7 +1621,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05c5"
+   "$oid": "6afc74a42423c94c88500d16"
   },
   "valor": "4064.51",
   "unidad": "COP",
@@ -1631,7 +1631,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05c6"
+   "$oid": "6afc74a42423c94c88500d17"
   },
   "valor": "4063.26",
   "unidad": "COP",
@@ -1641,7 +1641,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05c7"
+   "$oid": "6afc74a42423c94c88500d18"
   },
   "valor": "4038.87",
   "unidad": "COP",
@@ -1651,7 +1651,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05c8"
+   "$oid": "6afc74a42423c94c88500d19"
   },
   "valor": "4021.1",
   "unidad": "COP",
@@ -1661,7 +1661,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05c9"
+   "$oid": "6afc74a42423c94c88500d1a"
   },
   "valor": "4014.18",
   "unidad": "COP",
@@ -1671,7 +1671,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ca"
+   "$oid": "6afc74a42423c94c88500d1b"
   },
   "valor": "4021.63",
   "unidad": "COP",
@@ -1681,7 +1681,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05cb"
+   "$oid": "6afc74a42423c94c88500d1c"
   },
   "valor": "4011.37",
   "unidad": "COP",
@@ -1691,7 +1691,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05cc"
+   "$oid": "6afc74a42423c94c88500d1d"
   },
   "valor": "4013.98",
   "unidad": "COP",
@@ -1701,7 +1701,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05cd"
+   "$oid": "6afc74a42423c94c88500d1e"
   },
   "valor": "4064.03",
   "unidad": "COP",
@@ -1711,7 +1711,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ce"
+   "$oid": "6afc74a42423c94c88500d1f"
   },
   "valor": "4030.52",
   "unidad": "COP",
@@ -1721,7 +1721,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05cf"
+   "$oid": "6afc74a42423c94c88500d20"
   },
   "valor": "4023.92",
   "unidad": "COP",
@@ -1731,7 +1731,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05d0"
+   "$oid": "6afc74a42423c94c88500d21"
   },
   "valor": "4045.64",
   "unidad": "COP",
@@ -1741,7 +1741,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05d1"
+   "$oid": "6afc74a42423c94c88500d22"
   },
   "valor": "4065.34",
   "unidad": "COP",
@@ -1751,7 +1751,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05d2"
+   "$oid": "6afc74a42423c94c88500d23"
   },
   "valor": "4132.11",
   "unidad": "COP",
@@ -1761,7 +1761,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05d3"
+   "$oid": "6afc74a42423c94c88500d24"
   },
   "valor": "4160.31",
   "unidad": "COP",
@@ -1771,7 +1771,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05d4"
+   "$oid": "6afc74a42423c94c88500d25"
   },
   "valor": "4185.8",
   "unidad": "COP",
@@ -1781,7 +1781,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05d5"
+   "$oid": "6afc74a42423c94c88500d26"
   },
   "valor": "4185.82",
   "unidad": "COP",
@@ -1791,7 +1791,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05d6"
+   "$oid": "6afc74a42423c94c88500d27"
   },
   "valor": "4172.5",
   "unidad": "COP",
@@ -1801,7 +1801,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05d7"
+   "$oid": "6afc74a42423c94c88500d28"
   },
   "valor": "4149.79",
   "unidad": "COP",
@@ -1811,7 +1811,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05d8"
+   "$oid": "6afc74a42423c94c88500d29"
   },
   "valor": "4220.68",
   "unidad": "COP",
@@ -1821,7 +1821,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05d9"
+   "$oid": "6afc74a42423c94c88500d2a"
   },
   "valor": "4285.61",
   "unidad": "COP",
@@ -1831,7 +1831,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05da"
+   "$oid": "6afc74a42423c94c88500d2b"
   },
   "valor": "4278.28",
   "unidad": "COP",
@@ -1841,7 +1841,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05db"
+   "$oid": "6afc74a42423c94c88500d2c"
   },
   "valor": "4236.63",
   "unidad": "COP",
@@ -1851,7 +1851,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05dc"
+   "$oid": "6afc74a42423c94c88500d2d"
   },
   "valor": "4172.13",
   "unidad": "COP",
@@ -1861,7 +1861,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05dd"
+   "$oid": "6afc74a42423c94c88500d2e"
   },
   "valor": "4220.58",
   "unidad": "COP",
@@ -1871,7 +1871,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05de"
+   "$oid": "6afc74a42423c94c88500d2f"
   },
   "valor": "4239.33",
   "unidad": "COP",
@@ -1881,7 +1881,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05df"
+   "$oid": "6afc74a42423c94c88500d30"
   },
   "valor": "4189.46",
   "unidad": "COP",
@@ -1891,7 +1891,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05e0"
+   "$oid": "6afc74a42423c94c88500d31"
   },
   "valor": "4175.1",
   "unidad": "COP",
@@ -1901,7 +1901,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05e1"
+   "$oid": "6afc74a42423c94c88500d32"
   },
   "valor": "4156.89",
   "unidad": "COP",
@@ -1911,7 +1911,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05e2"
+   "$oid": "6afc74a42423c94c88500d33"
   },
   "valor": "4155.31",
   "unidad": "COP",
@@ -1921,7 +1921,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05e3"
+   "$oid": "6afc74a42423c94c88500d34"
   },
   "valor": "4139.43",
   "unidad": "COP",
@@ -1931,7 +1931,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05e4"
+   "$oid": "6afc74a42423c94c88500d35"
   },
   "valor": "4192.74",
   "unidad": "COP",
@@ -1941,7 +1941,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05e5"
+   "$oid": "6afc74a42423c94c88500d36"
   },
   "valor": "4188.11",
   "unidad": "COP",
@@ -1951,7 +1951,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05e6"
+   "$oid": "6afc74a42423c94c88500d37"
   },
   "valor": "4164.21",
   "unidad": "COP",
@@ -1961,7 +1961,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05e7"
+   "$oid": "6afc74a42423c94c88500d38"
   },
   "valor": "4178.3",
   "unidad": "COP",
@@ -1971,7 +1971,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05e8"
+   "$oid": "6afc74a42423c94c88500d39"
   },
   "valor": "4224.21",
   "unidad": "COP",
@@ -1981,7 +1981,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05e9"
+   "$oid": "6afc74a42423c94c88500d3a"
   },
   "valor": "4203.43",
   "unidad": "COP",
@@ -1991,7 +1991,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ea"
+   "$oid": "6afc74a42423c94c88500d3b"
   },
   "valor": "4197.73",
   "unidad": "COP",
@@ -2001,7 +2001,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05eb"
+   "$oid": "6afc74a42423c94c88500d3c"
   },
   "valor": "4173.66",
   "unidad": "COP",
@@ -2011,7 +2011,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ec"
+   "$oid": "6afc74a42423c94c88500d3d"
   },
   "valor": "4194.97",
   "unidad": "COP",
@@ -2021,7 +2021,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ed"
+   "$oid": "6afc74a42423c94c88500d3e"
   },
   "valor": "4233.54",
   "unidad": "COP",
@@ -2031,7 +2031,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ee"
+   "$oid": "6afc74a42423c94c88500d3f"
   },
   "valor": "4233.17",
   "unidad": "COP",
@@ -2041,7 +2041,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ef"
+   "$oid": "6afc74a42423c94c88500d40"
   },
   "valor": "4217.4",
   "unidad": "COP",
@@ -2051,7 +2051,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05f0"
+   "$oid": "6afc74a42423c94c88500d41"
   },
   "valor": "4192.56",
   "unidad": "COP",
@@ -2061,7 +2061,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05f1"
+   "$oid": "6afc74a42423c94c88500d42"
   },
   "valor": "4244.84",
   "unidad": "COP",
@@ -2071,7 +2071,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05f2"
+   "$oid": "6afc74a42423c94c88500d43"
   },
   "valor": "4266.2",
   "unidad": "COP",
@@ -2081,7 +2081,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05f3"
+   "$oid": "6afc74a42423c94c88500d44"
   },
   "valor": "4263.17",
   "unidad": "COP",
@@ -2091,7 +2091,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05f4"
+   "$oid": "6afc74a42423c94c88500d45"
   },
   "valor": "4252.15",
   "unidad": "COP",
@@ -2101,7 +2101,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05f5"
+   "$oid": "6afc74a42423c94c88500d46"
   },
   "valor": "4286.96",
   "unidad": "COP",
@@ -2111,7 +2111,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05f6"
+   "$oid": "6afc74a42423c94c88500d47"
   },
   "valor": "4262.3",
   "unidad": "COP",
@@ -2121,7 +2121,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05f7"
+   "$oid": "6afc74a42423c94c88500d48"
   },
   "valor": "4293.91",
   "unidad": "COP",
@@ -2131,7 +2131,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05f8"
+   "$oid": "6afc74a42423c94c88500d49"
   },
   "valor": "4311.83",
   "unidad": "COP",
@@ -2141,7 +2141,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05f9"
+   "$oid": "6afc74a42423c94c88500d4a"
   },
   "valor": "4316.73",
   "unidad": "COP",
@@ -2151,7 +2151,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05fa"
+   "$oid": "6afc74a42423c94c88500d4b"
   },
   "valor": "4342.9",
   "unidad": "COP",
@@ -2161,7 +2161,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05fb"
+   "$oid": "6afc74a42423c94c88500d4c"
   },
   "valor": "4367.39",
   "unidad": "COP",
@@ -2171,7 +2171,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05fc"
+   "$oid": "6afc74a42423c94c88500d4d"
   },
   "valor": "4413.46",
   "unidad": "COP",
@@ -2181,7 +2181,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05fd"
+   "$oid": "6afc74a42423c94c88500d4e"
   },
   "valor": "4409.57",
   "unidad": "COP",
@@ -2191,7 +2191,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05fe"
+   "$oid": "6afc74a42423c94c88500d4f"
   },
   "valor": "4414.0",
   "unidad": "COP",
@@ -2201,7 +2201,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed05ff"
+   "$oid": "6afc74a42423c94c88500d50"
   },
   "valor": "4421.86",
   "unidad": "COP",
@@ -2211,7 +2211,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0600"
+   "$oid": "6afc74a42423c94c88500d51"
   },
   "valor": "4430.4",
   "unidad": "COP",
@@ -2221,7 +2221,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0601"
+   "$oid": "6afc74a42423c94c88500d52"
   },
   "valor": "4344.55",
   "unidad": "COP",
@@ -2231,7 +2231,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0602"
+   "$oid": "6afc74a42423c94c88500d53"
   },
   "valor": "4346.7",
   "unidad": "COP",
@@ -2241,7 +2241,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0603"
+   "$oid": "6afc74a42423c94c88500d54"
   },
   "valor": "4413.79",
   "unidad": "COP",
@@ -2251,7 +2251,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0604"
+   "$oid": "6afc74a42423c94c88500d55"
   },
   "valor": "4478.21",
   "unidad": "COP",
@@ -2261,7 +2261,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0605"
+   "$oid": "6afc74a42423c94c88500d56"
   },
   "valor": "4475.57",
   "unidad": "COP",
@@ -2271,7 +2271,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0606"
+   "$oid": "6afc74a42423c94c88500d57"
   },
   "valor": "4454.68",
   "unidad": "COP",
@@ -2281,7 +2281,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0607"
+   "$oid": "6afc74a42423c94c88500d58"
   },
   "valor": "4400.69",
   "unidad": "COP",
@@ -2291,7 +2291,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0608"
+   "$oid": "6afc74a42423c94c88500d59"
   },
   "valor": "4401.34",
   "unidad": "COP",
@@ -2301,7 +2301,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0609"
+   "$oid": "6afc74a42423c94c88500d5a"
   },
   "valor": "4414.06",
   "unidad": "COP",
@@ -2311,7 +2311,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed060a"
+   "$oid": "6afc74a42423c94c88500d5b"
   },
   "valor": "4387.09",
   "unidad": "COP",
@@ -2321,7 +2321,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed060b"
+   "$oid": "6afc74a42423c94c88500d5c"
   },
   "valor": "4418.58",
   "unidad": "COP",
@@ -2331,7 +2331,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed060c"
+   "$oid": "6afc74a42423c94c88500d5d"
   },
   "valor": "4381.99",
   "unidad": "COP",
@@ -2341,7 +2341,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed060d"
+   "$oid": "6afc74a42423c94c88500d5e"
   },
   "valor": "4405.96",
   "unidad": "COP",
@@ -2351,7 +2351,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed060e"
+   "$oid": "6afc74a42423c94c88500d5f"
   },
   "valor": "4406.16",
   "unidad": "COP",
@@ -2361,7 +2361,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed060f"
+   "$oid": "6afc74a42423c94c88500d60"
   },
   "valor": "4419.59",
   "unidad": "COP",
@@ -2371,7 +2371,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0610"
+   "$oid": "6afc74a42423c94c88500d61"
   },
   "valor": "4462.97",
   "unidad": "COP",
@@ -2381,7 +2381,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0611"
+   "$oid": "6afc74a42423c94c88500d62"
   },
   "valor": "4443.53",
   "unidad": "COP",
@@ -2391,7 +2391,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0612"
+   "$oid": "6afc74a42423c94c88500d63"
   },
   "valor": "4424.56",
   "unidad": "COP",
@@ -2401,7 +2401,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0613"
+   "$oid": "6afc74a42423c94c88500d64"
   },
   "valor": "4407.13",
   "unidad": "COP",
@@ -2411,7 +2411,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0614"
+   "$oid": "6afc74a42423c94c88500d65"
   },
   "valor": "4396.52",
   "unidad": "COP",
@@ -2421,7 +2421,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0615"
+   "$oid": "6afc74a42423c94c88500d66"
   },
   "valor": "4379.71",
   "unidad": "COP",
@@ -2431,7 +2431,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0616"
+   "$oid": "6afc74a42423c94c88500d67"
   },
   "valor": "4377.34",
   "unidad": "COP",
@@ -2441,7 +2441,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0617"
+   "$oid": "6afc74a42423c94c88500d68"
   },
   "valor": "4361.22",
   "unidad": "COP",
@@ -2451,7 +2451,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0618"
+   "$oid": "6afc74a42423c94c88500d69"
   },
   "valor": "4335.2",
   "unidad": "COP",
@@ -2461,7 +2461,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0619"
+   "$oid": "6afc74a42423c94c88500d6a"
   },
   "valor": "4341.32",
   "unidad": "COP",
@@ -2471,7 +2471,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed061a"
+   "$oid": "6afc74a42423c94c88500d6b"
   },
   "valor": "4324.19",
   "unidad": "COP",
@@ -2481,7 +2481,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed061b"
+   "$oid": "6afc74a42423c94c88500d6c"
   },
   "valor": "4345.32",
   "unidad": "COP",
@@ -2491,7 +2491,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed061c"
+   "$oid": "6afc74a42423c94c88500d6d"
   },
   "valor": "4359.11",
   "unidad": "COP",
@@ -2501,7 +2501,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed061d"
+   "$oid": "6afc74a42423c94c88500d6e"
   },
   "valor": "4394.5",
   "unidad": "COP",
@@ -2511,7 +2511,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed061e"
+   "$oid": "6afc74a42423c94c88500d6f"
   },
   "valor": "4374.62",
   "unidad": "COP",
@@ -2521,7 +2521,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed061f"
+   "$oid": "6afc74a42423c94c88500d70"
   },
   "valor": "4395.44",
   "unidad": "COP",
@@ -2531,7 +2531,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0620"
+   "$oid": "6afc74a42423c94c88500d71"
   },
   "valor": "4380.94",
   "unidad": "COP",
@@ -2541,7 +2541,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0621"
+   "$oid": "6afc74a42423c94c88500d72"
   },
   "valor": "4375.86",
   "unidad": "COP",
@@ -2551,7 +2551,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0622"
+   "$oid": "6afc74a42423c94c88500d73"
   },
   "valor": "4401.98",
   "unidad": "COP",
@@ -2561,7 +2561,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0623"
+   "$oid": "6afc74a42423c94c88500d74"
   },
   "valor": "4409.15",
   "unidad": "COP",
@@ -2571,7 +2571,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0624"
+   "$oid": "6afc74a42423c94c88500d75"
   },
   "valor": "4410.5",
   "unidad": "COP",
@@ -2581,7 +2581,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0625"
+   "$oid": "6afc74a42423c94c88500d76"
   },
   "valor": "4355.51",
   "unidad": "COP",
@@ -2591,7 +2591,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0626"
+   "$oid": "6afc74a42423c94c88500d77"
   },
   "valor": "4342.31",
   "unidad": "COP",
@@ -2601,7 +2601,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0627"
+   "$oid": "6afc74a42423c94c88500d78"
   },
   "valor": "4347.42",
   "unidad": "COP",
@@ -2611,7 +2611,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0628"
+   "$oid": "6afc74a42423c94c88500d79"
   },
   "valor": "4321.19",
   "unidad": "COP",
@@ -2621,7 +2621,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0629"
+   "$oid": "6afc74a42423c94c88500d7a"
   },
   "valor": "4343.48",
   "unidad": "COP",
@@ -2631,7 +2631,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed062a"
+   "$oid": "6afc74a42423c94c88500d7b"
   },
   "valor": "4331.23",
   "unidad": "COP",
@@ -2641,7 +2641,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed062b"
+   "$oid": "6afc74a42423c94c88500d7c"
   },
   "valor": "4300.24",
   "unidad": "COP",
@@ -2651,7 +2651,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed062c"
+   "$oid": "6afc74a42423c94c88500d7d"
   },
   "valor": "4294.11",
   "unidad": "COP",
@@ -2661,7 +2661,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed062d"
+   "$oid": "6afc74a42423c94c88500d7e"
   },
   "valor": "4338.15",
   "unidad": "COP",
@@ -2671,7 +2671,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed062e"
+   "$oid": "6afc74a42423c94c88500d7f"
   },
   "valor": "4344.27",
   "unidad": "COP",
@@ -2681,7 +2681,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed062f"
+   "$oid": "6afc74a42423c94c88500d80"
   },
   "valor": "4307.07",
   "unidad": "COP",
@@ -2691,7 +2691,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0630"
+   "$oid": "6afc74a42423c94c88500d81"
   },
   "valor": "4278.01",
   "unidad": "COP",
@@ -2701,7 +2701,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0631"
+   "$oid": "6afc74a42423c94c88500d82"
   },
   "valor": "4245.65",
   "unidad": "COP",
@@ -2711,7 +2711,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0632"
+   "$oid": "6afc74a42423c94c88500d83"
   },
   "valor": "4188.46",
   "unidad": "COP",
@@ -2721,7 +2721,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0633"
+   "$oid": "6afc74a42423c94c88500d84"
   },
   "valor": "4220.86",
   "unidad": "COP",
@@ -2731,7 +2731,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0634"
+   "$oid": "6afc74a42423c94c88500d85"
   },
   "valor": "4219.0",
   "unidad": "COP",
@@ -2741,7 +2741,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0635"
+   "$oid": "6afc74a42423c94c88500d86"
   },
   "valor": "4195.6",
   "unidad": "COP",
@@ -2751,7 +2751,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0636"
+   "$oid": "6afc74a42423c94c88500d87"
   },
   "valor": "4170.01",
   "unidad": "COP",
@@ -2761,7 +2761,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0637"
+   "$oid": "6afc74a42423c94c88500d88"
   },
   "valor": "4183.93",
   "unidad": "COP",
@@ -2771,7 +2771,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0638"
+   "$oid": "6afc74a42423c94c88500d89"
   },
   "valor": "4198.66",
   "unidad": "COP",
@@ -2781,7 +2781,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0639"
+   "$oid": "6afc74a42423c94c88500d8a"
   },
   "valor": "4153.54",
   "unidad": "COP",
@@ -2791,7 +2791,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed063a"
+   "$oid": "6afc74a42423c94c88500d8b"
   },
   "valor": "4180.06",
   "unidad": "COP",
@@ -2801,7 +2801,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed063b"
+   "$oid": "6afc74a42423c94c88500d8c"
   },
   "valor": "4150.99",
   "unidad": "COP",
@@ -2811,7 +2811,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed063c"
+   "$oid": "6afc74a42423c94c88500d8d"
   },
   "valor": "4113.7",
   "unidad": "COP",
@@ -2821,7 +2821,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed063d"
+   "$oid": "6afc74a42423c94c88500d8e"
   },
   "valor": "4132.93",
   "unidad": "COP",
@@ -2831,7 +2831,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed063e"
+   "$oid": "6afc74a42423c94c88500d8f"
   },
   "valor": "4153.8",
   "unidad": "COP",
@@ -2841,7 +2841,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed063f"
+   "$oid": "6afc74a42423c94c88500d90"
   },
   "valor": "4165.07",
   "unidad": "COP",
@@ -2851,7 +2851,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0640"
+   "$oid": "6afc74a42423c94c88500d91"
   },
   "valor": "4161.46",
   "unidad": "COP",
@@ -2861,7 +2861,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0641"
+   "$oid": "6afc74a42423c94c88500d92"
   },
   "valor": "4100.66",
   "unidad": "COP",
@@ -2871,7 +2871,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0642"
+   "$oid": "6afc74a42423c94c88500d93"
   },
   "valor": "4111.38",
   "unidad": "COP",
@@ -2881,7 +2881,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0643"
+   "$oid": "6afc74a42423c94c88500d94"
   },
   "valor": "4098.67",
   "unidad": "COP",
@@ -2891,7 +2891,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0644"
+   "$oid": "6afc74a42423c94c88500d95"
   },
   "valor": "4077.56",
   "unidad": "COP",
@@ -2901,7 +2901,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0645"
+   "$oid": "6afc74a42423c94c88500d96"
   },
   "valor": "4073.56",
   "unidad": "COP",
@@ -2911,7 +2911,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0646"
+   "$oid": "6afc74a42423c94c88500d97"
   },
   "valor": "4112.63",
   "unidad": "COP",
@@ -2921,7 +2921,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0647"
+   "$oid": "6afc74a42423c94c88500d98"
   },
   "valor": "4126.54",
   "unidad": "COP",
@@ -2931,7 +2931,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0648"
+   "$oid": "6afc74a42423c94c88500d99"
   },
   "valor": "4123.1",
   "unidad": "COP",
@@ -2941,7 +2941,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0649"
+   "$oid": "6afc74a42423c94c88500d9a"
   },
   "valor": "4120.11",
   "unidad": "COP",
@@ -2951,7 +2951,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed064a"
+   "$oid": "6afc74a42423c94c88500d9b"
   },
   "valor": "4134.04",
   "unidad": "COP",
@@ -2961,7 +2961,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed064b"
+   "$oid": "6afc74a42423c94c88500d9c"
   },
   "valor": "4116.61",
   "unidad": "COP",
@@ -2971,7 +2971,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed064c"
+   "$oid": "6afc74a42423c94c88500d9d"
   },
   "valor": "4144.18",
   "unidad": "COP",
@@ -2981,7 +2981,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed064d"
+   "$oid": "6afc74a42423c94c88500d9e"
   },
   "valor": "4125.63",
   "unidad": "COP",
@@ -2991,7 +2991,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed064e"
+   "$oid": "6afc74a42423c94c88500d9f"
   },
   "valor": "4104.56",
   "unidad": "COP",
@@ -3001,7 +3001,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed064f"
+   "$oid": "6afc74a42423c94c88500da0"
   },
   "valor": "4116.8",
   "unidad": "COP",
@@ -3011,7 +3011,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0650"
+   "$oid": "6afc74a42423c94c88500da1"
   },
   "valor": "4161.96",
   "unidad": "COP",
@@ -3021,7 +3021,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0651"
+   "$oid": "6afc74a42423c94c88500da2"
   },
   "valor": "4152.76",
   "unidad": "COP",
@@ -3031,7 +3031,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0652"
+   "$oid": "6afc74a42423c94c88500da3"
   },
   "valor": "4110.08",
   "unidad": "COP",
@@ -3041,7 +3041,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0653"
+   "$oid": "6afc74a42423c94c88500da4"
   },
   "valor": "4114.18",
   "unidad": "COP",
@@ -3051,7 +3051,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0654"
+   "$oid": "6afc74a42423c94c88500da5"
   },
   "valor": "4102.67",
   "unidad": "COP",
@@ -3061,7 +3061,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0655"
+   "$oid": "6afc74a42423c94c88500da6"
   },
   "valor": "4076.7",
   "unidad": "COP",
@@ -3071,7 +3071,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0656"
+   "$oid": "6afc74a42423c94c88500da7"
   },
   "valor": "4126.03",
   "unidad": "COP",
@@ -3081,7 +3081,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0657"
+   "$oid": "6afc74a42423c94c88500da8"
   },
   "valor": "4143.14",
   "unidad": "COP",
@@ -3091,7 +3091,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0658"
+   "$oid": "6afc74a42423c94c88500da9"
   },
   "valor": "4187.72",
   "unidad": "COP",
@@ -3101,7 +3101,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0659"
+   "$oid": "6afc74a42423c94c88500daa"
   },
   "valor": "4168.82",
   "unidad": "COP",
@@ -3111,7 +3111,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed065a"
+   "$oid": "6afc74a42423c94c88500dab"
   },
   "valor": "4107.14",
   "unidad": "COP",
@@ -3121,7 +3121,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed065b"
+   "$oid": "6afc74a42423c94c88500dac"
   },
   "valor": "4131.42",
   "unidad": "COP",
@@ -3131,7 +3131,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed065c"
+   "$oid": "6afc74a42423c94c88500dad"
   },
   "valor": "4152.59",
   "unidad": "COP",
@@ -3141,7 +3141,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed065d"
+   "$oid": "6afc74a42423c94c88500dae"
   },
   "valor": "4192.57",
   "unidad": "COP",
@@ -3151,7 +3151,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed065e"
+   "$oid": "6afc74a42423c94c88500daf"
   },
   "valor": "4191.79",
   "unidad": "COP",
@@ -3161,7 +3161,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed065f"
+   "$oid": "6afc74a42423c94c88500db0"
   },
   "valor": "4149.24",
   "unidad": "COP",
@@ -3171,7 +3171,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0660"
+   "$oid": "6afc74a42423c94c88500db1"
   },
   "valor": "4146.07",
   "unidad": "COP",
@@ -3181,7 +3181,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0661"
+   "$oid": "6afc74a42423c94c88500db2"
   },
   "valor": "4130.01",
   "unidad": "COP",
@@ -3191,7 +3191,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0662"
+   "$oid": "6afc74a42423c94c88500db3"
   },
   "valor": "4274.03",
   "unidad": "COP",
@@ -3201,7 +3201,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0663"
+   "$oid": "6afc74a42423c94c88500db4"
   },
   "valor": "4374.53",
   "unidad": "COP",
@@ -3211,7 +3211,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0664"
+   "$oid": "6afc74a42423c94c88500db5"
   },
   "valor": "4387.98",
   "unidad": "COP",
@@ -3221,7 +3221,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0665"
+   "$oid": "6afc74a42423c94c88500db6"
   },
   "valor": "4416.69",
   "unidad": "COP",
@@ -3231,7 +3231,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0666"
+   "$oid": "6afc74a42423c94c88500db7"
   },
   "valor": "4351.55",
   "unidad": "COP",
@@ -3241,7 +3241,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0667"
+   "$oid": "6afc74a42423c94c88500db8"
   },
   "valor": "4338.36",
   "unidad": "COP",
@@ -3251,7 +3251,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0668"
+   "$oid": "6afc74a42423c94c88500db9"
   },
   "valor": "4286.17",
   "unidad": "COP",
@@ -3261,7 +3261,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0669"
+   "$oid": "6afc74a42423c94c88500dba"
   },
   "valor": "4329.9",
   "unidad": "COP",
@@ -3271,7 +3271,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed066a"
+   "$oid": "6afc74a42423c94c88500dbb"
   },
   "valor": "4306.54",
   "unidad": "COP",
@@ -3281,7 +3281,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed066b"
+   "$oid": "6afc74a42423c94c88500dbc"
   },
   "valor": "4272.83",
   "unidad": "COP",
@@ -3291,7 +3291,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed066c"
+   "$oid": "6afc74a42423c94c88500dbd"
   },
   "valor": "4283.22",
   "unidad": "COP",
@@ -3301,7 +3301,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed066d"
+   "$oid": "6afc74a42423c94c88500dbe"
   },
   "valor": "4298.31",
   "unidad": "COP",
@@ -3311,7 +3311,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed066e"
+   "$oid": "6afc74a42423c94c88500dbf"
   },
   "valor": "4274.57",
   "unidad": "COP",
@@ -3321,7 +3321,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed066f"
+   "$oid": "6afc74a42423c94c88500dc0"
   },
   "valor": "4239.62",
   "unidad": "COP",
@@ -3331,7 +3331,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0670"
+   "$oid": "6afc74a42423c94c88500dc1"
   },
   "valor": "4227.32",
   "unidad": "COP",
@@ -3341,7 +3341,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0671"
+   "$oid": "6afc74a42423c94c88500dc2"
   },
   "valor": "4198.83",
   "unidad": "COP",
@@ -3351,7 +3351,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0672"
+   "$oid": "6afc74a42423c94c88500dc3"
   },
   "valor": "4222.25",
   "unidad": "COP",
@@ -3361,7 +3361,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0673"
+   "$oid": "6afc74a42423c94c88500dc4"
   },
   "valor": "4243.8",
   "unidad": "COP",
@@ -3371,7 +3371,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0674"
+   "$oid": "6afc74a42423c94c88500dc5"
   },
   "valor": "4283.62",
   "unidad": "COP",
@@ -3381,7 +3381,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0675"
+   "$oid": "6afc74a42423c94c88500dc6"
   },
   "valor": "4305.02",
   "unidad": "COP",
@@ -3391,7 +3391,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0676"
+   "$oid": "6afc74a42423c94c88500dc7"
   },
   "valor": "4306.79",
   "unidad": "COP",
@@ -3401,7 +3401,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0677"
+   "$oid": "6afc74a42423c94c88500dc8"
   },
   "valor": "4260.22",
   "unidad": "COP",
@@ -3411,7 +3411,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0678"
+   "$oid": "6afc74a42423c94c88500dc9"
   },
   "valor": "4239.23",
   "unidad": "COP",
@@ -3421,7 +3421,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0679"
+   "$oid": "6afc74a42423c94c88500dca"
   },
   "valor": "4218.6",
   "unidad": "COP",
@@ -3431,7 +3431,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed067a"
+   "$oid": "6afc74a42423c94c88500dcb"
   },
   "valor": "4204.63",
   "unidad": "COP",
@@ -3441,7 +3441,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed067b"
+   "$oid": "6afc74a42423c94c88500dcc"
   },
   "valor": "4194.18",
   "unidad": "COP",
@@ -3451,7 +3451,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed067c"
+   "$oid": "6afc74a42423c94c88500dcd"
   },
   "valor": "4196.66",
   "unidad": "COP",
@@ -3461,7 +3461,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed067d"
+   "$oid": "6afc74a42423c94c88500dce"
   },
   "valor": "4194.28",
   "unidad": "COP",
@@ -3471,7 +3471,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed067e"
+   "$oid": "6afc74a42423c94c88500dcf"
   },
   "valor": "4168.03",
   "unidad": "COP",
@@ -3481,7 +3481,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed067f"
+   "$oid": "6afc74a42423c94c88500dd0"
   },
   "valor": "4172.76",
   "unidad": "COP",
@@ -3491,7 +3491,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0680"
+   "$oid": "6afc74a42423c94c88500dd1"
   },
   "valor": "4169.47",
   "unidad": "COP",
@@ -3501,7 +3501,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0681"
+   "$oid": "6afc74a42423c94c88500dd2"
   },
   "valor": "4176.54",
   "unidad": "COP",
@@ -3511,7 +3511,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0682"
+   "$oid": "6afc74a42423c94c88500dd3"
   },
   "valor": "4165.41",
   "unidad": "COP",
@@ -3521,7 +3521,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0683"
+   "$oid": "6afc74a42423c94c88500dd4"
   },
   "valor": "4128.15",
   "unidad": "COP",
@@ -3531,7 +3531,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0684"
+   "$oid": "6afc74a42423c94c88500dd5"
   },
   "valor": "4126.44",
   "unidad": "COP",
@@ -3541,7 +3541,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0685"
+   "$oid": "6afc74a42423c94c88500dd6"
   },
   "valor": "4106.79",
   "unidad": "COP",
@@ -3551,7 +3551,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0686"
+   "$oid": "6afc74a42423c94c88500dd7"
   },
   "valor": "4148.72",
   "unidad": "COP",
@@ -3561,7 +3561,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0687"
+   "$oid": "6afc74a42423c94c88500dd8"
   },
   "valor": "4136.71",
   "unidad": "COP",
@@ -3571,7 +3571,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0688"
+   "$oid": "6afc74a42423c94c88500dd9"
   },
   "valor": "4107.85",
   "unidad": "COP",
@@ -3581,7 +3581,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0689"
+   "$oid": "6afc74a42423c94c88500dda"
   },
   "valor": "4097.66",
   "unidad": "COP",
@@ -3591,7 +3591,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed068a"
+   "$oid": "6afc74a42423c94c88500ddb"
   },
   "valor": "4138.72",
   "unidad": "COP",
@@ -3601,7 +3601,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed068b"
+   "$oid": "6afc74a42423c94c88500ddc"
   },
   "valor": "4138.53",
   "unidad": "COP",
@@ -3611,7 +3611,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed068c"
+   "$oid": "6afc74a42423c94c88500ddd"
   },
   "valor": "4190.9",
   "unidad": "COP",
@@ -3621,7 +3621,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed068d"
+   "$oid": "6afc74a42423c94c88500dde"
   },
   "valor": "4190.61",
   "unidad": "COP",
@@ -3631,7 +3631,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed068e"
+   "$oid": "6afc74a42423c94c88500ddf"
   },
   "valor": "4169.13",
   "unidad": "COP",
@@ -3641,7 +3641,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed068f"
+   "$oid": "6afc74a42423c94c88500de0"
   },
   "valor": "4147.34",
   "unidad": "COP",
@@ -3651,7 +3651,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0690"
+   "$oid": "6afc74a42423c94c88500de1"
   },
   "valor": "4096.44",
   "unidad": "COP",
@@ -3661,7 +3661,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0691"
+   "$oid": "6afc74a42423c94c88500de2"
   },
   "valor": "4098.83",
   "unidad": "COP",
@@ -3671,7 +3671,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0692"
+   "$oid": "6afc74a42423c94c88500de3"
   },
   "valor": "4076.32",
   "unidad": "COP",
@@ -3681,7 +3681,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0693"
+   "$oid": "6afc74a42423c94c88500de4"
   },
   "valor": "4080.06",
   "unidad": "COP",
@@ -3691,7 +3691,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0694"
+   "$oid": "6afc74a42423c94c88500de5"
   },
   "valor": "4081.15",
   "unidad": "COP",
@@ -3701,7 +3701,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0695"
+   "$oid": "6afc74a42423c94c88500de6"
   },
   "valor": "4067.64",
   "unidad": "COP",
@@ -3711,7 +3711,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0696"
+   "$oid": "6afc74a42423c94c88500de7"
   },
   "valor": "4042.87",
   "unidad": "COP",
@@ -3721,7 +3721,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0697"
+   "$oid": "6afc74a42423c94c88500de8"
   },
   "valor": "4069.67",
   "unidad": "COP",
@@ -3731,7 +3731,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0698"
+   "$oid": "6afc74a42423c94c88500de9"
   },
   "valor": "4047.71",
   "unidad": "COP",
@@ -3741,7 +3741,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0699"
+   "$oid": "6afc74a42423c94c88500dea"
   },
   "valor": "4006.46",
   "unidad": "COP",
@@ -3751,7 +3751,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed069a"
+   "$oid": "6afc74a42423c94c88500deb"
   },
   "valor": "3974.37",
   "unidad": "COP",
@@ -3761,7 +3761,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed069b"
+   "$oid": "6afc74a42423c94c88500dec"
   },
   "valor": "4022.29",
   "unidad": "COP",
@@ -3771,7 +3771,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed069c"
+   "$oid": "6afc74a42423c94c88500ded"
   },
   "valor": "4054.13",
   "unidad": "COP",
@@ -3781,7 +3781,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed069d"
+   "$oid": "6afc74a42423c94c88500dee"
   },
   "valor": "4026.09",
   "unidad": "COP",
@@ -3791,7 +3791,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed069e"
+   "$oid": "6afc74a42423c94c88500def"
   },
   "valor": "4013.5",
   "unidad": "COP",
@@ -3801,7 +3801,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed069f"
+   "$oid": "6afc74a42423c94c88500df0"
   },
   "valor": "4003.9",
   "unidad": "COP",
@@ -3811,7 +3811,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06a0"
+   "$oid": "6afc74a42423c94c88500df1"
   },
   "valor": "4011.79",
   "unidad": "COP",
@@ -3821,7 +3821,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06a1"
+   "$oid": "6afc74a42423c94c88500df2"
   },
   "valor": "4015.04",
   "unidad": "COP",
@@ -3831,7 +3831,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06a2"
+   "$oid": "6afc74a42423c94c88500df3"
   },
   "valor": "4031.86",
   "unidad": "COP",
@@ -3841,7 +3841,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06a3"
+   "$oid": "6afc74a42423c94c88500df4"
   },
   "valor": "4016.44",
   "unidad": "COP",
@@ -3851,7 +3851,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06a4"
+   "$oid": "6afc74a42423c94c88500df5"
   },
   "valor": "4000.61",
   "unidad": "COP",
@@ -3861,7 +3861,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06a5"
+   "$oid": "6afc74a42423c94c88500df6"
   },
   "valor": "4026.27",
   "unidad": "COP",
@@ -3871,7 +3871,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06a6"
+   "$oid": "6afc74a42423c94c88500df7"
   },
   "valor": "4061.36",
   "unidad": "COP",
@@ -3881,7 +3881,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06a7"
+   "$oid": "6afc74a42423c94c88500df8"
   },
   "valor": "4052.86",
   "unidad": "COP",
@@ -3891,7 +3891,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06a8"
+   "$oid": "6afc74a42423c94c88500df9"
   },
   "valor": "4063.31",
   "unidad": "COP",
@@ -3901,7 +3901,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06a9"
+   "$oid": "6afc74a42423c94c88500dfa"
   },
   "valor": "4110.48",
   "unidad": "COP",
@@ -3911,7 +3911,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06aa"
+   "$oid": "6afc74a42423c94c88500dfb"
   },
   "valor": "4170.59",
   "unidad": "COP",
@@ -3921,7 +3921,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ab"
+   "$oid": "6afc74a42423c94c88500dfc"
   },
   "valor": "4154.79",
   "unidad": "COP",
@@ -3931,7 +3931,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ac"
+   "$oid": "6afc74a42423c94c88500dfd"
   },
   "valor": "4179.69",
   "unidad": "COP",
@@ -3941,7 +3941,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ad"
+   "$oid": "6afc74a42423c94c88500dfe"
   },
   "valor": "4186.71",
   "unidad": "COP",
@@ -3951,7 +3951,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ae"
+   "$oid": "6afc74a42423c94c88500dff"
   },
   "valor": "4129.42",
   "unidad": "COP",
@@ -3961,7 +3961,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06af"
+   "$oid": "6afc74a42423c94c88500e00"
   },
   "valor": "4097.38",
   "unidad": "COP",
@@ -3971,7 +3971,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06b0"
+   "$oid": "6afc74a42423c94c88500e01"
   },
   "valor": "4093.12",
   "unidad": "COP",
@@ -3981,7 +3981,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06b1"
+   "$oid": "6afc74a42423c94c88500e02"
   },
   "valor": "4049.35",
   "unidad": "COP",
@@ -3991,7 +3991,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06b2"
+   "$oid": "6afc74a42423c94c88500e03"
   },
   "valor": "4034.74",
   "unidad": "COP",
@@ -4001,7 +4001,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06b3"
+   "$oid": "6afc74a42423c94c88500e04"
   },
   "valor": "4045.87",
   "unidad": "COP",
@@ -4011,7 +4011,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06b4"
+   "$oid": "6afc74a42423c94c88500e05"
   },
   "valor": "4017.12",
   "unidad": "COP",
@@ -4021,7 +4021,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06b5"
+   "$oid": "6afc74a42423c94c88500e06"
   },
   "valor": "4020.64",
   "unidad": "COP",
@@ -4031,7 +4031,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06b6"
+   "$oid": "6afc74a42423c94c88500e07"
   },
   "valor": "4048.74",
   "unidad": "COP",
@@ -4041,7 +4041,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06b7"
+   "$oid": "6afc74a42423c94c88500e08"
   },
   "valor": "4019.24",
   "unidad": "COP",
@@ -4051,7 +4051,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06b8"
+   "$oid": "6afc74a42423c94c88500e09"
   },
   "valor": "4036.42",
   "unidad": "COP",
@@ -4061,7 +4061,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06b9"
+   "$oid": "6afc74a42423c94c88500e0a"
   },
   "valor": "4025.51",
   "unidad": "COP",
@@ -4071,7 +4071,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ba"
+   "$oid": "6afc74a42423c94c88500e0b"
   },
   "valor": "4034.18",
   "unidad": "COP",
@@ -4081,7 +4081,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06bb"
+   "$oid": "6afc74a42423c94c88500e0c"
   },
   "valor": "4008.7",
   "unidad": "COP",
@@ -4091,7 +4091,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06bc"
+   "$oid": "6afc74a42423c94c88500e0d"
   },
   "valor": "4017.44",
   "unidad": "COP",
@@ -4101,7 +4101,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06bd"
+   "$oid": "6afc74a42423c94c88500e0e"
   },
   "valor": "4044.51",
   "unidad": "COP",
@@ -4111,7 +4111,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06be"
+   "$oid": "6afc74a42423c94c88500e0f"
   },
   "valor": "4051.97",
   "unidad": "COP",
@@ -4121,7 +4121,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06bf"
+   "$oid": "6afc74a42423c94c88500e10"
   },
   "valor": "4019.09",
   "unidad": "COP",
@@ -4131,7 +4131,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06c0"
+   "$oid": "6afc74a42423c94c88500e11"
   },
   "valor": "4018.41",
   "unidad": "COP",
@@ -4141,7 +4141,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06c1"
+   "$oid": "6afc74a42423c94c88500e12"
   },
   "valor": "4016.94",
   "unidad": "COP",
@@ -4151,7 +4151,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06c2"
+   "$oid": "6afc74a42423c94c88500e13"
   },
   "valor": "4002.86",
   "unidad": "COP",
@@ -4161,7 +4161,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06c3"
+   "$oid": "6afc74a42423c94c88500e14"
   },
   "valor": "3991.09",
   "unidad": "COP",
@@ -4171,7 +4171,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06c4"
+   "$oid": "6afc74a42423c94c88500e15"
   },
   "valor": "3960.94",
   "unidad": "COP",
@@ -4181,7 +4181,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06c5"
+   "$oid": "6afc74a42423c94c88500e16"
   },
   "valor": "3945.29",
   "unidad": "COP",
@@ -4191,7 +4191,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06c6"
+   "$oid": "6afc74a42423c94c88500e17"
   },
   "valor": "3919.13",
   "unidad": "COP",
@@ -4201,7 +4201,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06c7"
+   "$oid": "6afc74a42423c94c88500e18"
   },
   "valor": "3921.58",
   "unidad": "COP",
@@ -4211,7 +4211,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06c8"
+   "$oid": "6afc74a42423c94c88500e19"
   },
   "valor": "3903.18",
   "unidad": "COP",
@@ -4221,7 +4221,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06c9"
+   "$oid": "6afc74a42423c94c88500e1a"
   },
   "valor": "3906.24",
   "unidad": "COP",
@@ -4231,7 +4231,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ca"
+   "$oid": "6afc74a42423c94c88500e1b"
   },
   "valor": "3897.57",
   "unidad": "COP",
@@ -4241,7 +4241,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06cb"
+   "$oid": "6afc74a42423c94c88500e1c"
   },
   "valor": "3881.92",
   "unidad": "COP",
@@ -4251,7 +4251,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06cc"
+   "$oid": "6afc74a42423c94c88500e1d"
   },
   "valor": "3880.01",
   "unidad": "COP",
@@ -4261,7 +4261,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06cd"
+   "$oid": "6afc74a42423c94c88500e1e"
   },
   "valor": "3892.45",
   "unidad": "COP",
@@ -4271,7 +4271,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ce"
+   "$oid": "6afc74a42423c94c88500e1f"
   },
   "valor": "3891.19",
   "unidad": "COP",
@@ -4281,7 +4281,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06cf"
+   "$oid": "6afc74a42423c94c88500e20"
   },
   "valor": "3852.16",
   "unidad": "COP",
@@ -4291,7 +4291,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06d0"
+   "$oid": "6afc74a42423c94c88500e21"
   },
   "valor": "3844.47",
   "unidad": "COP",
@@ -4301,7 +4301,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06d1"
+   "$oid": "6afc74a42423c94c88500e22"
   },
   "valor": "3881.26",
   "unidad": "COP",
@@ -4311,7 +4311,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06d2"
+   "$oid": "6afc74a42423c94c88500e23"
   },
   "valor": "3898.87",
   "unidad": "COP",
@@ -4321,7 +4321,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06d3"
+   "$oid": "6afc74a42423c94c88500e24"
   },
   "valor": "3908.12",
   "unidad": "COP",
@@ -4331,7 +4331,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06d4"
+   "$oid": "6afc74a42423c94c88500e25"
   },
   "valor": "3901.29",
   "unidad": "COP",
@@ -4341,7 +4341,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06d5"
+   "$oid": "6afc74a42423c94c88500e26"
   },
   "valor": "3923.55",
   "unidad": "COP",
@@ -4351,7 +4351,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06d6"
+   "$oid": "6afc74a42423c94c88500e27"
   },
   "valor": "3890.0",
   "unidad": "COP",
@@ -4361,7 +4361,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06d7"
+   "$oid": "6afc74a42423c94c88500e28"
   },
   "valor": "3897.64",
   "unidad": "COP",
@@ -4371,7 +4371,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06d8"
+   "$oid": "6afc74a42423c94c88500e29"
   },
   "valor": "3874.18",
   "unidad": "COP",
@@ -4381,7 +4381,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06d9"
+   "$oid": "6afc74a42423c94c88500e2a"
   },
   "valor": "3853.19",
   "unidad": "COP",
@@ -4391,7 +4391,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06da"
+   "$oid": "6afc74a42423c94c88500e2b"
   },
   "valor": "3867.54",
   "unidad": "COP",
@@ -4401,7 +4401,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06db"
+   "$oid": "6afc74a42423c94c88500e2c"
   },
   "valor": "3879.8",
   "unidad": "COP",
@@ -4411,7 +4411,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06dc"
+   "$oid": "6afc74a42423c94c88500e2d"
   },
   "valor": "3894.99",
   "unidad": "COP",
@@ -4421,7 +4421,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06dd"
+   "$oid": "6afc74a42423c94c88500e2e"
   },
   "valor": "3913.24",
   "unidad": "COP",
@@ -4431,7 +4431,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06de"
+   "$oid": "6afc74a42423c94c88500e2f"
   },
   "valor": "3933.31",
   "unidad": "COP",
@@ -4441,7 +4441,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06df"
+   "$oid": "6afc74a42423c94c88500e30"
   },
   "valor": "3902.16",
   "unidad": "COP",
@@ -4451,7 +4451,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06e0"
+   "$oid": "6afc74a42423c94c88500e31"
   },
   "valor": "3877.07",
   "unidad": "COP",
@@ -4461,7 +4461,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06e1"
+   "$oid": "6afc74a42423c94c88500e32"
   },
   "valor": "3808.12",
   "unidad": "COP",
@@ -4471,7 +4471,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06e2"
+   "$oid": "6afc74a42423c94c88500e33"
   },
   "valor": "3877.26",
   "unidad": "COP",
@@ -4481,7 +4481,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06e3"
+   "$oid": "6afc74a42423c94c88500e34"
   },
   "valor": "3876.6",
   "unidad": "COP",
@@ -4491,7 +4491,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06e4"
+   "$oid": "6afc74a42423c94c88500e35"
   },
   "valor": "3900.82",
   "unidad": "COP",
@@ -4501,7 +4501,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06e5"
+   "$oid": "6afc74a42423c94c88500e36"
   },
   "valor": "3888.76",
   "unidad": "COP",
@@ -4511,7 +4511,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06e6"
+   "$oid": "6afc74a42423c94c88500e37"
   },
   "valor": "3858.63",
   "unidad": "COP",
@@ -4521,7 +4521,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06e7"
+   "$oid": "6afc74a42423c94c88500e38"
   },
   "valor": "3844.2",
   "unidad": "COP",
@@ -4531,7 +4531,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06e8"
+   "$oid": "6afc74a42423c94c88500e39"
   },
   "valor": "3874.84",
   "unidad": "COP",
@@ -4541,7 +4541,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06e9"
+   "$oid": "6afc74a42423c94c88500e3a"
   },
   "valor": "3885.29",
   "unidad": "COP",
@@ -4551,7 +4551,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ea"
+   "$oid": "6afc74a42423c94c88500e3b"
   },
   "valor": "3870.42",
   "unidad": "COP",
@@ -4561,7 +4561,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06eb"
+   "$oid": "6afc74a42423c94c88500e3c"
   },
   "valor": "3860.12",
   "unidad": "COP",
@@ -4571,7 +4571,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ec"
+   "$oid": "6afc74a42423c94c88500e3d"
   },
   "valor": "3872.47",
   "unidad": "COP",
@@ -4581,7 +4581,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ed"
+   "$oid": "6afc74a42423c94c88500e3e"
   },
   "valor": "3839.47",
   "unidad": "COP",
@@ -4591,7 +4591,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ee"
+   "$oid": "6afc74a42423c94c88500e3f"
   },
   "valor": "3807.06",
   "unidad": "COP",
@@ -4601,7 +4601,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ef"
+   "$oid": "6afc74a42423c94c88500e40"
   },
   "valor": "3779.2",
   "unidad": "COP",
@@ -4611,7 +4611,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06f0"
+   "$oid": "6afc74a42423c94c88500e41"
   },
   "valor": "3760.93",
   "unidad": "COP",
@@ -4621,7 +4621,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06f1"
+   "$oid": "6afc74a42423c94c88500e42"
   },
   "valor": "3719.71",
   "unidad": "COP",
@@ -4631,7 +4631,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06f2"
+   "$oid": "6afc74a42423c94c88500e43"
   },
   "valor": "3719.6",
   "unidad": "COP",
@@ -4641,7 +4641,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06f3"
+   "$oid": "6afc74a42423c94c88500e44"
   },
   "valor": "3764.77",
   "unidad": "COP",
@@ -4651,7 +4651,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06f4"
+   "$oid": "6afc74a42423c94c88500e45"
   },
   "valor": "3737.55",
   "unidad": "COP",
@@ -4661,7 +4661,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06f5"
+   "$oid": "6afc74a42423c94c88500e46"
   },
   "valor": "3716.73",
   "unidad": "COP",
@@ -4671,7 +4671,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06f6"
+   "$oid": "6afc74a42423c94c88500e47"
   },
   "valor": "3741.27",
   "unidad": "COP",
@@ -4681,7 +4681,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06f7"
+   "$oid": "6afc74a42423c94c88500e48"
   },
   "valor": "3808.77",
   "unidad": "COP",
@@ -4691,7 +4691,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06f8"
+   "$oid": "6afc74a42423c94c88500e49"
   },
   "valor": "3804.09",
   "unidad": "COP",
@@ -4701,7 +4701,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06f9"
+   "$oid": "6afc74a42423c94c88500e4a"
   },
   "valor": "3806.16",
   "unidad": "COP",
@@ -4711,7 +4711,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06fa"
+   "$oid": "6afc74a42423c94c88500e4b"
   },
   "valor": "3773.6",
   "unidad": "COP",
@@ -4721,7 +4721,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06fb"
+   "$oid": "6afc74a42423c94c88500e4c"
   },
   "valor": "3744.43",
   "unidad": "COP",
@@ -4731,7 +4731,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06fc"
+   "$oid": "6afc74a42423c94c88500e4d"
   },
   "valor": "3784.43",
   "unidad": "COP",
@@ -4741,7 +4741,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06fd"
+   "$oid": "6afc74a42423c94c88500e4e"
   },
   "valor": "3817.66",
   "unidad": "COP",
@@ -4751,7 +4751,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06fe"
+   "$oid": "6afc74a42423c94c88500e4f"
   },
   "valor": "3780.8",
   "unidad": "COP",
@@ -4761,7 +4761,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed06ff"
+   "$oid": "6afc74a42423c94c88500e50"
   },
   "valor": "3757.92",
   "unidad": "COP",
@@ -4771,7 +4771,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0700"
+   "$oid": "6afc74a42423c94c88500e51"
   },
   "valor": "3830.02",
   "unidad": "COP",
@@ -4781,7 +4781,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0701"
+   "$oid": "6afc74a42423c94c88500e52"
   },
   "valor": "3861.34",
   "unidad": "COP",
@@ -4791,7 +4791,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0702"
+   "$oid": "6afc74a42423c94c88500e53"
   },
   "valor": "3854.28",
   "unidad": "COP",
@@ -4801,7 +4801,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0703"
+   "$oid": "6afc74a42423c94c88500e54"
   },
   "valor": "3810.99",
   "unidad": "COP",
@@ -4811,7 +4811,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0704"
+   "$oid": "6afc74a42423c94c88500e55"
   },
   "valor": "3788.53",
   "unidad": "COP",
@@ -4821,7 +4821,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0705"
+   "$oid": "6afc74a42423c94c88500e56"
   },
   "valor": "3817.59",
   "unidad": "COP",
@@ -4831,7 +4831,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0706"
+   "$oid": "6afc74a42423c94c88500e57"
   },
   "valor": "3847.1",
   "unidad": "COP",
@@ -4841,7 +4841,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0707"
+   "$oid": "6afc74a42423c94c88500e58"
   },
   "valor": "3866.77",
   "unidad": "COP",
@@ -4851,7 +4851,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0708"
+   "$oid": "6afc74a42423c94c88500e59"
   },
   "valor": "3874.71",
   "unidad": "COP",
@@ -4861,7 +4861,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0709"
+   "$oid": "6afc74a42423c94c88500e5a"
   },
   "valor": "3817.93",
   "unidad": "COP",
@@ -4871,7 +4871,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed070a"
+   "$oid": "6afc74a42423c94c88500e5b"
   },
   "valor": "3792.59",
   "unidad": "COP",
@@ -4881,7 +4881,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed070b"
+   "$oid": "6afc74a42423c94c88500e5c"
   },
   "valor": "3759.48",
   "unidad": "COP",
@@ -4891,7 +4891,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed070c"
+   "$oid": "6afc74a42423c94c88500e5d"
   },
   "valor": "3706.94",
   "unidad": "COP",
@@ -4901,7 +4901,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed070d"
+   "$oid": "6afc74a42423c94c88500e5e"
   },
   "valor": "3716.05",
   "unidad": "COP",
@@ -4911,7 +4911,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed070e"
+   "$oid": "6afc74a42423c94c88500e5f"
   },
   "valor": "3706.97",
   "unidad": "COP",
@@ -4921,7 +4921,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed070f"
+   "$oid": "6afc74a42423c94c88500e60"
   },
   "valor": "3757.08",
   "unidad": "COP",
@@ -4931,7 +4931,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0710"
+   "$oid": "6afc74a42423c94c88500e61"
   },
   "valor": "3790.77",
   "unidad": "COP",
@@ -4941,7 +4941,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0711"
+   "$oid": "6afc74a42423c94c88500e62"
   },
   "valor": "3770.03",
   "unidad": "COP",
@@ -4951,7 +4951,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0712"
+   "$oid": "6afc74a42423c94c88500e63"
   },
   "valor": "3730.26",
   "unidad": "COP",
@@ -4961,7 +4961,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0713"
+   "$oid": "6afc74a42423c94c88500e64"
   },
   "valor": "3748.83",
   "unidad": "COP",
@@ -4971,7 +4971,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0714"
+   "$oid": "6afc74a42423c94c88500e65"
   },
   "valor": "3734.67",
   "unidad": "COP",
@@ -4981,7 +4981,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0715"
+   "$oid": "6afc74a42423c94c88500e66"
   },
   "valor": "3717.09",
   "unidad": "COP",
@@ -4991,7 +4991,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0716"
+   "$oid": "6afc74a42423c94c88500e67"
   },
   "valor": "3663.24",
   "unidad": "COP",
@@ -5001,7 +5001,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0717"
+   "$oid": "6afc74a42423c94c88500e68"
   },
   "valor": "3655.16",
   "unidad": "COP",
@@ -5011,7 +5011,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0718"
+   "$oid": "6afc74a42423c94c88500e69"
   },
   "valor": "3687.32",
   "unidad": "COP",
@@ -5021,7 +5021,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0719"
+   "$oid": "6afc74a42423c94c88500e6a"
   },
   "valor": "3700.05",
   "unidad": "COP",
@@ -5031,7 +5031,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed071a"
+   "$oid": "6afc74a42423c94c88500e6b"
   },
   "valor": "3682.97",
   "unidad": "COP",
@@ -5041,7 +5041,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed071b"
+   "$oid": "6afc74a42423c94c88500e6c"
   },
   "valor": "3669.15",
   "unidad": "COP",
@@ -5051,7 +5051,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed071c"
+   "$oid": "6afc74a42423c94c88500e6d"
   },
   "valor": "3630.33",
   "unidad": "COP",
@@ -5061,7 +5061,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed071d"
+   "$oid": "6afc74a42423c94c88500e6e"
   },
   "valor": "3637.88",
   "unidad": "COP",
@@ -5071,7 +5071,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed071e"
+   "$oid": "6afc74a42423c94c88500e6f"
   },
   "valor": "3676.02",
   "unidad": "COP",
@@ -5081,7 +5081,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed071f"
+   "$oid": "6afc74a42423c94c88500e70"
   },
   "valor": "3678.59",
   "unidad": "COP",
@@ -5091,7 +5091,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0720"
+   "$oid": "6afc74a42423c94c88500e71"
   },
   "valor": "3665.97",
   "unidad": "COP",
@@ -5101,7 +5101,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0721"
+   "$oid": "6afc74a42423c94c88500e72"
   },
   "valor": "3661.29",
   "unidad": "COP",
@@ -5111,7 +5111,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0722"
+   "$oid": "6afc74a42423c94c88500e73"
   },
   "valor": "3670.47",
   "unidad": "COP",
@@ -5121,7 +5121,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0723"
+   "$oid": "6afc74a42423c94c88500e74"
   },
   "valor": "3628.16",
   "unidad": "COP",
@@ -5131,7 +5131,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0724"
+   "$oid": "6afc74a42423c94c88500e75"
   },
   "valor": "3622.0",
   "unidad": "COP",
@@ -5141,7 +5141,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0725"
+   "$oid": "6afc74a42423c94c88500e76"
   },
   "valor": "3644.93",
   "unidad": "COP",
@@ -5151,7 +5151,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0726"
+   "$oid": "6afc74a42423c94c88500e77"
   },
   "valor": "3691.75",
   "unidad": "COP",
@@ -5161,7 +5161,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0727"
+   "$oid": "6afc74a42423c94c88500e78"
   },
   "valor": "3670.2",
   "unidad": "COP",
@@ -5171,7 +5171,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0728"
+   "$oid": "6afc74a42423c94c88500e79"
   },
   "valor": "3651.9",
   "unidad": "COP",
@@ -5181,7 +5181,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0729"
+   "$oid": "6afc74a42423c94c88500e7a"
   },
   "valor": "3659.71",
   "unidad": "COP",
@@ -5191,7 +5191,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed072a"
+   "$oid": "6afc74a42423c94c88500e7b"
   },
   "valor": "3671.01",
   "unidad": "COP",
@@ -5201,7 +5201,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed072b"
+   "$oid": "6afc74a42423c94c88500e7c"
   },
   "valor": "3665.78",
   "unidad": "COP",
@@ -5211,7 +5211,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed072c"
+   "$oid": "6afc74a42423c94c88500e7d"
   },
   "valor": "3652.89",
   "unidad": "COP",
@@ -5221,7 +5221,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed072d"
+   "$oid": "6afc74a42423c94c88500e7e"
   },
   "valor": "3664.26",
   "unidad": "COP",
@@ -5231,7 +5231,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed072e"
+   "$oid": "6afc74a42423c94c88500e7f"
   },
   "valor": "3669.21",
   "unidad": "COP",
@@ -5241,7 +5241,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed072f"
+   "$oid": "6afc74a42423c94c88500e80"
   },
   "valor": "3695.72",
   "unidad": "COP",
@@ -5251,7 +5251,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0730"
+   "$oid": "6afc74a42423c94c88500e81"
   },
   "valor": "3691.34",
   "unidad": "COP",
@@ -5261,7 +5261,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0731"
+   "$oid": "6afc74a42423c94c88500e82"
   },
   "valor": "3697.36",
   "unidad": "COP",
@@ -5271,7 +5271,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0732"
+   "$oid": "6afc74a42423c94c88500e83"
   },
   "valor": "3703.28",
   "unidad": "COP",
@@ -5281,7 +5281,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0733"
+   "$oid": "6afc74a42423c94c88500e84"
   },
   "valor": "3703.69",
   "unidad": "COP",
@@ -5291,7 +5291,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0734"
+   "$oid": "6afc74a42423c94c88500e85"
   },
   "valor": "3745.78",
   "unidad": "COP",
@@ -5301,7 +5301,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0735"
+   "$oid": "6afc74a42423c94c88500e86"
   },
   "valor": "3766.3",
   "unidad": "COP",
@@ -5311,7 +5311,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0736"
+   "$oid": "6afc74a42423c94c88500e87"
   },
   "valor": "3768.73",
   "unidad": "COP",
@@ -5321,7 +5321,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0737"
+   "$oid": "6afc74a42423c94c88500e88"
   },
   "valor": "3797.64",
   "unidad": "COP",
@@ -5331,7 +5331,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0738"
+   "$oid": "6afc74a42423c94c88500e89"
   },
   "valor": "3751.41",
   "unidad": "COP",
@@ -5341,7 +5341,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0739"
+   "$oid": "6afc74a42423c94c88500e8a"
   },
   "valor": "3767.94",
   "unidad": "COP",
@@ -5351,7 +5351,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed073a"
+   "$oid": "6afc74a42423c94c88500e8b"
   },
   "valor": "3795.55",
   "unidad": "COP",
@@ -5361,7 +5361,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed073b"
+   "$oid": "6afc74a42423c94c88500e8c"
   },
   "valor": "3744.84",
   "unidad": "COP",
@@ -5371,7 +5371,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed073c"
+   "$oid": "6afc74a42423c94c88500e8d"
   },
   "valor": "3710.5",
   "unidad": "COP",
@@ -5381,7 +5381,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed073d"
+   "$oid": "6afc74a42423c94c88500e8e"
   },
   "valor": "3687.87",
   "unidad": "COP",
@@ -5391,7 +5391,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed073e"
+   "$oid": "6afc74a42423c94c88500e8f"
   },
   "valor": "3700.46",
   "unidad": "COP",
@@ -5401,7 +5401,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed073f"
+   "$oid": "6afc74a42423c94c88500e90"
   },
   "valor": "3685.53",
   "unidad": "COP",
@@ -5411,7 +5411,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0740"
+   "$oid": "6afc74a42423c94c88500e91"
   },
   "valor": "3691.9",
   "unidad": "COP",
@@ -5421,7 +5421,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0741"
+   "$oid": "6afc74a42423c94c88500e92"
   },
   "valor": "3689.97",
   "unidad": "COP",
@@ -5431,7 +5431,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0742"
+   "$oid": "6afc74a42423c94c88500e93"
   },
   "valor": "3704.17",
   "unidad": "COP",
@@ -5441,7 +5441,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0743"
+   "$oid": "6afc74a42423c94c88500e94"
   },
   "valor": "3692.48",
   "unidad": "COP",
@@ -5451,7 +5451,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0744"
+   "$oid": "6afc74a42423c94c88500e95"
   },
   "valor": "3704.87",
   "unidad": "COP",
@@ -5461,7 +5461,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0745"
+   "$oid": "6afc74a42423c94c88500e96"
   },
   "valor": "3700.67",
   "unidad": "COP",
@@ -5471,7 +5471,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0746"
+   "$oid": "6afc74a42423c94c88500e97"
   },
   "valor": "3688.46",
   "unidad": "COP",
@@ -5481,7 +5481,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0747"
+   "$oid": "6afc74a42423c94c88500e98"
   },
   "valor": "3675.29",
   "unidad": "COP",
@@ -5491,7 +5491,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0748"
+   "$oid": "6afc74a42423c94c88500e99"
   },
   "valor": "3668.89",
   "unidad": "COP",
@@ -5501,7 +5501,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0749"
+   "$oid": "6afc74a42423c94c88500e9a"
   },
   "valor": "3669.96",
   "unidad": "COP",
@@ -5511,7 +5511,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed074a"
+   "$oid": "6afc74a42423c94c88500e9b"
   },
   "valor": "3660.1",
   "unidad": "COP",
@@ -5521,7 +5521,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed074b"
+   "$oid": "6afc74a42423c94c88500e9c"
   },
   "valor": "3675.81",
   "unidad": "COP",
@@ -5531,7 +5531,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed074c"
+   "$oid": "6afc74a42423c94c88500e9d"
   },
   "valor": "3664.41",
   "unidad": "COP",
@@ -5541,7 +5541,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed074d"
+   "$oid": "6afc74a42423c94c88500e9e"
   },
   "valor": "3678.19",
   "unidad": "COP",
@@ -5551,7 +5551,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed074e"
+   "$oid": "6afc74a42423c94c88500e9f"
   },
   "valor": "3640.63",
   "unidad": "COP",
@@ -5561,7 +5561,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed074f"
+   "$oid": "6afc74a42423c94c88500ea0"
   },
   "valor": "3642.93",
   "unidad": "COP",
@@ -5571,7 +5571,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0750"
+   "$oid": "6afc74a42423c94c88500ea1"
   },
   "valor": "3631.49",
   "unidad": "COP",
@@ -5581,7 +5581,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0751"
+   "$oid": "6afc74a42423c94c88500ea2"
   },
   "valor": "3608.1",
   "unidad": "COP",
@@ -5591,7 +5591,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0752"
+   "$oid": "6afc74a42423c94c88500ea3"
   },
   "valor": "3578.82",
   "unidad": "COP",
@@ -5601,7 +5601,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0753"
+   "$oid": "6afc74a42423c94c88500ea4"
   },
   "valor": "3603.19",
   "unidad": "COP",
@@ -5611,7 +5611,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0754"
+   "$oid": "6afc74a42423c94c88500ea5"
   },
   "valor": "3615.1",
   "unidad": "COP",
@@ -5621,7 +5621,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0755"
+   "$oid": "6afc74a42423c94c88500ea6"
   },
   "valor": "3593.14",
   "unidad": "COP",
@@ -5631,7 +5631,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0756"
+   "$oid": "6afc74a42423c94c88500ea7"
   },
   "valor": "3573.3",
   "unidad": "COP",
@@ -5641,7 +5641,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0757"
+   "$oid": "6afc74a42423c94c88500ea8"
   },
   "valor": "3576.05",
   "unidad": "COP",
@@ -5651,7 +5651,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0758"
+   "$oid": "6afc74a42423c94c88500ea9"
   },
   "valor": "3568.88",
   "unidad": "COP",
@@ -5661,7 +5661,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0759"
+   "$oid": "6afc74a42423c94c88500eaa"
   },
   "valor": "3560.62",
   "unidad": "COP",
@@ -5671,7 +5671,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed075a"
+   "$oid": "6afc74a42423c94c88500eab"
   },
   "valor": "3551.17",
   "unidad": "COP",
@@ -5681,7 +5681,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed075b"
+   "$oid": "6afc74a42423c94c88500eac"
   },
   "valor": "3593.17",
   "unidad": "COP",
@@ -5691,7 +5691,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed075c"
+   "$oid": "6afc74a42423c94c88500ead"
   },
   "valor": "3633.76",
   "unidad": "COP",
@@ -5701,7 +5701,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed075d"
+   "$oid": "6afc74a42423c94c88500eae"
   },
   "valor": "3621.86",
   "unidad": "COP",
@@ -5711,7 +5711,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed075e"
+   "$oid": "6afc74a42423c94c88500eaf"
   },
   "valor": "3637.51",
   "unidad": "COP",
@@ -5721,7 +5721,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed075f"
+   "$oid": "6afc74a42423c94c88500eb0"
   },
   "valor": "3707.58",
   "unidad": "COP",
@@ -5731,7 +5731,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0760"
+   "$oid": "6afc74a42423c94c88500eb1"
   },
   "valor": "3723.33",
   "unidad": "COP",
@@ -5741,7 +5741,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0761"
+   "$oid": "6afc74a42423c94c88500eb2"
   },
   "valor": "3706.44",
   "unidad": "COP",
@@ -5751,7 +5751,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0762"
+   "$oid": "6afc74a42423c94c88500eb3"
   },
   "valor": "3729.27",
   "unidad": "COP",
@@ -5761,7 +5761,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0763"
+   "$oid": "6afc74a42423c94c88500eb4"
   },
   "valor": "3747.1",
   "unidad": "COP",
@@ -5771,7 +5771,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0764"
+   "$oid": "6afc74a42423c94c88500eb5"
   },
   "valor": "3759.0",
   "unidad": "COP",
@@ -5781,7 +5781,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0765"
+   "$oid": "6afc74a42423c94c88500eb6"
   },
   "valor": "3775.07",
   "unidad": "COP",
@@ -5791,7 +5791,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0766"
+   "$oid": "6afc74a42423c94c88500eb7"
   },
   "valor": "3794.91",
   "unidad": "COP",
@@ -5801,7 +5801,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0767"
+   "$oid": "6afc74a42423c94c88500eb8"
   },
   "valor": "3784.7",
   "unidad": "COP",
@@ -5811,7 +5811,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0768"
+   "$oid": "6afc74a42423c94c88500eb9"
   },
   "valor": "3796.78",
   "unidad": "COP",
@@ -5821,7 +5821,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0769"
+   "$oid": "6afc74a42423c94c88500eba"
   },
   "valor": "3796.87",
   "unidad": "COP",
@@ -5831,7 +5831,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed076a"
+   "$oid": "6afc74a42423c94c88500ebb"
   },
   "valor": "3730.49",
   "unidad": "COP",
@@ -5841,7 +5841,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed076b"
+   "$oid": "6afc74a42423c94c88500ebc"
   },
   "valor": "3701.37",
   "unidad": "COP",
@@ -5851,7 +5851,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed076c"
+   "$oid": "6afc74a42423c94c88500ebd"
   },
   "valor": "3667.06",
   "unidad": "COP",
@@ -5861,7 +5861,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed076d"
+   "$oid": "6afc74a42423c94c88500ebe"
   },
   "valor": "3644.47",
   "unidad": "COP",
@@ -5871,7 +5871,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed076e"
+   "$oid": "6afc74a42423c94c88500ebf"
   },
   "valor": "3631.57",
   "unidad": "COP",
@@ -5881,7 +5881,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed076f"
+   "$oid": "6afc74a42423c94c88500ec0"
   },
   "valor": "3646.58",
   "unidad": "COP",
@@ -5891,7 +5891,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0770"
+   "$oid": "6afc74a42423c94c88500ec1"
   },
   "valor": "3678.15",
   "unidad": "COP",
@@ -5901,7 +5901,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0771"
+   "$oid": "6afc74a42423c94c88500ec2"
   },
   "valor": "3560.24",
   "unidad": "COP",
@@ -5911,7 +5911,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0772"
+   "$oid": "6afc74a42423c94c88500ec3"
   },
   "valor": "3562.0",
   "unidad": "COP",
@@ -5921,7 +5921,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0773"
+   "$oid": "6afc74a42423c94c88500ec4"
   },
   "valor": "3572.85",
   "unidad": "COP",
@@ -5931,7 +5931,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0774"
+   "$oid": "6afc74a42423c94c88500ec5"
   },
   "valor": "3565.32",
   "unidad": "COP",
@@ -5941,7 +5941,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0775"
+   "$oid": "6afc74a42423c94c88500ec6"
   },
   "valor": "3588.09",
   "unidad": "COP",
@@ -5951,7 +5951,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0776"
+   "$oid": "6afc74a42423c94c88500ec7"
   },
   "valor": "3581.46",
   "unidad": "COP",
@@ -5961,7 +5961,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0777"
+   "$oid": "6afc74a42423c94c88500ec8"
   },
   "valor": "3567.11",
   "unidad": "COP",
@@ -5971,7 +5971,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0778"
+   "$oid": "6afc74a42423c94c88500ec9"
   },
   "valor": "3513.54",
   "unidad": "COP",
@@ -5981,7 +5981,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0779"
+   "$oid": "6afc74a42423c94c88500eca"
   },
   "valor": "3475.72",
   "unidad": "COP",
@@ -5991,7 +5991,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed077a"
+   "$oid": "6afc74a42423c94c88500ecb"
   },
   "valor": "3427.07",
   "unidad": "COP",
@@ -6001,7 +6001,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed077b"
+   "$oid": "6afc74a42423c94c88500ecc"
   },
   "valor": "3439.91",
   "unidad": "COP",
@@ -6011,7 +6011,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed077c"
+   "$oid": "6afc74a42423c94c88500ecd"
   },
   "valor": "3459.53",
   "unidad": "COP",
@@ -6021,7 +6021,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed077d"
+   "$oid": "6afc74a42423c94c88500ece"
   },
   "valor": "3406.14",
   "unidad": "COP",
@@ -6031,7 +6031,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed077e"
+   "$oid": "6afc74a42423c94c88500ecf"
   },
   "valor": "3425.95",
   "unidad": "COP",
@@ -6041,7 +6041,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed077f"
+   "$oid": "6afc74a42423c94c88500ed0"
   },
   "valor": "3428.32",
   "unidad": "COP",
@@ -6051,7 +6051,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0780"
+   "$oid": "6afc74a42423c94c88500ed1"
   },
   "valor": "3433.71",
   "unidad": "COP",
@@ -6061,7 +6061,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0781"
+   "$oid": "6afc74a42423c94c88500ed2"
   },
   "valor": "3443.59",
   "unidad": "COP",
@@ -6071,7 +6071,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0782"
+   "$oid": "6afc74a42423c94c88500ed3"
   },
   "valor": "3440.83",
   "unidad": "COP",
@@ -6081,7 +6081,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0783"
+   "$oid": "6afc74a42423c94c88500ed4"
   },
   "valor": "3403.35",
   "unidad": "COP",
@@ -6091,7 +6091,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0784"
+   "$oid": "6afc74a42423c94c88500ed5"
   },
   "valor": "3357.82",
   "unidad": "COP",
@@ -6101,7 +6101,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0785"
+   "$oid": "6afc74a42423c94c88500ed6"
   },
   "valor": "3334.93",
   "unidad": "COP",
@@ -6111,7 +6111,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0786"
+   "$oid": "6afc74a42423c94c88500ed7"
   },
   "valor": "3350.68",
   "unidad": "COP",
@@ -6121,7 +6121,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0787"
+   "$oid": "6afc74a42423c94c88500ed8"
   },
   "valor": "3335.5",
   "unidad": "COP",
@@ -6131,7 +6131,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0788"
+   "$oid": "6afc74a42423c94c88500ed9"
   },
   "valor": "3339.65",
   "unidad": "COP",
@@ -6141,7 +6141,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0789"
+   "$oid": "6afc74a42423c94c88500eda"
   },
   "valor": "3305.38",
   "unidad": "COP",
@@ -6151,7 +6151,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed078a"
+   "$oid": "6afc74a42423c94c88500edb"
   },
   "valor": "3248.87",
   "unidad": "COP",
@@ -6161,7 +6161,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed078b"
+   "$oid": "6afc74a42423c94c88500edc"
   },
   "valor": "3252.11",
   "unidad": "COP",
@@ -6171,7 +6171,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed078c"
+   "$oid": "6afc74a42423c94c88500edd"
   },
   "valor": "3233.91",
   "unidad": "COP",
@@ -6181,7 +6181,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed078d"
+   "$oid": "6afc74a42423c94c88500ede"
   },
   "valor": "3221.41",
   "unidad": "COP",
@@ -6191,7 +6191,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed078e"
+   "$oid": "6afc74a42423c94c88500edf"
   },
   "valor": "3262.58",
   "unidad": "COP",
@@ -6201,7 +6201,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed078f"
+   "$oid": "6afc74a42423c94c88500ee0"
   },
   "valor": "3238.19",
   "unidad": "COP",
@@ -6211,7 +6211,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0790"
+   "$oid": "6afc74a42423c94c88500ee1"
   },
   "valor": "3206.86",
   "unidad": "COP",
@@ -6221,7 +6221,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0791"
+   "$oid": "6afc74a42423c94c88500ee2"
   },
   "valor": "3219.31",
   "unidad": "COP",
@@ -6231,7 +6231,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0792"
+   "$oid": "6afc74a42423c94c88500ee3"
   },
   "valor": "3210.56",
   "unidad": "COP",
@@ -6241,7 +6241,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0793"
+   "$oid": "6afc74a42423c94c88500ee4"
   },
   "valor": "3205.8",
   "unidad": "COP",
@@ -6251,7 +6251,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0794"
+   "$oid": "6afc74a42423c94c88500ee5"
   },
   "valor": "3205.87",
   "unidad": "COP",
@@ -6261,7 +6261,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0795"
+   "$oid": "6afc74a42423c94c88500ee6"
   },
   "valor": "3206.18",
   "unidad": "COP",
@@ -6271,7 +6271,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0796"
+   "$oid": "6afc74a42423c94c88500ee7"
   },
   "valor": "3132.42",
   "unidad": "COP",
@@ -6281,7 +6281,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0797"
+   "$oid": "6afc74a42423c94c88500ee8"
   },
   "valor": "3144.14",
   "unidad": "COP",
@@ -6291,7 +6291,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0798"
+   "$oid": "6afc74a42423c94c88500ee9"
   },
   "valor": "3230.44",
   "unidad": "COP",
@@ -6301,7 +6301,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed0799"
+   "$oid": "6afc74a42423c94c88500eea"
   },
   "valor": "3204.51",
   "unidad": "COP",
@@ -6311,7 +6311,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed079a"
+   "$oid": "6afc74a42423c94c88500eeb"
   },
   "valor": "3179.4",
   "unidad": "COP",
@@ -6321,7 +6321,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed079b"
+   "$oid": "6afc74a42423c94c88500eec"
   },
   "valor": "3157.43",
   "unidad": "COP",
@@ -6331,7 +6331,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed079c"
+   "$oid": "6afc74a42423c94c88500eed"
   },
   "valor": "3125.47",
   "unidad": "COP",
@@ -6341,7 +6341,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed079d"
+   "$oid": "6afc74a42423c94c88500eee"
   },
   "valor": "3121.07",
   "unidad": "COP",
@@ -6351,7 +6351,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed079e"
+   "$oid": "6afc74a42423c94c88500eef"
   },
   "valor": "3123.28",
   "unidad": "COP",
@@ -6361,7 +6361,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed079f"
+   "$oid": "6afc74a42423c94c88500ef0"
   },
   "valor": "3127.51",
   "unidad": "COP",
@@ -6371,7 +6371,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07a0"
+   "$oid": "6afc74a42423c94c88500ef1"
   },
   "valor": "3128.65",
   "unidad": "COP",
@@ -6381,7 +6381,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07a1"
+   "$oid": "6afc74a42423c94c88500ef2"
   },
   "valor": "3098.79",
   "unidad": "COP",
@@ -6391,7 +6391,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07a2"
+   "$oid": "6afc74a42423c94c88500ef3"
   },
   "valor": "3053.48",
   "unidad": "COP",
@@ -6401,7 +6401,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07a3"
+   "$oid": "6afc74a42423c94c88500ef4"
   },
   "valor": "3062.96",
   "unidad": "COP",
@@ -6411,7 +6411,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07a4"
+   "$oid": "6afc74a42423c94c88500ef5"
   },
   "valor": "3048.12",
   "unidad": "COP",
@@ -6421,7 +6421,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07a5"
+   "$oid": "6afc74a42423c94c88500ef6"
   },
   "valor": "3056.51",
   "unidad": "COP",
@@ -6431,7 +6431,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07a6"
+   "$oid": "6afc74a42423c94c88500ef7"
   },
   "valor": "3081.67",
   "unidad": "COP",
@@ -6441,7 +6441,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07a7"
+   "$oid": "6afc74a42423c94c88500ef8"
   },
   "valor": "3118.24",
   "unidad": "COP",
@@ -6451,7 +6451,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07a8"
+   "$oid": "6afc74a42423c94c88500ef9"
   },
   "valor": "3144.28",
   "unidad": "COP",
@@ -6461,7 +6461,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07a9"
+   "$oid": "6afc74a42423c94c88500efa"
   },
   "valor": "3202.79",
   "unidad": "COP",
@@ -6471,7 +6471,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07aa"
+   "$oid": "6afc74a42423c94c88500efb"
   },
   "valor": "3213.97",
   "unidad": "COP",
@@ -6481,7 +6481,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07ab"
+   "$oid": "6afc74a42423c94c88500efc"
   },
   "valor": "3184.0",
   "unidad": "COP",
@@ -6491,7 +6491,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07ac"
+   "$oid": "6afc74a42423c94c88500efd"
   },
   "valor": "3140.55",
   "unidad": "COP",
@@ -6501,7 +6501,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07ad"
+   "$oid": "6afc74a42423c94c88500efe"
   },
   "valor": "3141.36",
   "unidad": "COP",
@@ -6511,7 +6511,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07ae"
+   "$oid": "6afc74a42423c94c88500eff"
   },
   "valor": "3126.08",
   "unidad": "COP",
@@ -6521,7 +6521,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07af"
+   "$oid": "6afc74a42423c94c88500f00"
   },
   "valor": "3116.47",
   "unidad": "COP",
@@ -6531,7 +6531,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07b0"
+   "$oid": "6afc74a42423c94c88500f01"
   },
   "valor": "3099.48",
   "unidad": "COP",
@@ -6541,7 +6541,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07b1"
+   "$oid": "6afc74a42423c94c88500f02"
   },
   "valor": "3101.0",
   "unidad": "COP",
@@ -6551,7 +6551,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07b2"
+   "$oid": "6afc74a42423c94c88500f03"
   },
   "valor": "3072.27",
   "unidad": "COP",
@@ -6561,7 +6561,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07b3"
+   "$oid": "6afc74a42423c94c88500f04"
   },
   "valor": "3109.3",
   "unidad": "COP",
@@ -6571,7 +6571,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07b4"
+   "$oid": "6afc74a42423c94c88500f05"
   },
   "valor": "3100.45",
   "unidad": "COP",
@@ -6581,7 +6581,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07b5"
+   "$oid": "6afc74a42423c94c88500f06"
   },
   "valor": "3128.46",
   "unidad": "COP",
@@ -6591,7 +6591,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07b6"
+   "$oid": "6afc74a42423c94c88500f07"
   },
   "valor": "3151.73",
   "unidad": "COP",
@@ -6601,7 +6601,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07b7"
+   "$oid": "6afc74a42423c94c88500f08"
   },
   "valor": "3192.92",
   "unidad": "COP",
@@ -6611,7 +6611,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07b8"
+   "$oid": "6afc74a42423c94c88500f09"
   },
   "valor": "3192.53",
   "unidad": "COP",
@@ -6621,7 +6621,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07b9"
+   "$oid": "6afc74a42423c94c88500f0a"
   },
   "valor": "3208.66",
   "unidad": "COP",
@@ -6631,7 +6631,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07ba"
+   "$oid": "6afc74a42423c94c88500f0b"
   },
   "valor": "3264.39",
   "unidad": "COP",
@@ -6641,7 +6641,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07bb"
+   "$oid": "6afc74a42423c94c88500f0c"
   },
   "valor": "3329.61",
   "unidad": "COP",
@@ -6651,7 +6651,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07bc"
+   "$oid": "6afc74a42423c94c88500f0d"
   },
   "valor": "3306.86",
   "unidad": "COP",
@@ -6661,7 +6661,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07bd"
+   "$oid": "6afc74a42423c94c88500f0e"
   },
   "valor": "3349.63",
   "unidad": "COP",
@@ -6671,7 +6671,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07be"
+   "$oid": "6afc74a42423c94c88500f0f"
   },
   "valor": "3341.23",
   "unidad": "COP",
@@ -6681,7 +6681,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07bf"
+   "$oid": "6afc74a42423c94c88500f10"
   },
   "valor": "3312.84",
   "unidad": "COP",
@@ -6691,7 +6691,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07c0"
+   "$oid": "6afc74a42423c94c88500f11"
   },
   "valor": "3307.73",
   "unidad": "COP",
@@ -6701,7 +6701,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07c1"
+   "$oid": "6afc74a42423c94c88500f12"
   },
   "valor": "3273.49",
   "unidad": "COP",
@@ -6711,7 +6711,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07c2"
+   "$oid": "6afc74a42423c94c88500f13"
   },
   "valor": "3209.78",
   "unidad": "COP",
@@ -6721,7 +6721,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07c3"
+   "$oid": "6afc74a42423c94c88500f14"
   },
   "valor": "3216.01",
   "unidad": "COP",
@@ -6731,7 +6731,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07c4"
+   "$oid": "6afc74a42423c94c88500f15"
   },
   "valor": "3238.88",
   "unidad": "COP",
@@ -6741,7 +6741,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07c5"
+   "$oid": "6afc74a42423c94c88500f16"
   },
   "valor": "3218.75",
   "unidad": "COP",
@@ -6751,7 +6751,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07c6"
+   "$oid": "6afc74a42423c94c88500f17"
   },
   "valor": "3194.44",
   "unidad": "COP",
@@ -6761,7 +6761,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07c7"
+   "$oid": "6afc74a42423c94c88500f18"
   },
   "valor": "3181.74",
   "unidad": "COP",
@@ -6771,7 +6771,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07c8"
+   "$oid": "6afc74a42423c94c88500f19"
   },
   "valor": "3197.65",
   "unidad": "COP",
@@ -6781,7 +6781,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07c9"
+   "$oid": "6afc74a42423c94c88500f1a"
   },
   "valor": "3170.46",
   "unidad": "COP",
@@ -6791,7 +6791,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07ca"
+   "$oid": "6afc74a42423c94c88500f1b"
   },
   "valor": "3174.67",
   "unidad": "COP",
@@ -6801,7 +6801,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07cb"
+   "$oid": "6afc74a42423c94c88500f1c"
   },
   "valor": "3156.32",
   "unidad": "COP",
@@ -6811,7 +6811,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07cc"
+   "$oid": "6afc74a42423c94c88500f1d"
   },
   "valor": "3163.76",
   "unidad": "COP",
@@ -6821,7 +6821,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07cd"
+   "$oid": "6afc74a42423c94c88500f1e"
   },
   "valor": "3191.47",
   "unidad": "COP",
@@ -6831,7 +6831,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07ce"
+   "$oid": "6afc74a42423c94c88500f1f"
   },
   "valor": "3185.01",
   "unidad": "COP",
@@ -6841,7 +6841,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07cf"
+   "$oid": "6afc74a42423c94c88500f20"
   },
   "valor": "3158.43",
   "unidad": "COP",
@@ -6851,7 +6851,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07d0"
+   "$oid": "6afc74a42423c94c88500f21"
   },
   "valor": "3157.94",
   "unidad": "COP",
@@ -6861,7 +6861,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07d1"
+   "$oid": "6afc74a42423c94c88500f22"
   },
   "valor": "3148.02",
   "unidad": "COP",
@@ -6871,7 +6871,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07d2"
+   "$oid": "6afc74a42423c94c88500f23"
   },
   "valor": "3162.35",
   "unidad": "COP",
@@ -6881,7 +6881,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07d3"
+   "$oid": "6afc74a42423c94c88500f24"
   },
   "valor": "3166.91",
   "unidad": "COP",
@@ -6891,7 +6891,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07d4"
+   "$oid": "6afc74a42423c94c88500f25"
   },
   "valor": "3182.99",
   "unidad": "COP",
@@ -6901,7 +6901,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07d5"
+   "$oid": "6afc74a42423c94c88500f26"
   },
   "valor": "3235.59",
   "unidad": "COP",
@@ -6911,7 +6911,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07d6"
+   "$oid": "6afc74a42423c94c88500f27"
   },
   "valor": "3221.19",
   "unidad": "COP",
@@ -6921,7 +6921,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07d7"
+   "$oid": "6afc74a42423c94c88500f28"
   },
   "valor": "3228.26",
   "unidad": "COP",
@@ -6931,7 +6931,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07d8"
+   "$oid": "6afc74a42423c94c88500f29"
   },
   "valor": "3237.83",
   "unidad": "COP",
@@ -6941,7 +6941,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07d9"
+   "$oid": "6afc74a42423c94c88500f2a"
   },
   "valor": "3269.88",
   "unidad": "COP",
@@ -6951,7 +6951,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07da"
+   "$oid": "6afc74a42423c94c88500f2b"
   },
   "valor": "3297.07",
   "unidad": "COP",
@@ -6961,7 +6961,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07db"
+   "$oid": "6afc74a42423c94c88500f2c"
   },
   "valor": "3301.91",
   "unidad": "COP",
@@ -6971,7 +6971,7 @@
  },
  {
   "_id": {
-   "$oid": "6afbdbf075d41c05dfed07dc"
+   "$oid": "6afc74a42423c94c88500f2d"
   },
   "valor": "3316.7",
   "unidad": "COP",

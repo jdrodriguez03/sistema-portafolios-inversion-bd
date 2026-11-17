@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict BFkbLWVcO243u3cEfHwS2kt05vhnKq3Lx5RcSLqbRxKGZABiLg4GMEpdYbIgcFa
+\restrict dkuZq3BSOXWp76GHoznZaMUhbS8aUcduNuUUjWPZaZO1KzHoecsiMFOabE6rYcv
 
 -- Dumped from database version 18.6
 -- Dumped by pg_dump version 18.6
@@ -24,14 +24,14 @@ SET row_security = off;
 --
 
 CREATE FUNCTION public.fn_efectivo(p_id_cuenta integer, p_fecha date DEFAULT CURRENT_DATE) RETURNS numeric
-    LANGUAGE sql STABLE
+    LANGUAGE sql
     AS $$
     SELECT
         COALESCE((SELECT SUM(CASE WHEN m.tipo_movimiento = 'DEPOSITO'
                                   THEN m.monto ELSE -m.monto END)
                   FROM movimiento_efectivo m
                   WHERE m.id_cuenta = p_id_cuenta
-                    AND m.fecha_hora < p_fecha + 1), 0)
+                    AND m.fecha_hora::date <= p_fecha), 0)
       + COALESCE((SELECT SUM(r.monto)
                   FROM rendimiento r
                   WHERE r.id_cuenta = p_id_cuenta
@@ -41,7 +41,7 @@ CREATE FUNCTION public.fn_efectivo(p_id_cuenta integer, p_fecha date DEFAULT CUR
                                   ELSE  (t.monto - t.comision) END)
                   FROM transaccion t
                   WHERE t.id_cuenta = p_id_cuenta
-                    AND t.fecha_hora < p_fecha + 1), 0);
+                    AND t.fecha_hora::date <= p_fecha), 0);
 $$;
 
 
@@ -50,7 +50,7 @@ $$;
 --
 
 CREATE FUNCTION public.fn_posiciones(p_fecha date DEFAULT CURRENT_DATE, p_id_cuenta integer DEFAULT NULL::integer) RETURNS TABLE(id_cuenta integer, id_activo integer, cantidad numeric, valor_usd numeric)
-    LANGUAGE sql STABLE
+    LANGUAGE sql
     AS $$
     -- Renta variable
     SELECT t.id_cuenta,
@@ -60,35 +60,35 @@ CREATE FUNCTION public.fn_posiciones(p_fecha date DEFAULT CURRENT_DATE, p_id_cue
                  * COALESCE(fn_precio(t.id_activo, p_fecha), 0), 2)
     FROM transaccion t
     JOIN accion_fondo af ON af.id_activo = t.id_activo
-    WHERE t.fecha_hora < p_fecha + 1
+    WHERE t.fecha_hora::date <= p_fecha
       AND (p_id_cuenta IS NULL OR t.id_cuenta = p_id_cuenta)
     GROUP BY t.id_cuenta, t.id_activo
     HAVING SUM(CASE WHEN t.tipo_transaccion = 'COMPRA' THEN t.cantidad ELSE -t.cantidad END) > 0
 
     UNION ALL
 
-    -- Renta fija: lotes comprados y aun no redimidos a la fecha
+    -- Renta fija: compras de CDT y TES aun no redimidas a la fecha
     SELECT t.id_cuenta,
            t.id_activo,
            SUM(t.cantidad),
            ROUND(SUM(t.monto * fn_trm(t.fecha_hora::date)
                      * POWER(1 + t.tasa_pactada,
-                             (LEAST(p_fecha, rf.fecha_vencimiento) - t.fecha_hora::date) / 365.0))
+                             (LEAST(p_fecha, COALESCE(c.fecha_vencimiento, s.fecha_vencimiento))
+                              - t.fecha_hora::date) / 365.0))
                  / fn_trm(p_fecha), 2)
     FROM transaccion t
-    JOIN (SELECT c.id_activo, c.fecha_vencimiento FROM cdt c
-          UNION ALL
-          SELECT s.id_activo, s.fecha_vencimiento FROM tes s) rf
-      ON rf.id_activo = t.id_activo
+    LEFT JOIN cdt c ON c.id_activo = t.id_activo
+    LEFT JOIN tes s ON s.id_activo = t.id_activo
     WHERE t.tipo_transaccion = 'COMPRA'
-      AND t.fecha_hora < p_fecha + 1
+      AND t.tasa_pactada IS NOT NULL
+      AND t.fecha_hora::date <= p_fecha
       AND (p_id_cuenta IS NULL OR t.id_cuenta = p_id_cuenta)
       AND NOT EXISTS (SELECT 1
                       FROM transaccion v
                       WHERE v.id_cuenta = t.id_cuenta
                         AND v.id_activo = t.id_activo
                         AND v.tipo_transaccion = 'VENTA'
-                        AND v.fecha_hora < p_fecha + 1)
+                        AND v.fecha_hora::date <= p_fecha)
     GROUP BY t.id_cuenta, t.id_activo;
 $$;
 
@@ -98,7 +98,7 @@ $$;
 --
 
 CREATE FUNCTION public.fn_precio(p_id_activo integer, p_fecha date DEFAULT CURRENT_DATE) RETURNS numeric
-    LANGUAGE sql STABLE
+    LANGUAGE sql
     AS $$
     SELECT ph.precio_cierre
     FROM precio_historico ph
@@ -114,7 +114,7 @@ $$;
 --
 
 CREATE FUNCTION public.fn_rentabilidad_cliente(p_id_cliente integer, p_desde date, p_hasta date DEFAULT CURRENT_DATE) RETURNS numeric
-    LANGUAGE plpgsql STABLE
+    LANGUAGE plpgsql
     AS $$
 DECLARE
     v_inicial NUMERIC;
@@ -137,8 +137,8 @@ BEGIN
     FROM movimiento_efectivo m
     JOIN cuenta c ON c.id_cuenta = m.id_cuenta
     WHERE c.id_cliente = p_id_cliente
-      AND m.fecha_hora >= p_desde + 1
-      AND m.fecha_hora <  p_hasta + 1;
+      AND m.fecha_hora::date > p_desde
+      AND m.fecha_hora::date <= p_hasta;
 
     IF v_inicial + v_aportes <= 0 THEN
         RETURN NULL;
@@ -154,7 +154,7 @@ $$;
 --
 
 CREATE FUNCTION public.fn_tenencia(p_id_cuenta integer, p_id_activo integer) RETURNS numeric
-    LANGUAGE sql STABLE
+    LANGUAGE sql
     AS $$
     SELECT COALESCE(SUM(CASE WHEN t.tipo_transaccion = 'COMPRA'
                              THEN t.cantidad ELSE -t.cantidad END), 0)
@@ -169,7 +169,7 @@ $$;
 --
 
 CREATE FUNCTION public.fn_trm(p_fecha date) RETURNS numeric
-    LANGUAGE sql STABLE
+    LANGUAGE sql
     AS $$
     SELECT t.valor_cop
     FROM trm t
@@ -184,7 +184,7 @@ $$;
 --
 
 CREATE FUNCTION public.fn_valor_cuenta(p_id_cuenta integer, p_fecha date DEFAULT CURRENT_DATE) RETURNS numeric
-    LANGUAGE sql STABLE
+    LANGUAGE sql
     AS $$
     SELECT fn_efectivo(p_id_cuenta, p_fecha)
          + COALESCE((SELECT SUM(p.valor_usd)
@@ -257,7 +257,7 @@ BEGIN
         IF NEW.saldo_efectivo <> 0 THEN
             RAISE EXCEPTION 'Una cuenta nueva inicia con saldo 0; registre un DEPOSITO en movimiento_efectivo';
         END IF;
-    ELSIF NEW.saldo_efectivo IS DISTINCT FROM OLD.saldo_efectivo
+    ELSIF NEW.saldo_efectivo <> OLD.saldo_efectivo
           AND pg_trigger_depth() < 2 THEN
         RAISE EXCEPTION 'El saldo no se modifica directamente; registre un movimiento, transaccion o rendimiento';
     END IF;
@@ -911,7 +911,6 @@ CREATE VIEW public.v_posicion_actual AS
  SELECT cl.id_cliente,
     (((cl.nombres)::text || ' '::text) || (cl.apellidos)::text) AS cliente,
     cu.id_cuenta,
-    cu.nombre_cuenta,
     a.id_activo,
     a.nombre AS activo,
     ta.nombre_tipo AS tipo_activo,
@@ -930,26 +929,17 @@ CREATE VIEW public.v_posicion_actual AS
 --
 
 CREATE VIEW public.v_portafolio_cliente AS
- WITH componentes AS (
-         SELECT pa.id_cliente,
-            pa.tipo_activo AS categoria,
-            sum(pa.valor_usd) AS valor_usd
-           FROM public.v_posicion_actual pa
-          GROUP BY pa.id_cliente, pa.tipo_activo
-        UNION ALL
-         SELECT cu.id_cliente,
-            'EFECTIVO'::character varying,
-            sum(cu.saldo_efectivo) AS sum
-           FROM public.cuenta cu
-          GROUP BY cu.id_cliente
-        )
- SELECT cl.id_cliente,
-    (((cl.nombres)::text || ' '::text) || (cl.apellidos)::text) AS cliente,
-    co.categoria,
-    co.valor_usd,
-    round((((100)::numeric * co.valor_usd) / NULLIF(sum(co.valor_usd) OVER (PARTITION BY cl.id_cliente), (0)::numeric)), 2) AS porcentaje
-   FROM (componentes co
-     JOIN public.cliente cl ON ((cl.id_cliente = co.id_cliente)));
+ SELECT v_posicion_actual.id_cliente,
+    v_posicion_actual.tipo_activo AS categoria,
+    sum(v_posicion_actual.valor_usd) AS valor_usd
+   FROM public.v_posicion_actual
+  GROUP BY v_posicion_actual.id_cliente, v_posicion_actual.tipo_activo
+UNION ALL
+ SELECT cuenta.id_cliente,
+    'EFECTIVO'::character varying AS categoria,
+    sum(cuenta.saldo_efectivo) AS valor_usd
+   FROM public.cuenta
+  GROUP BY cuenta.id_cliente;
 
 
 --
@@ -961,16 +951,15 @@ CREATE VIEW public.v_cumplimiento_perfil AS
     (((cl.nombres)::text || ' '::text) || (cl.apellidos)::text) AS cliente,
     pr.nombre_perfil,
     pr.limite_max_renta_var AS limite_pct,
-    COALESCE(sum(pc.valor_usd), (0)::numeric) AS valor_total_usd,
-    COALESCE(sum(pc.valor_usd) FILTER (WHERE ((pc.categoria)::text = ANY ((ARRAY['ACCION'::character varying, 'FONDO'::character varying])::text[]))), (0)::numeric) AS valor_renta_variable_usd,
-    COALESCE(round((((100)::numeric * sum(pc.valor_usd) FILTER (WHERE ((pc.categoria)::text = ANY ((ARRAY['ACCION'::character varying, 'FONDO'::character varying])::text[])))) / NULLIF(sum(pc.valor_usd), (0)::numeric)), 2), (0)::numeric) AS pct_renta_variable,
+    sum(p.valor_usd) AS valor_total_usd,
+    round((((100)::numeric * sum(
         CASE
-            WHEN (COALESCE((((100)::numeric * sum(pc.valor_usd) FILTER (WHERE ((pc.categoria)::text = ANY ((ARRAY['ACCION'::character varying, 'FONDO'::character varying])::text[])))) / NULLIF(sum(pc.valor_usd), (0)::numeric)), (0)::numeric) <= pr.limite_max_renta_var) THEN 'CUMPLE'::text
-            ELSE 'EXCEDE'::text
-        END AS estado
+            WHEN ((p.categoria)::text = ANY ((ARRAY['ACCION'::character varying, 'FONDO'::character varying])::text[])) THEN p.valor_usd
+            ELSE (0)::numeric
+        END)) / sum(p.valor_usd)), 2) AS pct_renta_variable
    FROM ((public.cliente cl
      JOIN public.perfil_riesgo pr ON ((pr.id_perfil = cl.id_perfil)))
-     LEFT JOIN public.v_portafolio_cliente pc ON ((pc.id_cliente = cl.id_cliente)))
+     JOIN public.v_portafolio_cliente p ON ((p.id_cliente = cl.id_cliente)))
   GROUP BY cl.id_cliente, cl.nombres, cl.apellidos, pr.nombre_perfil, pr.limite_max_renta_var;
 
 
@@ -986,7 +975,7 @@ CREATE VIEW public.v_tenencia AS
             WHEN ((tipo_transaccion)::text = 'COMPRA'::text) THEN cantidad
             ELSE (- cantidad)
         END) AS cantidad
-   FROM public.transaccion t
+   FROM public.transaccion
   GROUP BY id_cuenta, id_activo
  HAVING (sum(
         CASE
@@ -1000,25 +989,20 @@ CREATE VIEW public.v_tenencia AS
 --
 
 CREATE VIEW public.v_vencimientos_renta_fija AS
- SELECT pa.id_cliente,
-    pa.cliente,
+ SELECT p.cliente,
     (((ase.nombres)::text || ' '::text) || (ase.apellidos)::text) AS asesor,
-    pa.id_cuenta,
-    pa.activo,
-    pa.tipo_activo,
-    rf.fecha_vencimiento,
-    (rf.fecha_vencimiento - CURRENT_DATE) AS dias_al_vencimiento,
-    pa.valor_usd AS valor_actual_usd
-   FROM (((public.v_posicion_actual pa
-     JOIN ( SELECT c.id_activo,
-            c.fecha_vencimiento
-           FROM public.cdt c
-        UNION ALL
-         SELECT s.id_activo,
-            s.fecha_vencimiento
-           FROM public.tes s) rf ON ((rf.id_activo = pa.id_activo)))
-     JOIN public.cliente cl ON ((cl.id_cliente = pa.id_cliente)))
-     JOIN public.asesor ase ON ((ase.id_asesor = cl.id_asesor)));
+    p.id_cuenta,
+    p.activo,
+    p.tipo_activo,
+    COALESCE(c.fecha_vencimiento, s.fecha_vencimiento) AS fecha_vencimiento,
+    (COALESCE(c.fecha_vencimiento, s.fecha_vencimiento) - CURRENT_DATE) AS dias_al_vencimiento,
+    p.valor_usd
+   FROM ((((public.v_posicion_actual p
+     JOIN public.cliente cl ON ((cl.id_cliente = p.id_cliente)))
+     JOIN public.asesor ase ON ((ase.id_asesor = cl.id_asesor)))
+     LEFT JOIN public.cdt c ON ((c.id_activo = p.id_activo)))
+     LEFT JOIN public.tes s ON ((s.id_activo = p.id_activo)))
+  WHERE ((p.clase_activo)::text = 'RENTA_FIJA'::text);
 
 
 --
@@ -2316,7 +2300,7 @@ COPY public.movimiento_efectivo (id_movimiento, id_cuenta, tipo_movimiento, fech
 405	77	DEPOSITO	2026-10-29 10:34:00	16444.07
 406	42	RETIRO	2026-11-02 10:29:00	13731.81
 407	71	DEPOSITO	2026-11-16 09:52:00	16183.54
-408	15	DEPOSITO	2026-11-16 23:45:29.804164	1000.00
+408	15	DEPOSITO	2026-11-17 10:37:01.214713	1000.00
 \.
 
 
@@ -12441,8 +12425,8 @@ COPY public.transaccion (id_transaccion, id_cuenta, id_activo, tipo_transaccion,
 1477	71	3	COMPRA	2026-11-16 09:55:00	8.000000	352.7800	0.0050	\N
 1478	71	1	COMPRA	2026-11-16 09:58:00	194.000000	14.9100	0.0050	\N
 1479	71	307	COMPRA	2026-11-16 10:01:00	1.000000	9494.5200	0.0050	0.1041
-1480	15	9	COMPRA	2026-11-16 23:45:29.804164	1.000000	739.9500	0.0050	\N
-1482	15	9	COMPRA	2026-11-16 23:45:33.313477	181.000000	739.9500	0.0050	\N
+1480	15	9	COMPRA	2026-11-17 10:37:01.214713	1.000000	739.9500	0.0050	\N
+1482	15	9	COMPRA	2026-11-17 10:37:04.822227	181.000000	739.9500	0.0050	\N
 \.
 
 
@@ -13580,5 +13564,5 @@ ALTER TABLE ONLY public.transaccion
 -- PostgreSQL database dump complete
 --
 
-\unrestrict BFkbLWVcO243u3cEfHwS2kt05vhnKq3Lx5RcSLqbRxKGZABiLg4GMEpdYbIgcFa
+\unrestrict dkuZq3BSOXWp76GHoznZaMUhbS8aUcduNuUUjWPZaZO1KzHoecsiMFOabE6rYcv
 

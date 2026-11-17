@@ -1,88 +1,43 @@
-﻿[2026-11-16 23:38:41] ==== Ejecucion de run_all.ps1 (pasos: datos, base, consultas, optimizacion, transacciones, concurrencia, mongo, backup) ====
-[2026-11-16 23:38:41] INICIO paso 'datos'
-[2026-11-16 23:38:57]      TRM: 698 rangos
-[2026-11-16 23:38:57]    
-[2026-11-16 23:38:57]    Generado sql\04_carga_datos.sql  (REALES: Yahoo Finance (yfinance) y datos.gov.co, descargados el 2026-11-16)
-[2026-11-16 23:38:57]      asesores 6 | clientes 60 | cuentas 80 | activos 346 (CDT 333)
-[2026-11-16 23:38:57]      transacciones 1479 | movimientos 407 | rendimientos 1367
-[2026-11-16 23:38:57]      precios 7220 | TRM 698 rangos | corte 2026-11-16
-[2026-11-16 23:38:57] FIN paso 'datos'
-[2026-11-16 23:38:57] INICIO paso 'base'
-[2026-11-16 23:39:00]            tabla        | filas 
-[2026-11-16 23:39:00]    ---------------------+-------
-[2026-11-16 23:39:00]     asesor              |     6
-[2026-11-16 23:39:00]     cliente             |    60
-[2026-11-16 23:39:00]     cuenta              |    80
-[2026-11-16 23:39:00]     movimiento_efectivo |   407
-[2026-11-16 23:39:00]     activo              |   346
-[2026-11-16 23:39:00]     accion_fondo        |    10
-[2026-11-16 23:39:00]     cdt                 |   333
-[2026-11-16 23:39:00]     tes                 |     3
-[2026-11-16 23:39:00]     precio_historico    |  7220
-[2026-11-16 23:39:00]     trm                 |   698
-[2026-11-16 23:39:00]     transaccion         |  1479
-[2026-11-16 23:39:00]     rendimiento         |  1367
-[2026-11-16 23:39:00]    (12 filas)
-[2026-11-16 23:39:00]    
-[2026-11-16 23:39:00] FIN paso 'base'
-[2026-11-16 23:39:00] INICIO paso 'consultas'
-[2026-11-16 23:39:00] FIN paso 'consultas'
-[2026-11-16 23:39:00] INICIO paso 'optimizacion'
-[2026-11-16 23:39:02] FIN paso 'optimizacion'
-[2026-11-16 23:39:02] INICIO paso 'transacciones'
-[2026-11-16 23:39:02] FIN paso 'transacciones'
-[2026-11-16 23:39:02] INICIO paso 'concurrencia'
-[2026-11-16 23:39:09] FIN paso 'concurrencia'
-[2026-11-16 23:39:09] INICIO paso 'mongo'
-[2026-11-16 23:39:10]    fallo en mongo\01_indices.js
-[2026-11-16 23:39:10] ERROR en el paso 'mongo' (ver evidencias)
-[2026-11-16 23:39:10] INICIO paso 'backup'
-[2026-11-16 23:39:11]    backup\portafolios.backup  155 KB
-[2026-11-16 23:39:11]    backup\portafolios.sql  425 KB
-[2026-11-16 23:39:11]    backup\mongo\mercado_activos.json  1,912 KB
-[2026-11-16 23:39:11]    backup\mongo\trm_raw.json  183 KB
-[2026-11-16 23:39:11] FIN paso 'backup'
-[2026-11-16 23:39:11] ==== TERMINO CON ERRORES en: mongo ====
-[2026-11-16 23:45:25] ==== Ejecucion de run_all.ps1 (pasos: datos, base, consultas, optimizacion, transacciones, concurrencia, mongo, backup) ====
-[2026-11-16 23:45:25] INICIO paso 'datos'
-[2026-11-16 23:45:25]    
-[2026-11-16 23:45:25]    Generado sql\04_carga_datos.sql  (REALES: Yahoo Finance (yfinance) y datos.gov.co, descargados el 2026-11-16)
-[2026-11-16 23:45:25]      asesores 6 | clientes 60 | cuentas 80 | activos 346 (CDT 333)
-[2026-11-16 23:45:25]      transacciones 1479 | movimientos 407 | rendimientos 1367
-[2026-11-16 23:45:25]      precios 7220 | TRM 698 rangos | corte 2026-11-16
-[2026-11-16 23:45:25] FIN paso 'datos'
-[2026-11-16 23:45:25] INICIO paso 'base'
-[2026-11-16 23:45:27]            tabla        | filas 
-[2026-11-16 23:45:27]    ---------------------+-------
-[2026-11-16 23:45:27]     asesor              |     6
-[2026-11-16 23:45:27]     cliente             |    60
-[2026-11-16 23:45:27]     cuenta              |    80
-[2026-11-16 23:45:27]     movimiento_efectivo |   407
-[2026-11-16 23:45:27]     activo              |   346
-[2026-11-16 23:45:27]     accion_fondo        |    10
-[2026-11-16 23:45:27]     cdt                 |   333
-[2026-11-16 23:45:27]     tes                 |     3
-[2026-11-16 23:45:27]     precio_historico    |  7220
-[2026-11-16 23:45:27]     trm                 |   698
-[2026-11-16 23:45:27]     transaccion         |  1479
-[2026-11-16 23:45:27]     rendimiento         |  1367
-[2026-11-16 23:45:27]    (12 filas)
-[2026-11-16 23:45:27]    
-[2026-11-16 23:45:27] FIN paso 'base'
-[2026-11-16 23:45:27] INICIO paso 'consultas'
-[2026-11-16 23:45:28] FIN paso 'consultas'
-[2026-11-16 23:45:28] INICIO paso 'optimizacion'
-[2026-11-16 23:45:29] FIN paso 'optimizacion'
-[2026-11-16 23:45:29] INICIO paso 'transacciones'
-[2026-11-16 23:45:29] FIN paso 'transacciones'
-[2026-11-16 23:45:29] INICIO paso 'concurrencia'
-[2026-11-16 23:45:36] FIN paso 'concurrencia'
-[2026-11-16 23:45:36] INICIO paso 'mongo'
-[2026-11-16 23:45:38] FIN paso 'mongo'
-[2026-11-16 23:45:38] INICIO paso 'backup'
-[2026-11-16 23:45:39]    backup\portafolios.backup  155 KB
-[2026-11-16 23:45:39]    backup\portafolios.sql  425 KB
-[2026-11-16 23:45:39]    backup\mongo\mercado_activos.json  1,912 KB
-[2026-11-16 23:45:39]    backup\mongo\trm_raw.json  183 KB
-[2026-11-16 23:45:39] FIN paso 'backup'
-[2026-11-16 23:45:39] ==== TERMINO SIN ERRORES ====
+[2026-11-17 10:36:57] ==== Ejecucion de run_all.ps1 (pasos: datos, base, consultas, optimizacion, transacciones, concurrencia, mongo, backup) ====
+[2026-11-17 10:36:57] INICIO paso 'datos'
+[2026-11-17 10:36:57]    
+[2026-11-17 10:36:57]    Generado sql\04_carga_datos.sql  (REALES: Yahoo Finance (yfinance) y datos.gov.co, descargados el 2026-11-16)
+[2026-11-17 10:36:57]      asesores 6 | clientes 60 | cuentas 80 | activos 346 (CDT 333)
+[2026-11-17 10:36:57]      transacciones 1479 | movimientos 407 | rendimientos 1367
+[2026-11-17 10:36:57]      precios 7220 | TRM 698 rangos | corte 2026-11-16
+[2026-11-17 10:36:57] FIN paso 'datos'
+[2026-11-17 10:36:57] INICIO paso 'base'
+[2026-11-17 10:36:59]            tabla        | filas 
+[2026-11-17 10:36:59]    ---------------------+-------
+[2026-11-17 10:36:59]     asesor              |     6
+[2026-11-17 10:36:59]     cliente             |    60
+[2026-11-17 10:36:59]     cuenta              |    80
+[2026-11-17 10:36:59]     movimiento_efectivo |   407
+[2026-11-17 10:36:59]     activo              |   346
+[2026-11-17 10:36:59]     accion_fondo        |    10
+[2026-11-17 10:36:59]     cdt                 |   333
+[2026-11-17 10:36:59]     tes                 |     3
+[2026-11-17 10:36:59]     precio_historico    |  7220
+[2026-11-17 10:36:59]     trm                 |   698
+[2026-11-17 10:36:59]     transaccion         |  1479
+[2026-11-17 10:36:59]     rendimiento         |  1367
+[2026-11-17 10:36:59]    (12 filas)
+[2026-11-17 10:36:59]    
+[2026-11-17 10:36:59] FIN paso 'base'
+[2026-11-17 10:36:59] INICIO paso 'consultas'
+[2026-11-17 10:36:59] FIN paso 'consultas'
+[2026-11-17 10:36:59] INICIO paso 'optimizacion'
+[2026-11-17 10:37:01] FIN paso 'optimizacion'
+[2026-11-17 10:37:01] INICIO paso 'transacciones'
+[2026-11-17 10:37:01] FIN paso 'transacciones'
+[2026-11-17 10:37:01] INICIO paso 'concurrencia'
+[2026-11-17 10:37:08] FIN paso 'concurrencia'
+[2026-11-17 10:37:08] INICIO paso 'mongo'
+[2026-11-17 10:37:10] FIN paso 'mongo'
+[2026-11-17 10:37:10] INICIO paso 'backup'
+[2026-11-17 10:37:11]    backup\portafolios.backup  154 KB
+[2026-11-17 10:37:11]    backup\portafolios.sql  424 KB
+[2026-11-17 10:37:11]    backup\mongo\mercado_activos.json  1,912 KB
+[2026-11-17 10:37:11]    backup\mongo\trm_raw.json  183 KB
+[2026-11-17 10:37:11] FIN paso 'backup'
+[2026-11-17 10:37:11] ==== TERMINO SIN ERRORES ====
