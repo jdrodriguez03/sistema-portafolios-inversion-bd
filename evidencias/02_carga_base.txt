@@ -1,0 +1,59 @@
+﻿DROP DATABASE
+CREATE DATABASE
+
+===== sql\01_ddl.sql =====
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «rendimiento» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «transaccion» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «precio_historico» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «trm» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «tes» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «cdt» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «accion_fondo» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «activo» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «tipo_activo» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «movimiento_efectivo» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «cuenta» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «cliente» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «asesor» no existe, omitiendo
+psql:sql/01_ddl.sql:20: NOTICE:  la tabla «perfil_riesgo» no existe, omitiendo
+
+===== sql\02_funciones_triggers.sql =====
+psql:sql/02_funciones_triggers.sql:307: NOTICE:  “trigger” «trg_transaccion_validar» para la relación «transaccion» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:356: NOTICE:  “trigger” «trg_movimiento_aplicar» para la relación «movimiento_efectivo» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:400: NOTICE:  “trigger” «trg_rendimiento_aplicar» para la relación «rendimiento» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:427: NOTICE:  “trigger” «trg_cuenta_proteger_saldo» para la relación «cuenta» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:445: NOTICE:  “trigger” «trg_transaccion_inmutable» para la relación «transaccion» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:450: NOTICE:  “trigger” «trg_movimiento_inmutable» para la relación «movimiento_efectivo» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:455: NOTICE:  “trigger” «trg_rendimiento_inmutable» para la relación «rendimiento» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:489: NOTICE:  “trigger” «trg_activo_subtipo» para la relación «activo» no existe, omitiendo
+
+===== sql\03_carga_catalogos.sql =====
+
+===== sql\04_carga_datos.sql =====
+ setval 
+--------
+      6
+(1 fila)
+
+ setval 
+--------
+     60
+(1 fila)
+
+ setval 
+--------
+     80
+(1 fila)
+
+ setval 
+--------
+    346
+(1 fila)
+
+
+===== sql\05_vistas.sql =====
+psql:sql/05_vistas.sql:14: NOTICE:  la vista «v_vencimientos_renta_fija» no existe, omitiendo
+psql:sql/05_vistas.sql:14: NOTICE:  la vista «v_cumplimiento_perfil» no existe, omitiendo
+psql:sql/05_vistas.sql:14: NOTICE:  la vista «v_portafolio_cliente» no existe, omitiendo
+psql:sql/05_vistas.sql:14: NOTICE:  la vista «v_posicion_actual» no existe, omitiendo
+psql:sql/05_vistas.sql:14: NOTICE:  la vista «v_tenencia» no existe, omitiendo

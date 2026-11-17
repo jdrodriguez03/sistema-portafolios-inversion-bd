@@ -1,0 +1,2 @@
+﻿  mercado_activos: 10 documentos -> backup/mongo/mercado_activos.json
+  trm_raw: 698 documentos -> backup/mongo/trm_raw.json

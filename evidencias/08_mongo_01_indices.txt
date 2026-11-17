@@ -1,0 +1,98 @@
+﻿
+=== INDICE 1 - trm_raw: TRM vigente al 2026-03-15 ===
+ANTES (sin indice):
+{
+  etapas: 'SORT <- COLLSCAN',
+  documentos_examinados: 698,
+  claves_examinadas: 0,
+  documentos_devueltos: 1,
+  tiempo_ms: 0
+}
+DESPUES (indice { vigenciadesde: 1 }):
+{
+  etapas: 'LIMIT <- FETCH <- IXSCAN',
+  documentos_examinados: 1,
+  claves_examinadas: 1,
+  documentos_devueltos: 1,
+  tiempo_ms: 5
+}
+Resultado:
+[
+  {
+    valor: '3685.53',
+    vigenciadesde: '2026-03-14T00:00:00.000',
+    vigenciahasta: '2026-03-16T00:00:00.000'
+  }
+]
+
+=== INDICE 2 - mercado_activos: acciones del sector Technology ===
+ANTES (sin indice):
+{
+  etapas: 'PROJECTION_DEFAULT <- COLLSCAN',
+  documentos_examinados: 10,
+  claves_examinadas: 0,
+  documentos_devueltos: 2,
+  tiempo_ms: 0
+}
+DESPUES (indice { info.sector: 1, tipo: 1 }):
+{
+  etapas: 'PROJECTION_DEFAULT <- FETCH <- IXSCAN',
+  documentos_examinados: 2,
+  claves_examinadas: 2,
+  documentos_devueltos: 2,
+  tiempo_ms: 6
+}
+Resultado:
+[
+  {
+    _id: 'AAPL',
+    ticker: 'AAPL',
+    nombre: 'Apple Inc.',
+    info: {
+      industry: 'Consumer Electronics'
+    }
+  },
+  {
+    _id: 'MSFT',
+    ticker: 'MSFT',
+    nombre: 'Microsoft Corporation',
+    info: {
+      industry: 'Software - Infrastructure'
+    }
+  }
+]
+
+=== Indices definidos ===
+[
+  {
+    coleccion: 'mercado_activos',
+    nombre: '_id_',
+    clave: {
+      _id: 1
+    }
+  },
+  {
+    coleccion: 'mercado_activos',
+    nombre: 'ix_sector_tipo',
+    clave: {
+      'info.sector': 1,
+      tipo: 1
+    }
+  }
+]
+[
+  {
+    coleccion: 'trm_raw',
+    nombre: '_id_',
+    clave: {
+      _id: 1
+    }
+  },
+  {
+    coleccion: 'trm_raw',
+    nombre: 'ix_trm_vigencia',
+    clave: {
+      vigenciadesde: 1
+    }
+  }
+]

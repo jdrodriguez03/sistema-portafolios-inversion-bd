@@ -1,0 +1,1295 @@
+﻿-- =====================================================================
+-- 06_consultas.sql
+-- Portafolio de consultas. Cada una indica la pregunta de informacion
+-- (P1..P9 del Entregable 1) que responde y las tecnicas SQL que usa.
+--
+--  C01 P1  Valor del portafolio por tipo ....... vista, agregacion condicional
+--  C02 P2  Rentabilidad 12 meses .............. funcion, JOIN
+--  C03 P3  Diversificacion vs. perfil ......... vistas, ventana (en la vista)
+--  C04 P4  Vencimientos 30/60/90 .............. vista, CASE
+--  C05 P5  Comisiones por asesor y mes ........ JOIN 4 tablas, GROUP BY, ventana
+--  C06 P6  Mayor y menor rentabilidad ......... CTE, RANK
+--  C07 P7  Historial de un cliente ............ JOIN, ventanas (SUM, LAG)
+--  C08 P8  Clientes y AUM por asesor .......... CTE, LEFT JOIN, ventana
+--  C09 P9  Activos mas comprados/vendidos ..... CTE, RANK con PARTITION BY
+--  C10 --  Asesores sobre el promedio ......... HAVING con subconsulta
+--  C11 --  Variacion mensual de precios ....... DISTINCT ON, LAG
+--  C12 --  Ganancia no realizada .............. CTE, JOIN con vista
+--  C13 --  Clientes sin operar en 90 dias ..... subconsulta correlacionada
+--  C14 --  Activos mas difundidos ............. GROUP BY, HAVING
+--  C15 --  Auditoria del saldo ................ funcion, control de integridad
+-- =====================================================================
+-- ---------------------------------------------------------------------
+-- C01 | P1: Valor actual del portafolio de cada cliente, por tipo de activo
+-- Una fila por cliente y una columna por tipo (agregacion con FILTER).
+-- ---------------------------------------------------------------------
+SELECT pc.id_cliente,
+       pc.cliente,
+       COALESCE(SUM(pc.valor_usd) FILTER (WHERE pc.categoria = 'ACCION'),   0) AS acciones_usd,
+       COALESCE(SUM(pc.valor_usd) FILTER (WHERE pc.categoria = 'FONDO'),    0) AS fondos_usd,
+       COALESCE(SUM(pc.valor_usd) FILTER (WHERE pc.categoria = 'CDT'),      0) AS cdt_usd,
+       COALESCE(SUM(pc.valor_usd) FILTER (WHERE pc.categoria = 'TES'),      0) AS tes_usd,
+       COALESCE(SUM(pc.valor_usd) FILTER (WHERE pc.categoria = 'EFECTIVO'), 0) AS efectivo_usd,
+       SUM(pc.valor_usd)                                                       AS total_usd
+FROM v_portafolio_cliente pc
+GROUP BY pc.id_cliente, pc.cliente
+ORDER BY total_usd DESC;
+ id_cliente |              cliente               | acciones_usd | fondos_usd |  cdt_usd  |  tes_usd  | efectivo_usd | total_usd 
+------------+------------------------------------+--------------+------------+-----------+-----------+--------------+-----------
+         13 | Carlos Lopez Castro                |     50697.05 |  113964.85 | 183652.28 | 122048.51 |    224513.99 | 694876.68
+         58 | Ricardo Lopez Cardenas             |     73600.50 |          0 | 127555.81 |  70026.83 |    280210.47 | 551393.61
+         25 | Daniela Laura Restrepo Acosta      |    254971.40 |          0 |  51793.10 |         0 |    215620.20 | 522384.70
+         36 | Ricardo Rojas Hernandez            |    297754.16 |   12928.10 |  27715.77 |   8064.24 |     97099.77 | 443562.04
+         42 | Gloria Lopez Hernandez             |    109598.24 |   15538.95 |  76251.40 |  64242.78 |    149365.05 | 414996.42
+         18 | Oscar Jimenez Torres               |    142442.55 |   27528.65 |  97079.16 |         0 |    104019.49 | 371069.85
+         49 | Laura Zapata Castro                |    296174.82 |          0 |   6658.29 |         0 |     50195.75 | 353028.86
+         53 | Gabriel Jimenez Diaz               |     81600.52 |    5294.00 |  80999.73 |  21526.81 |    149928.01 | 339349.07
+         16 | Jorge Velez Rojas                  |    242277.60 |    7941.00 |   3650.29 |         0 |     78001.66 | 331870.55
+          6 | Claudia Cortes Pardo               |    127612.23 |   15538.95 |         0 |  73943.78 |    109428.08 | 326523.04
+         31 | Gloria Giraldo Zapata              |    166612.71 |          0 |  48116.06 |  30982.73 |     56550.59 | 302262.09
+         43 | Carolina Suarez Garcia             |     92577.62 |   29598.00 |  11408.31 |   2106.62 |    162736.82 | 298427.37
+         50 | Santiago Rafael Lopez Londono      |     63253.08 |    1985.25 |  27970.71 |  50018.50 |    145845.54 | 289073.08
+          7 | Felipe Cortes Mejia                |            0 |   98293.85 |  27395.86 |  42655.46 |    107334.74 | 275679.91
+         12 | Paula Rojas Pardo                  |     54571.22 |   13896.75 |  56118.27 |   8794.91 |    141704.00 | 275085.15
+         15 | Nicolas Rincon Cardenas            |     15525.12 |   62866.25 |  12795.61 |  31339.04 |    152183.24 | 274709.26
+         14 | Sebastian Juan Gomez Castro        |     95961.66 |          0 |  62530.21 |  43506.04 |     15634.63 | 217632.54
+         47 | Adriana Paula Ortiz Ramirez        |     32584.45 |   54756.30 | 100813.33 |         0 |     25409.46 | 213563.54
+          9 | Nicolas Juan Gutierrez Jimenez     |     60406.05 |          0 |  45162.43 |  51743.82 |     47166.90 | 204479.20
+         41 | Angela Luisa Ospina Castro         |     95095.70 |   14799.00 |  15707.59 |   3612.21 |     65119.23 | 194333.73
+         37 | Gabriel Jorge Giraldo Pardo        |      9601.19 |    3970.50 |  29275.69 |  42524.63 |     91571.78 | 176943.79
+         40 | Claudia Rincon Velez               |     35749.53 |    1985.25 |  33851.15 |  28691.85 |     76013.55 | 176291.33
+         45 | Ivan Cardenas Suarez               |     13068.79 |    8602.75 | 123291.71 |         0 |     30888.01 | 175851.26
+         44 | Marcela Gutierrez Velez            |     68667.17 |   23161.25 |  18029.78 |   2467.32 |     61858.26 | 174183.78
+         54 | Adriana Garcia Gomez               |     21261.15 |    2881.60 |  79970.33 |  33227.52 |     25895.17 | 163235.77
+         34 | Hernan Ricardo Velez Diaz          |     30275.61 |   10588.00 |  63951.20 |  34637.99 |     22036.00 | 161488.80
+         60 | David Fernando Acosta Mejia        |    105462.95 |    6659.55 |   7630.79 |   2781.28 |     26716.16 | 149250.73
+         32 | Gloria Martinez Gutierrez          |     60051.63 |    7399.50 |         0 |  31061.32 |     44040.85 | 142553.30
+         56 | Sebastian Restrepo Cortes          |     15074.13 |          0 |  23990.43 |  15326.00 |     73410.72 | 127801.28
+         29 | Miguel Felipe Gutierrez Giraldo    |     27006.57 |          0 |  93311.89 |   2041.45 |      1153.81 | 123513.72
+         46 | Laura Pardo Londono                |     10778.58 |   30440.50 |         0 |  25279.36 |     50473.32 | 116971.76
+         28 | Oscar Rojas Castro                 |      4238.31 |          0 |         0 |         0 |     97079.95 | 101318.26
+         55 | Sofia Cardenas Acosta              |     17621.49 |          0 |  11056.84 |   3318.81 |     68923.36 | 100920.50
+         10 | Natalia Restrepo Londono           |      4648.53 |    3970.50 |   6701.03 |  18351.09 |     57162.26 |  90833.41
+         23 | Monica Acosta Hernandez            |     14111.20 |    1323.50 |         0 |   7920.37 |     64869.03 |  88224.10
+         22 | Diana Ospina Diaz                  |     59551.87 |   16278.90 |   8649.20 |   1725.19 |      1788.28 |  87993.44
+          8 | Camila Adriana Moreno Acosta       |     27715.75 |   17205.50 |  22411.86 |   9752.39 |      7154.95 |  84240.45
+         27 | Maria Giraldo Vargas               |     22883.62 |   28340.90 |         0 |         0 |     24856.44 |  76080.96
+          1 | Camila Giraldo Garcia              |     21725.68 |   14799.00 |   4867.17 |   5198.06 |     21870.53 |  68460.44
+         39 | Rafael Vargas Torres               |     32572.64 |    3699.75 |  15460.23 |   6602.50 |      9386.29 |  67721.41
+          5 | Daniela Gomez Martinez             |     34875.52 |    7279.25 |   8803.16 |   8422.54 |       646.04 |  60026.51
+         51 | Carolina Diana Cardenas Salazar    |     13225.13 |    3308.75 |  13113.98 |  10513.15 |     15863.68 |  56024.69
+         19 | Carolina Castro Diaz               |      1031.00 |     739.95 |  19670.00 |         0 |     33413.77 |  54854.72
+         24 | Alejandro Jimenez Ramirez          |     42668.74 |          0 |         0 |         0 |     11946.35 |  54615.09
+         52 | Rafael Gutierrez Jimenez           |      6663.68 |   10239.05 |  17856.77 |  16168.86 |      3226.38 |  54154.74
+         30 | Adriana Pardo Salazar              |     20739.86 |    1323.50 |   1740.51 |         0 |     29366.99 |  53170.86
+          3 | Nicolas Zapata Restrepo            |     10118.18 |   14365.95 |   8249.07 |  10025.98 |      6569.52 |  49328.70
+         38 | Santiago Alejandro Velez Hernandez |      7054.78 |          0 |   5668.75 |   2431.69 |     30138.99 |  45294.21
+         21 | Marcela Gutierrez Zapata           |     20924.03 |          0 |   3883.37 |   2814.01 |     17291.03 |  44912.44
+         11 | Alejandro Moreno Restrepo          |     17508.52 |    1323.50 |  21777.08 |   1237.22 |       478.33 |  42324.65
+         26 | Jorge Salazar Lopez                |      5570.13 |          0 |  24000.26 |         0 |      9722.45 |  39292.84
+         59 | Nicolas Rafael Jimenez Ramirez     |     14211.59 |          0 |   9269.46 |   2178.45 |     10285.92 |  35945.42
+         17 | Rafael Ramirez Gutierrez           |     26826.65 |          0 |   4765.09 |         0 |      3386.08 |  34977.82
+         33 | Monica Gutierrez Garcia            |      5040.66 |          0 |  19725.07 |         0 |      8946.32 |  33712.05
+         20 | Valentina Gomez Salazar            |      7825.79 |          0 |  11253.15 |         0 |      8277.63 |  27356.57
+          4 | Carlos Rincon Zapata               |      6672.24 |          0 |         0 |   4380.49 |     16232.00 |  27284.73
+          2 | Rafael Mauricio Acosta Vargas      |     11019.45 |   10588.00 |   2935.59 |         0 |      1242.37 |  25785.41
+         35 | Catalina Claudia Rodriguez Velez   |     12760.38 |          0 |   6822.37 |         0 |      1014.77 |  20597.52
+         48 | Carolina Pardo Ospina              |      8927.67 |    1479.90 |         0 |         0 |      8192.38 |  18599.95
+         57 | Miguel Ortiz Zapata                |     16610.32 |          0 |         0 |         0 |       220.30 |  16830.62
+(60 filas)
+
+-- ---------------------------------------------------------------------
+-- C02 | P2: Rentabilidad de cada cliente en los ultimos 12 meses
+-- fn_rentabilidad_cliente descuenta los aportes del periodo.
+-- ---------------------------------------------------------------------
+SELECT cl.id_cliente,
+       cl.nombres || ' ' || cl.apellidos AS cliente,
+       pr.nombre_perfil,
+       fn_rentabilidad_cliente(cl.id_cliente,
+                               (CURRENT_DATE - INTERVAL '12 months')::date,
+                               CURRENT_DATE) AS rentabilidad_12m_pct
+FROM cliente cl
+JOIN perfil_riesgo pr ON pr.id_perfil = cl.id_perfil
+ORDER BY rentabilidad_12m_pct DESC NULLS LAST;
+ id_cliente |              cliente               | nombre_perfil | rentabilidad_12m_pct 
+------------+------------------------------------+---------------+----------------------
+         49 | Laura Zapata Castro                | AGRESIVO      |                34.78
+          6 | Claudia Cortes Pardo               | MODERADO      |                27.95
+         30 | Adriana Pardo Salazar              | MODERADO      |                27.33
+         17 | Rafael Ramirez Gutierrez           | AGRESIVO      |                26.70
+         20 | Valentina Gomez Salazar            | MODERADO      |                24.89
+         29 | Miguel Felipe Gutierrez Giraldo    | CONSERVADOR   |                24.56
+         22 | Diana Ospina Diaz                  | MODERADO      |                24.52
+         14 | Sebastian Juan Gomez Castro        | MODERADO      |                23.90
+         51 | Carolina Diana Cardenas Salazar    | MODERADO      |                22.69
+         31 | Gloria Giraldo Zapata              | AGRESIVO      |                22.68
+          7 | Felipe Cortes Mejia                | MODERADO      |                21.80
+         42 | Gloria Lopez Hernandez             | MODERADO      |                21.35
+         16 | Jorge Velez Rojas                  | AGRESIVO      |                21.14
+          5 | Daniela Gomez Martinez             | MODERADO      |                21.10
+         45 | Ivan Cardenas Suarez               | CONSERVADOR   |                20.76
+         54 | Adriana Garcia Gomez               | CONSERVADOR   |                20.66
+          2 | Rafael Mauricio Acosta Vargas      | AGRESIVO      |                20.60
+         24 | Alejandro Jimenez Ramirez          | AGRESIVO      |                19.90
+          9 | Nicolas Juan Gutierrez Jimenez     | CONSERVADOR   |                18.94
+         47 | Adriana Paula Ortiz Ramirez        | MODERADO      |                18.89
+         55 | Sofia Cardenas Acosta              | MODERADO      |                18.81
+         40 | Claudia Rincon Velez               | MODERADO      |                18.56
+          8 | Camila Adriana Moreno Acosta       | MODERADO      |                18.14
+         11 | Alejandro Moreno Restrepo          | MODERADO      |                16.71
+         39 | Rafael Vargas Torres               | MODERADO      |                16.47
+         26 | Jorge Salazar Lopez                | MODERADO      |                16.32
+         32 | Gloria Martinez Gutierrez          | MODERADO      |                15.98
+         37 | Gabriel Jorge Giraldo Pardo        | CONSERVADOR   |                15.77
+         12 | Paula Rojas Pardo                  | MODERADO      |                15.42
+         41 | Angela Luisa Ospina Castro         | AGRESIVO      |                14.93
+         13 | Carlos Lopez Castro                | CONSERVADOR   |                14.76
+         43 | Carolina Suarez Garcia             | AGRESIVO      |                13.48
+         34 | Hernan Ricardo Velez Diaz          | MODERADO      |                13.10
+         33 | Monica Gutierrez Garcia            | CONSERVADOR   |                12.94
+         25 | Daniela Laura Restrepo Acosta      | AGRESIVO      |                12.84
+         58 | Ricardo Lopez Cardenas             | CONSERVADOR   |                12.77
+          1 | Camila Giraldo Garcia              | AGRESIVO      |                11.49
+         46 | Laura Pardo Londono                | MODERADO      |                11.43
+         52 | Rafael Gutierrez Jimenez           | CONSERVADOR   |                11.07
+         21 | Marcela Gutierrez Zapata           | AGRESIVO      |                10.89
+         35 | Catalina Claudia Rodriguez Velez   | AGRESIVO      |                10.80
+         10 | Natalia Restrepo Londono           | CONSERVADOR   |                10.22
+          3 | Nicolas Zapata Restrepo            | MODERADO      |                10.12
+         15 | Nicolas Rincon Cardenas            | AGRESIVO      |                10.03
+         50 | Santiago Rafael Lopez Londono      | MODERADO      |                10.02
+         60 | David Fernando Acosta Mejia        | MODERADO      |                 9.80
+         27 | Maria Giraldo Vargas               | AGRESIVO      |                 9.25
+         18 | Oscar Jimenez Torres               | MODERADO      |                 8.98
+         53 | Gabriel Jimenez Diaz               | MODERADO      |                 8.81
+         38 | Santiago Alejandro Velez Hernandez | CONSERVADOR   |                 8.71
+         59 | Nicolas Rafael Jimenez Ramirez     | MODERADO      |                 7.86
+         56 | Sebastian Restrepo Cortes          | CONSERVADOR   |                 7.84
+         57 | Miguel Ortiz Zapata                | AGRESIVO      |                 7.19
+         23 | Monica Acosta Hernandez            | CONSERVADOR   |                 7.19
+         48 | Carolina Pardo Ospina              | MODERADO      |                 6.59
+          4 | Carlos Rincon Zapata               | CONSERVADOR   |                 5.58
+         44 | Marcela Gutierrez Velez            | AGRESIVO      |                 4.87
+         36 | Ricardo Rojas Hernandez            | AGRESIVO      |                 4.53
+         19 | Carolina Castro Diaz               | CONSERVADOR   |                 2.27
+         28 | Oscar Rojas Castro                 | CONSERVADOR   |                 1.70
+(60 filas)
+
+-- ---------------------------------------------------------------------
+-- C03 | P3: Porcentaje del portafolio por tipo de activo y cumplimiento
+--           del limite de diversificacion del perfil (Regla 2)
+-- ---------------------------------------------------------------------
+-- C03a. Composicion porcentual de cada cliente
+SELECT pc.cliente, pc.categoria, pc.valor_usd, pc.porcentaje
+FROM v_portafolio_cliente pc
+ORDER BY pc.cliente, pc.porcentaje DESC;
+              cliente               | categoria | valor_usd | porcentaje 
+------------------------------------+-----------+-----------+------------
+ Adriana Garcia Gomez               | CDT       |  79970.33 |      48.99
+ Adriana Garcia Gomez               | TES       |  33227.52 |      20.36
+ Adriana Garcia Gomez               | EFECTIVO  |  25895.17 |      15.86
+ Adriana Garcia Gomez               | ACCION    |  21261.15 |      13.02
+ Adriana Garcia Gomez               | FONDO     |   2881.60 |       1.77
+ Adriana Pardo Salazar              | EFECTIVO  |  29366.99 |      55.23
+ Adriana Pardo Salazar              | ACCION    |  20739.86 |      39.01
+ Adriana Pardo Salazar              | CDT       |   1740.51 |       3.27
+ Adriana Pardo Salazar              | FONDO     |   1323.50 |       2.49
+ Adriana Paula Ortiz Ramirez        | CDT       | 100813.33 |      47.21
+ Adriana Paula Ortiz Ramirez        | FONDO     |  54756.30 |      25.64
+ Adriana Paula Ortiz Ramirez        | ACCION    |  32584.45 |      15.26
+ Adriana Paula Ortiz Ramirez        | EFECTIVO  |  25409.46 |      11.90
+ Alejandro Jimenez Ramirez          | ACCION    |  42668.74 |      78.13
+ Alejandro Jimenez Ramirez          | EFECTIVO  |  11946.35 |      21.87
+ Alejandro Moreno Restrepo          | CDT       |  21777.08 |      51.45
+ Alejandro Moreno Restrepo          | ACCION    |  17508.52 |      41.37
+ Alejandro Moreno Restrepo          | FONDO     |   1323.50 |       3.13
+ Alejandro Moreno Restrepo          | TES       |   1237.22 |       2.92
+ Alejandro Moreno Restrepo          | EFECTIVO  |    478.33 |       1.13
+ Angela Luisa Ospina Castro         | ACCION    |  95095.70 |      48.93
+ Angela Luisa Ospina Castro         | EFECTIVO  |  65119.23 |      33.51
+ Angela Luisa Ospina Castro         | CDT       |  15707.59 |       8.08
+ Angela Luisa Ospina Castro         | FONDO     |  14799.00 |       7.62
+ Angela Luisa Ospina Castro         | TES       |   3612.21 |       1.86
+ Camila Adriana Moreno Acosta       | ACCION    |  27715.75 |      32.90
+ Camila Adriana Moreno Acosta       | CDT       |  22411.86 |      26.60
+ Camila Adriana Moreno Acosta       | FONDO     |  17205.50 |      20.42
+ Camila Adriana Moreno Acosta       | TES       |   9752.39 |      11.58
+ Camila Adriana Moreno Acosta       | EFECTIVO  |   7154.95 |       8.49
+ Camila Giraldo Garcia              | EFECTIVO  |  21870.53 |      31.95
+ Camila Giraldo Garcia              | ACCION    |  21725.68 |      31.73
+ Camila Giraldo Garcia              | FONDO     |  14799.00 |      21.62
+ Camila Giraldo Garcia              | TES       |   5198.06 |       7.59
+ Camila Giraldo Garcia              | CDT       |   4867.17 |       7.11
+ Carlos Lopez Castro                | EFECTIVO  | 224513.99 |      32.31
+ Carlos Lopez Castro                | CDT       | 183652.28 |      26.43
+ Carlos Lopez Castro                | TES       | 122048.51 |      17.56
+ Carlos Lopez Castro                | FONDO     | 113964.85 |      16.40
+ Carlos Lopez Castro                | ACCION    |  50697.05 |       7.30
+ Carlos Rincon Zapata               | EFECTIVO  |  16232.00 |      59.49
+ Carlos Rincon Zapata               | ACCION    |   6672.24 |      24.45
+ Carlos Rincon Zapata               | TES       |   4380.49 |      16.05
+ Carolina Castro Diaz               | EFECTIVO  |  33413.77 |      60.91
+ Carolina Castro Diaz               | CDT       |  19670.00 |      35.86
+ Carolina Castro Diaz               | ACCION    |   1031.00 |       1.88
+ Carolina Castro Diaz               | FONDO     |    739.95 |       1.35
+ Carolina Diana Cardenas Salazar    | EFECTIVO  |  15863.68 |      28.32
+ Carolina Diana Cardenas Salazar    | ACCION    |  13225.13 |      23.61
+ Carolina Diana Cardenas Salazar    | CDT       |  13113.98 |      23.41
+ Carolina Diana Cardenas Salazar    | TES       |  10513.15 |      18.77
+ Carolina Diana Cardenas Salazar    | FONDO     |   3308.75 |       5.91
+ Carolina Pardo Ospina              | ACCION    |   8927.67 |      48.00
+ Carolina Pardo Ospina              | EFECTIVO  |   8192.38 |      44.05
+ Carolina Pardo Ospina              | FONDO     |   1479.90 |       7.96
+ Carolina Suarez Garcia             | EFECTIVO  | 162736.82 |      54.53
+ Carolina Suarez Garcia             | ACCION    |  92577.62 |      31.02
+ Carolina Suarez Garcia             | FONDO     |  29598.00 |       9.92
+ Carolina Suarez Garcia             | CDT       |  11408.31 |       3.82
+ Carolina Suarez Garcia             | TES       |   2106.62 |       0.71
+ Catalina Claudia Rodriguez Velez   | ACCION    |  12760.38 |      61.95
+ Catalina Claudia Rodriguez Velez   | CDT       |   6822.37 |      33.12
+ Catalina Claudia Rodriguez Velez   | EFECTIVO  |   1014.77 |       4.93
+ Claudia Cortes Pardo               | ACCION    | 127612.23 |      39.08
+ Claudia Cortes Pardo               | EFECTIVO  | 109428.08 |      33.51
+ Claudia Cortes Pardo               | TES       |  73943.78 |      22.65
+ Claudia Cortes Pardo               | FONDO     |  15538.95 |       4.76
+ Claudia Rincon Velez               | EFECTIVO  |  76013.55 |      43.12
+ Claudia Rincon Velez               | ACCION    |  35749.53 |      20.28
+ Claudia Rincon Velez               | CDT       |  33851.15 |      19.20
+ Claudia Rincon Velez               | TES       |  28691.85 |      16.28
+ Claudia Rincon Velez               | FONDO     |   1985.25 |       1.13
+ Daniela Gomez Martinez             | ACCION    |  34875.52 |      58.10
+ Daniela Gomez Martinez             | CDT       |   8803.16 |      14.67
+ Daniela Gomez Martinez             | TES       |   8422.54 |      14.03
+ Daniela Gomez Martinez             | FONDO     |   7279.25 |      12.13
+ Daniela Gomez Martinez             | EFECTIVO  |    646.04 |       1.08
+ Daniela Laura Restrepo Acosta      | ACCION    | 254971.40 |      48.81
+ Daniela Laura Restrepo Acosta      | EFECTIVO  | 215620.20 |      41.28
+ Daniela Laura Restrepo Acosta      | CDT       |  51793.10 |       9.91
+ David Fernando Acosta Mejia        | ACCION    | 105462.95 |      70.66
+ David Fernando Acosta Mejia        | EFECTIVO  |  26716.16 |      17.90
+ David Fernando Acosta Mejia        | CDT       |   7630.79 |       5.11
+ David Fernando Acosta Mejia        | FONDO     |   6659.55 |       4.46
+ David Fernando Acosta Mejia        | TES       |   2781.28 |       1.86
+ Diana Ospina Diaz                  | ACCION    |  59551.87 |      67.68
+ Diana Ospina Diaz                  | FONDO     |  16278.90 |      18.50
+ Diana Ospina Diaz                  | CDT       |   8649.20 |       9.83
+ Diana Ospina Diaz                  | EFECTIVO  |   1788.28 |       2.03
+ Diana Ospina Diaz                  | TES       |   1725.19 |       1.96
+ Felipe Cortes Mejia                | EFECTIVO  | 107334.74 |      38.93
+ Felipe Cortes Mejia                | FONDO     |  98293.85 |      35.66
+ Felipe Cortes Mejia                | TES       |  42655.46 |      15.47
+ Felipe Cortes Mejia                | CDT       |  27395.86 |       9.94
+ Gabriel Jimenez Diaz               | EFECTIVO  | 149928.01 |      44.18
+ Gabriel Jimenez Diaz               | ACCION    |  81600.52 |      24.05
+ Gabriel Jimenez Diaz               | CDT       |  80999.73 |      23.87
+ Gabriel Jimenez Diaz               | TES       |  21526.81 |       6.34
+ Gabriel Jimenez Diaz               | FONDO     |   5294.00 |       1.56
+ Gabriel Jorge Giraldo Pardo        | EFECTIVO  |  91571.78 |      51.75
+ Gabriel Jorge Giraldo Pardo        | TES       |  42524.63 |      24.03
+ Gabriel Jorge Giraldo Pardo        | CDT       |  29275.69 |      16.55
+ Gabriel Jorge Giraldo Pardo        | ACCION    |   9601.19 |       5.43
+ Gabriel Jorge Giraldo Pardo        | FONDO     |   3970.50 |       2.24
+ Gloria Giraldo Zapata              | ACCION    | 166612.71 |      55.12
+ Gloria Giraldo Zapata              | EFECTIVO  |  56550.59 |      18.71
+ Gloria Giraldo Zapata              | CDT       |  48116.06 |      15.92
+ Gloria Giraldo Zapata              | TES       |  30982.73 |      10.25
+ Gloria Lopez Hernandez             | EFECTIVO  | 149365.05 |      35.99
+ Gloria Lopez Hernandez             | ACCION    | 109598.24 |      26.41
+ Gloria Lopez Hernandez             | CDT       |  76251.40 |      18.37
+ Gloria Lopez Hernandez             | TES       |  64242.78 |      15.48
+ Gloria Lopez Hernandez             | FONDO     |  15538.95 |       3.74
+ Gloria Martinez Gutierrez          | ACCION    |  60051.63 |      42.13
+ Gloria Martinez Gutierrez          | EFECTIVO  |  44040.85 |      30.89
+ Gloria Martinez Gutierrez          | TES       |  31061.32 |      21.79
+ Gloria Martinez Gutierrez          | FONDO     |   7399.50 |       5.19
+ Hernan Ricardo Velez Diaz          | CDT       |  63951.20 |      39.60
+ Hernan Ricardo Velez Diaz          | TES       |  34637.99 |      21.45
+ Hernan Ricardo Velez Diaz          | ACCION    |  30275.61 |      18.75
+ Hernan Ricardo Velez Diaz          | EFECTIVO  |  22036.00 |      13.65
+ Hernan Ricardo Velez Diaz          | FONDO     |  10588.00 |       6.56
+ Ivan Cardenas Suarez               | CDT       | 123291.71 |      70.11
+ Ivan Cardenas Suarez               | EFECTIVO  |  30888.01 |      17.56
+ Ivan Cardenas Suarez               | ACCION    |  13068.79 |       7.43
+ Ivan Cardenas Suarez               | FONDO     |   8602.75 |       4.89
+ Jorge Salazar Lopez                | CDT       |  24000.26 |      61.08
+ Jorge Salazar Lopez                | EFECTIVO  |   9722.45 |      24.74
+ Jorge Salazar Lopez                | ACCION    |   5570.13 |      14.18
+ Jorge Velez Rojas                  | ACCION    | 242277.60 |      73.00
+ Jorge Velez Rojas                  | EFECTIVO  |  78001.66 |      23.50
+ Jorge Velez Rojas                  | FONDO     |   7941.00 |       2.39
+ Jorge Velez Rojas                  | CDT       |   3650.29 |       1.10
+ Laura Pardo Londono                | EFECTIVO  |  50473.32 |      43.15
+ Laura Pardo Londono                | FONDO     |  30440.50 |      26.02
+ Laura Pardo Londono                | TES       |  25279.36 |      21.61
+ Laura Pardo Londono                | ACCION    |  10778.58 |       9.21
+ Laura Zapata Castro                | ACCION    | 296174.82 |      83.90
+ Laura Zapata Castro                | EFECTIVO  |  50195.75 |      14.22
+ Laura Zapata Castro                | CDT       |   6658.29 |       1.89
+ Marcela Gutierrez Velez            | ACCION    |  68667.17 |      39.42
+ Marcela Gutierrez Velez            | EFECTIVO  |  61858.26 |      35.51
+ Marcela Gutierrez Velez            | FONDO     |  23161.25 |      13.30
+ Marcela Gutierrez Velez            | CDT       |  18029.78 |      10.35
+ Marcela Gutierrez Velez            | TES       |   2467.32 |       1.42
+ Marcela Gutierrez Zapata           | ACCION    |  20924.03 |      46.59
+ Marcela Gutierrez Zapata           | EFECTIVO  |  17291.03 |      38.50
+ Marcela Gutierrez Zapata           | CDT       |   3883.37 |       8.65
+ Marcela Gutierrez Zapata           | TES       |   2814.01 |       6.27
+ Maria Giraldo Vargas               | FONDO     |  28340.90 |      37.25
+ Maria Giraldo Vargas               | EFECTIVO  |  24856.44 |      32.67
+ Maria Giraldo Vargas               | ACCION    |  22883.62 |      30.08
+ Miguel Felipe Gutierrez Giraldo    | CDT       |  93311.89 |      75.55
+ Miguel Felipe Gutierrez Giraldo    | ACCION    |  27006.57 |      21.87
+ Miguel Felipe Gutierrez Giraldo    | TES       |   2041.45 |       1.65
+ Miguel Felipe Gutierrez Giraldo    | EFECTIVO  |   1153.81 |       0.93
+ Miguel Ortiz Zapata                | ACCION    |  16610.32 |      98.69
+ Miguel Ortiz Zapata                | EFECTIVO  |    220.30 |       1.31
+ Monica Acosta Hernandez            | EFECTIVO  |  64869.03 |      73.53
+ Monica Acosta Hernandez            | ACCION    |  14111.20 |      15.99
+ Monica Acosta Hernandez            | TES       |   7920.37 |       8.98
+ Monica Acosta Hernandez            | FONDO     |   1323.50 |       1.50
+ Monica Gutierrez Garcia            | CDT       |  19725.07 |      58.51
+ Monica Gutierrez Garcia            | EFECTIVO  |   8946.32 |      26.54
+ Monica Gutierrez Garcia            | ACCION    |   5040.66 |      14.95
+ Natalia Restrepo Londono           | EFECTIVO  |  57162.26 |      62.93
+ Natalia Restrepo Londono           | TES       |  18351.09 |      20.20
+ Natalia Restrepo Londono           | CDT       |   6701.03 |       7.38
+ Natalia Restrepo Londono           | ACCION    |   4648.53 |       5.12
+ Natalia Restrepo Londono           | FONDO     |   3970.50 |       4.37
+ Nicolas Juan Gutierrez Jimenez     | ACCION    |  60406.05 |      29.54
+ Nicolas Juan Gutierrez Jimenez     | TES       |  51743.82 |      25.31
+ Nicolas Juan Gutierrez Jimenez     | EFECTIVO  |  47166.90 |      23.07
+ Nicolas Juan Gutierrez Jimenez     | CDT       |  45162.43 |      22.09
+ Nicolas Rafael Jimenez Ramirez     | ACCION    |  14211.59 |      39.54
+ Nicolas Rafael Jimenez Ramirez     | EFECTIVO  |  10285.92 |      28.62
+ Nicolas Rafael Jimenez Ramirez     | CDT       |   9269.46 |      25.79
+ Nicolas Rafael Jimenez Ramirez     | TES       |   2178.45 |       6.06
+ Nicolas Rincon Cardenas            | EFECTIVO  | 152183.24 |      55.40
+ Nicolas Rincon Cardenas            | FONDO     |  62866.25 |      22.88
+ Nicolas Rincon Cardenas            | TES       |  31339.04 |      11.41
+ Nicolas Rincon Cardenas            | ACCION    |  15525.12 |       5.65
+ Nicolas Rincon Cardenas            | CDT       |  12795.61 |       4.66
+ Nicolas Zapata Restrepo            | FONDO     |  14365.95 |      29.12
+ Nicolas Zapata Restrepo            | ACCION    |  10118.18 |      20.51
+ Nicolas Zapata Restrepo            | TES       |  10025.98 |      20.32
+ Nicolas Zapata Restrepo            | CDT       |   8249.07 |      16.72
+ Nicolas Zapata Restrepo            | EFECTIVO  |   6569.52 |      13.32
+ Oscar Jimenez Torres               | ACCION    | 142442.55 |      38.39
+ Oscar Jimenez Torres               | EFECTIVO  | 104019.49 |      28.03
+ Oscar Jimenez Torres               | CDT       |  97079.16 |      26.16
+ Oscar Jimenez Torres               | FONDO     |  27528.65 |       7.42
+ Oscar Rojas Castro                 | EFECTIVO  |  97079.95 |      95.82
+ Oscar Rojas Castro                 | ACCION    |   4238.31 |       4.18
+ Paula Rojas Pardo                  | EFECTIVO  | 141704.00 |      51.51
+ Paula Rojas Pardo                  | CDT       |  56118.27 |      20.40
+ Paula Rojas Pardo                  | ACCION    |  54571.22 |      19.84
+ Paula Rojas Pardo                  | FONDO     |  13896.75 |       5.05
+ Paula Rojas Pardo                  | TES       |   8794.91 |       3.20
+ Rafael Gutierrez Jimenez           | CDT       |  17856.77 |      32.97
+ Rafael Gutierrez Jimenez           | TES       |  16168.86 |      29.86
+ Rafael Gutierrez Jimenez           | FONDO     |  10239.05 |      18.91
+ Rafael Gutierrez Jimenez           | ACCION    |   6663.68 |      12.30
+ Rafael Gutierrez Jimenez           | EFECTIVO  |   3226.38 |       5.96
+ Rafael Mauricio Acosta Vargas      | ACCION    |  11019.45 |      42.74
+ Rafael Mauricio Acosta Vargas      | FONDO     |  10588.00 |      41.06
+ Rafael Mauricio Acosta Vargas      | CDT       |   2935.59 |      11.38
+ Rafael Mauricio Acosta Vargas      | EFECTIVO  |   1242.37 |       4.82
+ Rafael Ramirez Gutierrez           | ACCION    |  26826.65 |      76.70
+ Rafael Ramirez Gutierrez           | CDT       |   4765.09 |      13.62
+ Rafael Ramirez Gutierrez           | EFECTIVO  |   3386.08 |       9.68
+ Rafael Vargas Torres               | ACCION    |  32572.64 |      48.10
+ Rafael Vargas Torres               | CDT       |  15460.23 |      22.83
+ Rafael Vargas Torres               | EFECTIVO  |   9386.29 |      13.86
+ Rafael Vargas Torres               | TES       |   6602.50 |       9.75
+ Rafael Vargas Torres               | FONDO     |   3699.75 |       5.46
+ Ricardo Lopez Cardenas             | EFECTIVO  | 280210.47 |      50.82
+ Ricardo Lopez Cardenas             | CDT       | 127555.81 |      23.13
+ Ricardo Lopez Cardenas             | ACCION    |  73600.50 |      13.35
+ Ricardo Lopez Cardenas             | TES       |  70026.83 |      12.70
+ Ricardo Rojas Hernandez            | ACCION    | 297754.16 |      67.13
+ Ricardo Rojas Hernandez            | EFECTIVO  |  97099.77 |      21.89
+ Ricardo Rojas Hernandez            | CDT       |  27715.77 |       6.25
+ Ricardo Rojas Hernandez            | FONDO     |  12928.10 |       2.91
+ Ricardo Rojas Hernandez            | TES       |   8064.24 |       1.82
+ Santiago Alejandro Velez Hernandez | EFECTIVO  |  30138.99 |      66.54
+ Santiago Alejandro Velez Hernandez | ACCION    |   7054.78 |      15.58
+ Santiago Alejandro Velez Hernandez | CDT       |   5668.75 |      12.52
+ Santiago Alejandro Velez Hernandez | TES       |   2431.69 |       5.37
+ Santiago Rafael Lopez Londono      | EFECTIVO  | 145845.54 |      50.45
+ Santiago Rafael Lopez Londono      | ACCION    |  63253.08 |      21.88
+ Santiago Rafael Lopez Londono      | TES       |  50018.50 |      17.30
+ Santiago Rafael Lopez Londono      | CDT       |  27970.71 |       9.68
+ Santiago Rafael Lopez Londono      | FONDO     |   1985.25 |       0.69
+ Sebastian Juan Gomez Castro        | ACCION    |  95961.66 |      44.09
+ Sebastian Juan Gomez Castro        | CDT       |  62530.21 |      28.73
+ Sebastian Juan Gomez Castro        | TES       |  43506.04 |      19.99
+ Sebastian Juan Gomez Castro        | EFECTIVO  |  15634.63 |       7.18
+ Sebastian Restrepo Cortes          | EFECTIVO  |  73410.72 |      57.44
+ Sebastian Restrepo Cortes          | CDT       |  23990.43 |      18.77
+ Sebastian Restrepo Cortes          | TES       |  15326.00 |      11.99
+ Sebastian Restrepo Cortes          | ACCION    |  15074.13 |      11.79
+ Sofia Cardenas Acosta              | EFECTIVO  |  68923.36 |      68.29
+ Sofia Cardenas Acosta              | ACCION    |  17621.49 |      17.46
+ Sofia Cardenas Acosta              | CDT       |  11056.84 |      10.96
+ Sofia Cardenas Acosta              | TES       |   3318.81 |       3.29
+ Valentina Gomez Salazar            | CDT       |  11253.15 |      41.14
+ Valentina Gomez Salazar            | EFECTIVO  |   8277.63 |      30.26
+ Valentina Gomez Salazar            | ACCION    |   7825.79 |      28.61
+(249 filas)
+
+-- C03b. Cumplimiento del limite (primero los que lo exceden)
+SELECT cp.cliente, cp.nombre_perfil, cp.limite_pct, cp.pct_renta_variable,
+       cp.valor_total_usd, cp.estado
+FROM v_cumplimiento_perfil cp
+ORDER BY cp.estado DESC, cp.pct_renta_variable DESC;
+              cliente               | nombre_perfil | limite_pct | pct_renta_variable | valor_total_usd | estado 
+------------------------------------+---------------+------------+--------------------+-----------------+--------
+ Diana Ospina Diaz                  | MODERADO      |      50.00 |              86.18 |        87993.44 | EXCEDE
+ David Fernando Acosta Mejia        | MODERADO      |      50.00 |              75.12 |       149250.73 | EXCEDE
+ Daniela Gomez Martinez             | MODERADO      |      50.00 |              70.23 |        60026.51 | EXCEDE
+ Carolina Pardo Ospina              | MODERADO      |      50.00 |              55.95 |        18599.95 | EXCEDE
+ Rafael Vargas Torres               | MODERADO      |      50.00 |              53.56 |        67721.41 | EXCEDE
+ Camila Adriana Moreno Acosta       | MODERADO      |      50.00 |              53.33 |        84240.45 | EXCEDE
+ Rafael Gutierrez Jimenez           | CONSERVADOR   |      20.00 |              31.21 |        54154.74 | EXCEDE
+ Nicolas Juan Gutierrez Jimenez     | CONSERVADOR   |      20.00 |              29.54 |       204479.20 | EXCEDE
+ Carlos Rincon Zapata               | CONSERVADOR   |      20.00 |              24.45 |        27284.73 | EXCEDE
+ Carlos Lopez Castro                | CONSERVADOR   |      20.00 |              23.70 |       694876.68 | EXCEDE
+ Miguel Felipe Gutierrez Giraldo    | CONSERVADOR   |      20.00 |              21.87 |       123513.72 | EXCEDE
+ Miguel Ortiz Zapata                | AGRESIVO      |     100.00 |              98.69 |        16830.62 | CUMPLE
+ Laura Zapata Castro                | AGRESIVO      |     100.00 |              83.90 |       353028.86 | CUMPLE
+ Rafael Mauricio Acosta Vargas      | AGRESIVO      |     100.00 |              83.80 |        25785.41 | CUMPLE
+ Alejandro Jimenez Ramirez          | AGRESIVO      |     100.00 |              78.13 |        54615.09 | CUMPLE
+ Rafael Ramirez Gutierrez           | AGRESIVO      |     100.00 |              76.70 |        34977.82 | CUMPLE
+ Jorge Velez Rojas                  | AGRESIVO      |     100.00 |              75.40 |       331870.55 | CUMPLE
+ Ricardo Rojas Hernandez            | AGRESIVO      |     100.00 |              70.04 |       443562.04 | CUMPLE
+ Maria Giraldo Vargas               | AGRESIVO      |     100.00 |              67.33 |        76080.96 | CUMPLE
+ Catalina Claudia Rodriguez Velez   | AGRESIVO      |     100.00 |              61.95 |        20597.52 | CUMPLE
+ Angela Luisa Ospina Castro         | AGRESIVO      |     100.00 |              56.55 |       194333.73 | CUMPLE
+ Gloria Giraldo Zapata              | AGRESIVO      |     100.00 |              55.12 |       302262.09 | CUMPLE
+ Camila Giraldo Garcia              | AGRESIVO      |     100.00 |              53.35 |        68460.44 | CUMPLE
+ Marcela Gutierrez Velez            | AGRESIVO      |     100.00 |              52.72 |       174183.78 | CUMPLE
+ Nicolas Zapata Restrepo            | MODERADO      |      50.00 |              49.63 |        49328.70 | CUMPLE
+ Daniela Laura Restrepo Acosta      | AGRESIVO      |     100.00 |              48.81 |       522384.70 | CUMPLE
+ Gloria Martinez Gutierrez          | MODERADO      |      50.00 |              47.32 |       142553.30 | CUMPLE
+ Marcela Gutierrez Zapata           | AGRESIVO      |     100.00 |              46.59 |        44912.44 | CUMPLE
+ Oscar Jimenez Torres               | MODERADO      |      50.00 |              45.81 |       371069.85 | CUMPLE
+ Alejandro Moreno Restrepo          | MODERADO      |      50.00 |              44.49 |        42324.65 | CUMPLE
+ Sebastian Juan Gomez Castro        | MODERADO      |      50.00 |              44.09 |       217632.54 | CUMPLE
+ Claudia Cortes Pardo               | MODERADO      |      50.00 |              43.84 |       326523.04 | CUMPLE
+ Adriana Pardo Salazar              | MODERADO      |      50.00 |              41.50 |        53170.86 | CUMPLE
+ Carolina Suarez Garcia             | AGRESIVO      |     100.00 |              40.94 |       298427.37 | CUMPLE
+ Adriana Paula Ortiz Ramirez        | MODERADO      |      50.00 |              40.90 |       213563.54 | CUMPLE
+ Nicolas Rafael Jimenez Ramirez     | MODERADO      |      50.00 |              39.54 |        35945.42 | CUMPLE
+ Felipe Cortes Mejia                | MODERADO      |      50.00 |              35.66 |       275679.91 | CUMPLE
+ Laura Pardo Londono                | MODERADO      |      50.00 |              35.24 |       116971.76 | CUMPLE
+ Gloria Lopez Hernandez             | MODERADO      |      50.00 |              30.15 |       414996.42 | CUMPLE
+ Carolina Diana Cardenas Salazar    | MODERADO      |      50.00 |              29.51 |        56024.69 | CUMPLE
+ Valentina Gomez Salazar            | MODERADO      |      50.00 |              28.61 |        27356.57 | CUMPLE
+ Nicolas Rincon Cardenas            | AGRESIVO      |     100.00 |              28.54 |       274709.26 | CUMPLE
+ Gabriel Jimenez Diaz               | MODERADO      |      50.00 |              25.61 |       339349.07 | CUMPLE
+ Hernan Ricardo Velez Diaz          | MODERADO      |      50.00 |              25.30 |       161488.80 | CUMPLE
+ Paula Rojas Pardo                  | MODERADO      |      50.00 |              24.89 |       275085.15 | CUMPLE
+ Santiago Rafael Lopez Londono      | MODERADO      |      50.00 |              22.57 |       289073.08 | CUMPLE
+ Claudia Rincon Velez               | MODERADO      |      50.00 |              21.40 |       176291.33 | CUMPLE
+ Monica Acosta Hernandez            | CONSERVADOR   |      20.00 |              17.49 |        88224.10 | CUMPLE
+ Sofia Cardenas Acosta              | MODERADO      |      50.00 |              17.46 |       100920.50 | CUMPLE
+ Santiago Alejandro Velez Hernandez | CONSERVADOR   |      20.00 |              15.58 |        45294.21 | CUMPLE
+ Monica Gutierrez Garcia            | CONSERVADOR   |      20.00 |              14.95 |        33712.05 | CUMPLE
+ Adriana Garcia Gomez               | CONSERVADOR   |      20.00 |              14.79 |       163235.77 | CUMPLE
+ Jorge Salazar Lopez                | MODERADO      |      50.00 |              14.18 |        39292.84 | CUMPLE
+ Ricardo Lopez Cardenas             | CONSERVADOR   |      20.00 |              13.35 |       551393.61 | CUMPLE
+ Ivan Cardenas Suarez               | CONSERVADOR   |      20.00 |              12.32 |       175851.26 | CUMPLE
+ Sebastian Restrepo Cortes          | CONSERVADOR   |      20.00 |              11.79 |       127801.28 | CUMPLE
+ Natalia Restrepo Londono           | CONSERVADOR   |      20.00 |               9.49 |        90833.41 | CUMPLE
+ Gabriel Jorge Giraldo Pardo        | CONSERVADOR   |      20.00 |               7.67 |       176943.79 | CUMPLE
+ Oscar Rojas Castro                 | CONSERVADOR   |      20.00 |               4.18 |       101318.26 | CUMPLE
+ Carolina Castro Diaz               | CONSERVADOR   |      20.00 |               3.23 |        54854.72 | CUMPLE
+(60 filas)
+
+-- ---------------------------------------------------------------------
+-- C04 | P4: CDT y TES que vencen en los proximos 30/60/90 dias
+-- ---------------------------------------------------------------------
+SELECT CASE WHEN v.dias_al_vencimiento <= 30 THEN '1. Hasta 30 dias'
+            WHEN v.dias_al_vencimiento <= 60 THEN '2. De 31 a 60 dias'
+            ELSE                                  '3. De 61 a 90 dias'
+       END AS ventana,
+       v.cliente, v.asesor, v.tipo_activo, v.activo,
+       v.fecha_vencimiento, v.dias_al_vencimiento, v.valor_actual_usd
+FROM v_vencimientos_renta_fija v
+WHERE v.dias_al_vencimiento BETWEEN 0 AND 90
+ORDER BY v.dias_al_vencimiento;
+      ventana       |              cliente               |            asesor            | tipo_activo |                 activo                  | fecha_vencimiento | dias_al_vencimiento | valor_actual_usd 
+--------------------+------------------------------------+------------------------------+-------------+-----------------------------------------+-------------------+---------------------+------------------
+ 1. Hasta 30 dias   | Gloria Lopez Hernandez             | Oscar Ospina Restrepo        | CDT         | CDT Banco de Occidente 180 dias No. 226 | 2026-11-22        |                   6 |         28205.32
+ 1. Hasta 30 dias   | Daniela Laura Restrepo Acosta      | Carlos Velez Londono         | CDT         | CDT Banco de Bogota 360 dias No. 128    | 2026-11-29        |                  13 |         10615.79
+ 1. Hasta 30 dias   | Ivan Cardenas Suarez               | Adriana Mejia Ortiz          | CDT         | CDT Davivienda 720 dias No. 242         | 2026-11-30        |                  14 |        100022.79
+ 1. Hasta 30 dias   | Oscar Jimenez Torres               | Marcela Claudia Vargas Gomez | CDT         | CDT Banco de Bogota 180 dias No. 095    | 2026-12-01        |                  15 |          3018.27
+ 1. Hasta 30 dias   | Adriana Garcia Gomez               | Carlos Velez Londono         | CDT         | CDT Banco de Occidente 180 dias No. 298 | 2026-12-05        |                  19 |          5215.29
+ 1. Hasta 30 dias   | Laura Zapata Castro                | Adriana Mejia Ortiz          | CDT         | CDT Davivienda 270 dias No. 260         | 2026-12-05        |                  19 |          6658.29
+ 1. Hasta 30 dias   | Ricardo Lopez Cardenas             | Marcela Claudia Vargas Gomez | CDT         | CDT Davivienda 180 dias No. 318         | 2026-12-06        |                  20 |         10106.66
+ 1. Hasta 30 dias   | Ricardo Lopez Cardenas             | Marcela Claudia Vargas Gomez | CDT         | CDT Banco de Bogota 720 dias No. 312    | 2026-12-08        |                  22 |         10276.42
+ 1. Hasta 30 dias   | Paula Rojas Pardo                  | Oscar Ospina Restrepo        | CDT         | CDT Itau Colombia 720 dias No. 055      | 2026-12-08        |                  22 |          7731.03
+ 1. Hasta 30 dias   | Daniela Laura Restrepo Acosta      | Carlos Velez Londono         | CDT         | CDT Bancolombia 360 dias No. 134        | 2026-12-10        |                  24 |         14987.65
+ 1. Hasta 30 dias   | Gloria Giraldo Zapata              | Oscar Ospina Restrepo        | CDT         | CDT Davivienda 270 dias No. 150         | 2026-12-11        |                  25 |         30264.75
+ 1. Hasta 30 dias   | Carolina Castro Diaz               | Marcela Claudia Vargas Gomez | CDT         | CDT Itau Colombia 360 dias No. 107      | 2026-12-12        |                  26 |          9535.42
+ 1. Hasta 30 dias   | Monica Gutierrez Garcia            | Marcela Claudia Vargas Gomez | CDT         | CDT Banco Caja Social 270 dias No. 160  | 2026-12-12        |                  26 |         17326.95
+ 1. Hasta 30 dias   | Rafael Gutierrez Jimenez           | Carlos Velez Londono         | CDT         | CDT Davivienda 180 dias No. 281         | 2026-12-13        |                  27 |          7446.08
+ 1. Hasta 30 dias   | Ricardo Rojas Hernandez            | Oscar Ospina Restrepo        | CDT         | CDT BBVA Colombia 360 dias No. 175      | 2026-12-14        |                  28 |          9481.90
+ 2. De 31 a 60 dias | Carolina Diana Cardenas Salazar    | Carlos Velez Londono         | CDT         | CDT BBVA Colombia 720 dias No. 271      | 2026-12-17        |                  31 |          4355.96
+ 2. De 31 a 60 dias | Ricardo Lopez Cardenas             | Marcela Claudia Vargas Gomez | CDT         | CDT Banco Caja Social 270 dias No. 324  | 2026-12-18        |                  32 |         10424.74
+ 2. De 31 a 60 dias | Gloria Giraldo Zapata              | Oscar Ospina Restrepo        | CDT         | CDT Banco Caja Social 180 dias No. 149  | 2026-12-20        |                  34 |         11572.42
+ 2. De 31 a 60 dias | Oscar Jimenez Torres               | Marcela Claudia Vargas Gomez | CDT         | CDT Bancolombia 270 dias No. 094        | 2026-12-22        |                  36 |          6111.88
+ 2. De 31 a 60 dias | Ricardo Lopez Cardenas             | Marcela Claudia Vargas Gomez | CDT         | CDT BBVA Colombia 360 dias No. 317      | 2026-12-24        |                  38 |         21322.67
+ 2. De 31 a 60 dias | Nicolas Zapata Restrepo            | Oscar Ospina Restrepo        | CDT         | CDT Bancolombia 360 dias No. 009        | 2026-12-25        |                  39 |          3625.99
+ 2. De 31 a 60 dias | Carolina Diana Cardenas Salazar    | Carlos Velez Londono         | CDT         | CDT Bancolombia 359 dias No. 275        | 2026-12-27        |                  41 |          3298.77
+ 2. De 31 a 60 dias | Nicolas Juan Gutierrez Jimenez     | Laura Monica Salazar Pardo   | CDT         | CDT Banco de Bogota 360 dias No. 040    | 2026-12-28        |                  42 |         19371.28
+ 2. De 31 a 60 dias | Carolina Diana Cardenas Salazar    | Carlos Velez Londono         | CDT         | CDT Banco de Occidente 540 dias No. 273 | 2026-12-29        |                  43 |          2683.77
+ 2. De 31 a 60 dias | Santiago Alejandro Velez Hernandez | Laura Monica Salazar Pardo   | CDT         | CDT Banco de Bogota 180 dias No. 189    | 2027-01-03        |                  48 |          5668.75
+ 2. De 31 a 60 dias | Sebastian Restrepo Cortes          | Carlos Velez Londono         | CDT         | CDT Banco de Bogota 180 dias No. 309    | 2027-01-04        |                  49 |          7942.04
+ 2. De 31 a 60 dias | Nicolas Rincon Cardenas            | Marcela Claudia Vargas Gomez | CDT         | CDT BBVA Colombia 180 dias No. 082      | 2027-01-11        |                  56 |         12795.61
+ 2. De 31 a 60 dias | Sofia Cardenas Acosta              | Adriana Mejia Ortiz          | CDT         | CDT Davivienda 357 dias No. 304         | 2027-01-12        |                  57 |         11056.84
+ 2. De 31 a 60 dias | Nicolas Zapata Restrepo            | Oscar Ospina Restrepo        | CDT         | CDT Itau Colombia 180 dias No. 010      | 2027-01-13        |                  58 |          4623.08
+ 3. De 61 a 90 dias | Felipe Cortes Mejia                | Laura Monica Salazar Pardo   | CDT         | CDT Davivienda 360 dias No. 025         | 2027-01-16        |                  61 |         16905.76
+ 3. De 61 a 90 dias | Claudia Rincon Velez               | Laura Monica Salazar Pardo   | CDT         | CDT Itau Colombia 360 dias No. 203      | 2027-01-18        |                  63 |         12837.71
+ 3. De 61 a 90 dias | Angela Luisa Ospina Castro         | Marcela Claudia Vargas Gomez | CDT         | CDT Banco de Bogota 360 dias No. 209    | 2027-01-21        |                  66 |          5148.12
+ 3. De 61 a 90 dias | Rafael Vargas Torres               | Marcela Claudia Vargas Gomez | CDT         | CDT Bancolombia 720 dias No. 192        | 2027-01-28        |                  73 |          2849.66
+ 3. De 61 a 90 dias | Adriana Paula Ortiz Ramirez        | Adriana Mejia Ortiz          | CDT         | CDT Itau Colombia 720 dias No. 249      | 2027-01-28        |                  73 |         55388.38
+ 3. De 61 a 90 dias | Valentina Gomez Salazar            | Oscar Ospina Restrepo        | CDT         | CDT Itau Colombia 540 dias No. 110      | 2027-01-28        |                  73 |          2227.62
+ 3. De 61 a 90 dias | Miguel Felipe Gutierrez Giraldo    | Oscar Ospina Restrepo        | CDT         | CDT Itau Colombia 540 dias No. 143      | 2027-01-29        |                  74 |          3259.00
+ 3. De 61 a 90 dias | Gabriel Jimenez Diaz               | Marcela Claudia Vargas Gomez | CDT         | CDT Bancolombia 179 dias No. 292        | 2027-01-29        |                  74 |         18731.30
+ 3. De 61 a 90 dias | Angela Luisa Ospina Castro         | Marcela Claudia Vargas Gomez | CDT         | CDT Banco Caja Social 180 dias No. 210  | 2027-01-31        |                  76 |          2846.73
+ 3. De 61 a 90 dias | Gabriel Jorge Giraldo Pardo        | Oscar Ospina Restrepo        | CDT         | CDT Itau Colombia 180 dias No. 184      | 2027-02-01        |                  77 |         11168.99
+ 3. De 61 a 90 dias | Nicolas Rafael Jimenez Ramirez     | Carlos Velez Londono         | CDT         | CDT Banco Caja Social 360 dias No. 327  | 2027-02-05        |                  81 |          5939.33
+ 3. De 61 a 90 dias | Santiago Rafael Lopez Londono      | Carlos Velez Londono         | CDT         | CDT BBVA Colombia 360 dias No. 266      | 2027-02-08        |                  84 |         10539.20
+ 3. De 61 a 90 dias | Carolina Diana Cardenas Salazar    | Carlos Velez Londono         | CDT         | CDT Banco Caja Social 540 dias No. 274  | 2027-02-09        |                  85 |          2775.48
+ 3. De 61 a 90 dias | Diana Ospina Diaz                  | Oscar Ospina Restrepo        | CDT         | CDT Banco de Occidente 720 dias No. 118 | 2027-02-11        |                  87 |          2555.25
+ 3. De 61 a 90 dias | Rafael Mauricio Acosta Vargas      | Carlos Velez Londono         | CDT         | CDT Davivienda 360 dias No. 005         | 2027-02-12        |                  88 |          2935.59
+(44 filas)
+
+-- ---------------------------------------------------------------------
+-- C05 | P5: Comisiones generadas por cada asesor, mes a mes, en los
+--           ultimos 12 meses, con su acumulado
+-- JOIN de 4 tablas; SUM(SUM()) OVER calcula el acumulado por asesor.
+-- ---------------------------------------------------------------------
+SELECT ase.id_asesor,
+       ase.nombres || ' ' || ase.apellidos           AS asesor,
+       DATE_TRUNC('month', t.fecha_hora)::date       AS mes,
+       COUNT(*)                                      AS transacciones,
+       SUM(t.comision)                               AS comision_mes_usd,
+       SUM(SUM(t.comision)) OVER (PARTITION BY ase.id_asesor
+                                  ORDER BY DATE_TRUNC('month', t.fecha_hora)) AS comision_acumulada_usd
+FROM transaccion t
+JOIN cuenta  cu  ON cu.id_cuenta  = t.id_cuenta
+JOIN cliente cl  ON cl.id_cliente = cu.id_cliente
+JOIN asesor  ase ON ase.id_asesor = cl.id_asesor
+WHERE t.fecha_hora >= CURRENT_DATE - INTERVAL '12 months'
+GROUP BY ase.id_asesor, ase.nombres, ase.apellidos, DATE_TRUNC('month', t.fecha_hora)
+ORDER BY asesor, mes;
+ id_asesor |            asesor            |    mes     | transacciones | comision_mes_usd | comision_acumulada_usd 
+-----------+------------------------------+------------+---------------+------------------+------------------------
+         2 | Adriana Mejia Ortiz          | 2025-11-01 |             4 |           259.25 |                 259.25
+         2 | Adriana Mejia Ortiz          | 2025-12-01 |            13 |           147.94 |                 407.19
+         2 | Adriana Mejia Ortiz          | 2026-01-01 |             5 |           183.53 |                 590.72
+         2 | Adriana Mejia Ortiz          | 2026-02-01 |             5 |            35.40 |                 626.12
+         2 | Adriana Mejia Ortiz          | 2026-03-01 |             9 |           384.17 |                1010.29
+         2 | Adriana Mejia Ortiz          | 2026-04-01 |             2 |            10.14 |                1020.43
+         2 | Adriana Mejia Ortiz          | 2026-05-01 |             9 |           185.33 |                1205.76
+         2 | Adriana Mejia Ortiz          | 2026-06-01 |             7 |            84.36 |                1290.12
+         2 | Adriana Mejia Ortiz          | 2026-07-01 |             7 |           284.29 |                1574.41
+         2 | Adriana Mejia Ortiz          | 2026-08-01 |            15 |           379.39 |                1953.80
+         2 | Adriana Mejia Ortiz          | 2026-09-01 |             9 |           236.29 |                2190.09
+         2 | Adriana Mejia Ortiz          | 2026-10-01 |             4 |            65.63 |                2255.72
+         2 | Adriana Mejia Ortiz          | 2026-11-01 |             5 |           295.64 |                2551.36
+         3 | Carlos Velez Londono         | 2025-11-01 |             3 |           207.45 |                 207.45
+         3 | Carlos Velez Londono         | 2025-12-01 |            14 |           348.74 |                 556.19
+         3 | Carlos Velez Londono         | 2026-01-01 |            11 |           457.09 |                1013.28
+         3 | Carlos Velez Londono         | 2026-02-01 |             9 |           146.76 |                1160.04
+         3 | Carlos Velez Londono         | 2026-03-01 |            16 |           334.24 |                1494.28
+         3 | Carlos Velez Londono         | 2026-04-01 |             5 |            34.80 |                1529.08
+         3 | Carlos Velez Londono         | 2026-05-01 |            17 |           609.04 |                2138.12
+         3 | Carlos Velez Londono         | 2026-06-01 |            14 |           349.58 |                2487.70
+         3 | Carlos Velez Londono         | 2026-07-01 |            10 |           205.12 |                2692.82
+         3 | Carlos Velez Londono         | 2026-08-01 |            14 |           634.09 |                3326.91
+         3 | Carlos Velez Londono         | 2026-09-01 |             7 |           260.89 |                3587.80
+         3 | Carlos Velez Londono         | 2026-10-01 |            10 |           427.59 |                4015.39
+         3 | Carlos Velez Londono         | 2026-11-01 |             3 |            25.35 |                4040.74
+         1 | Laura Monica Salazar Pardo   | 2025-11-01 |             1 |            34.62 |                  34.62
+         1 | Laura Monica Salazar Pardo   | 2025-12-01 |            15 |           560.10 |                 594.72
+         1 | Laura Monica Salazar Pardo   | 2026-01-01 |            11 |           519.72 |                1114.44
+         1 | Laura Monica Salazar Pardo   | 2026-02-01 |             2 |            27.73 |                1142.17
+         1 | Laura Monica Salazar Pardo   | 2026-03-01 |            11 |           222.03 |                1364.20
+         1 | Laura Monica Salazar Pardo   | 2026-04-01 |             5 |           203.28 |                1567.48
+         1 | Laura Monica Salazar Pardo   | 2026-05-01 |            10 |           442.86 |                2010.34
+         1 | Laura Monica Salazar Pardo   | 2026-06-01 |             7 |           140.38 |                2150.72
+         1 | Laura Monica Salazar Pardo   | 2026-07-01 |            10 |           455.85 |                2606.57
+         1 | Laura Monica Salazar Pardo   | 2026-08-01 |             6 |           185.60 |                2792.17
+         1 | Laura Monica Salazar Pardo   | 2026-09-01 |             4 |           512.69 |                3304.86
+         1 | Laura Monica Salazar Pardo   | 2026-10-01 |             4 |            51.47 |                3356.33
+         1 | Laura Monica Salazar Pardo   | 2026-11-01 |             2 |            45.60 |                3401.93
+         5 | Marcela Claudia Vargas Gomez | 2025-11-01 |             1 |            45.78 |                  45.78
+         5 | Marcela Claudia Vargas Gomez | 2025-12-01 |            24 |          1513.03 |                1558.81
+         5 | Marcela Claudia Vargas Gomez | 2026-01-01 |            11 |           512.23 |                2071.04
+         5 | Marcela Claudia Vargas Gomez | 2026-02-01 |             4 |            71.62 |                2142.66
+         5 | Marcela Claudia Vargas Gomez | 2026-03-01 |            23 |          1200.36 |                3343.02
+         5 | Marcela Claudia Vargas Gomez | 2026-04-01 |            14 |           302.87 |                3645.89
+         5 | Marcela Claudia Vargas Gomez | 2026-05-01 |            12 |           518.81 |                4164.70
+         5 | Marcela Claudia Vargas Gomez | 2026-06-01 |            13 |           543.01 |                4707.71
+         5 | Marcela Claudia Vargas Gomez | 2026-07-01 |            17 |           599.79 |                5307.50
+         5 | Marcela Claudia Vargas Gomez | 2026-08-01 |            17 |           494.99 |                5802.49
+         5 | Marcela Claudia Vargas Gomez | 2026-09-01 |             5 |           312.05 |                6114.54
+         5 | Marcela Claudia Vargas Gomez | 2026-10-01 |            14 |           220.97 |                6335.51
+         5 | Marcela Claudia Vargas Gomez | 2026-11-01 |             7 |           288.47 |                6623.98
+         4 | Oscar Ospina Restrepo        | 2025-11-01 |             9 |           233.94 |                 233.94
+         4 | Oscar Ospina Restrepo        | 2025-12-01 |            10 |           715.50 |                 949.44
+         4 | Oscar Ospina Restrepo        | 2026-01-01 |             9 |           443.83 |                1393.27
+         4 | Oscar Ospina Restrepo        | 2026-02-01 |             9 |           439.97 |                1833.24
+         4 | Oscar Ospina Restrepo        | 2026-03-01 |            13 |           862.07 |                2695.31
+         4 | Oscar Ospina Restrepo        | 2026-04-01 |             3 |            46.81 |                2742.12
+         4 | Oscar Ospina Restrepo        | 2026-05-01 |            23 |           896.59 |                3638.71
+         4 | Oscar Ospina Restrepo        | 2026-06-01 |            18 |           505.49 |                4144.20
+         4 | Oscar Ospina Restrepo        | 2026-07-01 |            15 |           873.11 |                5017.31
+         4 | Oscar Ospina Restrepo        | 2026-08-01 |             6 |           397.66 |                5414.97
+         4 | Oscar Ospina Restrepo        | 2026-09-01 |             8 |           390.02 |                5804.99
+         4 | Oscar Ospina Restrepo        | 2026-10-01 |            13 |           776.22 |                6581.21
+(64 filas)
+
+-- ---------------------------------------------------------------------
+-- C06 | P6: Clientes con mayor y menor rentabilidad en el periodo
+-- La CTE calcula la rentabilidad una sola vez; RANK ordena en ambos
+-- sentidos y se conservan los 3 primeros de cada extremo.
+-- ---------------------------------------------------------------------
+WITH rentabilidad AS (
+    SELECT cl.id_cliente,
+           cl.nombres || ' ' || cl.apellidos AS cliente,
+           fn_rentabilidad_cliente(cl.id_cliente,
+                                   (CURRENT_DATE - INTERVAL '12 months')::date,
+                                   CURRENT_DATE) AS rentabilidad_pct
+    FROM cliente cl
+),
+ranking AS (
+    SELECT r.*,
+           RANK() OVER (ORDER BY r.rentabilidad_pct DESC) AS puesto_mayor,
+           RANK() OVER (ORDER BY r.rentabilidad_pct ASC)  AS puesto_menor
+    FROM rentabilidad r
+    WHERE r.rentabilidad_pct IS NOT NULL
+)
+SELECT CASE WHEN k.puesto_mayor <= 3 THEN 'MAYOR RENTABILIDAD'
+            ELSE 'MENOR RENTABILIDAD' END AS grupo,
+       k.cliente,
+       k.rentabilidad_pct,
+       k.puesto_mayor AS puesto_general
+FROM ranking k
+WHERE k.puesto_mayor <= 3 OR k.puesto_menor <= 3
+ORDER BY k.rentabilidad_pct DESC;
+       grupo        |         cliente         | rentabilidad_pct | puesto_general 
+--------------------+-------------------------+------------------+----------------
+ MAYOR RENTABILIDAD | Laura Zapata Castro     |            34.78 |              1
+ MAYOR RENTABILIDAD | Claudia Cortes Pardo    |            27.95 |              2
+ MAYOR RENTABILIDAD | Adriana Pardo Salazar   |            27.33 |              3
+ MENOR RENTABILIDAD | Ricardo Rojas Hernandez |             4.53 |             58
+ MENOR RENTABILIDAD | Carolina Castro Diaz    |             2.27 |             59
+ MENOR RENTABILIDAD | Oscar Rojas Castro      |             1.70 |             60
+(6 filas)
+
+-- ---------------------------------------------------------------------
+-- C07 | P7: Historial completo de compras y ventas de un cliente
+-- Cambiar el id en el WHERE para consultar otro cliente.
+-- Ventanas: flujo de caja acumulado y dias desde la operacion anterior.
+-- ---------------------------------------------------------------------
+SELECT t.fecha_hora,
+       cu.nombre_cuenta,
+       t.tipo_transaccion,
+       ta.nombre_tipo AS tipo_activo,
+       a.nombre       AS activo,
+       t.cantidad,
+       t.precio_unitario,
+       t.monto,
+       t.comision,
+       SUM(CASE WHEN t.tipo_transaccion = 'COMPRA'
+                THEN -(t.monto + t.comision) ELSE t.monto - t.comision END)
+           OVER (ORDER BY t.fecha_hora, t.id_transaccion) AS flujo_caja_acumulado_usd,
+       t.fecha_hora::date
+           - LAG(t.fecha_hora::date) OVER (ORDER BY t.fecha_hora, t.id_transaccion) AS dias_desde_anterior
+FROM transaccion t
+JOIN cuenta      cu ON cu.id_cuenta      = t.id_cuenta
+JOIN activo      a  ON a.id_activo       = t.id_activo
+JOIN tipo_activo ta ON ta.id_tipo_activo = a.id_tipo_activo
+WHERE cu.id_cliente = 1
+ORDER BY t.fecha_hora, t.id_transaccion;
+     fecha_hora      |    nombre_cuenta     | tipo_transaccion | tipo_activo |                 activo                 | cantidad  | precio_unitario |  monto   | comision | flujo_caja_acumulado_usd | dias_desde_anterior 
+---------------------+----------------------+------------------+-------------+----------------------------------------+-----------+-----------------+----------+----------+--------------------------+---------------------
+ 2025-07-09 09:42:00 | Portafolio principal | COMPRA           | FONDO       | SPDR S&P 500 ETF Trust                 | 20.000000 |        624.0600 | 12481.20 |    62.41 |                -12543.61 |                    
+ 2025-07-09 09:45:00 | Portafolio principal | COMPRA           | TES         | TES 2032 (mediano plazo)               | 15.000000 |        246.6620 |  3699.93 |    18.50 |                -16262.04 |                   0
+ 2025-07-09 09:48:00 | Portafolio principal | COMPRA           | CDT         | CDT Banco de Bogota 360 dias No. 001   |  1.000000 |       5821.1500 |  5821.15 |    29.11 |                -22112.30 |                   0
+ 2025-09-29 09:42:00 | Portafolio principal | COMPRA           | ACCION      | Microsoft Corporation                  |  7.000000 |        514.6000 |  3602.20 |    18.01 |                -25732.51 |                  82
+ 2025-09-29 09:45:00 | Portafolio principal | COMPRA           | ACCION      | Microsoft Corporation                  |  7.000000 |        514.6000 |  3602.20 |    18.01 |                -29352.72 |                   0
+ 2025-09-29 09:48:00 | Portafolio principal | COMPRA           | ACCION      | Microsoft Corporation                  |  7.000000 |        514.6000 |  3602.20 |    18.01 |                -32972.93 |                   0
+ 2025-09-29 09:51:00 | Portafolio principal | COMPRA           | CDT         | CDT Banco Popular 180 dias No. 002     |  1.000000 |       2931.0800 |  2931.08 |    14.66 |                -35918.67 |                   0
+ 2026-01-08 09:42:00 | Portafolio principal | COMPRA           | ACCION      | Apple Inc.                             |  6.000000 |        259.0400 |  1554.24 |     7.77 |                -37480.68 |                 101
+ 2026-03-16 09:45:00 | Portafolio principal | COMPRA           | ACCION      | Microsoft Corporation                  |  9.000000 |        399.9500 |  3599.55 |    18.00 |                -41098.23 |                  67
+ 2026-03-16 09:48:00 | Portafolio principal | COMPRA           | CDT         | CDT Banco Caja Social 720 dias No. 003 |  1.000000 |       2742.6700 |  2742.67 |    13.71 |                -43854.61 |                   0
+ 2026-03-30 09:42:00 | Portafolio principal | VENTA            | CDT         | CDT Banco Popular 180 dias No. 002     |  1.000000 |       3281.6845 |  3281.68 |    16.41 |                -40589.34 |                  14
+ 2026-05-06 09:42:00 | Portafolio principal | VENTA            | ACCION      | Apple Inc.                             |  2.000000 |        287.5100 |   575.02 |     2.88 |                -40017.20 |                  37
+ 2026-07-06 09:42:00 | Portafolio principal | VENTA            | CDT         | CDT Banco de Bogota 360 dias No. 001   |  1.000000 |       7968.4582 |  7968.46 |    39.84 |                -32088.58 |                  61
+ 2026-08-04 09:45:00 | Portafolio principal | COMPRA           | ACCION      | Tesla Inc.                             |  7.000000 |        327.3500 |  2291.45 |    11.46 |                -34391.49 |                  29
+ 2026-10-07 09:45:00 | Portafolio principal | COMPRA           | ACCION      | Apple Inc.                             |  6.000000 |        336.6700 |  2020.02 |    10.10 |                -36421.61 |                  64
+ 2026-10-07 09:48:00 | Portafolio principal | COMPRA           | CDT         | CDT Itau Colombia 270 dias No. 004     |  1.000000 |       1665.0300 |  1665.03 |     8.33 |                -38094.97 |                   0
+(16 filas)
+
+-- ---------------------------------------------------------------------
+-- C08 | P8: Clientes que gestiona cada asesor y valor que administra (AUM)
+-- LEFT JOIN para incluir asesores sin clientes; la ventana calcula la
+-- participacion de cada asesor en el AUM de la firma.
+-- ---------------------------------------------------------------------
+WITH valor_cuenta AS (
+    SELECT cu.id_cuenta, cu.id_cliente, fn_valor_cuenta(cu.id_cuenta) AS valor_usd
+    FROM cuenta cu
+)
+SELECT ase.id_asesor,
+       ase.nombres || ' ' || ase.apellidos AS asesor,
+       COUNT(DISTINCT cl.id_cliente)       AS clientes,
+       COUNT(vc.id_cuenta)                 AS cuentas,
+       COALESCE(SUM(vc.valor_usd), 0)      AS aum_usd,
+       ROUND(100 * COALESCE(SUM(vc.valor_usd), 0)
+             / NULLIF(SUM(SUM(vc.valor_usd)) OVER (), 0), 2) AS pct_aum_firma
+FROM asesor ase
+LEFT JOIN cliente      cl ON cl.id_asesor  = ase.id_asesor
+LEFT JOIN valor_cuenta vc ON vc.id_cliente = cl.id_cliente
+GROUP BY ase.id_asesor, ase.nombres, ase.apellidos
+ORDER BY aum_usd DESC;
+ id_asesor |            asesor            | clientes | cuentas |  aum_usd   | pct_aum_firma 
+-----------+------------------------------+----------+---------+------------+---------------
+         4 | Oscar Ospina Restrepo        |       13 |      18 | 3009688.97 |         29.67
+         5 | Marcela Claudia Vargas Gomez |       14 |      20 | 2647739.72 |         26.10
+         3 | Carlos Velez Londono         |       14 |      19 | 1895640.80 |         18.69
+         2 | Adriana Mejia Ortiz          |       10 |      13 | 1313409.83 |         12.95
+         1 | Laura Monica Salazar Pardo   |        9 |      10 | 1276789.40 |         12.59
+         6 | Claudia Pardo Lopez          |        0 |       0 |          0 |          0.00
+(6 filas)
+
+-- ---------------------------------------------------------------------
+-- C09 | P9: Activos mas comprados y mas vendidos en los ultimos 12 meses
+-- RANK con PARTITION BY genera un ranking separado para compras y ventas.
+-- ---------------------------------------------------------------------
+WITH movimiento_activo AS (
+    SELECT t.tipo_transaccion,
+           a.nombre       AS activo,
+           ta.nombre_tipo AS tipo_activo,
+           COUNT(*)       AS operaciones,
+           SUM(t.monto)   AS monto_usd
+    FROM transaccion t
+    JOIN activo      a  ON a.id_activo       = t.id_activo
+    JOIN tipo_activo ta ON ta.id_tipo_activo = a.id_tipo_activo
+    WHERE t.fecha_hora >= CURRENT_DATE - INTERVAL '12 months'
+    GROUP BY t.tipo_transaccion, a.nombre, ta.nombre_tipo
+),
+ranking AS (
+    SELECT m.*,
+           RANK() OVER (PARTITION BY m.tipo_transaccion ORDER BY m.monto_usd DESC) AS puesto
+    FROM movimiento_activo m
+)
+SELECT k.tipo_transaccion, k.puesto, k.activo, k.tipo_activo, k.operaciones, k.monto_usd
+FROM ranking k
+WHERE k.puesto <= 5
+ORDER BY k.tipo_transaccion, k.puesto;
+ tipo_transaccion | puesto |                 activo                 | tipo_activo | operaciones | monto_usd 
+------------------+--------+----------------------------------------+-------------+-------------+-----------
+ COMPRA           |      1 | Alphabet Inc. Clase A                  | ACCION      |          32 | 165921.96
+ COMPRA           |      2 | Johnson & Johnson                      | ACCION      |          38 | 150477.10
+ COMPRA           |      3 | Apple Inc.                             | ACCION      |          32 | 137408.33
+ COMPRA           |      4 | Invesco QQQ Trust (Nasdaq-100)         | FONDO       |          27 | 117883.25
+ COMPRA           |      5 | Ecopetrol S.A. (ADR)                   | ACCION      |          33 | 109381.49
+ VENTA            |      1 | Johnson & Johnson                      | ACCION      |          14 | 183148.86
+ VENTA            |      2 | Amazon.com Inc.                        | ACCION      |          12 |  90282.55
+ VENTA            |      3 | CDT Banco Caja Social 360 dias No. 058 | CDT         |           1 |  75163.68
+ VENTA            |      4 | Ecopetrol S.A. (ADR)                   | ACCION      |           9 |  74934.23
+ VENTA            |      5 | CDT Banco de Bogota 270 dias No. 307   | CDT         |           1 |  70716.18
+(10 filas)
+
+-- ---------------------------------------------------------------------
+-- C10 | Apoyo a P5: asesores cuya comision total supera el promedio
+--       de comision por asesor (HAVING con subconsulta)
+-- ---------------------------------------------------------------------
+SELECT ase.nombres || ' ' || ase.apellidos AS asesor,
+       COUNT(*)                            AS transacciones,
+       SUM(t.comision)                     AS comision_total_usd
+FROM transaccion t
+JOIN cuenta  cu  ON cu.id_cuenta  = t.id_cuenta
+JOIN cliente cl  ON cl.id_cliente = cu.id_cliente
+JOIN asesor  ase ON ase.id_asesor = cl.id_asesor
+GROUP BY ase.id_asesor, ase.nombres, ase.apellidos
+HAVING SUM(t.comision) > (SELECT AVG(x.total)
+                          FROM (SELECT SUM(t2.comision) AS total
+                                FROM transaccion t2
+                                JOIN cuenta  cu2 ON cu2.id_cuenta  = t2.id_cuenta
+                                JOIN cliente cl2 ON cl2.id_cliente = cu2.id_cliente
+                                GROUP BY cl2.id_asesor) x)
+ORDER BY comision_total_usd DESC;
+            asesor            | transacciones | comision_total_usd 
+------------------------------+---------------+--------------------
+ Marcela Claudia Vargas Gomez |           421 |           19332.94
+ Oscar Ospina Restrepo        |           311 |           16430.40
+ Carlos Velez Londono         |           322 |           13309.72
+(3 filas)
+
+-- ---------------------------------------------------------------------
+-- C11 | Apoyo a P2: variacion mensual del precio de cada accion/fondo
+--       en los ultimos 6 meses
+-- DISTINCT ON toma el ultimo cierre de cada mes; LAG trae el del mes
+-- anterior para calcular el cambio porcentual.
+-- ---------------------------------------------------------------------
+WITH cierre_mes AS (
+    SELECT DISTINCT ON (ph.id_activo, DATE_TRUNC('month', ph.fecha))
+           ph.id_activo,
+           DATE_TRUNC('month', ph.fecha)::date AS mes,
+           ph.precio_cierre
+    FROM precio_historico ph
+    WHERE ph.fecha >= DATE_TRUNC('month', CURRENT_DATE) - INTERVAL '6 months'
+    ORDER BY ph.id_activo, DATE_TRUNC('month', ph.fecha), ph.fecha DESC
+)
+SELECT af.ticker,
+       cm.mes,
+       cm.precio_cierre,
+       LAG(cm.precio_cierre) OVER (PARTITION BY cm.id_activo ORDER BY cm.mes) AS cierre_mes_anterior,
+       ROUND(100 * (cm.precio_cierre
+                    / LAG(cm.precio_cierre) OVER (PARTITION BY cm.id_activo ORDER BY cm.mes) - 1), 2)
+           AS variacion_pct
+FROM cierre_mes cm
+JOIN accion_fondo af ON af.id_activo = cm.id_activo
+ORDER BY af.ticker, cm.mes;
+ ticker |    mes     | precio_cierre | cierre_mes_anterior | variacion_pct 
+--------+------------+---------------+---------------------+---------------
+ AAPL   | 2026-05-01 |      312.0600 |                     |              
+ AAPL   | 2026-06-01 |      289.3600 |            312.0600 |         -7.27
+ AAPL   | 2026-07-01 |      308.9100 |            289.3600 |          6.76
+ AAPL   | 2026-08-01 |      316.8500 |            308.9100 |          2.57
+ AAPL   | 2026-09-01 |      333.0200 |            316.8500 |          5.10
+ AAPL   | 2026-10-01 |      344.6300 |            333.0200 |          3.49
+ AAPL   | 2026-11-01 |      352.7800 |            344.6300 |          2.36
+ AMZN   | 2026-05-01 |      270.6400 |                     |              
+ AMZN   | 2026-06-01 |      238.3400 |            270.6400 |        -11.93
+ AMZN   | 2026-07-01 |      271.5800 |            238.3400 |         13.95
+ AMZN   | 2026-08-01 |      259.7700 |            271.5800 |         -4.35
+ AMZN   | 2026-09-01 |      249.1500 |            259.7700 |         -4.09
+ AMZN   | 2026-10-01 |      240.3500 |            249.1500 |         -3.53
+ AMZN   | 2026-11-01 |      257.7500 |            240.3500 |          7.24
+ CIB    | 2026-05-01 |       68.5900 |                     |              
+ CIB    | 2026-06-01 |       79.4300 |             68.5900 |         15.80
+ CIB    | 2026-07-01 |       92.5200 |             79.4300 |         16.48
+ CIB    | 2026-08-01 |       96.1200 |             92.5200 |          3.89
+ CIB    | 2026-09-01 |       92.8500 |             96.1200 |         -3.40
+ CIB    | 2026-10-01 |       92.0200 |             92.8500 |         -0.89
+ CIB    | 2026-11-01 |       87.4500 |             92.0200 |         -4.97
+ EC     | 2026-05-01 |       14.6100 |                     |              
+ EC     | 2026-06-01 |       14.2400 |             14.6100 |         -2.53
+ EC     | 2026-07-01 |       16.7700 |             14.2400 |         17.77
+ EC     | 2026-08-01 |       16.6700 |             16.7700 |         -0.60
+ EC     | 2026-09-01 |       16.4800 |             16.6700 |         -1.14
+ EC     | 2026-10-01 |       17.1900 |             16.4800 |          4.31
+ EC     | 2026-11-01 |       14.9100 |             17.1900 |        -13.26
+ GOOGL  | 2026-05-01 |      380.3400 |                     |              
+ GOOGL  | 2026-06-01 |      357.3700 |            380.3400 |         -6.04
+ GOOGL  | 2026-07-01 |      356.1300 |            357.3700 |         -0.35
+ GOOGL  | 2026-08-01 |      339.3500 |            356.1300 |         -4.71
+ GOOGL  | 2026-09-01 |      344.0800 |            339.3500 |          1.39
+ GOOGL  | 2026-10-01 |      279.8400 |            344.0800 |        -18.67
+ GOOGL  | 2026-11-01 |      283.7200 |            279.8400 |          1.39
+ JNJ    | 2026-05-01 |      225.3300 |                     |              
+ JNJ    | 2026-06-01 |      253.9700 |            225.3300 |         12.71
+ JNJ    | 2026-07-01 |      256.3500 |            253.9700 |          0.94
+ JNJ    | 2026-08-01 |      265.8500 |            256.3500 |          3.71
+ JNJ    | 2026-09-01 |      264.7400 |            265.8500 |         -0.42
+ JNJ    | 2026-10-01 |      273.2000 |            264.7400 |          3.20
+ JNJ    | 2026-11-01 |      282.5500 |            273.2000 |          3.42
+ MSFT   | 2026-05-01 |      450.2400 |                     |              
+ MSFT   | 2026-06-01 |      373.0200 |            450.2400 |        -17.15
+ MSFT   | 2026-07-01 |      464.7200 |            373.0200 |         24.58
+ MSFT   | 2026-08-01 |      507.2900 |            464.7200 |          9.16
+ MSFT   | 2026-09-01 |      512.9000 |            507.2900 |          1.11
+ MSFT   | 2026-10-01 |      521.9100 |            512.9000 |          1.76
+ MSFT   | 2026-11-01 |      517.9900 |            521.9100 |         -0.75
+ QQQ    | 2026-05-01 |      738.3100 |                     |              
+ QQQ    | 2026-06-01 |      736.4000 |            738.3100 |         -0.26
+ QQQ    | 2026-07-01 |      687.9900 |            736.4000 |         -6.57
+ QQQ    | 2026-08-01 |      716.7600 |            687.9900 |          4.18
+ QQQ    | 2026-09-01 |      739.7700 |            716.7600 |          3.21
+ QQQ    | 2026-10-01 |      690.4900 |            739.7700 |         -6.66
+ QQQ    | 2026-11-01 |      661.7500 |            690.4900 |         -4.16
+ SPY    | 2026-05-01 |      756.4800 |                     |              
+ SPY    | 2026-06-01 |      746.7700 |            756.4800 |         -1.28
+ SPY    | 2026-07-01 |      747.0300 |            746.7700 |          0.03
+ SPY    | 2026-08-01 |      767.0500 |            747.0300 |          2.68
+ SPY    | 2026-09-01 |      762.6300 |            767.0500 |         -0.58
+ SPY    | 2026-10-01 |      755.7200 |            762.6300 |         -0.91
+ SPY    | 2026-11-01 |      739.9500 |            755.7200 |         -2.09
+ TSLA   | 2026-05-01 |      435.7900 |                     |              
+ TSLA   | 2026-06-01 |      420.6000 |            435.7900 |         -3.49
+ TSLA   | 2026-07-01 |      311.2100 |            420.6000 |        -26.01
+ TSLA   | 2026-08-01 |      367.9500 |            311.2100 |         18.23
+ TSLA   | 2026-09-01 |      354.8100 |            367.9500 |         -3.57
+ TSLA   | 2026-10-01 |      399.8100 |            354.8100 |         12.68
+ TSLA   | 2026-11-01 |      379.7400 |            399.8100 |         -5.02
+(70 filas)
+
+-- ---------------------------------------------------------------------
+-- C12 | Apoyo a P1 y P2: ganancia o perdida no realizada por posicion
+--       de renta variable (valor actual frente al costo promedio)
+-- ---------------------------------------------------------------------
+WITH costo AS (
+    SELECT t.id_cuenta,
+           t.id_activo,
+           SUM(t.monto) / SUM(t.cantidad) AS costo_promedio
+    FROM transaccion t
+    WHERE t.tipo_transaccion = 'COMPRA'
+    GROUP BY t.id_cuenta, t.id_activo
+)
+SELECT pa.cliente,
+       pa.activo,
+       pa.cantidad,
+       ROUND(co.costo_promedio, 4)                             AS costo_promedio_usd,
+       ROUND(pa.valor_usd / pa.cantidad, 4)                    AS precio_actual_usd,
+       ROUND(pa.valor_usd - pa.cantidad * co.costo_promedio, 2) AS ganancia_no_realizada_usd,
+       ROUND(100 * (pa.valor_usd / (pa.cantidad * co.costo_promedio) - 1), 2) AS ganancia_pct
+FROM v_posicion_actual pa
+JOIN costo co ON co.id_cuenta = pa.id_cuenta AND co.id_activo = pa.id_activo
+WHERE pa.clase_activo = 'RENTA_VARIABLE'
+ORDER BY ganancia_no_realizada_usd DESC;
+              cliente               |             activo             |  cantidad   | costo_promedio_usd | precio_actual_usd | ganancia_no_realizada_usd | ganancia_pct 
+------------------------------------+--------------------------------+-------------+--------------------+-------------------+---------------------------+--------------
+ Laura Zapata Castro                | Bancolombia S.A. (ADR)         | 2383.000000 |            38.8611 |           87.4500 |                 115787.36 |       125.03
+ Jorge Velez Rojas                  | Johnson & Johnson              |  457.000000 |           162.4004 |          282.5500 |                  54908.37 |        73.98
+ Claudia Cortes Pardo               | Johnson & Johnson              |  366.000000 |           148.3337 |          282.5500 |                  49123.16 |        90.48
+ Jorge Velez Rojas                  | Amazon.com Inc.                |  439.000000 |           178.0855 |          257.7500 |                  34972.73 |        44.73
+ Ricardo Rojas Hernandez            | Alphabet Inc. Clase A          |  405.000000 |           202.7265 |          283.7200 |                  32802.38 |        39.95
+ Daniela Laura Restrepo Acosta      | Amazon.com Inc.                |  457.000000 |           193.1894 |          257.7500 |                  29504.17 |        33.42
+ Oscar Jimenez Torres               | Amazon.com Inc.                |  308.000000 |           171.2994 |          257.7500 |                  26626.80 |        50.47
+ Daniela Laura Restrepo Acosta      | Bancolombia S.A. (ADR)         |  510.000000 |            37.2634 |           87.4500 |                  25595.19 |       134.68
+ Carolina Suarez Garcia             | Ecopetrol S.A. (ADR)           | 5486.000000 |            10.3918 |           14.9100 |                  24786.92 |        43.48
+ Laura Zapata Castro                | Ecopetrol S.A. (ADR)           | 4289.000000 |             9.5688 |           14.9100 |                  22908.44 |        55.82
+ Gloria Giraldo Zapata              | Apple Inc.                     |  178.000000 |           252.8200 |          352.7800 |                  17792.88 |        39.54
+ Gloria Lopez Hernandez             | Apple Inc.                     |  142.000000 |           237.7790 |          352.7800 |                  16330.14 |        48.36
+ Gloria Giraldo Zapata              | Johnson & Johnson              |  124.000000 |           153.2500 |          282.5500 |                  16033.20 |        84.37
+ David Fernando Acosta Mejia        | Apple Inc.                     |  150.000000 |           247.8573 |          352.7800 |                  15738.41 |        42.33
+ Carlos Lopez Castro                | Invesco QQQ Trust (Nasdaq-100) |   85.000000 |           487.1871 |          661.7500 |                  14837.85 |        35.83
+ Felipe Cortes Mejia                | Invesco QQQ Trust (Nasdaq-100) |  134.000000 |           552.7461 |          661.7500 |                  14606.52 |        19.72
+ Sebastian Juan Gomez Castro        | Bancolombia S.A. (ADR)         |  701.000000 |            68.3003 |           87.4500 |                  13423.93 |        28.04
+ Carlos Lopez Castro                | SPDR S&P 500 ETF Trust         |   78.000000 |           576.5810 |          739.9500 |                  12742.78 |        28.33
+ Marcela Gutierrez Velez            | Alphabet Inc. Clase A          |  151.000000 |           204.0972 |          283.7200 |                  12023.04 |        39.01
+ Gabriel Jimenez Diaz               | Ecopetrol S.A. (ADR)           | 2561.000000 |            10.3342 |           14.9100 |                  11718.75 |        44.28
+ Daniela Laura Restrepo Acosta      | Johnson & Johnson              |   89.000000 |           155.3622 |          282.5500 |                  11319.72 |        81.87
+ Sebastian Juan Gomez Castro        | Johnson & Johnson              |   97.000000 |           169.5583 |          282.5500 |                  10960.19 |        66.64
+ Ricardo Rojas Hernandez            | Microsoft Corporation          |  241.000000 |           474.1900 |          517.9900 |                  10555.80 |         9.24
+ Paula Rojas Pardo                  | Bancolombia S.A. (ADR)         |  256.000000 |            46.4390 |           87.4500 |                  10498.82 |        88.31
+ Carlos Lopez Castro                | Ecopetrol S.A. (ADR)           | 2605.000000 |            10.9709 |           14.9100 |                  10261.40 |        35.91
+ Alejandro Jimenez Ramirez          | Ecopetrol S.A. (ADR)           | 1577.000000 |             8.4700 |           14.9100 |                  10155.88 |        76.03
+ Camila Adriana Moreno Acosta       | Bancolombia S.A. (ADR)         |  178.000000 |            35.1353 |           87.4500 |                   9312.01 |       148.89
+ Gloria Lopez Hernandez             | Ecopetrol S.A. (ADR)           | 2418.000000 |            11.1082 |           14.9100 |                   9192.67 |        34.22
+ Diana Ospina Diaz                  | Apple Inc.                     |   78.000000 |           238.2305 |          352.7800 |                   8934.86 |        48.08
+ Oscar Jimenez Torres               | Bancolombia S.A. (ADR)         |  186.000000 |            39.6500 |           87.4500 |                   8890.80 |       120.55
+ Angela Luisa Ospina Castro         | Amazon.com Inc.                |  149.000000 |           198.5020 |          257.7500 |                   8827.95 |        29.85
+ Santiago Rafael Lopez Londono      | Apple Inc.                     |   56.000000 |           199.0649 |          352.7800 |                   8608.05 |        77.22
+ Claudia Cortes Pardo               | Ecopetrol S.A. (ADR)           | 1623.000000 |             9.8400 |           14.9100 |                   8228.61 |        51.52
+ Gloria Giraldo Zapata              | Johnson & Johnson              |  199.000000 |           241.7351 |          282.5500 |                   8122.16 |        16.88
+ Gloria Martinez Gutierrez          | Bancolombia S.A. (ADR)         |  149.000000 |            33.8048 |           87.4500 |                   7993.14 |       158.69
+ Adriana Paula Ortiz Ramirez        | SPDR S&P 500 ETF Trust         |   58.000000 |           602.2783 |          739.9500 |                   7984.96 |        22.86
+ Ricardo Lopez Cardenas             | Johnson & Johnson              |   67.000000 |           175.4493 |          282.5500 |                   7175.75 |        61.04
+ Gloria Martinez Gutierrez          | Apple Inc.                     |   54.000000 |           220.3082 |          352.7800 |                   7153.48 |        60.13
+ Laura Pardo Londono                | Invesco QQQ Trust (Nasdaq-100) |   46.000000 |           506.5900 |          661.7500 |                   7137.36 |        30.63
+ Angela Luisa Ospina Castro         | Johnson & Johnson              |   70.000000 |           184.5820 |          282.5500 |                   6857.76 |        53.08
+ Marcela Gutierrez Velez            | Invesco QQQ Trust (Nasdaq-100) |   35.000000 |           477.5772 |          661.7500 |                   6446.05 |        38.56
+ Nicolas Juan Gutierrez Jimenez     | Johnson & Johnson              |   51.000000 |           158.9296 |          282.5500 |                   6304.64 |        77.78
+ Angela Luisa Ospina Castro         | Apple Inc.                     |   52.000000 |           233.6415 |          352.7800 |                   6195.20 |        50.99
+ Daniela Gomez Martinez             | Apple Inc.                     |   46.000000 |           224.7678 |          352.7800 |                   5888.56 |        56.95
+ Gloria Martinez Gutierrez          | Microsoft Corporation          |   54.000000 |           412.3200 |          517.9900 |                   5706.18 |        25.63
+ Carolina Suarez Garcia             | SPDR S&P 500 ETF Trust         |   40.000000 |           598.4887 |          739.9500 |                   5658.45 |        23.64
+ Marcela Gutierrez Velez            | Johnson & Johnson              |   54.000000 |           179.4230 |          282.5500 |                   5568.86 |        57.48
+ Monica Acosta Hernandez            | Apple Inc.                     |   40.000000 |           214.5750 |          352.7800 |                   5528.20 |        64.41
+ Adriana Pardo Salazar              | Johnson & Johnson              |   45.000000 |           160.2600 |          282.5500 |                   5503.05 |        76.31
+ Ricardo Lopez Cardenas             | Tesla Inc.                     |   48.000000 |           268.5682 |          379.7400 |                   5336.25 |        41.39
+ Santiago Rafael Lopez Londono      | Bancolombia S.A. (ADR)         |  101.000000 |            35.2697 |           87.4500 |                   5270.21 |       147.95
+ Ivan Cardenas Suarez               | Bancolombia S.A. (ADR)         |   97.000000 |            33.8024 |           87.4500 |                   5203.82 |       158.71
+ Nicolas Juan Gutierrez Jimenez     | Ecopetrol S.A. (ADR)           | 1040.000000 |            10.0511 |           14.9100 |                   5053.29 |        48.34
+ Santiago Rafael Lopez Londono      | Tesla Inc.                     |   49.000000 |           281.0596 |          379.7400 |                   4835.34 |        35.11
+ Maria Giraldo Vargas               | Johnson & Johnson              |   37.000000 |           152.1900 |          282.5500 |                   4823.32 |        85.66
+ Rafael Mauricio Acosta Vargas      | Johnson & Johnson              |   39.000000 |           162.0833 |          282.5500 |                   4698.20 |        74.32
+ Gloria Giraldo Zapata              | Ecopetrol S.A. (ADR)           |  842.000000 |             9.3800 |           14.9100 |                   4656.26 |        58.96
+ Carolina Diana Cardenas Salazar    | Bancolombia S.A. (ADR)         |   88.000000 |            35.2580 |           87.4500 |                   4592.90 |       148.03
+ Valentina Gomez Salazar            | Bancolombia S.A. (ADR)         |   83.000000 |            33.4100 |           87.4500 |                   4485.32 |       161.75
+ Claudia Cortes Pardo               | SPDR S&P 500 ETF Trust         |   21.000000 |           527.8000 |          739.9500 |                   4455.15 |        40.20
+ Miguel Felipe Gutierrez Giraldo    | Johnson & Johnson              |   36.000000 |           159.4367 |          282.5500 |                   4432.08 |        77.22
+ Rafael Ramirez Gutierrez           | Apple Inc.                     |   36.000000 |           229.8935 |          352.7800 |                   4423.91 |        53.45
+ Gabriel Jimenez Diaz               | Alphabet Inc. Clase A          |   59.000000 |           211.8295 |          283.7200 |                   4241.54 |        33.94
+ Daniela Gomez Martinez             | Microsoft Corporation          |   36.000000 |           401.0356 |          517.9900 |                   4210.36 |        29.16
+ Camila Adriana Moreno Acosta       | Invesco QQQ Trust (Nasdaq-100) |   26.000000 |           500.2100 |          661.7500 |                   4200.04 |        32.29
+ Claudia Rincon Velez               | Ecopetrol S.A. (ADR)           | 1421.000000 |            11.9705 |           14.9100 |                   4177.01 |        24.56
+ Nicolas Rincon Cardenas            | Invesco QQQ Trust (Nasdaq-100) |   95.000000 |           619.2100 |          661.7500 |                   4041.30 |         6.87
+ Rafael Vargas Torres               | Ecopetrol S.A. (ADR)           |  685.000000 |             9.0376 |           14.9100 |                   4022.60 |        64.98
+ Santiago Rafael Lopez Londono      | Microsoft Corporation          |   31.000000 |           390.5800 |          517.9900 |                   3949.71 |        32.62
+ Adriana Paula Ortiz Ramirez        | Apple Inc.                     |   38.000000 |           249.9400 |          352.7800 |                   3907.92 |        41.15
+ Adriana Paula Ortiz Ramirez        | Ecopetrol S.A. (ADR)           | 1021.000000 |            11.1007 |           14.9100 |                   3889.31 |        34.32
+ Diana Ospina Diaz                  | SPDR S&P 500 ETF Trust         |   22.000000 |           566.3517 |          739.9500 |                   3819.16 |        30.65
+ Nicolas Juan Gutierrez Jimenez     | Microsoft Corporation          |   42.000000 |           428.9531 |          517.9900 |                   3739.55 |        20.76
+ Sebastian Restrepo Cortes          | Johnson & Johnson              |   34.000000 |           173.0795 |          282.5500 |                   3722.00 |        63.25
+ Daniela Laura Restrepo Acosta      | Microsoft Corporation          |   67.000000 |           464.7188 |          517.9900 |                   3569.17 |        11.46
+ Ricardo Lopez Cardenas             | Alphabet Inc. Clase A          |   43.000000 |           200.9374 |          283.7200 |                   3559.65 |        41.20
+ Sofia Cardenas Acosta              | Ecopetrol S.A. (ADR)           |  589.000000 |             8.8800 |           14.9100 |                   3551.67 |        67.91
+ Hernan Ricardo Velez Diaz          | Ecopetrol S.A. (ADR)           | 1003.000000 |            11.5341 |           14.9100 |                   3386.05 |        29.27
+ Miguel Felipe Gutierrez Giraldo    | Apple Inc.                     |   24.000000 |           212.5000 |          352.7800 |                   3366.72 |        66.01
+ Diana Ospina Diaz                  | Microsoft Corporation          |   34.000000 |           419.9438 |          517.9900 |                   3333.57 |        23.35
+ Ricardo Rojas Hernandez            | Ecopetrol S.A. (ADR)           |  827.000000 |            10.9139 |           14.9100 |                   3304.81 |        36.62
+ Paula Rojas Pardo                  | Invesco QQQ Trust (Nasdaq-100) |   18.000000 |           481.5733 |          661.7500 |                   3243.18 |        37.41
+ Maria Giraldo Vargas               | Invesco QQQ Trust (Nasdaq-100) |   35.000000 |           569.4374 |          661.7500 |                   3230.94 |        16.21
+ Nicolas Zapata Restrepo            | Tesla Inc.                     |   22.000000 |           234.7327 |          379.7400 |                   3190.16 |        61.78
+ Diana Ospina Diaz                  | Johnson & Johnson              |   33.000000 |           186.0548 |          282.5500 |                   3184.34 |        51.86
+ Ricardo Lopez Cardenas             | Bancolombia S.A. (ADR)         |   87.000000 |            50.9493 |           87.4500 |                   3175.56 |        71.64
+ Nicolas Rafael Jimenez Ramirez     | Apple Inc.                     |   29.000000 |           245.9863 |          352.7800 |                   3097.02 |        43.41
+ Alejandro Moreno Restrepo          | Bancolombia S.A. (ADR)         |  139.000000 |            65.5883 |           87.4500 |                   3038.78 |        33.33
+ Gloria Lopez Hernandez             | Microsoft Corporation          |   30.000000 |           417.0764 |          517.9900 |                   3027.41 |        24.20
+ Paula Rojas Pardo                  | Johnson & Johnson              |   45.000000 |           215.4127 |          282.5500 |                   3021.18 |        31.17
+ Gloria Lopez Hernandez             | SPDR S&P 500 ETF Trust         |   21.000000 |           597.5300 |          739.9500 |                   2990.82 |        23.83
+ Camila Adriana Moreno Acosta       | Johnson & Johnson              |   43.000000 |           213.5841 |          282.5500 |                   2965.53 |        32.29
+ Angela Luisa Ospina Castro         | SPDR S&P 500 ETF Trust         |   20.000000 |           595.5100 |          739.9500 |                   2888.80 |        24.25
+ Ricardo Rojas Hernandez            | Amazon.com Inc.                |  107.000000 |           232.1276 |          257.7500 |                   2741.60 |        11.04
+ Hernan Ricardo Velez Diaz          | Invesco QQQ Trust (Nasdaq-100) |   16.000000 |           492.5652 |          661.7500 |                   2706.96 |        34.35
+ Oscar Jimenez Torres               | Microsoft Corporation          |   25.000000 |           413.8652 |          517.9900 |                   2603.12 |        25.16
+ Adriana Garcia Gomez               | Bancolombia S.A. (ADR)         |  100.000000 |            61.9100 |           87.4500 |                   2554.00 |        41.25
+ Nicolas Zapata Restrepo            | Invesco QQQ Trust (Nasdaq-100) |   15.000000 |           494.0873 |          661.7500 |                   2514.94 |        33.93
+ Angela Luisa Ospina Castro         | Tesla Inc.                     |   15.000000 |           222.6675 |          379.7400 |                   2356.09 |        70.54
+ Oscar Jimenez Torres               | Alphabet Inc. Clase A          |   27.000000 |           197.8735 |          283.7200 |                   2317.86 |        43.38
+ Camila Giraldo Garcia              | SPDR S&P 500 ETF Trust         |   20.000000 |           624.0600 |          739.9500 |                   2317.80 |        18.57
+ Rafael Ramirez Gutierrez           | Johnson & Johnson              |   21.000000 |           172.9460 |          282.5500 |                   2301.68 |        63.37
+ Oscar Jimenez Torres               | Invesco QQQ Trust (Nasdaq-100) |   17.000000 |           526.6915 |          661.7500 |                   2295.99 |        25.64
+ Angela Luisa Ospina Castro         | Tesla Inc.                     |   21.000000 |           272.0600 |          379.7400 |                   2261.28 |        39.58
+ Laura Pardo Londono                | Ecopetrol S.A. (ADR)           |  368.000000 |             8.7800 |           14.9100 |                   2255.84 |        69.82
+ Ricardo Rojas Hernandez            | SPDR S&P 500 ETF Trust         |   13.000000 |           567.4143 |          739.9500 |                   2242.96 |        30.41
+ Gloria Lopez Hernandez             | Johnson & Johnson              |   28.000000 |           203.0700 |          282.5500 |                   2225.44 |        39.14
+ Alejandro Jimenez Ramirez          | Microsoft Corporation          |   33.000000 |           454.8188 |          517.9900 |                   2084.65 |        13.89
+ Adriana Garcia Gomez               | Johnson & Johnson              |   23.000000 |           192.5878 |          282.5500 |                   2069.13 |        46.71
+ Gabriel Jimenez Diaz               | Tesla Inc.                     |   18.000000 |           264.8142 |          379.7400 |                   2068.66 |        43.40
+ Oscar Jimenez Torres               | SPDR S&P 500 ETF Trust         |   22.000000 |           646.2209 |          739.9500 |                   2062.04 |        14.50
+ Diana Ospina Diaz                  | Ecopetrol S.A. (ADR)           |  342.000000 |             8.9056 |           14.9100 |                   2053.52 |        67.42
+ Ricardo Lopez Cardenas             | Apple Inc.                     |   17.000000 |           232.1400 |          352.7800 |                   2050.88 |        51.97
+ Rafael Ramirez Gutierrez           | Bancolombia S.A. (ADR)         |   58.000000 |            52.4600 |           87.4500 |                   2029.42 |        66.70
+ Marcela Gutierrez Velez            | Amazon.com Inc.                |   41.000000 |           208.2868 |          257.7500 |                   2027.99 |        23.75
+ Marcela Gutierrez Zapata           | Ecopetrol S.A. (ADR)           |  383.000000 |             9.7417 |           14.9100 |                   1979.45 |        53.05
+ Miguel Ortiz Zapata                | Tesla Inc.                     |   18.000000 |           270.0878 |          379.7400 |                   1973.74 |        40.60
+ Laura Pardo Londono                | Apple Inc.                     |   15.000000 |           230.0769 |          352.7800 |                   1840.55 |        53.33
+ Gabriel Jimenez Diaz               | Invesco QQQ Trust (Nasdaq-100) |    8.000000 |           432.8588 |          661.7500 |                   1831.13 |        52.88
+ Gabriel Jimenez Diaz               | Tesla Inc.                     |   12.000000 |           227.2000 |          379.7400 |                   1830.48 |        67.14
+ Ivan Cardenas Suarez               | Apple Inc.                     |   13.000000 |           214.5674 |          352.7800 |                   1796.76 |        64.41
+ Nicolas Rincon Cardenas            | Johnson & Johnson              |   15.000000 |           162.9900 |          282.5500 |                   1793.40 |        73.35
+ Adriana Pardo Salazar              | Microsoft Corporation          |   14.000000 |           389.9700 |          517.9900 |                   1792.28 |        32.83
+ Adriana Garcia Gomez               | Apple Inc.                     |   13.000000 |           215.2700 |          352.7800 |                   1787.63 |        63.88
+ Santiago Alejandro Velez Hernandez | Ecopetrol S.A. (ADR)           |  283.000000 |             8.7558 |           14.9100 |                   1741.63 |        70.29
+ Oscar Jimenez Torres               | Ecopetrol S.A. (ADR)           |  538.000000 |            11.7819 |           14.9100 |                   1682.93 |        26.55
+ Claudia Rincon Velez               | Bancolombia S.A. (ADR)         |   32.000000 |            35.2172 |           87.4500 |                   1671.45 |       148.32
+ Daniela Gomez Martinez             | Invesco QQQ Trust (Nasdaq-100) |   11.000000 |           512.7145 |          661.7500 |                   1639.39 |        29.07
+ Ricardo Lopez Cardenas             | Apple Inc.                     |   17.000000 |           256.4400 |          352.7800 |                   1637.78 |        37.57
+ Miguel Felipe Gutierrez Giraldo    | Tesla Inc.                     |   20.000000 |           297.9060 |          379.7400 |                   1636.68 |        27.47
+ Angela Luisa Ospina Castro         | Amazon.com Inc.                |   19.000000 |           176.1288 |          257.7500 |                   1550.80 |        46.34
+ Carolina Suarez Garcia             | Alphabet Inc. Clase A          |   26.000000 |           224.2628 |          283.7200 |                   1545.89 |        26.51
+ Adriana Paula Ortiz Ramirez        | Johnson & Johnson              |   14.000000 |           174.2100 |          282.5500 |                   1516.76 |        62.19
+ Ivan Cardenas Suarez               | Invesco QQQ Trust (Nasdaq-100) |   13.000000 |           548.6063 |          661.7500 |                   1470.87 |        20.62
+ Miguel Ortiz Zapata                | Johnson & Johnson              |   20.000000 |           210.8510 |          282.5500 |                   1433.98 |        34.00
+ Carlos Rincon Zapata               | Tesla Inc.                     |   16.000000 |           290.2025 |          379.7400 |                   1432.60 |        30.85
+ Carlos Lopez Castro                | Amazon.com Inc.                |   46.000000 |           227.0700 |          257.7500 |                   1411.28 |        13.51
+ Daniela Laura Restrepo Acosta      | Ecopetrol S.A. (ADR)           |  197.000000 |             7.9300 |           14.9100 |                   1375.06 |        88.02
+ Gloria Martinez Gutierrez          | SPDR S&P 500 ETF Trust         |   10.000000 |           607.6600 |          739.9500 |                   1322.90 |        21.77
+ Claudia Rincon Velez               | Apple Inc.                     |   13.000000 |           253.2180 |          352.7800 |                   1294.31 |        39.32
+ Maria Giraldo Vargas               | Microsoft Corporation          |   15.000000 |           431.9504 |          517.9900 |                   1290.59 |        19.92
+ Ricardo Rojas Hernandez            | Bancolombia S.A. (ADR)         |   47.000000 |            60.2700 |           87.4500 |                   1277.46 |        45.10
+ Rafael Ramirez Gutierrez           | Alphabet Inc. Clase A          |   11.000000 |           168.1000 |          283.7200 |                   1271.82 |        68.78
+ Natalia Restrepo Londono           | Johnson & Johnson              |   10.000000 |           156.2980 |          282.5500 |                   1262.52 |        80.78
+ Rafael Gutierrez Jimenez           | Invesco QQQ Trust (Nasdaq-100) |   11.000000 |           547.0330 |          661.7500 |                   1261.89 |        20.97
+ Rafael Vargas Torres               | Amazon.com Inc.                |   25.000000 |           207.4664 |          257.7500 |                   1257.09 |        24.24
+ Jorge Salazar Lopez                | Alphabet Inc. Clase A          |   11.000000 |           173.6800 |          283.7200 |                   1210.44 |        63.36
+ Marcela Gutierrez Zapata           | Alphabet Inc. Clase A          |   20.000000 |           225.5188 |          283.7200 |                   1164.02 |        25.81
+ Paula Rojas Pardo                  | Apple Inc.                     |   15.000000 |           276.8060 |          352.7800 |                   1139.61 |        27.45
+ Camila Giraldo Garcia              | Microsoft Corporation          |   30.000000 |           480.2050 |          517.9900 |                   1133.55 |         7.87
+ Sofia Cardenas Acosta              | Bancolombia S.A. (ADR)         |   44.000000 |            61.8300 |           87.4500 |                   1127.28 |        41.44
+ Gabriel Jimenez Diaz               | Apple Inc.                     |   16.000000 |           283.4689 |          352.7800 |                   1108.98 |        24.45
+ Natalia Restrepo Londono           | Invesco QQQ Trust (Nasdaq-100) |    6.000000 |           478.8083 |          661.7500 |                   1097.65 |        38.21
+ Gabriel Jimenez Diaz               | Microsoft Corporation          |   10.000000 |           409.3200 |          517.9900 |                   1086.70 |        26.55
+ Nicolas Juan Gutierrez Jimenez     | Tesla Inc.                     |   23.000000 |           332.5636 |          379.7400 |                   1085.06 |        14.19
+ Hernan Ricardo Velez Diaz          | Alphabet Inc. Clase A          |   54.000000 |           264.7906 |          283.7200 |                   1022.19 |         7.15
+ Oscar Rojas Castro                 | Alphabet Inc. Clase A          |    9.000000 |           170.2600 |          283.7200 |                   1021.14 |        66.64
+ Carolina Diana Cardenas Salazar    | Apple Inc.                     |    9.000000 |           242.1822 |          352.7800 |                    995.38 |        45.67
+ Catalina Claudia Rodriguez Velez   | Amazon.com Inc.                |   27.000000 |           220.9200 |          257.7500 |                    994.41 |        16.67
+ Miguel Ortiz Zapata                | Amazon.com Inc.                |   16.000000 |           195.7425 |          257.7500 |                    992.12 |        31.68
+ Marcela Gutierrez Zapata           | Johnson & Johnson              |    8.000000 |           163.4812 |          282.5500 |                    952.55 |        72.83
+ Maria Giraldo Vargas               | SPDR S&P 500 ETF Trust         |    7.000000 |           605.7706 |          739.9500 |                    939.26 |        22.15
+ Marcela Gutierrez Zapata           | Microsoft Corporation          |   10.000000 |           425.4000 |          517.9900 |                    925.90 |        21.77
+ Rafael Mauricio Acosta Vargas      | Invesco QQQ Trust (Nasdaq-100) |   16.000000 |           604.0256 |          661.7500 |                    923.59 |         9.56
+ Carolina Diana Cardenas Salazar    | Invesco QQQ Trust (Nasdaq-100) |    5.000000 |           486.1800 |          661.7500 |                    877.85 |        36.11
+ Sebastian Restrepo Cortes          | Apple Inc.                     |    6.000000 |           208.1793 |          352.7800 |                    867.60 |        69.46
+ Carolina Pardo Ospina              | Ecopetrol S.A. (ADR)           |  149.000000 |             9.3800 |           14.9100 |                    823.97 |        58.96
+ Claudia Rincon Velez               | Johnson & Johnson              |    7.000000 |           166.7955 |          282.5500 |                    810.28 |        69.40
+ Rafael Vargas Torres               | Microsoft Corporation          |    8.000000 |           417.6850 |          517.9900 |                    802.44 |        24.01
+ Paula Rojas Pardo                  | Amazon.com Inc.                |   29.000000 |           230.4569 |          257.7500 |                    791.50 |        11.84
+ Sebastian Juan Gomez Castro        | Microsoft Corporation          |   14.000000 |           464.4500 |          517.9900 |                    749.56 |        11.53
+ Gabriel Jorge Giraldo Pardo        | Invesco QQQ Trust (Nasdaq-100) |    6.000000 |           542.8960 |          661.7500 |                    713.12 |        21.89
+ Oscar Rojas Castro                 | Ecopetrol S.A. (ADR)           |  113.000000 |             8.6471 |           14.9100 |                    707.71 |        72.43
+ Monica Gutierrez Garcia            | Apple Inc.                     |    5.000000 |           214.0000 |          352.7800 |                    693.90 |        64.85
+ Claudia Rincon Velez               | Bancolombia S.A. (ADR)         |   18.000000 |            49.8000 |           87.4500 |                    677.70 |        75.60
+ Gabriel Jimenez Diaz               | Bancolombia S.A. (ADR)         |   51.000000 |            74.5333 |           87.4500 |                    658.75 |        17.33
+ Ricardo Rojas Hernandez            | Invesco QQQ Trust (Nasdaq-100) |    5.000000 |           534.2900 |          661.7500 |                    637.30 |        23.86
+ Adriana Paula Ortiz Ramirez        | SPDR S&P 500 ETF Trust         |   16.000000 |           701.6173 |          739.9500 |                    613.32 |         5.46
+ Rafael Vargas Torres               | SPDR S&P 500 ETF Trust         |    5.000000 |           618.1500 |          739.9500 |                    609.00 |        19.70
+ Rafael Gutierrez Jimenez           | SPDR S&P 500 ETF Trust         |    4.000000 |           594.2800 |          739.9500 |                    582.68 |        24.51
+ Paula Rojas Pardo                  | Apple Inc.                     |   19.000000 |           322.5184 |          352.7800 |                    574.97 |         9.38
+ Claudia Rincon Velez               | Microsoft Corporation          |    7.000000 |           436.6000 |          517.9900 |                    569.73 |        18.64
+ Carolina Suarez Garcia             | Alphabet Inc. Clase A          |   12.000000 |           236.5700 |          283.7200 |                    565.80 |        19.93
+ Camila Giraldo Garcia              | Apple Inc.                     |   10.000000 |           297.8550 |          352.7800 |                    549.25 |        18.44
+ Marcela Gutierrez Zapata           | Bancolombia S.A. (ADR)         |   24.000000 |            65.6613 |           87.4500 |                    522.93 |        33.18
+ Ricardo Lopez Cardenas             | Amazon.com Inc.                |   18.000000 |           229.0178 |          257.7500 |                    517.18 |        12.55
+ Natalia Restrepo Londono           | Bancolombia S.A. (ADR)         |    9.000000 |            31.1700 |           87.4500 |                    506.52 |       180.56
+ Nicolas Zapata Restrepo            | SPDR S&P 500 ETF Trust         |    6.000000 |           657.0486 |          739.9500 |                    497.41 |        12.62
+ Alejandro Moreno Restrepo          | Amazon.com Inc.                |   14.000000 |           223.4700 |          257.7500 |                    479.92 |        15.34
+ Rafael Vargas Torres               | Alphabet Inc. Clase A          |    6.000000 |           205.0046 |          283.7200 |                    472.29 |        38.40
+ Rafael Vargas Torres               | Ecopetrol S.A. (ADR)           |  124.000000 |            11.2441 |           14.9100 |                    454.57 |        32.60
+ Santiago Alejandro Velez Hernandez | Amazon.com Inc.                |   11.000000 |           217.1073 |          257.7500 |                    447.07 |        18.72
+ Sofia Cardenas Acosta              | Amazon.com Inc.                |   12.000000 |           221.2700 |          257.7500 |                    437.76 |        16.49
+ Adriana Garcia Gomez               | SPDR S&P 500 ETF Trust         |    3.000000 |           595.9300 |          739.9500 |                    432.06 |        24.17
+ Carolina Pardo Ospina              | Tesla Inc.                     |    6.000000 |           315.3500 |          379.7400 |                    386.34 |        20.42
+ Camila Giraldo Garcia              | Tesla Inc.                     |    7.000000 |           327.3500 |          379.7400 |                    366.73 |        16.00
+ Monica Gutierrez Garcia            | Alphabet Inc. Clase A          |    3.000000 |           164.2900 |          283.7200 |                    358.29 |        72.69
+ Monica Gutierrez Garcia            | Amazon.com Inc.                |    5.000000 |           195.7400 |          257.7500 |                    310.05 |        31.68
+ Monica Acosta Hernandez            | Invesco QQQ Trust (Nasdaq-100) |    2.000000 |           514.3525 |          661.7500 |                    294.80 |        28.66
+ Gabriel Jorge Giraldo Pardo        | Bancolombia S.A. (ADR)         |   47.000000 |            81.6321 |           87.4500 |                    273.44 |         7.13
+ Adriana Pardo Salazar              | Invesco QQQ Trust (Nasdaq-100) |    2.000000 |           527.3000 |          661.7500 |                    268.90 |        25.50
+ Santiago Rafael Lopez Londono      | Invesco QQQ Trust (Nasdaq-100) |    3.000000 |           576.0600 |          661.7500 |                    257.07 |        14.88
+ Carolina Diana Cardenas Salazar    | Microsoft Corporation          |    4.000000 |           453.8400 |          517.9900 |                    256.60 |        14.13
+ Monica Gutierrez Garcia            | Bancolombia S.A. (ADR)         |   13.000000 |            67.9000 |           87.4500 |                    254.15 |        28.79
+ Catalina Claudia Rodriguez Velez   | Microsoft Corporation          |    9.000000 |           490.1100 |          517.9900 |                    250.92 |         5.69
+ David Fernando Acosta Mejia        | Microsoft Corporation          |   23.000000 |           507.7992 |          517.9900 |                    234.39 |         2.01
+ Carlos Rincon Zapata               | Ecopetrol S.A. (ADR)           |   40.000000 |             9.5300 |           14.9100 |                    215.20 |        56.45
+ Alejandro Jimenez Ramirez          | Amazon.com Inc.                |    8.000000 |           232.7900 |          257.7500 |                    199.68 |        10.72
+ Maria Giraldo Vargas               | Microsoft Corporation          |    8.000000 |           494.0050 |          517.9900 |                    191.88 |         4.86
+ Oscar Jimenez Torres               | Alphabet Inc. Clase A          |   64.000000 |           280.7819 |          283.7200 |                    188.04 |         1.05
+ Valentina Gomez Salazar            | Alphabet Inc. Clase A          |    2.000000 |           196.0900 |          283.7200 |                    175.26 |        44.69
+ Carolina Pardo Ospina              | SPDR S&P 500 ETF Trust         |    2.000000 |           660.0000 |          739.9500 |                    159.90 |        12.11
+ Adriana Pardo Salazar              | Amazon.com Inc.                |    3.000000 |           205.7100 |          257.7500 |                    156.12 |        25.30
+ Carolina Pardo Ospina              | Microsoft Corporation          |    8.000000 |           498.8400 |          517.9900 |                    153.20 |         3.84
+ Rafael Gutierrez Jimenez           | Apple Inc.                     |    2.000000 |           284.1800 |          352.7800 |                    137.20 |        24.14
+ Carolina Castro Diaz               | Amazon.com Inc.                |    4.000000 |           227.1200 |          257.7500 |                    122.52 |        13.49
+ Miguel Felipe Gutierrez Giraldo    | Amazon.com Inc.                |    3.000000 |           223.1300 |          257.7500 |                    103.86 |        15.52
+ Natalia Restrepo Londono           | Microsoft Corporation          |    2.000000 |           467.6800 |          517.9900 |                    100.62 |        10.76
+ Nicolas Zapata Restrepo            | Apple Inc.                     |    5.000000 |           333.7400 |          352.7800 |                     95.20 |         5.71
+ Alejandro Moreno Restrepo          | Ecopetrol S.A. (ADR)           |  117.000000 |            14.2400 |           14.9100 |                     78.39 |         4.71
+ Adriana Garcia Gomez               | Invesco QQQ Trust (Nasdaq-100) |    1.000000 |           587.8200 |          661.7500 |                     73.93 |        12.58
+ Carolina Diana Cardenas Salazar    | Johnson & Johnson              |    1.000000 |           210.3300 |          282.5500 |                     72.22 |        34.34
+ Maria Giraldo Vargas               | Amazon.com Inc.                |    2.000000 |           231.4300 |          257.7500 |                     52.64 |        11.37
+ Jorge Salazar Lopez                | Amazon.com Inc.                |    2.000000 |           232.3800 |          257.7500 |                     50.74 |        10.92
+ Jorge Salazar Lopez                | Microsoft Corporation          |    3.000000 |           505.3500 |          517.9900 |                     37.92 |         2.50
+ Sebastian Restrepo Cortes          | Amazon.com Inc.                |   13.000000 |           255.3292 |          257.7500 |                     31.47 |         0.95
+ Carolina Castro Diaz               | SPDR S&P 500 ETF Trust         |    1.000000 |           768.5600 |          739.9500 |                    -28.61 |        -3.72
+ Carolina Pardo Ospina              | Alphabet Inc. Clase A          |    1.000000 |           313.0000 |          283.7200 |                    -29.28 |        -9.35
+ Rafael Vargas Torres               | Amazon.com Inc.                |   26.000000 |           259.6503 |          257.7500 |                    -49.41 |        -0.73
+ Jorge Salazar Lopez                | Tesla Inc.                     |    1.000000 |           446.7400 |          379.7400 |                    -67.00 |       -15.00
+ Catalina Claudia Rodriguez Velez   | Tesla Inc.                     |    3.000000 |           402.9000 |          379.7400 |                    -69.48 |        -5.75
+ Rafael Vargas Torres               | Tesla Inc.                     |    4.000000 |           400.6200 |          379.7400 |                    -83.52 |        -5.21
+ Paula Rojas Pardo                  | Invesco QQQ Trust (Nasdaq-100) |    3.000000 |           695.7700 |          661.7500 |                   -102.06 |        -4.89
+ Alejandro Moreno Restrepo          | Invesco QQQ Trust (Nasdaq-100) |    2.000000 |           713.4400 |          661.7500 |                   -103.38 |        -7.25
+ Felipe Cortes Mejia                | SPDR S&P 500 ETF Trust         |   13.000000 |           748.1700 |          739.9500 |                   -106.86 |        -1.10
+ Jorge Velez Rojas                  | Invesco QQQ Trust (Nasdaq-100) |   12.000000 |           672.8800 |          661.7500 |                   -133.56 |        -1.65
+ Claudia Rincon Velez               | Invesco QQQ Trust (Nasdaq-100) |    3.000000 |           714.5100 |          661.7500 |                   -158.28 |        -7.38
+ Nicolas Rafael Jimenez Ramirez     | Ecopetrol S.A. (ADR)           |  267.000000 |            15.6447 |           14.9100 |                   -196.17 |        -4.70
+ Adriana Garcia Gomez               | Ecopetrol S.A. (ADR)           |   96.000000 |            17.7000 |           14.9100 |                   -267.84 |       -15.76
+ Gabriel Jorge Giraldo Pardo        | Tesla Inc.                     |    4.000000 |           454.1727 |          379.7400 |                   -297.73 |       -16.39
+ David Fernando Acosta Mejia        | SPDR S&P 500 ETF Trust         |    9.000000 |           773.2600 |          739.9500 |                   -299.79 |        -4.31
+ Laura Zapata Castro                | Alphabet Inc. Clase A          |   84.000000 |           287.3668 |          283.7200 |                   -306.33 |        -1.27
+ Gabriel Jorge Giraldo Pardo        | Alphabet Inc. Clase A          |    6.000000 |           342.0500 |          283.7200 |                   -349.98 |       -17.05
+ Sofia Cardenas Acosta              | Tesla Inc.                     |    5.000000 |           467.2600 |          379.7400 |                   -437.60 |       -18.73
+ Daniela Laura Restrepo Acosta      | Alphabet Inc. Clase A          |  105.000000 |           289.6737 |          283.7200 |                   -625.14 |        -2.06
+ Rafael Gutierrez Jimenez           | Alphabet Inc. Clase A          |   21.000000 |           316.5143 |          283.7200 |                   -688.68 |       -10.36
+ Gabriel Jorge Giraldo Pardo        | Alphabet Inc. Clase A          |    8.000000 |           373.2500 |          283.7200 |                   -716.24 |       -23.99
+ Nicolas Rincon Cardenas            | Ecopetrol S.A. (ADR)           |  757.000000 |            15.9800 |           14.9100 |                   -809.99 |        -6.70
+ Ricardo Rojas Hernandez            | Bancolombia S.A. (ADR)         |  160.000000 |            94.9600 |           87.4500 |                  -1201.60 |        -7.91
+ David Fernando Acosta Mejia        | Tesla Inc.                     |  107.000000 |           402.7366 |          379.7400 |                  -2460.63 |        -5.71
+(250 filas)
+
+-- ---------------------------------------------------------------------
+-- C13 | Apoyo a P7: clientes sin compras ni ventas en los ultimos 90 dias
+--       (subconsulta correlacionada con NOT EXISTS)
+-- ---------------------------------------------------------------------
+SELECT cl.id_cliente,
+       cl.nombres || ' ' || cl.apellidos   AS cliente,
+       ase.nombres || ' ' || ase.apellidos AS asesor,
+       (SELECT MAX(t.fecha_hora)::date
+        FROM transaccion t
+        JOIN cuenta cu ON cu.id_cuenta = t.id_cuenta
+        WHERE cu.id_cliente = cl.id_cliente) AS ultima_operacion
+FROM cliente cl
+JOIN asesor ase ON ase.id_asesor = cl.id_asesor
+WHERE NOT EXISTS (SELECT 1
+                  FROM transaccion t
+                  JOIN cuenta cu ON cu.id_cuenta = t.id_cuenta
+                  WHERE cu.id_cliente = cl.id_cliente
+                    AND t.fecha_hora >= CURRENT_DATE - INTERVAL '90 days')
+ORDER BY ultima_operacion NULLS FIRST;
+ id_cliente |              cliente               |            asesor            | ultima_operacion 
+------------+------------------------------------+------------------------------+------------------
+         29 | Miguel Felipe Gutierrez Giraldo    | Oscar Ospina Restrepo        | 2025-11-11
+         33 | Monica Gutierrez Garcia            | Marcela Claudia Vargas Gomez | 2026-04-06
+          4 | Carlos Rincon Zapata               | Oscar Ospina Restrepo        | 2026-04-29
+         24 | Alejandro Jimenez Ramirez          | Oscar Ospina Restrepo        | 2026-05-18
+         32 | Gloria Martinez Gutierrez          | Marcela Claudia Vargas Gomez | 2026-05-28
+         23 | Monica Acosta Hernandez            | Laura Monica Salazar Pardo   | 2026-06-01
+         26 | Jorge Salazar Lopez                | Carlos Velez Londono         | 2026-06-02
+         48 | Carolina Pardo Ospina              | Marcela Claudia Vargas Gomez | 2026-06-15
+          6 | Claudia Cortes Pardo               | Marcela Claudia Vargas Gomez | 2026-06-15
+         31 | Gloria Giraldo Zapata              | Oscar Ospina Restrepo        | 2026-06-23
+         38 | Santiago Alejandro Velez Hernandez | Laura Monica Salazar Pardo   | 2026-07-07
+         50 | Santiago Rafael Lopez Londono      | Carlos Velez Londono         | 2026-07-10
+          5 | Daniela Gomez Martinez             | Laura Monica Salazar Pardo   | 2026-07-14
+         34 | Hernan Ricardo Velez Diaz          | Marcela Claudia Vargas Gomez | 2026-07-15
+         19 | Carolina Castro Diaz               | Marcela Claudia Vargas Gomez | 2026-08-06
+          2 | Rafael Mauricio Acosta Vargas      | Carlos Velez Londono         | 2026-08-17
+         27 | Maria Giraldo Vargas               | Adriana Mejia Ortiz          | 2026-08-17
+         14 | Sebastian Juan Gomez Castro        | Laura Monica Salazar Pardo   | 2026-08-17
+(18 filas)
+
+-- ---------------------------------------------------------------------
+-- C14 | Apoyo a P9: activos presentes en 3 o mas cuentas y cuanto
+--       suman (GROUP BY + HAVING sobre la vista de tenencia)
+-- ---------------------------------------------------------------------
+SELECT a.nombre          AS activo,
+       ta.nombre_tipo    AS tipo_activo,
+       COUNT(*)          AS cuentas_tenedoras,
+       SUM(te.cantidad)  AS cantidad_total
+FROM v_tenencia te
+JOIN activo      a  ON a.id_activo       = te.id_activo
+JOIN tipo_activo ta ON ta.id_tipo_activo = a.id_tipo_activo
+GROUP BY a.nombre, ta.nombre_tipo
+HAVING COUNT(*) >= 3
+ORDER BY cuentas_tenedoras DESC, activo;
+             activo             | tipo_activo | cuentas_tenedoras | cantidad_total 
+--------------------------------+-------------+-------------------+----------------
+ Ecopetrol S.A. (ADR)           | ACCION      |                29 |   31761.000000
+ Apple Inc.                     | ACCION      |                28 |    1098.000000
+ Invesco QQQ Trust (Nasdaq-100) | FONDO       |                28 |     631.000000
+ Johnson & Johnson              | ACCION      |                28 |    2033.000000
+ Amazon.com Inc.                | ACCION      |                25 |    1784.000000
+ Bancolombia S.A. (ADR)         | ACCION      |                25 |    5561.000000
+ Microsoft Corporation          | ACCION      |                25 |     758.000000
+ TES 2032 (mediano plazo)       | TES         |                25 |    1086.000000
+ TES 2027 (corto plazo)         | TES         |                23 |     954.000000
+ Alphabet Inc. Clase A          | ACCION      |                22 |    1128.000000
+ SPDR S&P 500 ETF Trust         | FONDO       |                21 |     391.000000
+ TES 2036 (largo plazo)         | TES         |                20 |     647.000000
+ Tesla Inc.                     | ACCION      |                19 |     399.000000
+(13 filas)
+
+-- ---------------------------------------------------------------------
+-- C15 | Auditoria de integridad: el saldo almacenado debe coincidir con
+--       el reconstruido desde el historial. Debe devolver 0 filas.
+-- ---------------------------------------------------------------------
+SELECT cu.id_cuenta,
+       cu.saldo_efectivo            AS saldo_almacenado,
+       fn_efectivo(cu.id_cuenta)    AS saldo_reconstruido,
+       cu.saldo_efectivo - fn_efectivo(cu.id_cuenta) AS diferencia
+FROM cuenta cu
+WHERE cu.saldo_efectivo <> fn_efectivo(cu.id_cuenta);
+ id_cuenta | saldo_almacenado | saldo_reconstruido | diferencia 
+-----------+------------------+--------------------+------------
+(0 filas)
+

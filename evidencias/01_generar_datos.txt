@@ -1,0 +1,5 @@
+﻿
+Generado sql\04_carga_datos.sql  (REALES: Yahoo Finance (yfinance) y datos.gov.co, descargados el 2026-11-16)
+  asesores 6 | clientes 60 | cuentas 80 | activos 346 (CDT 333)
+  transacciones 1479 | movimientos 407 | rendimientos 1367
+  precios 7220 | TRM 698 rangos | corte 2026-11-16

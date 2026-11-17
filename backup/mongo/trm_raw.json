@@ -1,0 +1,6982 @@
+[
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0523"
+  },
+  "valor": "4045.22",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-01T00:00:00.000",
+  "vigenciahasta": "2023-12-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0524"
+  },
+  "valor": "3983.15",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-02T00:00:00.000",
+  "vigenciahasta": "2023-12-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0525"
+  },
+  "valor": "3999.91",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-05T00:00:00.000",
+  "vigenciahasta": "2023-12-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0526"
+  },
+  "valor": "4023.21",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-06T00:00:00.000",
+  "vigenciahasta": "2023-12-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0527"
+  },
+  "valor": "3989.55",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-07T00:00:00.000",
+  "vigenciahasta": "2023-12-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0528"
+  },
+  "valor": "3998.51",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-08T00:00:00.000",
+  "vigenciahasta": "2023-12-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0529"
+  },
+  "valor": "3982.5",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-12T00:00:00.000",
+  "vigenciahasta": "2023-12-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed052a"
+  },
+  "valor": "3990.88",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-13T00:00:00.000",
+  "vigenciahasta": "2023-12-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed052b"
+  },
+  "valor": "3999.43",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-14T00:00:00.000",
+  "vigenciahasta": "2023-12-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed052c"
+  },
+  "valor": "3955.88",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-15T00:00:00.000",
+  "vigenciahasta": "2023-12-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed052d"
+  },
+  "valor": "3956.76",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-16T00:00:00.000",
+  "vigenciahasta": "2023-12-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed052e"
+  },
+  "valor": "3932.59",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-19T00:00:00.000",
+  "vigenciahasta": "2023-12-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed052f"
+  },
+  "valor": "3925.77",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-20T00:00:00.000",
+  "vigenciahasta": "2023-12-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0530"
+  },
+  "valor": "3948.54",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-21T00:00:00.000",
+  "vigenciahasta": "2023-12-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0531"
+  },
+  "valor": "3943.03",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-22T00:00:00.000",
+  "vigenciahasta": "2023-12-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0532"
+  },
+  "valor": "3915.43",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-23T00:00:00.000",
+  "vigenciahasta": "2023-12-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0533"
+  },
+  "valor": "3871.45",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-27T00:00:00.000",
+  "vigenciahasta": "2023-12-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0534"
+  },
+  "valor": "3844.81",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-28T00:00:00.000",
+  "vigenciahasta": "2023-12-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0535"
+  },
+  "valor": "3822.05",
+  "unidad": "COP",
+  "vigenciadesde": "2023-12-29T00:00:00.000",
+  "vigenciahasta": "2024-01-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0536"
+  },
+  "valor": "3895.53",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-03T00:00:00.000",
+  "vigenciahasta": "2024-01-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0537"
+  },
+  "valor": "3914.6",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-04T00:00:00.000",
+  "vigenciahasta": "2024-01-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0538"
+  },
+  "valor": "3927.64",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-05T00:00:00.000",
+  "vigenciahasta": "2024-01-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0539"
+  },
+  "valor": "3912.93",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-06T00:00:00.000",
+  "vigenciahasta": "2024-01-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed053a"
+  },
+  "valor": "3934.13",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-10T00:00:00.000",
+  "vigenciahasta": "2024-01-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed053b"
+  },
+  "valor": "3946.39",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-11T00:00:00.000",
+  "vigenciahasta": "2024-01-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed053c"
+  },
+  "valor": "3929.79",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-12T00:00:00.000",
+  "vigenciahasta": "2024-01-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed053d"
+  },
+  "valor": "3901.38",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-13T00:00:00.000",
+  "vigenciahasta": "2024-01-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed053e"
+  },
+  "valor": "3940.85",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-17T00:00:00.000",
+  "vigenciahasta": "2024-01-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed053f"
+  },
+  "valor": "3969.5",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-18T00:00:00.000",
+  "vigenciahasta": "2024-01-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0540"
+  },
+  "valor": "3939.89",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-19T00:00:00.000",
+  "vigenciahasta": "2024-01-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0541"
+  },
+  "valor": "3916.39",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-20T00:00:00.000",
+  "vigenciahasta": "2024-01-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0542"
+  },
+  "valor": "3904.49",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-23T00:00:00.000",
+  "vigenciahasta": "2024-01-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0543"
+  },
+  "valor": "3934.62",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-24T00:00:00.000",
+  "vigenciahasta": "2024-01-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0544"
+  },
+  "valor": "3929.95",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-25T00:00:00.000",
+  "vigenciahasta": "2024-01-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0545"
+  },
+  "valor": "3932.96",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-26T00:00:00.000",
+  "vigenciahasta": "2024-01-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0546"
+  },
+  "valor": "3925.26",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-27T00:00:00.000",
+  "vigenciahasta": "2024-01-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0547"
+  },
+  "valor": "3918.93",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-30T00:00:00.000",
+  "vigenciahasta": "2024-01-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0548"
+  },
+  "valor": "3925.6",
+  "unidad": "COP",
+  "vigenciadesde": "2024-01-31T00:00:00.000",
+  "vigenciahasta": "2024-01-31T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0549"
+  },
+  "valor": "3915.56",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-01T00:00:00.000",
+  "vigenciahasta": "2024-02-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed054a"
+  },
+  "valor": "3889.05",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-02T00:00:00.000",
+  "vigenciahasta": "2024-02-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed054b"
+  },
+  "valor": "3928.11",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-03T00:00:00.000",
+  "vigenciahasta": "2024-02-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed054c"
+  },
+  "valor": "3975.74",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-06T00:00:00.000",
+  "vigenciahasta": "2024-02-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed054d"
+  },
+  "valor": "3950.57",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-07T00:00:00.000",
+  "vigenciahasta": "2024-02-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed054e"
+  },
+  "valor": "3962.23",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-08T00:00:00.000",
+  "vigenciahasta": "2024-02-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed054f"
+  },
+  "valor": "3954.68",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-09T00:00:00.000",
+  "vigenciahasta": "2024-02-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0550"
+  },
+  "valor": "3926.08",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-10T00:00:00.000",
+  "vigenciahasta": "2024-02-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0551"
+  },
+  "valor": "3915.28",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-13T00:00:00.000",
+  "vigenciahasta": "2024-02-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0552"
+  },
+  "valor": "3929.0",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-14T00:00:00.000",
+  "vigenciahasta": "2024-02-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0553"
+  },
+  "valor": "3916.61",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-15T00:00:00.000",
+  "vigenciahasta": "2024-02-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0554"
+  },
+  "valor": "3909.89",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-16T00:00:00.000",
+  "vigenciahasta": "2024-02-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0555"
+  },
+  "valor": "3917.84",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-17T00:00:00.000",
+  "vigenciahasta": "2024-02-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0556"
+  },
+  "valor": "3912.97",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-21T00:00:00.000",
+  "vigenciahasta": "2024-02-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0557"
+  },
+  "valor": "3930.26",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-22T00:00:00.000",
+  "vigenciahasta": "2024-02-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0558"
+  },
+  "valor": "3935.64",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-23T00:00:00.000",
+  "vigenciahasta": "2024-02-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0559"
+  },
+  "valor": "3949.36",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-24T00:00:00.000",
+  "vigenciahasta": "2024-02-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed055a"
+  },
+  "valor": "3963.08",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-27T00:00:00.000",
+  "vigenciahasta": "2024-02-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed055b"
+  },
+  "valor": "3935.59",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-28T00:00:00.000",
+  "vigenciahasta": "2024-02-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed055c"
+  },
+  "valor": "3933.56",
+  "unidad": "COP",
+  "vigenciadesde": "2024-02-29T00:00:00.000",
+  "vigenciahasta": "2024-02-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed055d"
+  },
+  "valor": "3931.31",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-01T00:00:00.000",
+  "vigenciahasta": "2024-03-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed055e"
+  },
+  "valor": "3934.82",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-02T00:00:00.000",
+  "vigenciahasta": "2024-03-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed055f"
+  },
+  "valor": "3948.67",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-05T00:00:00.000",
+  "vigenciahasta": "2024-03-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0560"
+  },
+  "valor": "3945.32",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-06T00:00:00.000",
+  "vigenciahasta": "2024-03-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0561"
+  },
+  "valor": "3932.55",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-07T00:00:00.000",
+  "vigenciahasta": "2024-03-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0562"
+  },
+  "valor": "3920.79",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-08T00:00:00.000",
+  "vigenciahasta": "2024-03-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0563"
+  },
+  "valor": "3905.45",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-09T00:00:00.000",
+  "vigenciahasta": "2024-03-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0564"
+  },
+  "valor": "3907.81",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-12T00:00:00.000",
+  "vigenciahasta": "2024-03-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0565"
+  },
+  "valor": "3919.86",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-13T00:00:00.000",
+  "vigenciahasta": "2024-03-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0566"
+  },
+  "valor": "3908.02",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-14T00:00:00.000",
+  "vigenciahasta": "2024-03-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0567"
+  },
+  "valor": "3899.39",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-15T00:00:00.000",
+  "vigenciahasta": "2024-03-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0568"
+  },
+  "valor": "3884.64",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-16T00:00:00.000",
+  "vigenciahasta": "2024-03-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0569"
+  },
+  "valor": "3880.59",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-19T00:00:00.000",
+  "vigenciahasta": "2024-03-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed056a"
+  },
+  "valor": "3894.37",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-20T00:00:00.000",
+  "vigenciahasta": "2024-03-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed056b"
+  },
+  "valor": "3886.94",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-21T00:00:00.000",
+  "vigenciahasta": "2024-03-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed056c"
+  },
+  "valor": "3888.02",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-22T00:00:00.000",
+  "vigenciahasta": "2024-03-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed056d"
+  },
+  "valor": "3901.51",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-23T00:00:00.000",
+  "vigenciahasta": "2024-03-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed056e"
+  },
+  "valor": "3865.97",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-27T00:00:00.000",
+  "vigenciahasta": "2024-03-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed056f"
+  },
+  "valor": "3842.3",
+  "unidad": "COP",
+  "vigenciadesde": "2024-03-28T00:00:00.000",
+  "vigenciahasta": "2024-04-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0570"
+  },
+  "valor": "3863.05",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-02T00:00:00.000",
+  "vigenciahasta": "2024-04-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0571"
+  },
+  "valor": "3845.22",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-03T00:00:00.000",
+  "vigenciahasta": "2024-04-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0572"
+  },
+  "valor": "3812.13",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-04T00:00:00.000",
+  "vigenciahasta": "2024-04-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0573"
+  },
+  "valor": "3775.37",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-05T00:00:00.000",
+  "vigenciahasta": "2024-04-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0574"
+  },
+  "valor": "3764.23",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-06T00:00:00.000",
+  "vigenciahasta": "2024-04-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0575"
+  },
+  "valor": "3768.8",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-09T00:00:00.000",
+  "vigenciahasta": "2024-04-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0576"
+  },
+  "valor": "3763.43",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-10T00:00:00.000",
+  "vigenciahasta": "2024-04-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0577"
+  },
+  "valor": "3815.44",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-11T00:00:00.000",
+  "vigenciahasta": "2024-04-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0578"
+  },
+  "valor": "3820.1",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-12T00:00:00.000",
+  "vigenciahasta": "2024-04-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0579"
+  },
+  "valor": "3864.97",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-13T00:00:00.000",
+  "vigenciahasta": "2024-04-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed057a"
+  },
+  "valor": "3889.58",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-16T00:00:00.000",
+  "vigenciahasta": "2024-04-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed057b"
+  },
+  "valor": "3938.11",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-17T00:00:00.000",
+  "vigenciahasta": "2024-04-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed057c"
+  },
+  "valor": "3901.94",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-18T00:00:00.000",
+  "vigenciahasta": "2024-04-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed057d"
+  },
+  "valor": "3918.23",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-19T00:00:00.000",
+  "vigenciahasta": "2024-04-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed057e"
+  },
+  "valor": "3937.13",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-20T00:00:00.000",
+  "vigenciahasta": "2024-04-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed057f"
+  },
+  "valor": "3924.82",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-23T00:00:00.000",
+  "vigenciahasta": "2024-04-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0580"
+  },
+  "valor": "3910.01",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-24T00:00:00.000",
+  "vigenciahasta": "2024-04-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0581"
+  },
+  "valor": "3935.65",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-25T00:00:00.000",
+  "vigenciahasta": "2024-04-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0582"
+  },
+  "valor": "3964.59",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-26T00:00:00.000",
+  "vigenciahasta": "2024-04-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0583"
+  },
+  "valor": "3926.02",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-27T00:00:00.000",
+  "vigenciahasta": "2024-04-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0584"
+  },
+  "valor": "3873.44",
+  "unidad": "COP",
+  "vigenciadesde": "2024-04-30T00:00:00.000",
+  "vigenciahasta": "2024-04-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0585"
+  },
+  "valor": "3899.07",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-01T00:00:00.000",
+  "vigenciahasta": "2024-05-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0586"
+  },
+  "valor": "3898.62",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-03T00:00:00.000",
+  "vigenciahasta": "2024-05-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0587"
+  },
+  "valor": "3895.41",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-04T00:00:00.000",
+  "vigenciahasta": "2024-05-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0588"
+  },
+  "valor": "3894.23",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-07T00:00:00.000",
+  "vigenciahasta": "2024-05-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0589"
+  },
+  "valor": "3884.84",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-08T00:00:00.000",
+  "vigenciahasta": "2024-05-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed058a"
+  },
+  "valor": "3902.63",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-09T00:00:00.000",
+  "vigenciahasta": "2024-05-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed058b"
+  },
+  "valor": "3900.38",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-10T00:00:00.000",
+  "vigenciahasta": "2024-05-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed058c"
+  },
+  "valor": "3888.21",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-11T00:00:00.000",
+  "vigenciahasta": "2024-05-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed058d"
+  },
+  "valor": "3861.82",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-15T00:00:00.000",
+  "vigenciahasta": "2024-05-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed058e"
+  },
+  "valor": "3825.42",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-16T00:00:00.000",
+  "vigenciahasta": "2024-05-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed058f"
+  },
+  "valor": "3828.98",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-17T00:00:00.000",
+  "vigenciahasta": "2024-05-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0590"
+  },
+  "valor": "3832.26",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-18T00:00:00.000",
+  "vigenciahasta": "2024-05-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0591"
+  },
+  "valor": "3822.39",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-21T00:00:00.000",
+  "vigenciahasta": "2024-05-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0592"
+  },
+  "valor": "3814.94",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-22T00:00:00.000",
+  "vigenciahasta": "2024-05-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0593"
+  },
+  "valor": "3829.59",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-23T00:00:00.000",
+  "vigenciahasta": "2024-05-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0594"
+  },
+  "valor": "3837.58",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-24T00:00:00.000",
+  "vigenciahasta": "2024-05-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0595"
+  },
+  "valor": "3878.07",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-25T00:00:00.000",
+  "vigenciahasta": "2024-05-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0596"
+  },
+  "valor": "3853.09",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-29T00:00:00.000",
+  "vigenciahasta": "2024-05-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0597"
+  },
+  "valor": "3867.02",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-30T00:00:00.000",
+  "vigenciahasta": "2024-05-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0598"
+  },
+  "valor": "3874.32",
+  "unidad": "COP",
+  "vigenciadesde": "2024-05-31T00:00:00.000",
+  "vigenciahasta": "2024-05-31T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0599"
+  },
+  "valor": "3860.92",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-01T00:00:00.000",
+  "vigenciahasta": "2024-06-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed059a"
+  },
+  "valor": "3909.65",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-05T00:00:00.000",
+  "vigenciahasta": "2024-06-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed059b"
+  },
+  "valor": "3927.91",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-06T00:00:00.000",
+  "vigenciahasta": "2024-06-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed059c"
+  },
+  "valor": "3938.53",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-07T00:00:00.000",
+  "vigenciahasta": "2024-06-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed059d"
+  },
+  "valor": "3944.14",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-08T00:00:00.000",
+  "vigenciahasta": "2024-06-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed059e"
+  },
+  "valor": "3960.83",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-12T00:00:00.000",
+  "vigenciahasta": "2024-06-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed059f"
+  },
+  "valor": "4023.26",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-13T00:00:00.000",
+  "vigenciahasta": "2024-06-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05a0"
+  },
+  "valor": "4107.52",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-14T00:00:00.000",
+  "vigenciahasta": "2024-06-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05a1"
+  },
+  "valor": "4151.55",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-15T00:00:00.000",
+  "vigenciahasta": "2024-06-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05a2"
+  },
+  "valor": "4144.63",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-18T00:00:00.000",
+  "vigenciahasta": "2024-06-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05a3"
+  },
+  "valor": "4101.87",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-19T00:00:00.000",
+  "vigenciahasta": "2024-06-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05a4"
+  },
+  "valor": "4175.96",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-21T00:00:00.000",
+  "vigenciahasta": "2024-06-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05a5"
+  },
+  "valor": "4143.72",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-22T00:00:00.000",
+  "vigenciahasta": "2024-06-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05a6"
+  },
+  "valor": "4104.38",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-25T00:00:00.000",
+  "vigenciahasta": "2024-06-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05a7"
+  },
+  "valor": "4093.66",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-26T00:00:00.000",
+  "vigenciahasta": "2024-06-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05a8"
+  },
+  "valor": "4133.61",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-27T00:00:00.000",
+  "vigenciahasta": "2024-06-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05a9"
+  },
+  "valor": "4158.1",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-28T00:00:00.000",
+  "vigenciahasta": "2024-06-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05aa"
+  },
+  "valor": "4148.04",
+  "unidad": "COP",
+  "vigenciadesde": "2024-06-29T00:00:00.000",
+  "vigenciahasta": "2024-07-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ab"
+  },
+  "valor": "4130.03",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-03T00:00:00.000",
+  "vigenciahasta": "2024-07-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ac"
+  },
+  "valor": "4096.09",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-04T00:00:00.000",
+  "vigenciahasta": "2024-07-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ad"
+  },
+  "valor": "4093.72",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-06T00:00:00.000",
+  "vigenciahasta": "2024-07-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ae"
+  },
+  "valor": "4052.99",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-09T00:00:00.000",
+  "vigenciahasta": "2024-07-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05af"
+  },
+  "valor": "4022.05",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-10T00:00:00.000",
+  "vigenciahasta": "2024-07-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05b0"
+  },
+  "valor": "3979.91",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-11T00:00:00.000",
+  "vigenciahasta": "2024-07-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05b1"
+  },
+  "valor": "3968.87",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-12T00:00:00.000",
+  "vigenciahasta": "2024-07-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05b2"
+  },
+  "valor": "3944.97",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-13T00:00:00.000",
+  "vigenciahasta": "2024-07-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05b3"
+  },
+  "valor": "3948.41",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-16T00:00:00.000",
+  "vigenciahasta": "2024-07-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05b4"
+  },
+  "valor": "3977.63",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-17T00:00:00.000",
+  "vigenciahasta": "2024-07-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05b5"
+  },
+  "valor": "4011.19",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-18T00:00:00.000",
+  "vigenciahasta": "2024-07-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05b6"
+  },
+  "valor": "4036.73",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-19T00:00:00.000",
+  "vigenciahasta": "2024-07-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05b7"
+  },
+  "valor": "4040.2",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-20T00:00:00.000",
+  "vigenciahasta": "2024-07-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05b8"
+  },
+  "valor": "4006.01",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-23T00:00:00.000",
+  "vigenciahasta": "2024-07-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05b9"
+  },
+  "valor": "4010.53",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-24T00:00:00.000",
+  "vigenciahasta": "2024-07-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ba"
+  },
+  "valor": "4047.66",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-25T00:00:00.000",
+  "vigenciahasta": "2024-07-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05bb"
+  },
+  "valor": "4035.0",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-26T00:00:00.000",
+  "vigenciahasta": "2024-07-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05bc"
+  },
+  "valor": "4014.56",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-27T00:00:00.000",
+  "vigenciahasta": "2024-07-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05bd"
+  },
+  "valor": "4059.91",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-30T00:00:00.000",
+  "vigenciahasta": "2024-07-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05be"
+  },
+  "valor": "4089.05",
+  "unidad": "COP",
+  "vigenciadesde": "2024-07-31T00:00:00.000",
+  "vigenciahasta": "2024-07-31T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05bf"
+  },
+  "valor": "4060.34",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-01T00:00:00.000",
+  "vigenciahasta": "2024-08-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05c0"
+  },
+  "valor": "4057.14",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-02T00:00:00.000",
+  "vigenciahasta": "2024-08-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05c1"
+  },
+  "valor": "4110.37",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-03T00:00:00.000",
+  "vigenciahasta": "2024-08-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05c2"
+  },
+  "valor": "4184.3",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-06T00:00:00.000",
+  "vigenciahasta": "2024-08-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05c3"
+  },
+  "valor": "4136.27",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-07T00:00:00.000",
+  "vigenciahasta": "2024-08-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05c4"
+  },
+  "valor": "4100.79",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-09T00:00:00.000",
+  "vigenciahasta": "2024-08-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05c5"
+  },
+  "valor": "4064.51",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-10T00:00:00.000",
+  "vigenciahasta": "2024-08-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05c6"
+  },
+  "valor": "4063.26",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-13T00:00:00.000",
+  "vigenciahasta": "2024-08-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05c7"
+  },
+  "valor": "4038.87",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-14T00:00:00.000",
+  "vigenciahasta": "2024-08-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05c8"
+  },
+  "valor": "4021.1",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-15T00:00:00.000",
+  "vigenciahasta": "2024-08-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05c9"
+  },
+  "valor": "4014.18",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-16T00:00:00.000",
+  "vigenciahasta": "2024-08-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ca"
+  },
+  "valor": "4021.63",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-17T00:00:00.000",
+  "vigenciahasta": "2024-08-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05cb"
+  },
+  "valor": "4011.37",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-21T00:00:00.000",
+  "vigenciahasta": "2024-08-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05cc"
+  },
+  "valor": "4013.98",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-22T00:00:00.000",
+  "vigenciahasta": "2024-08-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05cd"
+  },
+  "valor": "4064.03",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-23T00:00:00.000",
+  "vigenciahasta": "2024-08-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ce"
+  },
+  "valor": "4030.52",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-24T00:00:00.000",
+  "vigenciahasta": "2024-08-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05cf"
+  },
+  "valor": "4023.92",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-27T00:00:00.000",
+  "vigenciahasta": "2024-08-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05d0"
+  },
+  "valor": "4045.64",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-28T00:00:00.000",
+  "vigenciahasta": "2024-08-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05d1"
+  },
+  "valor": "4065.34",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-29T00:00:00.000",
+  "vigenciahasta": "2024-08-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05d2"
+  },
+  "valor": "4132.11",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-30T00:00:00.000",
+  "vigenciahasta": "2024-08-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05d3"
+  },
+  "valor": "4160.31",
+  "unidad": "COP",
+  "vigenciadesde": "2024-08-31T00:00:00.000",
+  "vigenciahasta": "2024-09-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05d4"
+  },
+  "valor": "4185.8",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-04T00:00:00.000",
+  "vigenciahasta": "2024-09-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05d5"
+  },
+  "valor": "4185.82",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-05T00:00:00.000",
+  "vigenciahasta": "2024-09-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05d6"
+  },
+  "valor": "4172.5",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-06T00:00:00.000",
+  "vigenciahasta": "2024-09-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05d7"
+  },
+  "valor": "4149.79",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-07T00:00:00.000",
+  "vigenciahasta": "2024-09-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05d8"
+  },
+  "valor": "4220.68",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-10T00:00:00.000",
+  "vigenciahasta": "2024-09-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05d9"
+  },
+  "valor": "4285.61",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-11T00:00:00.000",
+  "vigenciahasta": "2024-09-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05da"
+  },
+  "valor": "4278.28",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-12T00:00:00.000",
+  "vigenciahasta": "2024-09-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05db"
+  },
+  "valor": "4236.63",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-13T00:00:00.000",
+  "vigenciahasta": "2024-09-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05dc"
+  },
+  "valor": "4172.13",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-14T00:00:00.000",
+  "vigenciahasta": "2024-09-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05dd"
+  },
+  "valor": "4220.58",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-17T00:00:00.000",
+  "vigenciahasta": "2024-09-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05de"
+  },
+  "valor": "4239.33",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-18T00:00:00.000",
+  "vigenciahasta": "2024-09-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05df"
+  },
+  "valor": "4189.46",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-19T00:00:00.000",
+  "vigenciahasta": "2024-09-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05e0"
+  },
+  "valor": "4175.1",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-20T00:00:00.000",
+  "vigenciahasta": "2024-09-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05e1"
+  },
+  "valor": "4156.89",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-21T00:00:00.000",
+  "vigenciahasta": "2024-09-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05e2"
+  },
+  "valor": "4155.31",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-24T00:00:00.000",
+  "vigenciahasta": "2024-09-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05e3"
+  },
+  "valor": "4139.43",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-25T00:00:00.000",
+  "vigenciahasta": "2024-09-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05e4"
+  },
+  "valor": "4192.74",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-26T00:00:00.000",
+  "vigenciahasta": "2024-09-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05e5"
+  },
+  "valor": "4188.11",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-27T00:00:00.000",
+  "vigenciahasta": "2024-09-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05e6"
+  },
+  "valor": "4164.21",
+  "unidad": "COP",
+  "vigenciadesde": "2024-09-28T00:00:00.000",
+  "vigenciahasta": "2024-09-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05e7"
+  },
+  "valor": "4178.3",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-01T00:00:00.000",
+  "vigenciahasta": "2024-10-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05e8"
+  },
+  "valor": "4224.21",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-02T00:00:00.000",
+  "vigenciahasta": "2024-10-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05e9"
+  },
+  "valor": "4203.43",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-03T00:00:00.000",
+  "vigenciahasta": "2024-10-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ea"
+  },
+  "valor": "4197.73",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-04T00:00:00.000",
+  "vigenciahasta": "2024-10-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05eb"
+  },
+  "valor": "4173.66",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-05T00:00:00.000",
+  "vigenciahasta": "2024-10-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ec"
+  },
+  "valor": "4194.97",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-08T00:00:00.000",
+  "vigenciahasta": "2024-10-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ed"
+  },
+  "valor": "4233.54",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-09T00:00:00.000",
+  "vigenciahasta": "2024-10-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ee"
+  },
+  "valor": "4233.17",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-10T00:00:00.000",
+  "vigenciahasta": "2024-10-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ef"
+  },
+  "valor": "4217.4",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-11T00:00:00.000",
+  "vigenciahasta": "2024-10-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05f0"
+  },
+  "valor": "4192.56",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-12T00:00:00.000",
+  "vigenciahasta": "2024-10-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05f1"
+  },
+  "valor": "4244.84",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-16T00:00:00.000",
+  "vigenciahasta": "2024-10-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05f2"
+  },
+  "valor": "4266.2",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-17T00:00:00.000",
+  "vigenciahasta": "2024-10-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05f3"
+  },
+  "valor": "4263.17",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-18T00:00:00.000",
+  "vigenciahasta": "2024-10-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05f4"
+  },
+  "valor": "4252.15",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-19T00:00:00.000",
+  "vigenciahasta": "2024-10-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05f5"
+  },
+  "valor": "4286.96",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-22T00:00:00.000",
+  "vigenciahasta": "2024-10-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05f6"
+  },
+  "valor": "4262.3",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-23T00:00:00.000",
+  "vigenciahasta": "2024-10-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05f7"
+  },
+  "valor": "4293.91",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-24T00:00:00.000",
+  "vigenciahasta": "2024-10-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05f8"
+  },
+  "valor": "4311.83",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-25T00:00:00.000",
+  "vigenciahasta": "2024-10-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05f9"
+  },
+  "valor": "4316.73",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-26T00:00:00.000",
+  "vigenciahasta": "2024-10-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05fa"
+  },
+  "valor": "4342.9",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-29T00:00:00.000",
+  "vigenciahasta": "2024-10-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05fb"
+  },
+  "valor": "4367.39",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-30T00:00:00.000",
+  "vigenciahasta": "2024-10-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05fc"
+  },
+  "valor": "4413.46",
+  "unidad": "COP",
+  "vigenciadesde": "2024-10-31T00:00:00.000",
+  "vigenciahasta": "2024-10-31T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05fd"
+  },
+  "valor": "4409.57",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-01T00:00:00.000",
+  "vigenciahasta": "2024-11-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05fe"
+  },
+  "valor": "4414.0",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-02T00:00:00.000",
+  "vigenciahasta": "2024-11-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed05ff"
+  },
+  "valor": "4421.86",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-06T00:00:00.000",
+  "vigenciahasta": "2024-11-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0600"
+  },
+  "valor": "4430.4",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-07T00:00:00.000",
+  "vigenciahasta": "2024-11-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0601"
+  },
+  "valor": "4344.55",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-08T00:00:00.000",
+  "vigenciahasta": "2024-11-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0602"
+  },
+  "valor": "4346.7",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-09T00:00:00.000",
+  "vigenciahasta": "2024-11-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0603"
+  },
+  "valor": "4413.79",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-13T00:00:00.000",
+  "vigenciahasta": "2024-11-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0604"
+  },
+  "valor": "4478.21",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-14T00:00:00.000",
+  "vigenciahasta": "2024-11-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0605"
+  },
+  "valor": "4475.57",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-15T00:00:00.000",
+  "vigenciahasta": "2024-11-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0606"
+  },
+  "valor": "4454.68",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-16T00:00:00.000",
+  "vigenciahasta": "2024-11-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0607"
+  },
+  "valor": "4400.69",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-19T00:00:00.000",
+  "vigenciahasta": "2024-11-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0608"
+  },
+  "valor": "4401.34",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-20T00:00:00.000",
+  "vigenciahasta": "2024-11-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0609"
+  },
+  "valor": "4414.06",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-21T00:00:00.000",
+  "vigenciahasta": "2024-11-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed060a"
+  },
+  "valor": "4387.09",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-22T00:00:00.000",
+  "vigenciahasta": "2024-11-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed060b"
+  },
+  "valor": "4418.58",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-23T00:00:00.000",
+  "vigenciahasta": "2024-11-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed060c"
+  },
+  "valor": "4381.99",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-26T00:00:00.000",
+  "vigenciahasta": "2024-11-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed060d"
+  },
+  "valor": "4405.96",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-27T00:00:00.000",
+  "vigenciahasta": "2024-11-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed060e"
+  },
+  "valor": "4406.16",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-28T00:00:00.000",
+  "vigenciahasta": "2024-11-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed060f"
+  },
+  "valor": "4419.59",
+  "unidad": "COP",
+  "vigenciadesde": "2024-11-30T00:00:00.000",
+  "vigenciahasta": "2024-12-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0610"
+  },
+  "valor": "4462.97",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-03T00:00:00.000",
+  "vigenciahasta": "2024-12-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0611"
+  },
+  "valor": "4443.53",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-04T00:00:00.000",
+  "vigenciahasta": "2024-12-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0612"
+  },
+  "valor": "4424.56",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-05T00:00:00.000",
+  "vigenciahasta": "2024-12-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0613"
+  },
+  "valor": "4407.13",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-06T00:00:00.000",
+  "vigenciahasta": "2024-12-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0614"
+  },
+  "valor": "4396.52",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-07T00:00:00.000",
+  "vigenciahasta": "2024-12-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0615"
+  },
+  "valor": "4379.71",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-10T00:00:00.000",
+  "vigenciahasta": "2024-12-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0616"
+  },
+  "valor": "4377.34",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-11T00:00:00.000",
+  "vigenciahasta": "2024-12-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0617"
+  },
+  "valor": "4361.22",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-12T00:00:00.000",
+  "vigenciahasta": "2024-12-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0618"
+  },
+  "valor": "4335.2",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-13T00:00:00.000",
+  "vigenciahasta": "2024-12-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0619"
+  },
+  "valor": "4341.32",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-14T00:00:00.000",
+  "vigenciahasta": "2024-12-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed061a"
+  },
+  "valor": "4324.19",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-17T00:00:00.000",
+  "vigenciahasta": "2024-12-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed061b"
+  },
+  "valor": "4345.32",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-18T00:00:00.000",
+  "vigenciahasta": "2024-12-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed061c"
+  },
+  "valor": "4359.11",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-19T00:00:00.000",
+  "vigenciahasta": "2024-12-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed061d"
+  },
+  "valor": "4394.5",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-20T00:00:00.000",
+  "vigenciahasta": "2024-12-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed061e"
+  },
+  "valor": "4374.62",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-21T00:00:00.000",
+  "vigenciahasta": "2024-12-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed061f"
+  },
+  "valor": "4395.44",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-24T00:00:00.000",
+  "vigenciahasta": "2024-12-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0620"
+  },
+  "valor": "4380.94",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-25T00:00:00.000",
+  "vigenciahasta": "2024-12-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0621"
+  },
+  "valor": "4375.86",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-27T00:00:00.000",
+  "vigenciahasta": "2024-12-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0622"
+  },
+  "valor": "4401.98",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-28T00:00:00.000",
+  "vigenciahasta": "2024-12-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0623"
+  },
+  "valor": "4409.15",
+  "unidad": "COP",
+  "vigenciadesde": "2024-12-31T00:00:00.000",
+  "vigenciahasta": "2025-01-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0624"
+  },
+  "valor": "4410.5",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-03T00:00:00.000",
+  "vigenciahasta": "2025-01-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0625"
+  },
+  "valor": "4355.51",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-04T00:00:00.000",
+  "vigenciahasta": "2025-01-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0626"
+  },
+  "valor": "4342.31",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-08T00:00:00.000",
+  "vigenciahasta": "2025-01-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0627"
+  },
+  "valor": "4347.42",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-09T00:00:00.000",
+  "vigenciahasta": "2025-01-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0628"
+  },
+  "valor": "4321.19",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-10T00:00:00.000",
+  "vigenciahasta": "2025-01-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0629"
+  },
+  "valor": "4343.48",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-11T00:00:00.000",
+  "vigenciahasta": "2025-01-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed062a"
+  },
+  "valor": "4331.23",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-14T00:00:00.000",
+  "vigenciahasta": "2025-01-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed062b"
+  },
+  "valor": "4300.24",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-15T00:00:00.000",
+  "vigenciahasta": "2025-01-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed062c"
+  },
+  "valor": "4294.11",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-16T00:00:00.000",
+  "vigenciahasta": "2025-01-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed062d"
+  },
+  "valor": "4338.15",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-17T00:00:00.000",
+  "vigenciahasta": "2025-01-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed062e"
+  },
+  "valor": "4344.27",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-18T00:00:00.000",
+  "vigenciahasta": "2025-01-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed062f"
+  },
+  "valor": "4307.07",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-22T00:00:00.000",
+  "vigenciahasta": "2025-01-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0630"
+  },
+  "valor": "4278.01",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-23T00:00:00.000",
+  "vigenciahasta": "2025-01-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0631"
+  },
+  "valor": "4245.65",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-24T00:00:00.000",
+  "vigenciahasta": "2025-01-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0632"
+  },
+  "valor": "4188.46",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-25T00:00:00.000",
+  "vigenciahasta": "2025-01-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0633"
+  },
+  "valor": "4220.86",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-28T00:00:00.000",
+  "vigenciahasta": "2025-01-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0634"
+  },
+  "valor": "4219.0",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-29T00:00:00.000",
+  "vigenciahasta": "2025-01-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0635"
+  },
+  "valor": "4195.6",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-30T00:00:00.000",
+  "vigenciahasta": "2025-01-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0636"
+  },
+  "valor": "4170.01",
+  "unidad": "COP",
+  "vigenciadesde": "2025-01-31T00:00:00.000",
+  "vigenciahasta": "2025-01-31T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0637"
+  },
+  "valor": "4183.93",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-01T00:00:00.000",
+  "vigenciahasta": "2025-02-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0638"
+  },
+  "valor": "4198.66",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-04T00:00:00.000",
+  "vigenciahasta": "2025-02-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0639"
+  },
+  "valor": "4153.54",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-05T00:00:00.000",
+  "vigenciahasta": "2025-02-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed063a"
+  },
+  "valor": "4180.06",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-06T00:00:00.000",
+  "vigenciahasta": "2025-02-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed063b"
+  },
+  "valor": "4150.99",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-07T00:00:00.000",
+  "vigenciahasta": "2025-02-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed063c"
+  },
+  "valor": "4113.7",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-08T00:00:00.000",
+  "vigenciahasta": "2025-02-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed063d"
+  },
+  "valor": "4132.93",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-11T00:00:00.000",
+  "vigenciahasta": "2025-02-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed063e"
+  },
+  "valor": "4153.8",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-12T00:00:00.000",
+  "vigenciahasta": "2025-02-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed063f"
+  },
+  "valor": "4165.07",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-13T00:00:00.000",
+  "vigenciahasta": "2025-02-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0640"
+  },
+  "valor": "4161.46",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-14T00:00:00.000",
+  "vigenciahasta": "2025-02-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0641"
+  },
+  "valor": "4100.66",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-15T00:00:00.000",
+  "vigenciahasta": "2025-02-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0642"
+  },
+  "valor": "4111.38",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-19T00:00:00.000",
+  "vigenciahasta": "2025-02-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0643"
+  },
+  "valor": "4098.67",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-20T00:00:00.000",
+  "vigenciahasta": "2025-02-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0644"
+  },
+  "valor": "4077.56",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-21T00:00:00.000",
+  "vigenciahasta": "2025-02-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0645"
+  },
+  "valor": "4073.56",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-22T00:00:00.000",
+  "vigenciahasta": "2025-02-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0646"
+  },
+  "valor": "4112.63",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-25T00:00:00.000",
+  "vigenciahasta": "2025-02-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0647"
+  },
+  "valor": "4126.54",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-26T00:00:00.000",
+  "vigenciahasta": "2025-02-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0648"
+  },
+  "valor": "4123.1",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-27T00:00:00.000",
+  "vigenciahasta": "2025-02-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0649"
+  },
+  "valor": "4120.11",
+  "unidad": "COP",
+  "vigenciadesde": "2025-02-28T00:00:00.000",
+  "vigenciahasta": "2025-02-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed064a"
+  },
+  "valor": "4134.04",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-01T00:00:00.000",
+  "vigenciahasta": "2025-03-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed064b"
+  },
+  "valor": "4116.61",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-04T00:00:00.000",
+  "vigenciahasta": "2025-03-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed064c"
+  },
+  "valor": "4144.18",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-05T00:00:00.000",
+  "vigenciahasta": "2025-03-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed064d"
+  },
+  "valor": "4125.63",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-06T00:00:00.000",
+  "vigenciahasta": "2025-03-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed064e"
+  },
+  "valor": "4104.56",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-07T00:00:00.000",
+  "vigenciahasta": "2025-03-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed064f"
+  },
+  "valor": "4116.8",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-08T00:00:00.000",
+  "vigenciahasta": "2025-03-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0650"
+  },
+  "valor": "4161.96",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-11T00:00:00.000",
+  "vigenciahasta": "2025-03-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0651"
+  },
+  "valor": "4152.76",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-12T00:00:00.000",
+  "vigenciahasta": "2025-03-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0652"
+  },
+  "valor": "4110.08",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-13T00:00:00.000",
+  "vigenciahasta": "2025-03-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0653"
+  },
+  "valor": "4114.18",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-14T00:00:00.000",
+  "vigenciahasta": "2025-03-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0654"
+  },
+  "valor": "4102.67",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-15T00:00:00.000",
+  "vigenciahasta": "2025-03-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0655"
+  },
+  "valor": "4076.7",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-18T00:00:00.000",
+  "vigenciahasta": "2025-03-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0656"
+  },
+  "valor": "4126.03",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-19T00:00:00.000",
+  "vigenciahasta": "2025-03-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0657"
+  },
+  "valor": "4143.14",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-20T00:00:00.000",
+  "vigenciahasta": "2025-03-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0658"
+  },
+  "valor": "4187.72",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-21T00:00:00.000",
+  "vigenciahasta": "2025-03-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0659"
+  },
+  "valor": "4168.82",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-22T00:00:00.000",
+  "vigenciahasta": "2025-03-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed065a"
+  },
+  "valor": "4107.14",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-26T00:00:00.000",
+  "vigenciahasta": "2025-03-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed065b"
+  },
+  "valor": "4131.42",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-27T00:00:00.000",
+  "vigenciahasta": "2025-03-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed065c"
+  },
+  "valor": "4152.59",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-28T00:00:00.000",
+  "vigenciahasta": "2025-03-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed065d"
+  },
+  "valor": "4192.57",
+  "unidad": "COP",
+  "vigenciadesde": "2025-03-29T00:00:00.000",
+  "vigenciahasta": "2025-03-31T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed065e"
+  },
+  "valor": "4191.79",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-01T00:00:00.000",
+  "vigenciahasta": "2025-04-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed065f"
+  },
+  "valor": "4149.24",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-02T00:00:00.000",
+  "vigenciahasta": "2025-04-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0660"
+  },
+  "valor": "4146.07",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-03T00:00:00.000",
+  "vigenciahasta": "2025-04-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0661"
+  },
+  "valor": "4130.01",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-04T00:00:00.000",
+  "vigenciahasta": "2025-04-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0662"
+  },
+  "valor": "4274.03",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-05T00:00:00.000",
+  "vigenciahasta": "2025-04-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0663"
+  },
+  "valor": "4374.53",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-08T00:00:00.000",
+  "vigenciahasta": "2025-04-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0664"
+  },
+  "valor": "4387.98",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-09T00:00:00.000",
+  "vigenciahasta": "2025-04-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0665"
+  },
+  "valor": "4416.69",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-10T00:00:00.000",
+  "vigenciahasta": "2025-04-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0666"
+  },
+  "valor": "4351.55",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-11T00:00:00.000",
+  "vigenciahasta": "2025-04-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0667"
+  },
+  "valor": "4338.36",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-12T00:00:00.000",
+  "vigenciahasta": "2025-04-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0668"
+  },
+  "valor": "4286.17",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-15T00:00:00.000",
+  "vigenciahasta": "2025-04-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0669"
+  },
+  "valor": "4329.9",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-16T00:00:00.000",
+  "vigenciahasta": "2025-04-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed066a"
+  },
+  "valor": "4306.54",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-17T00:00:00.000",
+  "vigenciahasta": "2025-04-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed066b"
+  },
+  "valor": "4272.83",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-22T00:00:00.000",
+  "vigenciahasta": "2025-04-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed066c"
+  },
+  "valor": "4283.22",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-23T00:00:00.000",
+  "vigenciahasta": "2025-04-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed066d"
+  },
+  "valor": "4298.31",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-24T00:00:00.000",
+  "vigenciahasta": "2025-04-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed066e"
+  },
+  "valor": "4274.57",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-25T00:00:00.000",
+  "vigenciahasta": "2025-04-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed066f"
+  },
+  "valor": "4239.62",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-26T00:00:00.000",
+  "vigenciahasta": "2025-04-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0670"
+  },
+  "valor": "4227.32",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-29T00:00:00.000",
+  "vigenciahasta": "2025-04-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0671"
+  },
+  "valor": "4198.83",
+  "unidad": "COP",
+  "vigenciadesde": "2025-04-30T00:00:00.000",
+  "vigenciahasta": "2025-04-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0672"
+  },
+  "valor": "4222.25",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-01T00:00:00.000",
+  "vigenciahasta": "2025-05-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0673"
+  },
+  "valor": "4243.8",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-03T00:00:00.000",
+  "vigenciahasta": "2025-05-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0674"
+  },
+  "valor": "4283.62",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-06T00:00:00.000",
+  "vigenciahasta": "2025-05-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0675"
+  },
+  "valor": "4305.02",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-07T00:00:00.000",
+  "vigenciahasta": "2025-05-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0676"
+  },
+  "valor": "4306.79",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-08T00:00:00.000",
+  "vigenciahasta": "2025-05-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0677"
+  },
+  "valor": "4260.22",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-09T00:00:00.000",
+  "vigenciahasta": "2025-05-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0678"
+  },
+  "valor": "4239.23",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-10T00:00:00.000",
+  "vigenciahasta": "2025-05-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0679"
+  },
+  "valor": "4218.6",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-13T00:00:00.000",
+  "vigenciahasta": "2025-05-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed067a"
+  },
+  "valor": "4204.63",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-14T00:00:00.000",
+  "vigenciahasta": "2025-05-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed067b"
+  },
+  "valor": "4194.18",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-15T00:00:00.000",
+  "vigenciahasta": "2025-05-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed067c"
+  },
+  "valor": "4196.66",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-16T00:00:00.000",
+  "vigenciahasta": "2025-05-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed067d"
+  },
+  "valor": "4194.28",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-17T00:00:00.000",
+  "vigenciahasta": "2025-05-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed067e"
+  },
+  "valor": "4168.03",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-20T00:00:00.000",
+  "vigenciahasta": "2025-05-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed067f"
+  },
+  "valor": "4172.76",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-21T00:00:00.000",
+  "vigenciahasta": "2025-05-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0680"
+  },
+  "valor": "4169.47",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-22T00:00:00.000",
+  "vigenciahasta": "2025-05-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0681"
+  },
+  "valor": "4176.54",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-23T00:00:00.000",
+  "vigenciahasta": "2025-05-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0682"
+  },
+  "valor": "4165.41",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-24T00:00:00.000",
+  "vigenciahasta": "2025-05-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0683"
+  },
+  "valor": "4128.15",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-28T00:00:00.000",
+  "vigenciahasta": "2025-05-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0684"
+  },
+  "valor": "4126.44",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-29T00:00:00.000",
+  "vigenciahasta": "2025-05-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0685"
+  },
+  "valor": "4106.79",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-30T00:00:00.000",
+  "vigenciahasta": "2025-05-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0686"
+  },
+  "valor": "4148.72",
+  "unidad": "COP",
+  "vigenciadesde": "2025-05-31T00:00:00.000",
+  "vigenciahasta": "2025-06-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0687"
+  },
+  "valor": "4136.71",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-04T00:00:00.000",
+  "vigenciahasta": "2025-06-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0688"
+  },
+  "valor": "4107.85",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-05T00:00:00.000",
+  "vigenciahasta": "2025-06-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0689"
+  },
+  "valor": "4097.66",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-06T00:00:00.000",
+  "vigenciahasta": "2025-06-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed068a"
+  },
+  "valor": "4138.72",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-07T00:00:00.000",
+  "vigenciahasta": "2025-06-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed068b"
+  },
+  "valor": "4138.53",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-10T00:00:00.000",
+  "vigenciahasta": "2025-06-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed068c"
+  },
+  "valor": "4190.9",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-11T00:00:00.000",
+  "vigenciahasta": "2025-06-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed068d"
+  },
+  "valor": "4190.61",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-12T00:00:00.000",
+  "vigenciahasta": "2025-06-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed068e"
+  },
+  "valor": "4169.13",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-13T00:00:00.000",
+  "vigenciahasta": "2025-06-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed068f"
+  },
+  "valor": "4147.34",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-14T00:00:00.000",
+  "vigenciahasta": "2025-06-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0690"
+  },
+  "valor": "4096.44",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-17T00:00:00.000",
+  "vigenciahasta": "2025-06-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0691"
+  },
+  "valor": "4098.83",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-18T00:00:00.000",
+  "vigenciahasta": "2025-06-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0692"
+  },
+  "valor": "4076.32",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-19T00:00:00.000",
+  "vigenciahasta": "2025-06-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0693"
+  },
+  "valor": "4080.06",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-21T00:00:00.000",
+  "vigenciahasta": "2025-06-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0694"
+  },
+  "valor": "4081.15",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-25T00:00:00.000",
+  "vigenciahasta": "2025-06-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0695"
+  },
+  "valor": "4067.64",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-26T00:00:00.000",
+  "vigenciahasta": "2025-06-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0696"
+  },
+  "valor": "4042.87",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-27T00:00:00.000",
+  "vigenciahasta": "2025-06-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0697"
+  },
+  "valor": "4069.67",
+  "unidad": "COP",
+  "vigenciadesde": "2025-06-28T00:00:00.000",
+  "vigenciahasta": "2025-07-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0698"
+  },
+  "valor": "4047.71",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-02T00:00:00.000",
+  "vigenciahasta": "2025-07-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0699"
+  },
+  "valor": "4006.46",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-03T00:00:00.000",
+  "vigenciahasta": "2025-07-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed069a"
+  },
+  "valor": "3974.37",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-04T00:00:00.000",
+  "vigenciahasta": "2025-07-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed069b"
+  },
+  "valor": "4022.29",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-08T00:00:00.000",
+  "vigenciahasta": "2025-07-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed069c"
+  },
+  "valor": "4054.13",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-09T00:00:00.000",
+  "vigenciahasta": "2025-07-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed069d"
+  },
+  "valor": "4026.09",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-10T00:00:00.000",
+  "vigenciahasta": "2025-07-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed069e"
+  },
+  "valor": "4013.5",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-11T00:00:00.000",
+  "vigenciahasta": "2025-07-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed069f"
+  },
+  "valor": "4003.9",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-12T00:00:00.000",
+  "vigenciahasta": "2025-07-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06a0"
+  },
+  "valor": "4011.79",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-15T00:00:00.000",
+  "vigenciahasta": "2025-07-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06a1"
+  },
+  "valor": "4015.04",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-16T00:00:00.000",
+  "vigenciahasta": "2025-07-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06a2"
+  },
+  "valor": "4031.86",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-17T00:00:00.000",
+  "vigenciahasta": "2025-07-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06a3"
+  },
+  "valor": "4016.44",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-18T00:00:00.000",
+  "vigenciahasta": "2025-07-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06a4"
+  },
+  "valor": "4000.61",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-19T00:00:00.000",
+  "vigenciahasta": "2025-07-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06a5"
+  },
+  "valor": "4026.27",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-22T00:00:00.000",
+  "vigenciahasta": "2025-07-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06a6"
+  },
+  "valor": "4061.36",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-23T00:00:00.000",
+  "vigenciahasta": "2025-07-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06a7"
+  },
+  "valor": "4052.86",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-24T00:00:00.000",
+  "vigenciahasta": "2025-07-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06a8"
+  },
+  "valor": "4063.31",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-25T00:00:00.000",
+  "vigenciahasta": "2025-07-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06a9"
+  },
+  "valor": "4110.48",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-26T00:00:00.000",
+  "vigenciahasta": "2025-07-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06aa"
+  },
+  "valor": "4170.59",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-29T00:00:00.000",
+  "vigenciahasta": "2025-07-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ab"
+  },
+  "valor": "4154.79",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-30T00:00:00.000",
+  "vigenciahasta": "2025-07-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ac"
+  },
+  "valor": "4179.69",
+  "unidad": "COP",
+  "vigenciadesde": "2025-07-31T00:00:00.000",
+  "vigenciahasta": "2025-07-31T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ad"
+  },
+  "valor": "4186.71",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-01T00:00:00.000",
+  "vigenciahasta": "2025-08-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ae"
+  },
+  "valor": "4129.42",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-02T00:00:00.000",
+  "vigenciahasta": "2025-08-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06af"
+  },
+  "valor": "4097.38",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-05T00:00:00.000",
+  "vigenciahasta": "2025-08-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06b0"
+  },
+  "valor": "4093.12",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-06T00:00:00.000",
+  "vigenciahasta": "2025-08-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06b1"
+  },
+  "valor": "4049.35",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-07T00:00:00.000",
+  "vigenciahasta": "2025-08-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06b2"
+  },
+  "valor": "4034.74",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-09T00:00:00.000",
+  "vigenciahasta": "2025-08-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06b3"
+  },
+  "valor": "4045.87",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-12T00:00:00.000",
+  "vigenciahasta": "2025-08-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06b4"
+  },
+  "valor": "4017.12",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-13T00:00:00.000",
+  "vigenciahasta": "2025-08-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06b5"
+  },
+  "valor": "4020.64",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-14T00:00:00.000",
+  "vigenciahasta": "2025-08-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06b6"
+  },
+  "valor": "4048.74",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-15T00:00:00.000",
+  "vigenciahasta": "2025-08-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06b7"
+  },
+  "valor": "4019.24",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-16T00:00:00.000",
+  "vigenciahasta": "2025-08-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06b8"
+  },
+  "valor": "4036.42",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-20T00:00:00.000",
+  "vigenciahasta": "2025-08-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06b9"
+  },
+  "valor": "4025.51",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-21T00:00:00.000",
+  "vigenciahasta": "2025-08-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ba"
+  },
+  "valor": "4034.18",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-22T00:00:00.000",
+  "vigenciahasta": "2025-08-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06bb"
+  },
+  "valor": "4008.7",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-23T00:00:00.000",
+  "vigenciahasta": "2025-08-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06bc"
+  },
+  "valor": "4017.44",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-26T00:00:00.000",
+  "vigenciahasta": "2025-08-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06bd"
+  },
+  "valor": "4044.51",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-27T00:00:00.000",
+  "vigenciahasta": "2025-08-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06be"
+  },
+  "valor": "4051.97",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-28T00:00:00.000",
+  "vigenciahasta": "2025-08-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06bf"
+  },
+  "valor": "4019.09",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-29T00:00:00.000",
+  "vigenciahasta": "2025-08-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06c0"
+  },
+  "valor": "4018.41",
+  "unidad": "COP",
+  "vigenciadesde": "2025-08-30T00:00:00.000",
+  "vigenciahasta": "2025-09-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06c1"
+  },
+  "valor": "4016.94",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-03T00:00:00.000",
+  "vigenciahasta": "2025-09-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06c2"
+  },
+  "valor": "4002.86",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-04T00:00:00.000",
+  "vigenciahasta": "2025-09-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06c3"
+  },
+  "valor": "3991.09",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-05T00:00:00.000",
+  "vigenciahasta": "2025-09-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06c4"
+  },
+  "valor": "3960.94",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-06T00:00:00.000",
+  "vigenciahasta": "2025-09-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06c5"
+  },
+  "valor": "3945.29",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-09T00:00:00.000",
+  "vigenciahasta": "2025-09-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06c6"
+  },
+  "valor": "3919.13",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-10T00:00:00.000",
+  "vigenciahasta": "2025-09-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06c7"
+  },
+  "valor": "3921.58",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-11T00:00:00.000",
+  "vigenciahasta": "2025-09-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06c8"
+  },
+  "valor": "3903.18",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-12T00:00:00.000",
+  "vigenciahasta": "2025-09-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06c9"
+  },
+  "valor": "3906.24",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-13T00:00:00.000",
+  "vigenciahasta": "2025-09-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ca"
+  },
+  "valor": "3897.57",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-16T00:00:00.000",
+  "vigenciahasta": "2025-09-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06cb"
+  },
+  "valor": "3881.92",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-17T00:00:00.000",
+  "vigenciahasta": "2025-09-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06cc"
+  },
+  "valor": "3880.01",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-18T00:00:00.000",
+  "vigenciahasta": "2025-09-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06cd"
+  },
+  "valor": "3892.45",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-19T00:00:00.000",
+  "vigenciahasta": "2025-09-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ce"
+  },
+  "valor": "3891.19",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-20T00:00:00.000",
+  "vigenciahasta": "2025-09-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06cf"
+  },
+  "valor": "3852.16",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-23T00:00:00.000",
+  "vigenciahasta": "2025-09-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06d0"
+  },
+  "valor": "3844.47",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-24T00:00:00.000",
+  "vigenciahasta": "2025-09-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06d1"
+  },
+  "valor": "3881.26",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-25T00:00:00.000",
+  "vigenciahasta": "2025-09-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06d2"
+  },
+  "valor": "3898.87",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-26T00:00:00.000",
+  "vigenciahasta": "2025-09-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06d3"
+  },
+  "valor": "3908.12",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-27T00:00:00.000",
+  "vigenciahasta": "2025-09-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06d4"
+  },
+  "valor": "3901.29",
+  "unidad": "COP",
+  "vigenciadesde": "2025-09-30T00:00:00.000",
+  "vigenciahasta": "2025-09-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06d5"
+  },
+  "valor": "3923.55",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-01T00:00:00.000",
+  "vigenciahasta": "2025-10-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06d6"
+  },
+  "valor": "3890.0",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-02T00:00:00.000",
+  "vigenciahasta": "2025-10-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06d7"
+  },
+  "valor": "3897.64",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-03T00:00:00.000",
+  "vigenciahasta": "2025-10-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06d8"
+  },
+  "valor": "3874.18",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-04T00:00:00.000",
+  "vigenciahasta": "2025-10-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06d9"
+  },
+  "valor": "3853.19",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-07T00:00:00.000",
+  "vigenciahasta": "2025-10-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06da"
+  },
+  "valor": "3867.54",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-08T00:00:00.000",
+  "vigenciahasta": "2025-10-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06db"
+  },
+  "valor": "3879.8",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-09T00:00:00.000",
+  "vigenciahasta": "2025-10-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06dc"
+  },
+  "valor": "3894.99",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-10T00:00:00.000",
+  "vigenciahasta": "2025-10-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06dd"
+  },
+  "valor": "3913.24",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-11T00:00:00.000",
+  "vigenciahasta": "2025-10-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06de"
+  },
+  "valor": "3933.31",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-15T00:00:00.000",
+  "vigenciahasta": "2025-10-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06df"
+  },
+  "valor": "3902.16",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-16T00:00:00.000",
+  "vigenciahasta": "2025-10-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06e0"
+  },
+  "valor": "3877.07",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-17T00:00:00.000",
+  "vigenciahasta": "2025-10-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06e1"
+  },
+  "valor": "3808.12",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-18T00:00:00.000",
+  "vigenciahasta": "2025-10-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06e2"
+  },
+  "valor": "3877.26",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-21T00:00:00.000",
+  "vigenciahasta": "2025-10-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06e3"
+  },
+  "valor": "3876.6",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-22T00:00:00.000",
+  "vigenciahasta": "2025-10-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06e4"
+  },
+  "valor": "3900.82",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-23T00:00:00.000",
+  "vigenciahasta": "2025-10-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06e5"
+  },
+  "valor": "3888.76",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-24T00:00:00.000",
+  "vigenciahasta": "2025-10-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06e6"
+  },
+  "valor": "3858.63",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-25T00:00:00.000",
+  "vigenciahasta": "2025-10-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06e7"
+  },
+  "valor": "3844.2",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-28T00:00:00.000",
+  "vigenciahasta": "2025-10-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06e8"
+  },
+  "valor": "3874.84",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-29T00:00:00.000",
+  "vigenciahasta": "2025-10-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06e9"
+  },
+  "valor": "3885.29",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-30T00:00:00.000",
+  "vigenciahasta": "2025-10-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ea"
+  },
+  "valor": "3870.42",
+  "unidad": "COP",
+  "vigenciadesde": "2025-10-31T00:00:00.000",
+  "vigenciahasta": "2025-10-31T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06eb"
+  },
+  "valor": "3860.12",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-01T00:00:00.000",
+  "vigenciahasta": "2025-11-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ec"
+  },
+  "valor": "3872.47",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-05T00:00:00.000",
+  "vigenciahasta": "2025-11-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ed"
+  },
+  "valor": "3839.47",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-06T00:00:00.000",
+  "vigenciahasta": "2025-11-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ee"
+  },
+  "valor": "3807.06",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-07T00:00:00.000",
+  "vigenciahasta": "2025-11-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ef"
+  },
+  "valor": "3779.2",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-08T00:00:00.000",
+  "vigenciahasta": "2025-11-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06f0"
+  },
+  "valor": "3760.93",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-11T00:00:00.000",
+  "vigenciahasta": "2025-11-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06f1"
+  },
+  "valor": "3719.71",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-13T00:00:00.000",
+  "vigenciahasta": "2025-11-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06f2"
+  },
+  "valor": "3719.6",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-14T00:00:00.000",
+  "vigenciahasta": "2025-11-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06f3"
+  },
+  "valor": "3764.77",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-15T00:00:00.000",
+  "vigenciahasta": "2025-11-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06f4"
+  },
+  "valor": "3737.55",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-19T00:00:00.000",
+  "vigenciahasta": "2025-11-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06f5"
+  },
+  "valor": "3716.73",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-20T00:00:00.000",
+  "vigenciahasta": "2025-11-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06f6"
+  },
+  "valor": "3741.27",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-21T00:00:00.000",
+  "vigenciahasta": "2025-11-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06f7"
+  },
+  "valor": "3808.77",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-22T00:00:00.000",
+  "vigenciahasta": "2025-11-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06f8"
+  },
+  "valor": "3804.09",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-25T00:00:00.000",
+  "vigenciahasta": "2025-11-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06f9"
+  },
+  "valor": "3806.16",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-26T00:00:00.000",
+  "vigenciahasta": "2025-11-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06fa"
+  },
+  "valor": "3773.6",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-27T00:00:00.000",
+  "vigenciahasta": "2025-11-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06fb"
+  },
+  "valor": "3744.43",
+  "unidad": "COP",
+  "vigenciadesde": "2025-11-29T00:00:00.000",
+  "vigenciahasta": "2025-12-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06fc"
+  },
+  "valor": "3784.43",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-02T00:00:00.000",
+  "vigenciahasta": "2025-12-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06fd"
+  },
+  "valor": "3817.66",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-03T00:00:00.000",
+  "vigenciahasta": "2025-12-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06fe"
+  },
+  "valor": "3780.8",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-04T00:00:00.000",
+  "vigenciahasta": "2025-12-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed06ff"
+  },
+  "valor": "3757.92",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-05T00:00:00.000",
+  "vigenciahasta": "2025-12-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0700"
+  },
+  "valor": "3830.02",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-06T00:00:00.000",
+  "vigenciahasta": "2025-12-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0701"
+  },
+  "valor": "3861.34",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-10T00:00:00.000",
+  "vigenciahasta": "2025-12-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0702"
+  },
+  "valor": "3854.28",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-11T00:00:00.000",
+  "vigenciahasta": "2025-12-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0703"
+  },
+  "valor": "3810.99",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-12T00:00:00.000",
+  "vigenciahasta": "2025-12-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0704"
+  },
+  "valor": "3788.53",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-13T00:00:00.000",
+  "vigenciahasta": "2025-12-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0705"
+  },
+  "valor": "3817.59",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-16T00:00:00.000",
+  "vigenciahasta": "2025-12-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0706"
+  },
+  "valor": "3847.1",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-17T00:00:00.000",
+  "vigenciahasta": "2025-12-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0707"
+  },
+  "valor": "3866.77",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-18T00:00:00.000",
+  "vigenciahasta": "2025-12-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0708"
+  },
+  "valor": "3874.71",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-19T00:00:00.000",
+  "vigenciahasta": "2025-12-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0709"
+  },
+  "valor": "3817.93",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-20T00:00:00.000",
+  "vigenciahasta": "2025-12-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed070a"
+  },
+  "valor": "3792.59",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-23T00:00:00.000",
+  "vigenciahasta": "2025-12-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed070b"
+  },
+  "valor": "3759.48",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-24T00:00:00.000",
+  "vigenciahasta": "2025-12-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed070c"
+  },
+  "valor": "3706.94",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-25T00:00:00.000",
+  "vigenciahasta": "2025-12-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed070d"
+  },
+  "valor": "3716.05",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-27T00:00:00.000",
+  "vigenciahasta": "2025-12-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed070e"
+  },
+  "valor": "3706.97",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-30T00:00:00.000",
+  "vigenciahasta": "2025-12-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed070f"
+  },
+  "valor": "3757.08",
+  "unidad": "COP",
+  "vigenciadesde": "2025-12-31T00:00:00.000",
+  "vigenciahasta": "2026-01-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0710"
+  },
+  "valor": "3790.77",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-03T00:00:00.000",
+  "vigenciahasta": "2026-01-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0711"
+  },
+  "valor": "3770.03",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-06T00:00:00.000",
+  "vigenciahasta": "2026-01-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0712"
+  },
+  "valor": "3730.26",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-07T00:00:00.000",
+  "vigenciahasta": "2026-01-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0713"
+  },
+  "valor": "3748.83",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-08T00:00:00.000",
+  "vigenciahasta": "2026-01-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0714"
+  },
+  "valor": "3734.67",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-09T00:00:00.000",
+  "vigenciahasta": "2026-01-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0715"
+  },
+  "valor": "3717.09",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-10T00:00:00.000",
+  "vigenciahasta": "2026-01-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0716"
+  },
+  "valor": "3663.24",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-14T00:00:00.000",
+  "vigenciahasta": "2026-01-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0717"
+  },
+  "valor": "3655.16",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-15T00:00:00.000",
+  "vigenciahasta": "2026-01-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0718"
+  },
+  "valor": "3687.32",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-16T00:00:00.000",
+  "vigenciahasta": "2026-01-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0719"
+  },
+  "valor": "3700.05",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-17T00:00:00.000",
+  "vigenciahasta": "2026-01-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed071a"
+  },
+  "valor": "3682.97",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-21T00:00:00.000",
+  "vigenciahasta": "2026-01-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed071b"
+  },
+  "valor": "3669.15",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-22T00:00:00.000",
+  "vigenciahasta": "2026-01-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed071c"
+  },
+  "valor": "3630.33",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-23T00:00:00.000",
+  "vigenciahasta": "2026-01-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed071d"
+  },
+  "valor": "3637.88",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-24T00:00:00.000",
+  "vigenciahasta": "2026-01-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed071e"
+  },
+  "valor": "3676.02",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-27T00:00:00.000",
+  "vigenciahasta": "2026-01-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed071f"
+  },
+  "valor": "3678.59",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-28T00:00:00.000",
+  "vigenciahasta": "2026-01-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0720"
+  },
+  "valor": "3665.97",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-29T00:00:00.000",
+  "vigenciahasta": "2026-01-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0721"
+  },
+  "valor": "3661.29",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-30T00:00:00.000",
+  "vigenciahasta": "2026-01-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0722"
+  },
+  "valor": "3670.47",
+  "unidad": "COP",
+  "vigenciadesde": "2026-01-31T00:00:00.000",
+  "vigenciahasta": "2026-02-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0723"
+  },
+  "valor": "3628.16",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-03T00:00:00.000",
+  "vigenciahasta": "2026-02-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0724"
+  },
+  "valor": "3622.0",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-04T00:00:00.000",
+  "vigenciahasta": "2026-02-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0725"
+  },
+  "valor": "3644.93",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-05T00:00:00.000",
+  "vigenciahasta": "2026-02-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0726"
+  },
+  "valor": "3691.75",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-06T00:00:00.000",
+  "vigenciahasta": "2026-02-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0727"
+  },
+  "valor": "3670.2",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-07T00:00:00.000",
+  "vigenciahasta": "2026-02-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0728"
+  },
+  "valor": "3651.9",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-10T00:00:00.000",
+  "vigenciahasta": "2026-02-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0729"
+  },
+  "valor": "3659.71",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-11T00:00:00.000",
+  "vigenciahasta": "2026-02-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed072a"
+  },
+  "valor": "3671.01",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-12T00:00:00.000",
+  "vigenciahasta": "2026-02-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed072b"
+  },
+  "valor": "3665.78",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-13T00:00:00.000",
+  "vigenciahasta": "2026-02-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed072c"
+  },
+  "valor": "3652.89",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-14T00:00:00.000",
+  "vigenciahasta": "2026-02-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed072d"
+  },
+  "valor": "3664.26",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-18T00:00:00.000",
+  "vigenciahasta": "2026-02-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed072e"
+  },
+  "valor": "3669.21",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-19T00:00:00.000",
+  "vigenciahasta": "2026-02-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed072f"
+  },
+  "valor": "3695.72",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-20T00:00:00.000",
+  "vigenciahasta": "2026-02-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0730"
+  },
+  "valor": "3691.34",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-21T00:00:00.000",
+  "vigenciahasta": "2026-02-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0731"
+  },
+  "valor": "3697.36",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-24T00:00:00.000",
+  "vigenciahasta": "2026-02-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0732"
+  },
+  "valor": "3703.28",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-25T00:00:00.000",
+  "vigenciahasta": "2026-02-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0733"
+  },
+  "valor": "3703.69",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-26T00:00:00.000",
+  "vigenciahasta": "2026-02-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0734"
+  },
+  "valor": "3745.78",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-27T00:00:00.000",
+  "vigenciahasta": "2026-02-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0735"
+  },
+  "valor": "3766.3",
+  "unidad": "COP",
+  "vigenciadesde": "2026-02-28T00:00:00.000",
+  "vigenciahasta": "2026-03-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0736"
+  },
+  "valor": "3768.73",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-03T00:00:00.000",
+  "vigenciahasta": "2026-03-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0737"
+  },
+  "valor": "3797.64",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-04T00:00:00.000",
+  "vigenciahasta": "2026-03-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0738"
+  },
+  "valor": "3751.41",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-05T00:00:00.000",
+  "vigenciahasta": "2026-03-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0739"
+  },
+  "valor": "3767.94",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-06T00:00:00.000",
+  "vigenciahasta": "2026-03-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed073a"
+  },
+  "valor": "3795.55",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-07T00:00:00.000",
+  "vigenciahasta": "2026-03-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed073b"
+  },
+  "valor": "3744.84",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-10T00:00:00.000",
+  "vigenciahasta": "2026-03-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed073c"
+  },
+  "valor": "3710.5",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-11T00:00:00.000",
+  "vigenciahasta": "2026-03-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed073d"
+  },
+  "valor": "3687.87",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-12T00:00:00.000",
+  "vigenciahasta": "2026-03-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed073e"
+  },
+  "valor": "3700.46",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-13T00:00:00.000",
+  "vigenciahasta": "2026-03-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed073f"
+  },
+  "valor": "3685.53",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-14T00:00:00.000",
+  "vigenciahasta": "2026-03-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0740"
+  },
+  "valor": "3691.9",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-17T00:00:00.000",
+  "vigenciahasta": "2026-03-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0741"
+  },
+  "valor": "3689.97",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-18T00:00:00.000",
+  "vigenciahasta": "2026-03-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0742"
+  },
+  "valor": "3704.17",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-19T00:00:00.000",
+  "vigenciahasta": "2026-03-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0743"
+  },
+  "valor": "3692.48",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-20T00:00:00.000",
+  "vigenciahasta": "2026-03-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0744"
+  },
+  "valor": "3704.87",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-21T00:00:00.000",
+  "vigenciahasta": "2026-03-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0745"
+  },
+  "valor": "3700.67",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-25T00:00:00.000",
+  "vigenciahasta": "2026-03-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0746"
+  },
+  "valor": "3688.46",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-26T00:00:00.000",
+  "vigenciahasta": "2026-03-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0747"
+  },
+  "valor": "3675.29",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-27T00:00:00.000",
+  "vigenciahasta": "2026-03-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0748"
+  },
+  "valor": "3668.89",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-28T00:00:00.000",
+  "vigenciahasta": "2026-03-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0749"
+  },
+  "valor": "3669.96",
+  "unidad": "COP",
+  "vigenciadesde": "2026-03-31T00:00:00.000",
+  "vigenciahasta": "2026-03-31T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed074a"
+  },
+  "valor": "3660.1",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-01T00:00:00.000",
+  "vigenciahasta": "2026-04-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed074b"
+  },
+  "valor": "3675.81",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-02T00:00:00.000",
+  "vigenciahasta": "2026-04-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed074c"
+  },
+  "valor": "3664.41",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-07T00:00:00.000",
+  "vigenciahasta": "2026-04-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed074d"
+  },
+  "valor": "3678.19",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-08T00:00:00.000",
+  "vigenciahasta": "2026-04-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed074e"
+  },
+  "valor": "3640.63",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-09T00:00:00.000",
+  "vigenciahasta": "2026-04-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed074f"
+  },
+  "valor": "3642.93",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-10T00:00:00.000",
+  "vigenciahasta": "2026-04-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0750"
+  },
+  "valor": "3631.49",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-11T00:00:00.000",
+  "vigenciahasta": "2026-04-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0751"
+  },
+  "valor": "3608.1",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-14T00:00:00.000",
+  "vigenciahasta": "2026-04-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0752"
+  },
+  "valor": "3578.82",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-15T00:00:00.000",
+  "vigenciahasta": "2026-04-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0753"
+  },
+  "valor": "3603.19",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-16T00:00:00.000",
+  "vigenciahasta": "2026-04-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0754"
+  },
+  "valor": "3615.1",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-17T00:00:00.000",
+  "vigenciahasta": "2026-04-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0755"
+  },
+  "valor": "3593.14",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-18T00:00:00.000",
+  "vigenciahasta": "2026-04-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0756"
+  },
+  "valor": "3573.3",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-21T00:00:00.000",
+  "vigenciahasta": "2026-04-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0757"
+  },
+  "valor": "3576.05",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-22T00:00:00.000",
+  "vigenciahasta": "2026-04-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0758"
+  },
+  "valor": "3568.88",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-23T00:00:00.000",
+  "vigenciahasta": "2026-04-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0759"
+  },
+  "valor": "3560.62",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-24T00:00:00.000",
+  "vigenciahasta": "2026-04-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed075a"
+  },
+  "valor": "3551.17",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-25T00:00:00.000",
+  "vigenciahasta": "2026-04-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed075b"
+  },
+  "valor": "3593.17",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-28T00:00:00.000",
+  "vigenciahasta": "2026-04-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed075c"
+  },
+  "valor": "3633.76",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-29T00:00:00.000",
+  "vigenciahasta": "2026-04-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed075d"
+  },
+  "valor": "3621.86",
+  "unidad": "COP",
+  "vigenciadesde": "2026-04-30T00:00:00.000",
+  "vigenciahasta": "2026-04-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed075e"
+  },
+  "valor": "3637.51",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-01T00:00:00.000",
+  "vigenciahasta": "2026-05-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed075f"
+  },
+  "valor": "3707.58",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-05T00:00:00.000",
+  "vigenciahasta": "2026-05-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0760"
+  },
+  "valor": "3723.33",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-06T00:00:00.000",
+  "vigenciahasta": "2026-05-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0761"
+  },
+  "valor": "3706.44",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-07T00:00:00.000",
+  "vigenciahasta": "2026-05-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0762"
+  },
+  "valor": "3729.27",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-08T00:00:00.000",
+  "vigenciahasta": "2026-05-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0763"
+  },
+  "valor": "3747.1",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-09T00:00:00.000",
+  "vigenciahasta": "2026-05-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0764"
+  },
+  "valor": "3759.0",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-12T00:00:00.000",
+  "vigenciahasta": "2026-05-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0765"
+  },
+  "valor": "3775.07",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-13T00:00:00.000",
+  "vigenciahasta": "2026-05-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0766"
+  },
+  "valor": "3794.91",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-14T00:00:00.000",
+  "vigenciahasta": "2026-05-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0767"
+  },
+  "valor": "3784.7",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-15T00:00:00.000",
+  "vigenciahasta": "2026-05-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0768"
+  },
+  "valor": "3796.78",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-16T00:00:00.000",
+  "vigenciahasta": "2026-05-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0769"
+  },
+  "valor": "3796.87",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-20T00:00:00.000",
+  "vigenciahasta": "2026-05-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed076a"
+  },
+  "valor": "3730.49",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-21T00:00:00.000",
+  "vigenciahasta": "2026-05-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed076b"
+  },
+  "valor": "3701.37",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-22T00:00:00.000",
+  "vigenciahasta": "2026-05-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed076c"
+  },
+  "valor": "3667.06",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-23T00:00:00.000",
+  "vigenciahasta": "2026-05-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed076d"
+  },
+  "valor": "3644.47",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-27T00:00:00.000",
+  "vigenciahasta": "2026-05-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed076e"
+  },
+  "valor": "3631.57",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-28T00:00:00.000",
+  "vigenciahasta": "2026-05-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed076f"
+  },
+  "valor": "3646.58",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-29T00:00:00.000",
+  "vigenciahasta": "2026-05-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0770"
+  },
+  "valor": "3678.15",
+  "unidad": "COP",
+  "vigenciadesde": "2026-05-30T00:00:00.000",
+  "vigenciahasta": "2026-06-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0771"
+  },
+  "valor": "3560.24",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-02T00:00:00.000",
+  "vigenciahasta": "2026-06-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0772"
+  },
+  "valor": "3562.0",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-03T00:00:00.000",
+  "vigenciahasta": "2026-06-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0773"
+  },
+  "valor": "3572.85",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-04T00:00:00.000",
+  "vigenciahasta": "2026-06-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0774"
+  },
+  "valor": "3565.32",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-05T00:00:00.000",
+  "vigenciahasta": "2026-06-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0775"
+  },
+  "valor": "3588.09",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-06T00:00:00.000",
+  "vigenciahasta": "2026-06-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0776"
+  },
+  "valor": "3581.46",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-10T00:00:00.000",
+  "vigenciahasta": "2026-06-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0777"
+  },
+  "valor": "3567.11",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-11T00:00:00.000",
+  "vigenciahasta": "2026-06-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0778"
+  },
+  "valor": "3513.54",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-12T00:00:00.000",
+  "vigenciahasta": "2026-06-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0779"
+  },
+  "valor": "3475.72",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-13T00:00:00.000",
+  "vigenciahasta": "2026-06-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed077a"
+  },
+  "valor": "3427.07",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-17T00:00:00.000",
+  "vigenciahasta": "2026-06-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed077b"
+  },
+  "valor": "3439.91",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-18T00:00:00.000",
+  "vigenciahasta": "2026-06-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed077c"
+  },
+  "valor": "3459.53",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-19T00:00:00.000",
+  "vigenciahasta": "2026-06-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed077d"
+  },
+  "valor": "3406.14",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-23T00:00:00.000",
+  "vigenciahasta": "2026-06-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed077e"
+  },
+  "valor": "3425.95",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-24T00:00:00.000",
+  "vigenciahasta": "2026-06-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed077f"
+  },
+  "valor": "3428.32",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-25T00:00:00.000",
+  "vigenciahasta": "2026-06-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0780"
+  },
+  "valor": "3433.71",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-26T00:00:00.000",
+  "vigenciahasta": "2026-06-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0781"
+  },
+  "valor": "3443.59",
+  "unidad": "COP",
+  "vigenciadesde": "2026-06-27T00:00:00.000",
+  "vigenciahasta": "2026-06-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0782"
+  },
+  "valor": "3440.83",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-01T00:00:00.000",
+  "vigenciahasta": "2026-07-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0783"
+  },
+  "valor": "3403.35",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-02T00:00:00.000",
+  "vigenciahasta": "2026-07-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0784"
+  },
+  "valor": "3357.82",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-03T00:00:00.000",
+  "vigenciahasta": "2026-07-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0785"
+  },
+  "valor": "3334.93",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-04T00:00:00.000",
+  "vigenciahasta": "2026-07-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0786"
+  },
+  "valor": "3350.68",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-07T00:00:00.000",
+  "vigenciahasta": "2026-07-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0787"
+  },
+  "valor": "3335.5",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-08T00:00:00.000",
+  "vigenciahasta": "2026-07-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0788"
+  },
+  "valor": "3339.65",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-09T00:00:00.000",
+  "vigenciahasta": "2026-07-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0789"
+  },
+  "valor": "3305.38",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-10T00:00:00.000",
+  "vigenciahasta": "2026-07-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed078a"
+  },
+  "valor": "3248.87",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-11T00:00:00.000",
+  "vigenciahasta": "2026-07-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed078b"
+  },
+  "valor": "3252.11",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-15T00:00:00.000",
+  "vigenciahasta": "2026-07-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed078c"
+  },
+  "valor": "3233.91",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-16T00:00:00.000",
+  "vigenciahasta": "2026-07-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed078d"
+  },
+  "valor": "3221.41",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-17T00:00:00.000",
+  "vigenciahasta": "2026-07-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed078e"
+  },
+  "valor": "3262.58",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-18T00:00:00.000",
+  "vigenciahasta": "2026-07-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed078f"
+  },
+  "valor": "3238.19",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-22T00:00:00.000",
+  "vigenciahasta": "2026-07-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0790"
+  },
+  "valor": "3206.86",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-23T00:00:00.000",
+  "vigenciahasta": "2026-07-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0791"
+  },
+  "valor": "3219.31",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-24T00:00:00.000",
+  "vigenciahasta": "2026-07-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0792"
+  },
+  "valor": "3210.56",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-25T00:00:00.000",
+  "vigenciahasta": "2026-07-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0793"
+  },
+  "valor": "3205.8",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-28T00:00:00.000",
+  "vigenciahasta": "2026-07-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0794"
+  },
+  "valor": "3205.87",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-29T00:00:00.000",
+  "vigenciahasta": "2026-07-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0795"
+  },
+  "valor": "3206.18",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-30T00:00:00.000",
+  "vigenciahasta": "2026-07-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0796"
+  },
+  "valor": "3132.42",
+  "unidad": "COP",
+  "vigenciadesde": "2026-07-31T00:00:00.000",
+  "vigenciahasta": "2026-07-31T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0797"
+  },
+  "valor": "3144.14",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-01T00:00:00.000",
+  "vigenciahasta": "2026-08-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0798"
+  },
+  "valor": "3230.44",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-04T00:00:00.000",
+  "vigenciahasta": "2026-08-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed0799"
+  },
+  "valor": "3204.51",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-05T00:00:00.000",
+  "vigenciahasta": "2026-08-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed079a"
+  },
+  "valor": "3179.4",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-06T00:00:00.000",
+  "vigenciahasta": "2026-08-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed079b"
+  },
+  "valor": "3157.43",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-07T00:00:00.000",
+  "vigenciahasta": "2026-08-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed079c"
+  },
+  "valor": "3125.47",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-11T00:00:00.000",
+  "vigenciahasta": "2026-08-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed079d"
+  },
+  "valor": "3121.07",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-12T00:00:00.000",
+  "vigenciahasta": "2026-08-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed079e"
+  },
+  "valor": "3123.28",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-13T00:00:00.000",
+  "vigenciahasta": "2026-08-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed079f"
+  },
+  "valor": "3127.51",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-14T00:00:00.000",
+  "vigenciahasta": "2026-08-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07a0"
+  },
+  "valor": "3128.65",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-15T00:00:00.000",
+  "vigenciahasta": "2026-08-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07a1"
+  },
+  "valor": "3098.79",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-19T00:00:00.000",
+  "vigenciahasta": "2026-08-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07a2"
+  },
+  "valor": "3053.48",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-20T00:00:00.000",
+  "vigenciahasta": "2026-08-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07a3"
+  },
+  "valor": "3062.96",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-21T00:00:00.000",
+  "vigenciahasta": "2026-08-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07a4"
+  },
+  "valor": "3048.12",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-22T00:00:00.000",
+  "vigenciahasta": "2026-08-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07a5"
+  },
+  "valor": "3056.51",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-25T00:00:00.000",
+  "vigenciahasta": "2026-08-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07a6"
+  },
+  "valor": "3081.67",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-26T00:00:00.000",
+  "vigenciahasta": "2026-08-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07a7"
+  },
+  "valor": "3118.24",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-27T00:00:00.000",
+  "vigenciahasta": "2026-08-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07a8"
+  },
+  "valor": "3144.28",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-28T00:00:00.000",
+  "vigenciahasta": "2026-08-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07a9"
+  },
+  "valor": "3202.79",
+  "unidad": "COP",
+  "vigenciadesde": "2026-08-29T00:00:00.000",
+  "vigenciahasta": "2026-08-31T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07aa"
+  },
+  "valor": "3213.97",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-01T00:00:00.000",
+  "vigenciahasta": "2026-09-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07ab"
+  },
+  "valor": "3184.0",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-02T00:00:00.000",
+  "vigenciahasta": "2026-09-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07ac"
+  },
+  "valor": "3140.55",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-03T00:00:00.000",
+  "vigenciahasta": "2026-09-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07ad"
+  },
+  "valor": "3141.36",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-04T00:00:00.000",
+  "vigenciahasta": "2026-09-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07ae"
+  },
+  "valor": "3126.08",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-05T00:00:00.000",
+  "vigenciahasta": "2026-09-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07af"
+  },
+  "valor": "3116.47",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-09T00:00:00.000",
+  "vigenciahasta": "2026-09-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07b0"
+  },
+  "valor": "3099.48",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-10T00:00:00.000",
+  "vigenciahasta": "2026-09-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07b1"
+  },
+  "valor": "3101.0",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-11T00:00:00.000",
+  "vigenciahasta": "2026-09-11T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07b2"
+  },
+  "valor": "3072.27",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-12T00:00:00.000",
+  "vigenciahasta": "2026-09-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07b3"
+  },
+  "valor": "3109.3",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-15T00:00:00.000",
+  "vigenciahasta": "2026-09-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07b4"
+  },
+  "valor": "3100.45",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-16T00:00:00.000",
+  "vigenciahasta": "2026-09-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07b5"
+  },
+  "valor": "3128.46",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-17T00:00:00.000",
+  "vigenciahasta": "2026-09-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07b6"
+  },
+  "valor": "3151.73",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-18T00:00:00.000",
+  "vigenciahasta": "2026-09-18T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07b7"
+  },
+  "valor": "3192.92",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-19T00:00:00.000",
+  "vigenciahasta": "2026-09-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07b8"
+  },
+  "valor": "3192.53",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-22T00:00:00.000",
+  "vigenciahasta": "2026-09-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07b9"
+  },
+  "valor": "3208.66",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-23T00:00:00.000",
+  "vigenciahasta": "2026-09-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07ba"
+  },
+  "valor": "3264.39",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-24T00:00:00.000",
+  "vigenciahasta": "2026-09-24T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07bb"
+  },
+  "valor": "3329.61",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-25T00:00:00.000",
+  "vigenciahasta": "2026-09-25T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07bc"
+  },
+  "valor": "3306.86",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-26T00:00:00.000",
+  "vigenciahasta": "2026-09-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07bd"
+  },
+  "valor": "3349.63",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-29T00:00:00.000",
+  "vigenciahasta": "2026-09-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07be"
+  },
+  "valor": "3341.23",
+  "unidad": "COP",
+  "vigenciadesde": "2026-09-30T00:00:00.000",
+  "vigenciahasta": "2026-09-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07bf"
+  },
+  "valor": "3312.84",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-01T00:00:00.000",
+  "vigenciahasta": "2026-10-01T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07c0"
+  },
+  "valor": "3307.73",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-02T00:00:00.000",
+  "vigenciahasta": "2026-10-02T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07c1"
+  },
+  "valor": "3273.49",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-03T00:00:00.000",
+  "vigenciahasta": "2026-10-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07c2"
+  },
+  "valor": "3209.78",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-06T00:00:00.000",
+  "vigenciahasta": "2026-10-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07c3"
+  },
+  "valor": "3216.01",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-07T00:00:00.000",
+  "vigenciahasta": "2026-10-07T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07c4"
+  },
+  "valor": "3238.88",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-08T00:00:00.000",
+  "vigenciahasta": "2026-10-08T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07c5"
+  },
+  "valor": "3218.75",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-09T00:00:00.000",
+  "vigenciahasta": "2026-10-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07c6"
+  },
+  "valor": "3194.44",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-10T00:00:00.000",
+  "vigenciahasta": "2026-10-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07c7"
+  },
+  "valor": "3181.74",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-14T00:00:00.000",
+  "vigenciahasta": "2026-10-14T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07c8"
+  },
+  "valor": "3197.65",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-15T00:00:00.000",
+  "vigenciahasta": "2026-10-15T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07c9"
+  },
+  "valor": "3170.46",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-16T00:00:00.000",
+  "vigenciahasta": "2026-10-16T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07ca"
+  },
+  "valor": "3174.67",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-17T00:00:00.000",
+  "vigenciahasta": "2026-10-19T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07cb"
+  },
+  "valor": "3156.32",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-20T00:00:00.000",
+  "vigenciahasta": "2026-10-20T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07cc"
+  },
+  "valor": "3163.76",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-21T00:00:00.000",
+  "vigenciahasta": "2026-10-21T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07cd"
+  },
+  "valor": "3191.47",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-22T00:00:00.000",
+  "vigenciahasta": "2026-10-22T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07ce"
+  },
+  "valor": "3185.01",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-23T00:00:00.000",
+  "vigenciahasta": "2026-10-23T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07cf"
+  },
+  "valor": "3158.43",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-24T00:00:00.000",
+  "vigenciahasta": "2026-10-26T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07d0"
+  },
+  "valor": "3157.94",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-27T00:00:00.000",
+  "vigenciahasta": "2026-10-27T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07d1"
+  },
+  "valor": "3148.02",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-28T00:00:00.000",
+  "vigenciahasta": "2026-10-28T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07d2"
+  },
+  "valor": "3162.35",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-29T00:00:00.000",
+  "vigenciahasta": "2026-10-29T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07d3"
+  },
+  "valor": "3166.91",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-30T00:00:00.000",
+  "vigenciahasta": "2026-10-30T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07d4"
+  },
+  "valor": "3182.99",
+  "unidad": "COP",
+  "vigenciadesde": "2026-10-31T00:00:00.000",
+  "vigenciahasta": "2026-11-03T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07d5"
+  },
+  "valor": "3235.59",
+  "unidad": "COP",
+  "vigenciadesde": "2026-11-04T00:00:00.000",
+  "vigenciahasta": "2026-11-04T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07d6"
+  },
+  "valor": "3221.19",
+  "unidad": "COP",
+  "vigenciadesde": "2026-11-05T00:00:00.000",
+  "vigenciahasta": "2026-11-05T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07d7"
+  },
+  "valor": "3228.26",
+  "unidad": "COP",
+  "vigenciadesde": "2026-11-06T00:00:00.000",
+  "vigenciahasta": "2026-11-06T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07d8"
+  },
+  "valor": "3237.83",
+  "unidad": "COP",
+  "vigenciadesde": "2026-11-07T00:00:00.000",
+  "vigenciahasta": "2026-11-09T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07d9"
+  },
+  "valor": "3269.88",
+  "unidad": "COP",
+  "vigenciadesde": "2026-11-10T00:00:00.000",
+  "vigenciahasta": "2026-11-10T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07da"
+  },
+  "valor": "3297.07",
+  "unidad": "COP",
+  "vigenciadesde": "2026-11-11T00:00:00.000",
+  "vigenciahasta": "2026-11-12T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07db"
+  },
+  "valor": "3301.91",
+  "unidad": "COP",
+  "vigenciadesde": "2026-11-13T00:00:00.000",
+  "vigenciahasta": "2026-11-13T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ },
+ {
+  "_id": {
+   "$oid": "6afbdbf075d41c05dfed07dc"
+  },
+  "valor": "3316.7",
+  "unidad": "COP",
+  "vigenciadesde": "2026-11-14T00:00:00.000",
+  "vigenciahasta": "2026-11-17T00:00:00.000",
+  "_fuente": "https://www.datos.gov.co/resource/32sa-8pi3.json"
+ }
+]

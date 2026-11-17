@@ -1,0 +1,10 @@
+config.ps1
+__pycache__/
+*.pyc
+
+# Temporales de la ejecucion
+evidencias/_tmp_*
+
+# Notas de trabajo internas
+docs/NOTAS_carga_y_pruebas.md
+docs/guia_sustentacion.md

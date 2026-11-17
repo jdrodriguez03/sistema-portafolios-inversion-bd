@@ -1,0 +1,1 @@
+REALES: Yahoo Finance (yfinance) y datos.gov.co, descargados el 2026-11-16

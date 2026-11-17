@@ -1,0 +1,16 @@
+﻿        tabla        | filas 
+---------------------+-------
+ asesor              |     6
+ cliente             |    60
+ cuenta              |    80
+ movimiento_efectivo |   407
+ activo              |   346
+ accion_fondo        |    10
+ cdt                 |   333
+ tes                 |     3
+ precio_historico    |  7220
+ trm                 |   698
+ transaccion         |  1479
+ rendimiento         |  1367
+(12 filas)
+

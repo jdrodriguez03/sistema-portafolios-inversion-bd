@@ -1,0 +1,12 @@
+﻿mercado_activos: 10 documentos desde datos/raw (respuestas crudas de yfinance)
+  AAPL   ACCION  campos en info: 188  dias en historia: 722
+  AMZN   ACCION  campos en info: 181  dias en historia: 722
+  CIB    ACCION  campos en info: 161  dias en historia: 722
+  EC     ACCION  campos en info: 162  dias en historia: 722
+  GOOGL  ACCION  campos en info: 185  dias en historia: 722
+  JNJ    ACCION  campos en info: 186  dias en historia: 722
+  MSFT   ACCION  campos en info: 187  dias en historia: 722
+  QQQ    FONDO   campos en info: 103  dias en historia: 722
+  SPY    FONDO   campos en info: 104  dias en historia: 722
+  TSLA   ACCION  campos en info: 180  dias en historia: 722
+trm_raw: 698 documentos desde datos/raw/trm_datos_gov_co.json
