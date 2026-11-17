@@ -1,43 +1,44 @@
-[2026-11-17 10:36:57] ==== Ejecucion de run_all.ps1 (pasos: datos, base, consultas, optimizacion, transacciones, concurrencia, mongo, backup) ====
-[2026-11-17 10:36:57] INICIO paso 'datos'
-[2026-11-17 10:36:57]    
-[2026-11-17 10:36:57]    Generado sql\04_carga_datos.sql  (REALES: Yahoo Finance (yfinance) y datos.gov.co, descargados el 2026-11-16)
-[2026-11-17 10:36:57]      asesores 6 | clientes 60 | cuentas 80 | activos 346 (CDT 333)
-[2026-11-17 10:36:57]      transacciones 1479 | movimientos 407 | rendimientos 1367
-[2026-11-17 10:36:57]      precios 7220 | TRM 698 rangos | corte 2026-11-16
-[2026-11-17 10:36:57] FIN paso 'datos'
-[2026-11-17 10:36:57] INICIO paso 'base'
-[2026-11-17 10:36:59]            tabla        | filas 
-[2026-11-17 10:36:59]    ---------------------+-------
-[2026-11-17 10:36:59]     asesor              |     6
-[2026-11-17 10:36:59]     cliente             |    60
-[2026-11-17 10:36:59]     cuenta              |    80
-[2026-11-17 10:36:59]     movimiento_efectivo |   407
-[2026-11-17 10:36:59]     activo              |   346
-[2026-11-17 10:36:59]     accion_fondo        |    10
-[2026-11-17 10:36:59]     cdt                 |   333
-[2026-11-17 10:36:59]     tes                 |     3
-[2026-11-17 10:36:59]     precio_historico    |  7220
-[2026-11-17 10:36:59]     trm                 |   698
-[2026-11-17 10:36:59]     transaccion         |  1479
-[2026-11-17 10:36:59]     rendimiento         |  1367
-[2026-11-17 10:36:59]    (12 filas)
-[2026-11-17 10:36:59]    
-[2026-11-17 10:36:59] FIN paso 'base'
-[2026-11-17 10:36:59] INICIO paso 'consultas'
-[2026-11-17 10:36:59] FIN paso 'consultas'
-[2026-11-17 10:36:59] INICIO paso 'optimizacion'
-[2026-11-17 10:37:01] FIN paso 'optimizacion'
-[2026-11-17 10:37:01] INICIO paso 'transacciones'
-[2026-11-17 10:37:01] FIN paso 'transacciones'
-[2026-11-17 10:37:01] INICIO paso 'concurrencia'
-[2026-11-17 10:37:08] FIN paso 'concurrencia'
-[2026-11-17 10:37:08] INICIO paso 'mongo'
-[2026-11-17 10:37:10] FIN paso 'mongo'
-[2026-11-17 10:37:10] INICIO paso 'backup'
-[2026-11-17 10:37:11]    backup\portafolios.backup  154 KB
-[2026-11-17 10:37:11]    backup\portafolios.sql  424 KB
-[2026-11-17 10:37:11]    backup\mongo\mercado_activos.json  1,912 KB
-[2026-11-17 10:37:11]    backup\mongo\trm_raw.json  183 KB
-[2026-11-17 10:37:11] FIN paso 'backup'
-[2026-11-17 10:37:11] ==== TERMINO SIN ERRORES ====
+﻿
+[2026-11-17 12:49:50] ==== Ejecucion de run_all.ps1 (pasos: datos, base, consultas, optimizacion, transacciones, concurrencia, mongo, backup) ====
+[2026-11-17 12:49:50] INICIO paso 'datos'
+[2026-11-17 12:49:50]    
+[2026-11-17 12:49:50]    Generado sql\04_carga_datos.sql  (REALES: Yahoo Finance (yfinance) y datos.gov.co, descargados el 2026-11-16)
+[2026-11-17 12:49:50]      asesores 6 | clientes 60 | cuentas 80 | activos 346 (CDT 333)
+[2026-11-17 12:49:50]      transacciones 1479 | movimientos 407 | rendimientos 1367
+[2026-11-17 12:49:50]      precios 7220 | TRM 698 rangos | corte 2026-11-16
+[2026-11-17 12:49:50] FIN paso 'datos'
+[2026-11-17 12:49:50] INICIO paso 'base'
+[2026-11-17 12:49:52]            tabla        | filas 
+[2026-11-17 12:49:52]    ---------------------+-------
+[2026-11-17 12:49:52]     asesor              |     6
+[2026-11-17 12:49:52]     cliente             |    60
+[2026-11-17 12:49:52]     cuenta              |    80
+[2026-11-17 12:49:52]     movimiento_efectivo |   407
+[2026-11-17 12:49:52]     activo              |   346
+[2026-11-17 12:49:52]     accion_fondo        |    10
+[2026-11-17 12:49:52]     cdt                 |   333
+[2026-11-17 12:49:52]     tes                 |     3
+[2026-11-17 12:49:52]     precio_historico    |  7220
+[2026-11-17 12:49:52]     trm                 |   698
+[2026-11-17 12:49:52]     transaccion         |  1479
+[2026-11-17 12:49:52]     rendimiento         |  1367
+[2026-11-17 12:49:52]    (12 filas)
+[2026-11-17 12:49:53]    
+[2026-11-17 12:49:53] FIN paso 'base'
+[2026-11-17 12:49:53] INICIO paso 'consultas'
+[2026-11-17 12:49:53] FIN paso 'consultas'
+[2026-11-17 12:49:53] INICIO paso 'optimizacion'
+[2026-11-17 12:49:55] FIN paso 'optimizacion'
+[2026-11-17 12:49:55] INICIO paso 'transacciones'
+[2026-11-17 12:49:55] FIN paso 'transacciones'
+[2026-11-17 12:49:55] INICIO paso 'concurrencia'
+[2026-11-17 12:50:01] FIN paso 'concurrencia'
+[2026-11-17 12:50:01] INICIO paso 'mongo'
+[2026-11-17 12:50:03] FIN paso 'mongo'
+[2026-11-17 12:50:03] INICIO paso 'backup'
+[2026-11-17 12:50:05]    backup\portafolios.backup  155 KB
+[2026-11-17 12:50:05]    backup\portafolios.sql  425 KB
+[2026-11-17 12:50:05]    backup\mongo\mercado_activos.json  1,912 KB
+[2026-11-17 12:50:05]    backup\mongo\trm_raw.json  183 KB
+[2026-11-17 12:50:05] FIN paso 'backup'
+[2026-11-17 12:50:05] ==== TERMINO SIN ERRORES ====

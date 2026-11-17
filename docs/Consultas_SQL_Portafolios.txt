@@ -466,7 +466,7 @@ $$;
 TRIGGERS
 ======================================================================
 
--- trg_fn_transaccion_validar: Valida cada compra o venta (Reglas 4, 6, 7 y 11) y actualiza el saldo
+-- trg_fn_transaccion_validar: Valida cada compra o venta (Reglas 4, 6, 7 y 11, sin fechas futuras) y actualiza el saldo
 CREATE OR REPLACE FUNCTION trg_fn_transaccion_validar()
 RETURNS TRIGGER
 LANGUAGE plpgsql AS $$
@@ -497,6 +497,9 @@ BEGIN
     IF NEW.fecha_hora::date < v_apertura THEN
         RAISE EXCEPTION 'La transaccion (%) es anterior a la apertura de la cuenta (%)',
             NEW.fecha_hora::date, v_apertura;
+    END IF;
+    IF NEW.fecha_hora > CURRENT_TIMESTAMP THEN
+        RAISE EXCEPTION 'No se aceptan transacciones con fecha futura (%)', NEW.fecha_hora;
     END IF;
 
     -- Tipo del activo y, si es renta fija, su vencimiento
@@ -572,7 +575,7 @@ CREATE TRIGGER trg_transaccion_validar
     BEFORE INSERT ON transaccion
     FOR EACH ROW EXECUTE FUNCTION trg_fn_transaccion_validar();
 
--- trg_fn_movimiento_aplicar: Aplica depositos y retiros al saldo
+-- trg_fn_movimiento_aplicar: Aplica depositos y retiros al saldo (sin fechas futuras)
 CREATE OR REPLACE FUNCTION trg_fn_movimiento_aplicar()
 RETURNS TRIGGER
 LANGUAGE plpgsql AS $$
@@ -597,6 +600,9 @@ BEGIN
         RAISE EXCEPTION 'El movimiento (%) es anterior a la apertura de la cuenta (%)',
             NEW.fecha_hora::date, v_apertura;
     END IF;
+    IF NEW.fecha_hora > CURRENT_TIMESTAMP THEN
+        RAISE EXCEPTION 'No se aceptan movimientos con fecha futura (%)', NEW.fecha_hora;
+    END IF;
 
     IF NEW.tipo_movimiento = 'RETIRO' THEN
         IF v_saldo < NEW.monto THEN
@@ -619,13 +625,17 @@ CREATE TRIGGER trg_movimiento_aplicar
     BEFORE INSERT ON movimiento_efectivo
     FOR EACH ROW EXECUTE FUNCTION trg_fn_movimiento_aplicar();
 
--- trg_fn_rendimiento_aplicar: Abona dividendos e intereses a la cuenta (Regla 8)
+-- trg_fn_rendimiento_aplicar: Abona dividendos e intereses a la cuenta (Regla 8, sin fechas futuras)
 CREATE OR REPLACE FUNCTION trg_fn_rendimiento_aplicar()
 RETURNS TRIGGER
 LANGUAGE plpgsql AS $$
 DECLARE
     v_tipo SMALLINT;
 BEGIN
+    IF NEW.fecha > CURRENT_DATE THEN
+        RAISE EXCEPTION 'No se aceptan rendimientos con fecha futura (%)', NEW.fecha;
+    END IF;
+
     SELECT a.id_tipo_activo INTO v_tipo
     FROM activo a
     WHERE a.id_activo = NEW.id_activo;

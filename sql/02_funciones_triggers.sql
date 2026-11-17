@@ -200,6 +200,7 @@ $$;
 --   Regla 6 : CDT/TES no se venden antes del vencimiento
 --   Regla 7 : toda compra de CDT/TES fija su tasa pactada
 --   Regla 11: no se vende mas de lo que se posee
+--   Ademas: la fecha no puede ser futura ni anterior a la apertura.
 -- La fila de la cuenta se bloquea con FOR UPDATE: dos compras
 -- simultaneas sobre la misma cuenta se ejecutan una tras otra y la
 -- segunda ve el saldo ya descontado (evita la actualizacion perdida).
@@ -234,6 +235,9 @@ BEGIN
     IF NEW.fecha_hora::date < v_apertura THEN
         RAISE EXCEPTION 'La transaccion (%) es anterior a la apertura de la cuenta (%)',
             NEW.fecha_hora::date, v_apertura;
+    END IF;
+    IF NEW.fecha_hora > CURRENT_TIMESTAMP THEN
+        RAISE EXCEPTION 'No se aceptan transacciones con fecha futura (%)', NEW.fecha_hora;
     END IF;
 
     -- Tipo del activo y, si es renta fija, su vencimiento
@@ -310,7 +314,8 @@ CREATE TRIGGER trg_transaccion_validar
     FOR EACH ROW EXECUTE FUNCTION trg_fn_transaccion_validar();
 
 -- ---------------------------------------------------------------------
--- B2. Depositos y retiros: actualizan el saldo; el retiro exige fondos
+-- B2. Depositos y retiros: actualizan el saldo; el retiro exige fondos.
+--   La fecha no puede ser futura ni anterior a la apertura de la cuenta.
 -- ---------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION trg_fn_movimiento_aplicar()
 RETURNS TRIGGER
@@ -335,6 +340,9 @@ BEGIN
     IF NEW.fecha_hora::date < v_apertura THEN
         RAISE EXCEPTION 'El movimiento (%) es anterior a la apertura de la cuenta (%)',
             NEW.fecha_hora::date, v_apertura;
+    END IF;
+    IF NEW.fecha_hora > CURRENT_TIMESTAMP THEN
+        RAISE EXCEPTION 'No se aceptan movimientos con fecha futura (%)', NEW.fecha_hora;
     END IF;
 
     IF NEW.tipo_movimiento = 'RETIRO' THEN
@@ -362,6 +370,7 @@ CREATE TRIGGER trg_movimiento_aplicar
 -- B3. Rendimientos (Regla 8): se abonan como ingreso de la cuenta.
 --   DIVIDENDO solo para acciones/fondos; INTERES solo para CDT/TES.
 --   La cuenta debe haber comprado el activo antes de recibir el pago.
+--   La fecha del pago no puede ser futura.
 -- ---------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION trg_fn_rendimiento_aplicar()
 RETURNS TRIGGER
@@ -369,6 +378,10 @@ LANGUAGE plpgsql AS $$
 DECLARE
     v_tipo SMALLINT;
 BEGIN
+    IF NEW.fecha > CURRENT_DATE THEN
+        RAISE EXCEPTION 'No se aceptan rendimientos con fecha futura (%)', NEW.fecha;
+    END IF;
+
     SELECT a.id_tipo_activo INTO v_tipo
     FROM activo a
     WHERE a.id_activo = NEW.id_activo;

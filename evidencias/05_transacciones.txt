@@ -41,10 +41,10 @@ INSERT INTO movimiento_efectivo (id_cuenta, tipo_movimiento, monto)
 VALUES (:cta, 'DEPOSITO', 1000.00);
 INSERT 0 1
 CALL sp_registrar_compra(:cta, :spy, 1);
-psql:sql/08_transacciones.sql:36: NOTICE:  Compra 1480 registrada: 1 unidades a 739.9500 USD. Total descontado (con comision): 743.65 USD
 CALL
 -- Dentro de la transaccion ya se ven los cambios (para esta sesion)
 SELECT saldo_efectivo AS saldo_dentro_de_la_transaccion FROM cuenta WHERE id_cuenta = :cta;
+psql:sql/08_transacciones.sql:36: NOTICE:  Compra 1480 registrada: 1 unidades a 739.9500 USD. Total descontado (con comision): 743.65 USD
  saldo_dentro_de_la_transaccion 
 --------------------------------
                       224770.34
@@ -60,9 +60,9 @@ SELECT id_cuenta, saldo_efectivo AS saldo_despues FROM cuenta WHERE id_cuenta = 
 
 SELECT id_transaccion, tipo_transaccion, cantidad, precio_unitario, monto, comision, fecha_hora
 FROM transaccion WHERE id_cuenta = :cta ORDER BY id_transaccion DESC LIMIT 1;
- id_transaccion | tipo_transaccion | cantidad | precio_unitario | monto  | comision |         fecha_hora         
-----------------+------------------+----------+-----------------+--------+----------+----------------------------
-           1480 | COMPRA           | 1.000000 |        739.9500 | 739.95 |     3.70 | 2026-11-17 10:37:01.214713
+ id_transaccion | tipo_transaccion | cantidad | precio_unitario | monto  | comision |        fecha_hora         
+----------------+------------------+----------+-----------------+--------+----------+---------------------------
+           1480 | COMPRA           | 1.000000 |        739.9500 | 739.95 |     3.70 | 2026-11-17 12:49:55.12121
 (1 fila)
 
 -- =====================================================================
@@ -88,7 +88,7 @@ INSERT 0 1
 INSERT INTO transaccion (id_cuenta, id_activo, tipo_transaccion, cantidad, precio_unitario)
 VALUES (:cta, :spy, 'COMPRA', 1000000, 500);
 psql:sql/08_transacciones.sql:63: ERROR:  Regla 4: saldo insuficiente en la cuenta 15. Disponible: 225270.34, requerido: 502500000.00
-CONTEXTO:  función PL/pgSQL trg_fn_transaccion_validar() en la línea 62 en RAISE
+CONTEXTO:  función PL/pgSQL trg_fn_transaccion_validar() en la línea 65 en RAISE
 -- La transaccion ya esta abortada: cualquier instruccion falla hasta el ROLLBACK
 SELECT saldo_efectivo FROM cuenta WHERE id_cuenta = :cta;
 psql:sql/08_transacciones.sql:65: ERROR:  transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
@@ -123,7 +123,17 @@ CONTEXTO:  función PL/pgSQL trg_fn_registro_inmutable() en la línea 3 en RAISE
 INSERT INTO movimiento_efectivo (id_cuenta, tipo_movimiento, monto)
 VALUES (:cta, 'RETIRO', 99999999);
 psql:sql/08_transacciones.sql:85: ERROR:  Saldo insuficiente para retirar 99999999.00 de la cuenta 15. Disponible: 224770.34
-CONTEXTO:  función PL/pgSQL trg_fn_movimiento_aplicar() en la línea 26 en RAISE
+CONTEXTO:  función PL/pgSQL trg_fn_movimiento_aplicar() en la línea 29 en RAISE
+-- Registrar una compra con fecha futura (ej. 2030)
+INSERT INTO transaccion (id_cuenta, id_activo, tipo_transaccion, fecha_hora, cantidad, precio_unitario)
+VALUES (:cta, :spy, 'COMPRA', '2030-01-15 10:00', 1, 500);
+psql:sql/08_transacciones.sql:88: ERROR:  No se aceptan transacciones con fecha futura (2030-01-15 10:00:00)
+CONTEXTO:  función PL/pgSQL trg_fn_transaccion_validar() en la línea 31 en RAISE
+-- Registrar un deposito con fecha futura
+INSERT INTO movimiento_efectivo (id_cuenta, tipo_movimiento, fecha_hora, monto)
+VALUES (:cta, 'DEPOSITO', '2030-01-15 10:00', 100);
+psql:sql/08_transacciones.sql:91: ERROR:  No se aceptan movimientos con fecha futura (2030-01-15 10:00:00)
+CONTEXTO:  función PL/pgSQL trg_fn_movimiento_aplicar() en la línea 24 en RAISE
 -- =====================================================================
 -- A4. Auditoria: el saldo almacenado sigue coincidiendo con el historial
 -- =====================================================================

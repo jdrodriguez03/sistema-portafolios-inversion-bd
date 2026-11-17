@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict dkuZq3BSOXWp76GHoznZaMUhbS8aUcduNuUUjWPZaZO1KzHoecsiMFOabE6rYcv
+\restrict toEasG3U6487jibhBshchUqgFlNfWv5rhz8OmqLWEifseAkDU0htHO2gg7FXIsB
 
 -- Dumped from database version 18.6
 -- Dumped by pg_dump version 18.6
@@ -294,6 +294,9 @@ BEGIN
         RAISE EXCEPTION 'El movimiento (%) es anterior a la apertura de la cuenta (%)',
             NEW.fecha_hora::date, v_apertura;
     END IF;
+    IF NEW.fecha_hora > CURRENT_TIMESTAMP THEN
+        RAISE EXCEPTION 'No se aceptan movimientos con fecha futura (%)', NEW.fecha_hora;
+    END IF;
 
     IF NEW.tipo_movimiento = 'RETIRO' THEN
         IF v_saldo < NEW.monto THEN
@@ -335,6 +338,10 @@ CREATE FUNCTION public.trg_fn_rendimiento_aplicar() RETURNS trigger
 DECLARE
     v_tipo SMALLINT;
 BEGIN
+    IF NEW.fecha > CURRENT_DATE THEN
+        RAISE EXCEPTION 'No se aceptan rendimientos con fecha futura (%)', NEW.fecha;
+    END IF;
+
     SELECT a.id_tipo_activo INTO v_tipo
     FROM activo a
     WHERE a.id_activo = NEW.id_activo;
@@ -398,6 +405,9 @@ BEGIN
     IF NEW.fecha_hora::date < v_apertura THEN
         RAISE EXCEPTION 'La transaccion (%) es anterior a la apertura de la cuenta (%)',
             NEW.fecha_hora::date, v_apertura;
+    END IF;
+    IF NEW.fecha_hora > CURRENT_TIMESTAMP THEN
+        RAISE EXCEPTION 'No se aceptan transacciones con fecha futura (%)', NEW.fecha_hora;
     END IF;
 
     -- Tipo del activo y, si es renta fija, su vencimiento
@@ -2300,7 +2310,7 @@ COPY public.movimiento_efectivo (id_movimiento, id_cuenta, tipo_movimiento, fech
 405	77	DEPOSITO	2026-10-29 10:34:00	16444.07
 406	42	RETIRO	2026-11-02 10:29:00	13731.81
 407	71	DEPOSITO	2026-11-16 09:52:00	16183.54
-408	15	DEPOSITO	2026-11-17 10:37:01.214713	1000.00
+408	15	DEPOSITO	2026-11-17 12:49:55.12121	1000.00
 \.
 
 
@@ -12425,8 +12435,8 @@ COPY public.transaccion (id_transaccion, id_cuenta, id_activo, tipo_transaccion,
 1477	71	3	COMPRA	2026-11-16 09:55:00	8.000000	352.7800	0.0050	\N
 1478	71	1	COMPRA	2026-11-16 09:58:00	194.000000	14.9100	0.0050	\N
 1479	71	307	COMPRA	2026-11-16 10:01:00	1.000000	9494.5200	0.0050	0.1041
-1480	15	9	COMPRA	2026-11-17 10:37:01.214713	1.000000	739.9500	0.0050	\N
-1482	15	9	COMPRA	2026-11-17 10:37:04.822227	181.000000	739.9500	0.0050	\N
+1480	15	9	COMPRA	2026-11-17 12:49:55.12121	1.000000	739.9500	0.0050	\N
+1483	15	9	COMPRA	2026-11-17 12:49:58.672644	181.000000	739.9500	0.0050	\N
 \.
 
 
@@ -13168,7 +13178,7 @@ SELECT pg_catalog.setval('public.cuenta_id_cuenta_seq', 80, true);
 -- Name: movimiento_efectivo_id_movimiento_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.movimiento_efectivo_id_movimiento_seq', 410, true);
+SELECT pg_catalog.setval('public.movimiento_efectivo_id_movimiento_seq', 411, true);
 
 
 --
@@ -13182,7 +13192,7 @@ SELECT pg_catalog.setval('public.rendimiento_id_rendimiento_seq', 1367, true);
 -- Name: transaccion_id_transaccion_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.transaccion_id_transaccion_seq', 1483, true);
+SELECT pg_catalog.setval('public.transaccion_id_transaccion_seq', 1484, true);
 
 
 --
@@ -13564,5 +13574,5 @@ ALTER TABLE ONLY public.transaccion
 -- PostgreSQL database dump complete
 --
 
-\unrestrict dkuZq3BSOXWp76GHoznZaMUhbS8aUcduNuUUjWPZaZO1KzHoecsiMFOabE6rYcv
+\unrestrict toEasG3U6487jibhBshchUqgFlNfWv5rhz8OmqLWEifseAkDU0htHO2gg7FXIsB
 

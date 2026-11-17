@@ -136,7 +136,7 @@ El proyecto incluye la gestión de clientes y su perfil de riesgo; la asignació
 \section{Requerimientos y reglas de negocio}
 % =====================================================================
 
-Las doce reglas de la formulación se mantuvieron y se precisaron durante el modelado; adicionalmente, se identificaron cuatro reglas nuevas (13 a 16). La Tabla~\ref{tab:reglas} resume cada regla y el mecanismo con el que el motor la garantiza.
+Las doce reglas de la formulación se mantuvieron y se precisaron durante el modelado; adicionalmente, se identificaron cinco reglas nuevas (13 a 17). La Tabla~\ref{tab:reglas} resume cada regla y el mecanismo con el que el motor la garantiza.
 
 \begin{table*}[t]
 \centering
@@ -163,6 +163,7 @@ Las doce reglas de la formulación se mantuvieron y se precisaron durante el mod
 14 & El efectivo solo cambia por operaciones registradas. & Disparador \texttt{trg\_cuenta\_proteger\_saldo}. \\
 15 & Transacciones, movimientos y rendimientos no se modifican ni se eliminan. & Disparadores \texttt{trg\_*\_inmutable}. \\
 16 & Solo se vinculan mayores de edad; documento y correo no se repiten. & CHECK de edad y restricciones UNIQUE. \\
+17 & Ninguna operación puede registrarse con fecha futura ni anterior a la apertura de la cuenta. & Disparadores de transacción, movimiento y rendimiento. \\
 \bottomrule
 \end{tabularx}
 \end{table*}
@@ -293,7 +294,7 @@ La base de datos se construye desde cero con un único comando (\texttt{EJECUTAR
 
 \subsection{Disparadores}
 
-Las reglas que comparan datos de varias tablas no pueden expresarse con una restricción CHECK, por lo que se implementaron con disparadores. El principal, \texttt{trg\_transaccion\_validar}, se ejecuta antes de cada inserción en \texttt{transaccion}: bloquea la fila de la cuenta, obtiene el tipo y el vencimiento del activo, calcula el monto y la comisión, valida las reglas 4, 6, 7 y 11 según se trate de una compra o una venta, y actualiza el saldo. El siguiente fragmento muestra la validación del saldo:
+Las reglas que comparan datos de varias tablas no pueden expresarse con una restricción CHECK, por lo que se implementaron con disparadores. El principal, \texttt{trg\_transaccion\_validar}, se ejecuta antes de cada inserción en \texttt{transaccion}: bloquea la fila de la cuenta, obtiene el tipo y el vencimiento del activo, calcula el monto y la comisión, rechaza fechas futuras o anteriores a la apertura (regla 17), valida las reglas 4, 6, 7 y 11 según se trate de una compra o una venta, y actualiza el saldo. El siguiente fragmento muestra la validación del saldo:
 
 \begin{lstlisting}
 SELECT saldo_efectivo INTO v_saldo
@@ -336,7 +337,7 @@ asesor & 6 \\
 \end{tabular}
 \end{table}
 
-La carga no produjo ningún rechazo de los disparadores. Adicionalmente, se verificó que la base rechaza dieciséis operaciones inválidas, una por regla, entre ellas una compra sin saldo, una venta sin tenencia, la venta de un CDT antes de su vencimiento, la modificación directa del saldo y la vinculación de un menor de edad.
+La carga no produjo ningún rechazo de los disparadores. Adicionalmente, se verificó que la base rechaza operaciones inválidas de cada regla, entre ellas una compra sin saldo, una venta sin tenencia, la venta de un CDT antes de su vencimiento, la modificación directa del saldo, la vinculación de un menor de edad y una compra con fecha de 2030.
 
 % =====================================================================
 \section{Consultas SQL y resultados}\label{sec:consultas}
@@ -483,7 +484,7 @@ El historial de precios se embebió porque pertenece al activo y siempre se cons
 
 \subsection{Conclusiones}
 
-La base de datos responde las nueve preguntas de información y garantiza dentro del motor quince de las dieciséis reglas de negocio; la Regla 2 se controla mediante una vista, porque el porcentaje en renta variable cambia con los precios aunque el cliente no realice operaciones.
+La base de datos responde las nueve preguntas de información y garantiza dentro del motor dieciséis de las diecisiete reglas de negocio; la Regla 2 se controla mediante una vista, porque el porcentaje en renta variable cambia con los precios aunque el cliente no realice operaciones.
 
 Llevar las reglas a restricciones y disparadores obligó a que los datos sintéticos las cumplieran para poder cargarse: las 1.479 transacciones entraron sin un solo rechazo y la auditoría del saldo no encontró diferencias. La normalización detectó cinco dependencias transitivas en el diseño preliminar, y las columnas generadas eliminaron el riesgo de inconsistencias en el monto y la comisión.
 
@@ -496,6 +497,7 @@ La medición con planes de ejecución justificó dos índices y descartó un ter
   \item Los CDT y TES se valoran capitalizando la tasa pactada, sin precio de mercado; en los TES no se descuentan los cupones ya pagados, por lo que su valor queda levemente sobrestimado.
   \item Si un cliente cambia de asesor, sus comisiones históricas se atribuyen al nuevo asesor; una tabla de historial de asignaciones resolvería esta limitación.
   \item Los clientes y sus operaciones son sintéticos; solo los precios, los dividendos y la TRM son datos reales.
+  \item Los CDT y TES comparten la fecha de emisión y la de vencimiento, que hoy se repiten en ambas tablas. Una superclase intermedia \texttt{renta\_fija} entre \texttt{activo} y estos subtipos eliminaría esa repetición, dejaría una jerarquía de dos niveles y simplificaría las consultas de renta fija, que hoy unen \texttt{cdt} y \texttt{tes} por separado.
 \end{itemize}
 
 % =====================================================================

@@ -83,6 +83,12 @@ DELETE FROM transaccion WHERE id_cuenta = :cta;
 -- Retirar mas de lo disponible
 INSERT INTO movimiento_efectivo (id_cuenta, tipo_movimiento, monto)
 VALUES (:cta, 'RETIRO', 99999999);
+-- Registrar una compra con fecha futura (ej. 2030)
+INSERT INTO transaccion (id_cuenta, id_activo, tipo_transaccion, fecha_hora, cantidad, precio_unitario)
+VALUES (:cta, :spy, 'COMPRA', '2030-01-15 10:00', 1, 500);
+-- Registrar un deposito con fecha futura
+INSERT INTO movimiento_efectivo (id_cuenta, tipo_movimiento, fecha_hora, monto)
+VALUES (:cta, 'DEPOSITO', '2030-01-15 10:00', 100);
 
 -- =====================================================================
 -- A4. Auditoria: el saldo almacenado sigue coincidiendo con el historial

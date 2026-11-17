@@ -18,14 +18,14 @@ psql:sql/01_ddl.sql:20: NOTICE:  la tabla «asesor» no existe, omitiendo
 psql:sql/01_ddl.sql:20: NOTICE:  la tabla «perfil_riesgo» no existe, omitiendo
 
 ===== sql\02_funciones_triggers.sql =====
-psql:sql/02_funciones_triggers.sql:307: NOTICE:  “trigger” «trg_transaccion_validar» para la relación «transaccion» no existe, omitiendo
-psql:sql/02_funciones_triggers.sql:356: NOTICE:  “trigger” «trg_movimiento_aplicar» para la relación «movimiento_efectivo» no existe, omitiendo
-psql:sql/02_funciones_triggers.sql:400: NOTICE:  “trigger” «trg_rendimiento_aplicar» para la relación «rendimiento» no existe, omitiendo
-psql:sql/02_funciones_triggers.sql:427: NOTICE:  “trigger” «trg_cuenta_proteger_saldo» para la relación «cuenta» no existe, omitiendo
-psql:sql/02_funciones_triggers.sql:445: NOTICE:  “trigger” «trg_transaccion_inmutable» para la relación «transaccion» no existe, omitiendo
-psql:sql/02_funciones_triggers.sql:450: NOTICE:  “trigger” «trg_movimiento_inmutable» para la relación «movimiento_efectivo» no existe, omitiendo
-psql:sql/02_funciones_triggers.sql:455: NOTICE:  “trigger” «trg_rendimiento_inmutable» para la relación «rendimiento» no existe, omitiendo
-psql:sql/02_funciones_triggers.sql:489: NOTICE:  “trigger” «trg_activo_subtipo» para la relación «activo» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:311: NOTICE:  “trigger” «trg_transaccion_validar» para la relación «transaccion» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:364: NOTICE:  “trigger” «trg_movimiento_aplicar» para la relación «movimiento_efectivo» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:413: NOTICE:  “trigger” «trg_rendimiento_aplicar» para la relación «rendimiento» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:440: NOTICE:  “trigger” «trg_cuenta_proteger_saldo» para la relación «cuenta» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:458: NOTICE:  “trigger” «trg_transaccion_inmutable» para la relación «transaccion» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:463: NOTICE:  “trigger” «trg_movimiento_inmutable» para la relación «movimiento_efectivo» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:468: NOTICE:  “trigger” «trg_rendimiento_inmutable» para la relación «rendimiento» no existe, omitiendo
+psql:sql/02_funciones_triggers.sql:502: NOTICE:  “trigger” «trg_activo_subtipo» para la relación «activo» no existe, omitiendo
 
 ===== sql\03_carga_catalogos.sql =====
 
